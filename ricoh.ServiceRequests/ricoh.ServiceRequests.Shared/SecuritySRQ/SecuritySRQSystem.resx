@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Property_ResponsibleName" xml:space="preserve">
+    <value>Имя ответственного</value>
+  </data>
+  <data name="Property_ResponsiblePhone" xml:space="preserve">
+    <value>Телефон</value>
+  </data>
+  <data name="Property_ValidFrom" xml:space="preserve">
+    <value>Действует с</value>
+  </data>
+  <data name="Property_ValidTill" xml:space="preserve">
+    <value>Действует до</value>
+  </data>
+  <data name="Property_ValidOn" xml:space="preserve">
+    <value>Действителен на</value>
+  </data>
+  <data name="CollectionDisplayName" xml:space="preserve">
+    <value>Все заявки в СБ</value>
+  </data>
+  <data name="AccusativeDisplayName" xml:space="preserve">
+    <value>Заявку в СБ</value>
+  </data>
+  <data name="DisplayName" xml:space="preserve">
+    <value>Заявка в СБ</value>
+  </data>
+  <data name="Control_728707c6c8184f18bef60a7a944b547e_EmptyText" xml:space="preserve">
+    <value>для связи в случае необходимости</value>
+  </data>
+  <data name="Control_5a9e062898e846fdb3d3156aaf9c7fc8_EmptyText" xml:space="preserve">
+    <value>за посетителя сотрудника</value>
+  </data>
+  <data name="ControlGroup_edc742810fc34ba8bcebbc443bc51b4e" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Property_ResponsibleMail" xml:space="preserve">
+    <value>E-mail</value>
+  </data>
+  <data name="ControlGroup_ff41af4282df4c38b59a4ec3bf4f7dfc" xml:space="preserve">
+    <value>Ответственный сотрудник</value>
+  </data>
+  <data name="FilterPanel_ValidOn_396641f23d5e406a923a387e4872b58d" xml:space="preserve">
+    <value>Действителен на</value>
+  </data>
+  <data name="FilterPanel_Today_7a85b8d50fcf4c86a319c97998bb5e09" xml:space="preserve">
+    <value>Сегодня</value>
+  </data>
+  <data name="FilterPanel_Tomorrow_b412b911ef244e51ad8052de49c62951" xml:space="preserve">
+    <value>Завтра</value>
+  </data>
+  <data name="FilterPanel_Any_0089a97d15114aa096f7d2945f932362" xml:space="preserve">
+    <value>Диапазон дат</value>
+  </data>
+  <data name="Property_Visitors" xml:space="preserve">
+    <value>Посетители</value>
+  </data>
+</root>

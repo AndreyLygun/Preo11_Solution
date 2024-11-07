@@ -1,0 +1,103 @@
+{
+  "$type": "Sungero.Metadata.SolutionMetadata, Sungero.Metadata",
+  "NameGuid": "597c698c-dff4-472e-97e4-805c4350174b",
+  "Name": "Preo8",
+  "AsyncHandlers": [],
+  "ClientAssemblyName": "ricoh.Preo8.Client",
+  "ClientBaseAssemblyName": "ricoh.Preo8.ClientBase",
+  "ClientBaseNamespace": "ricoh.Preo8.ClientBase",
+  "ClientNamespace": "ricoh.Preo8.Client",
+  "Code": "Preo8",
+  "CompanyCode": "ricoh",
+  "Cover": {
+    "NameGuid": "d83c65d8-7181-4bd9-a6f1-dd8fe9f3edae",
+    "Actions": [],
+    "Background": null,
+    "Footer": {
+      "NameGuid": "2f4e48c7-19ec-425a-8afc-e9fd3c9c17eb",
+      "BackgroundPosition": "Stretch"
+    },
+    "Groups": [],
+    "Header": {
+      "NameGuid": "2224f933-78ce-4ecc-b4e0-6d0dade676a0",
+      "BackgroundPosition": "Stretch"
+    },
+    "RemoteControls": [],
+    "Tabs": []
+  },
+  "DesktopViews": [],
+  "ExplorerTreeOrder": [
+    {
+      "ItemId": "1bf2bcfd-e27c-41dd-a05b-9a32d1f731c0",
+      "PreviousItemId": "aaef34eb-c6f6-4de3-9144-08a9d02df8c8"
+    },
+    {
+      "ItemId": "d27d5683-a2e1-4fb7-bbe9-a3ca00b2e530",
+      "PreviousItemId": "1bf2bcfd-e27c-41dd-a05b-9a32d1f731c0"
+    },
+    {
+      "ItemId": "663b879f-c88a-4a12-871e-d58ca6e91d32",
+      "PreviousItemId": "d27d5683-a2e1-4fb7-bbe9-a3ca00b2e530"
+    },
+    {
+      "ItemId": "7bf073f8-29d5-4f59-9e45-1f53f64e8476",
+      "PreviousItemId": "663b879f-c88a-4a12-871e-d58ca6e91d32"
+    },
+    {
+      "ItemId": "f64f4335-f722-4d57-a5a7-3cfafcd5595f",
+      "PreviousItemId": "7bf073f8-29d5-4f59-9e45-1f53f64e8476"
+    },
+    {
+      "ItemId": "b72b6e61-0465-4a4d-9f63-ffd209afbaf2",
+      "PreviousItemId": "f64f4335-f722-4d57-a5a7-3cfafcd5595f"
+    },
+    {
+      "ItemId": "a4172cb9-ac63-4251-9c95-c0d68b6ca92d",
+      "PreviousItemId": "b72b6e61-0465-4a4d-9f63-ffd209afbaf2"
+    },
+    {
+      "ItemId": "73f494e1-215e-48a0-9a08-8655d412e251",
+      "PreviousItemId": "a4172cb9-ac63-4251-9c95-c0d68b6ca92d"
+    },
+    {
+      "ItemId": "e64f0522-001b-4b38-bd57-f690508b0cd6",
+      "PreviousItemId": "73f494e1-215e-48a0-9a08-8655d412e251"
+    },
+    {
+      "ItemId": "80fbedac-1a23-40d4-aec5-7c59b92b5eb1",
+      "PreviousItemId": "e64f0522-001b-4b38-bd57-f690508b0cd6"
+    }
+  ],
+  "IconResourcesKeys": [],
+  "Importance": "Medium",
+  "InterfaceAssemblyName": "Sungero.Domain.Interfaces",
+  "InterfaceNamespace": "ricoh.Preo8",
+  "IsolatedAssemblyName": "ricoh.Preo8.Isolated",
+  "IsolatedNamespace": "ricoh.Preo8.Isolated",
+  "OrderedSpecialFolders": [],
+  "PublicStructures": [],
+  "ResourceInterfaceAssemblyName": "Sungero.Domain.Interfaces",
+  "ResourceInterfaceNamespace": "ricoh.Preo8",
+  "ResourcesKeys": [],
+  "ServerAssemblyName": "ricoh.Preo8.Server",
+  "ServerNamespace": "ricoh.Preo8.Server",
+  "SharedAssemblyName": "ricoh.Preo8.Shared",
+  "SharedNamespace": "ricoh.Preo8.Shared",
+  "SpecialFolders": [],
+  "Version": "0.0.1.4",
+  "Widgets": [],
+  "Versions": [
+    {
+      "Type": "SolutionMetadata",
+      "Number": 8
+    },
+    {
+      "Type": "ModuleMetadata",
+      "Number": 8
+    },
+    {
+      "Type": "DomainApi",
+      "Number": 3
+    }
+  ]
+}

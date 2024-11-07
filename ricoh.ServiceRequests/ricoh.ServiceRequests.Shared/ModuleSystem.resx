@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="DisplayName" xml:space="preserve">
+    <value>Сервисные заявки</value>
+  </data>
+  <data name="CoverTitle" xml:space="preserve">
+    <value>Сервисные заявки</value>
+  </data>
+  <data name="CoverDescription" xml:space="preserve">
+    <value>Заявки на вход, въезд, внос-вынос, оформление пропусков</value>
+  </data>
+  <data name="CoverTab_Requests" xml:space="preserve">
+    <value>Заявки</value>
+  </data>
+  <data name="CoverGroup_Settings" xml:space="preserve">
+    <value>Настройки</value>
+  </data>
+  <data name="CoverGroup_Passses4Car" xml:space="preserve">
+    <value>Автомобильные пропуска</value>
+  </data>
+  <data name="CoverDescription_PermanentPass4Car" xml:space="preserve">
+    <value>Заявки на изготовление постоянных автомобильных пропусков</value>
+  </data>
+  <data name="CoverAction_PermanentPass4Car" xml:space="preserve">
+    <value>Постоянный автомобильный пропуск</value>
+  </data>
+  <data name="CoverAction_Pass4Visitors" xml:space="preserve">
+    <value>Разовые пропуска</value>
+  </data>
+  <data name="CoverDescription_Pass4Visitors" xml:space="preserve">
+    <value>Заявки на разовые пропуска для гостей бизнесцентра</value>
+  </data>
+  <data name="CoverAction_Pass4Cars" xml:space="preserve">
+    <value>Разовый автомобильный пропуск</value>
+  </data>
+  <data name="CoverDescription_Pass4Cars" xml:space="preserve">
+    <value>Заявку на выдачу разового пропуска для въезда автомобилей</value>
+  </data>
+  <data name="CoverAction_Renters" xml:space="preserve">
+    <value>Арендаторы</value>
+  </data>
+  <data name="CoverDescription_Renters" xml:space="preserve">
+    <value>Список компаний, сотрудники которых могут создавать заявки</value>
+  </data>
+  <data name="CoverAction_Pass4AssetsMoving" xml:space="preserve">
+    <value>Разовые пропуска на перемещение ТМЦ</value>
+  </data>
+  <data name="CoverDescription_Pass4AssetsMoving" xml:space="preserve">
+    <value>Заявка на разовые пропуска на ввоз, вывоз, внос, вынос товарно-материальных ценностей</value>
+  </data>
+  <data name="CoverAction_Sites" xml:space="preserve">
+    <value>Sites</value>
+  </data>
+  <data name="CoverDescription_Sites" xml:space="preserve">
+    <value>Секции БЦ, места для разгрузки, въезда и пр.</value>
+  </data>
+  <data name="CoverAction_TimeSpans" xml:space="preserve">
+    <value>TimeSpans</value>
+  </data>
+  <data name="CoverDescription_TimeSpans" xml:space="preserve">
+    <value>Интервалы времени для выбора в зявках</value>
+  </data>
+  <data name="CoverGroup_Common" xml:space="preserve">
+    <value>Общий</value>
+  </data>
+  <data name="CoverAction_Visitors" xml:space="preserve">
+    <value>Visitors</value>
+  </data>
+  <data name="CoverDescription_Visitors" xml:space="preserve">
+    <value>Посетители, на которых оформлены разовые пропуска</value>
+  </data>
+  <data name="CoverAction_PermanentAssetMovin" xml:space="preserve">
+    <value>Постоянные пропуска на перемещение ТМЦ</value>
+  </data>
+  <data name="CoverDescription_PermanentAssetMovin" xml:space="preserve">
+    <value>Ввоз-вывоз товарно-материальных ценностей на регулярной основе</value>
+  </data>
+  <data name="CoverAction_PermanentPass4Emploee" xml:space="preserve">
+    <value>Пропуска для сотрудников</value>
+  </data>
+  <data name="CoverDescription_PermanentPass4Emploee" xml:space="preserve">
+    <value>Заявки на изготовление постоянных пропусков для сотрудников</value>
+  </data>
+  <data name="CoverAction_StopPermanentPass4Employee" xml:space="preserve">
+    <value>Блокировка пропуска для сотрудников</value>
+  </data>
+  <data name="CoverDescription_StopPermanentPass4Employee" xml:space="preserve">
+    <value>Заявки на блокировку постоянных пропусков сотрудников</value>
+  </data>
+  <data name="CoverGroup_Passes4Employee" xml:space="preserve">
+    <value>Сотрудники и гости</value>
+  </data>
+  <data name="CoverDescription_BlockPermanentPass4Car" xml:space="preserve">
+    <value>Заявки на блокировку пропусков для автомобилей арендаторов</value>
+  </data>
+  <data name="CoverAction_BlockPermanentPass4Car" xml:space="preserve">
+    <value>Блокировка автомобильных пропусков</value>
+  </data>
+  <data name="CoverAction_Permission4Employee" xml:space="preserve">
+    <value>Временный доступ для сотрудника</value>
+  </data>
+  <data name="CoverDescription_Permission4Employee" xml:space="preserve">
+    <value>Заявки на выдачу временного доступа на выполнение разичных работ</value>
+  </data>
+  <data name="CoverGroup_Passes4Assets" xml:space="preserve">
+    <value>ТМЦ</value>
+  </data>
+  <data name="CoverAction_AllRequests" xml:space="preserve">
+    <value>Все заявки</value>
+  </data>
+  <data name="CoverDescription_AllRequests" xml:space="preserve">
+    <value>Все заявки на проход, въезд, вввоз, вывоз и пр.</value>
+  </data>
+</root>
