@@ -7,4 +7,12 @@ using Sungero.Workflow;
 
 namespace ricoh.Srq.Server.SrqBlocks
 {
+  partial class SendMailHandlers
+  {
+
+    public virtual void SendMailExecute()
+    {
+      
+    }
+  }  
 }

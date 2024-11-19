@@ -19,15 +19,15 @@ namespace ricoh.ServiceRequests.Server
     }
 
     /// <summary>
-    /// Преобразует список {"ab", "cd", "ef", ...} в строку типа "ab, cf, ef и др." с учётом максимальной длины
+    /// Преобразует список {"Первый", "Втроей", "Третий", ...} в строку типа "Первый, Второй, Третий и др." с учётом длины списка и допустимой длиный строки
     /// </summary>
     /// list - список строк, из которых составляем строку
-    /// max - количество элементов, которые должны перейти в строку. Если элементов в списке больше, то в конце строки добавляется "и др"
-    /// maxLen - максимальная длина строки на выходе. Если добавлении очередного элемента из списка длина строки превышает maxLen, то в конце строки добавляется "и др"
+    /// max - количество элементов, которые должны перейти в строку. Если элементов в списке больше, то в конце строки добавляется "и др."
+    /// maxLen - максимальная длина строки на выходе. Если добавлении очередного элемента из списка длина строки превышает maxLen, то в конце строки добавляется "и дрю"
     public string List2SmartStr(List<string> list, int max, int maxLen)
     {
       string result = "";
-      if (list.Count==0) return "";      
+      if (list.Count==0) return "";
       foreach(var item in list.Take(max+1)) {
         if (result.Length + item.Length > maxLen - 5) {
           result += "и др.";
@@ -48,8 +48,8 @@ namespace ricoh.ServiceRequests.Server
     [Public(WebApiRequestType = RequestType.Post)]
     public void StartDocumentReviewTask(long requestId) {
       var request = BaseSRQs.Get(requestId);
-      if (request == null) return;
-      Functions.BaseSRQ.CreateAndStartRequestApprovalTask(request);
+      var task = Sungero.DocflowApproval.PublicFunctions.Module.Remote.CreateDocumentFlowTask(request);
+      task.Start();
     }
     
     /// 
@@ -59,8 +59,8 @@ namespace ricoh.ServiceRequests.Server
       var request = BaseSRQs.Get(requestId);
       if (request == null) return null;
       var s = Functions.BaseSRQ.GetStateViewXml(request).ToString();
-      return "{'status':"+s+"'}";      
-    }    
+      return "{'status':"+s+"'}";
+    }
 
   }
 }

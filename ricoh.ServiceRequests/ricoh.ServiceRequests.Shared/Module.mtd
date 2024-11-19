@@ -3,6 +3,40 @@
   "NameGuid": "5de25943-1cb3-45ef-9972-4be4f15b6d54",
   "Name": "ServiceRequests",
   "AsyncHandlers": [],
+  "Blocks": [
+    {
+      "$type": "Sungero.Metadata.ScriptBlockMetadata, Sungero.Workflow.Shared",
+      "NameGuid": "bb640b18-9d77-4644-a6c0-4fe8ce32b867",
+      "Name": "SendMail",
+      "BaseGuid": "1f76cc5d-f096-4062-b34a-51b3c02269f2",
+      "Properties": [
+        {
+          "$type": "Sungero.Metadata.StringBlockPropertyMetadata, Sungero.Metadata",
+          "NameGuid": "0fb0eb86-2d84-4d5a-84ee-f9e85688e23f",
+          "Name": "Subject",
+          "PreviousPropertyGuid": "5f1ac2dc-00b1-47f9-9795-7b8d499dab1b"
+        },
+        {
+          "$type": "Sungero.Metadata.StringBlockPropertyMetadata, Sungero.Metadata",
+          "NameGuid": "247d7190-f9ad-41cd-9458-89a622f7dccb",
+          "Name": "From",
+          "PreviousPropertyGuid": "5dc92a72-3a65-4872-bc04-0aa7ec353b05"
+        },
+        {
+          "$type": "Sungero.Metadata.StringBlockPropertyMetadata, Sungero.Metadata",
+          "NameGuid": "5f1ac2dc-00b1-47f9-9795-7b8d499dab1b",
+          "Name": "To",
+          "PreviousPropertyGuid": "247d7190-f9ad-41cd-9458-89a622f7dccb"
+        },
+        {
+          "$type": "Sungero.Metadata.StringBlockPropertyMetadata, Sungero.Metadata",
+          "NameGuid": "d20263e6-f25b-4083-883f-1e5d9c140300",
+          "Name": "Body",
+          "PreviousPropertyGuid": "0fb0eb86-2d84-4d5a-84ee-f9e85688e23f"
+        }
+      ]
+    }
+  ],
   "ClientAssemblyName": "ricoh.ServiceRequests.Client",
   "ClientBaseAssemblyName": "ricoh.ServiceRequests.ClientBase",
   "ClientBaseNamespace": "ricoh.ServiceRequests.ClientBase",
@@ -259,6 +293,10 @@
     {
       "ItemId": "a112c6db-f89f-4cc2-970e-19d91a67af42",
       "PreviousItemId": "91891079-5e87-4cec-9c55-e53221392e8e"
+    },
+    {
+      "ItemId": "d13d196b-504f-486c-a866-2e0cc972519e",
+      "PreviousItemId": "a112c6db-f89f-4cc2-970e-19d91a67af42"
     }
   ],
   "HandledEvents": [
@@ -385,7 +423,7 @@
   "SharedAssemblyName": "ricoh.ServiceRequests.Shared",
   "SharedNamespace": "ricoh.ServiceRequests.Shared",
   "SpecialFolders": [],
-  "Version": "0.0.1.4",
+  "Version": "0.0.1.8",
   "Widgets": [],
   "Versions": [
     {

@@ -10,6 +10,19 @@ namespace ricoh.ServiceRequests.Client
 
   partial class BaseSRQActions
   {
+    public virtual void Send2ProcessApproval(Sungero.Domain.Client.ExecuteActionArgs e)
+    {
+      _obj.Save();
+      var task = Sungero.DocflowApproval.PublicFunctions.Module.Remote.CreateDocumentFlowTask(_obj);
+      task.Start();
+      e.CloseFormAfterAction = true;      
+    }
+
+    public virtual bool CanSend2ProcessApproval(Sungero.Domain.Client.CanExecuteActionArgs e)
+    {
+      return _obj.RequestState == ServiceRequests.BaseSRQ.RequestState.Draft;
+    }
+
 
     // Отправить заявку на согласование
     public virtual void Send2Approval(Sungero.Domain.Client.ExecuteActionArgs e)

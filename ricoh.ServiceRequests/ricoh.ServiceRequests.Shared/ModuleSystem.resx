@@ -169,4 +169,19 @@
   <data name="CoverDescription_AllRequests" xml:space="preserve">
     <value>Все заявки на проход, въезд, вввоз, вывоз и пр.</value>
   </data>
+  <data name="Block_bb640b189d774644a6c04fe8ce32b867_Property_5f1ac2dc00b147f997957b8d499dab1b" xml:space="preserve">
+    <value>To</value>
+  </data>
+  <data name="Block_bb640b189d774644a6c04fe8ce32b867_Property_0fb0eb862d844d5a84eef9e85688e23f" xml:space="preserve">
+    <value>Subject</value>
+  </data>
+  <data name="Block_bb640b189d774644a6c04fe8ce32b867_Property_247d7190f9ad41cd945889a622f7dccb" xml:space="preserve">
+    <value>From</value>
+  </data>
+  <data name="Block_bb640b189d774644a6c04fe8ce32b867" xml:space="preserve">
+    <value>Отправка по E-Mail</value>
+  </data>
+  <data name="Block_bb640b189d774644a6c04fe8ce32b867_Property_d20263e6f25b4083883f1e5d9c140300" xml:space="preserve">
+    <value>Body</value>
+  </data>
 </root>

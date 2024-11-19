@@ -149,13 +149,13 @@
     <value>Request</value>
   </data>
   <data name="Action_Send2Approval" xml:space="preserve">
-    <value>Отправить на согласование</value>
+    <value>Old.Отправить на согласование</value>
   </data>
   <data name="Action_Send2ApprovalDescription" xml:space="preserve">
-    <value>Отправить заявку на согласование</value>
+    <value>Old.Отправить заявку на согласование</value>
   </data>
   <data name="Action_Send2ApprovalHint" xml:space="preserve">
-    <value>Отправить заявку на согласование</value>
+    <value>Old.Отправить заявку на согласование</value>
   </data>
   <data name="Action_Send2ApprovalConfirmationMessage" xml:space="preserve">
     <value>Отправить заявку на согласование?</value>
@@ -174,5 +174,20 @@
   </data>
   <data name="Enum_RequestState_Closed" xml:space="preserve">
     <value>Закрыто</value>
+  </data>
+  <data name="Action_Send2ProcessApproval" xml:space="preserve">
+    <value>Отправить заявку на согласование</value>
+  </data>
+  <data name="Action_Send2ProcessApprovalDescription" xml:space="preserve">
+    <value>Отправить заявку на согласование</value>
+  </data>
+  <data name="Action_Send2ProcessApprovalHint" xml:space="preserve">
+    <value>Отправить заявку на согласование</value>
+  </data>
+  <data name="Action_Send2ProcessApprovalConfirmationMessage" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Action_Send2ProcessApprovalConfirmationDescription" xml:space="preserve">
+    <value />
   </data>
 </root>

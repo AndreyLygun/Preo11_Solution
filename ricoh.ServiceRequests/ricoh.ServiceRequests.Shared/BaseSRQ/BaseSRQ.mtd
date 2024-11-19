@@ -13,6 +13,14 @@
       "LargeIconName": "Action_Send2Approval_large_a86c8354f0e1441a9ae5dfd843ba46f8.png",
       "NeedConfirmation": true,
       "SmallIconName": "Action_Send2Approval_small_a86c8354f0e1441a9ae5dfd843ba46f8.png"
+    },
+    {
+      "NameGuid": "d2982426-2a57-4769-91c0-b4dd5840b141",
+      "Name": "Send2ProcessApproval",
+      "ActionArea": "Card",
+      "GenerateHandler": true,
+      "LargeIconName": "Action_Send2ProcessApproval_large_d29824262a57476991c0b4dd5840b141.png",
+      "SmallIconName": "Action_Send2ProcessApproval_small_d29824262a57476991c0b4dd5840b141.png"
     }
   ],
   "BaseGuid": "58cca102-1e97-4f07-b6ac-fd866a8b7cb1",
@@ -1256,20 +1264,20 @@
       },
       {
         "$type": "Sungero.Metadata.RibbonActionButtonMetadata, Sungero.Metadata",
-        "NameGuid": "544915ac-cc6d-4853-b98a-52019b058624",
-        "Name": "ActionButton",
-        "ActionGuid": "a86c8354-f0e1-441a-9ae5-dfd843ba46f8",
-        "Index": 50,
-        "ParentGuid": "08286ff4-2571-4150-955e-571c1c352ff9"
-      },
-      {
-        "$type": "Sungero.Metadata.RibbonActionButtonMetadata, Sungero.Metadata",
         "NameGuid": "4f600fd6-2dac-40ca-82bc-da420a06d40f",
         "Name": "Send2Approval",
         "ActionGuid": "a86c8354-f0e1-441a-9ae5-dfd843ba46f8",
         "ButtonSize": "Large",
         "Index": -2,
         "ParentGuid": "f329dc86-efcb-484a-bdfd-999e6f96e971"
+      },
+      {
+        "$type": "Sungero.Metadata.RibbonActionButtonMetadata, Sungero.Metadata",
+        "NameGuid": "6094f74b-c26d-4c54-a2de-3772b541f486",
+        "Name": "ActionButton1",
+        "ActionGuid": "d2982426-2a57-4769-91c0-b4dd5840b141",
+        "Index": 51,
+        "ParentGuid": "08286ff4-2571-4150-955e-571c1c352ff9"
       }
     ],
     "Groups": [

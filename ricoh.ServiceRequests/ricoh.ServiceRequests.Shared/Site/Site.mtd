@@ -67,6 +67,9 @@
       ]
     }
   ],
+  "HandledEvents": [
+    "BeforeSaveServer"
+  ],
   "HideFromNavigationEditorCreationArea": true,
   "IconResourcesKeys": [],
   "IntegrationServiceName": "ServiceRequestsSite",
