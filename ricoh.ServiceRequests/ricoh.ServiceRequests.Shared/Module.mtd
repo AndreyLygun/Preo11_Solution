@@ -3,40 +3,6 @@
   "NameGuid": "5de25943-1cb3-45ef-9972-4be4f15b6d54",
   "Name": "ServiceRequests",
   "AsyncHandlers": [],
-  "Blocks": [
-    {
-      "$type": "Sungero.Metadata.ScriptBlockMetadata, Sungero.Workflow.Shared",
-      "NameGuid": "bb640b18-9d77-4644-a6c0-4fe8ce32b867",
-      "Name": "SendMail",
-      "BaseGuid": "1f76cc5d-f096-4062-b34a-51b3c02269f2",
-      "Properties": [
-        {
-          "$type": "Sungero.Metadata.StringBlockPropertyMetadata, Sungero.Metadata",
-          "NameGuid": "0fb0eb86-2d84-4d5a-84ee-f9e85688e23f",
-          "Name": "Subject",
-          "PreviousPropertyGuid": "5f1ac2dc-00b1-47f9-9795-7b8d499dab1b"
-        },
-        {
-          "$type": "Sungero.Metadata.StringBlockPropertyMetadata, Sungero.Metadata",
-          "NameGuid": "247d7190-f9ad-41cd-9458-89a622f7dccb",
-          "Name": "From",
-          "PreviousPropertyGuid": "5dc92a72-3a65-4872-bc04-0aa7ec353b05"
-        },
-        {
-          "$type": "Sungero.Metadata.StringBlockPropertyMetadata, Sungero.Metadata",
-          "NameGuid": "5f1ac2dc-00b1-47f9-9795-7b8d499dab1b",
-          "Name": "To",
-          "PreviousPropertyGuid": "247d7190-f9ad-41cd-9458-89a622f7dccb"
-        },
-        {
-          "$type": "Sungero.Metadata.StringBlockPropertyMetadata, Sungero.Metadata",
-          "NameGuid": "d20263e6-f25b-4083-883f-1e5d9c140300",
-          "Name": "Body",
-          "PreviousPropertyGuid": "0fb0eb86-2d84-4d5a-84ee-f9e85688e23f"
-        }
-      ]
-    }
-  ],
   "ClientAssemblyName": "ricoh.ServiceRequests.Client",
   "ClientBaseAssemblyName": "ricoh.ServiceRequests.ClientBase",
   "ClientBaseNamespace": "ricoh.ServiceRequests.ClientBase",
@@ -55,6 +21,14 @@
       },
       {
         "$type": "Sungero.Metadata.CoverEntityListActionMetadata, Sungero.Metadata",
+        "NameGuid": "46f0bbef-af2e-4d9a-a1aa-66fc82570f49",
+        "Name": "WorkPermission",
+        "EntityTypeId": "81a92bbf-8b60-4306-99ef-f57a3663cbc9",
+        "GroupId": "a74a8579-f128-41fa-be85-7368fc39504a",
+        "PreviousItemGuid": "9b99d168-2114-43a7-9907-b4faa5fc6679"
+      },
+      {
+        "$type": "Sungero.Metadata.CoverEntityListActionMetadata, Sungero.Metadata",
         "NameGuid": "5ba7f133-edda-4a89-a827-2abe0dc8d000",
         "Name": "Pass4Cars",
         "EntityTypeId": "8ce2b667-494d-443b-b389-a653002d304c",
@@ -66,7 +40,7 @@
         "Name": "StopPermanentPass4Employee",
         "EntityTypeId": "b3707878-748d-41e6-b807-badd72e0d265",
         "GroupId": "a74a8579-f128-41fa-be85-7368fc39504a",
-        "PreviousItemGuid": "9b99d168-2114-43a7-9907-b4faa5fc6679"
+        "PreviousItemGuid": "7c317105-b213-48f8-a649-1fe44919060b"
       },
       {
         "$type": "Sungero.Metadata.CoverEntityListActionMetadata, Sungero.Metadata",
@@ -98,7 +72,7 @@
         "Name": "Permission4Employee",
         "EntityTypeId": "6cbff565-8da6-43f5-8b40-af86fa9a2a2e",
         "GroupId": "a74a8579-f128-41fa-be85-7368fc39504a",
-        "PreviousItemGuid": "7c317105-b213-48f8-a649-1fe44919060b"
+        "PreviousItemGuid": "63aa6215-4db9-4966-93a4-bac66253dcb1"
       },
       {
         "$type": "Sungero.Metadata.CoverEntityListActionMetadata, Sungero.Metadata",
@@ -295,8 +269,12 @@
       "PreviousItemId": "91891079-5e87-4cec-9c55-e53221392e8e"
     },
     {
-      "ItemId": "d13d196b-504f-486c-a866-2e0cc972519e",
+      "ItemId": "81a92bbf-8b60-4306-99ef-f57a3663cbc9",
       "PreviousItemId": "a112c6db-f89f-4cc2-970e-19d91a67af42"
+    },
+    {
+      "ItemId": "d13d196b-504f-486c-a866-2e0cc972519e",
+      "PreviousItemId": "81a92bbf-8b60-4306-99ef-f57a3663cbc9"
     }
   ],
   "HandledEvents": [
@@ -309,8 +287,10 @@
   "InterfaceNamespace": "ricoh.ServiceRequests",
   "IsolatedAssemblyName": "ricoh.ServiceRequests.Isolated",
   "IsolatedNamespace": "ricoh.ServiceRequests.Isolated",
+  "IsVisible": false,
   "Overridden": [
-    "Importance"
+    "Importance",
+    "IsVisible"
   ],
   "PublicConstants": [
     {
@@ -384,6 +364,14 @@
       ],
       "TypeName": "System.Guid",
       "Value": "new System.Guid(\"9D51F4F4-A83F-4809-AC10-92233FBD64B0\")"
+    },
+    {
+      "Name": "WokrPermission",
+      "ParentClasses": [
+        "Module"
+      ],
+      "TypeName": "System.Guid",
+      "Value": "new System.Guid(\"3154D122-8ED4-43A3-93EE-FEA682BBABF0\")"
     }
   ],
   "PublicFunctions": [
@@ -423,7 +411,7 @@
   "SharedAssemblyName": "ricoh.ServiceRequests.Shared",
   "SharedNamespace": "ricoh.ServiceRequests.Shared",
   "SpecialFolders": [],
-  "Version": "0.0.1.8",
+  "Version": "0.0.1.10",
   "Widgets": [],
   "Versions": [
     {

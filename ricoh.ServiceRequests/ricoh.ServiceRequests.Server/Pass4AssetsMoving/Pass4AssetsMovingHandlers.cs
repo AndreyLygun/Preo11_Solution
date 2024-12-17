@@ -61,10 +61,9 @@ namespace ricoh.ServiceRequests
         "\n\rАвтомобиль: " + _obj.CarModel + ", г/н " + _obj.CarNumber +
         "\n\rГрузчики:" +
         "\n\r" + _obj.Visitors;
-      using (var binary = new System.IO.MemoryStream(System.Text.Encoding.UTF8.GetBytes(descrption)))
-      {
-        _obj.CreateVersionFrom(binary, "txt");
-      }
+      var ext = "txt";
+      Functions.BaseSRQ.UpdateVersion(_obj, descrption, "txt");
+
     }
 
     public override void Created(Sungero.Domain.CreatedEventArgs e)

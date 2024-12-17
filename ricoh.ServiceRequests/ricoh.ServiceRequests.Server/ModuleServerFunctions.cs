@@ -57,8 +57,10 @@ namespace ricoh.ServiceRequests.Server
     [Public(WebApiRequestType = RequestType.Post)]
     public string GetApprovalStatus(long requestId) {
       var request = BaseSRQs.Get(requestId);
-      if (request == null) return null;
-      var s = Functions.BaseSRQ.GetStateViewXml(request).ToString();
+      if (request == null) return "";
+      //      var s = Sungero.Docflow.PublicFunctions.Module.GetDocumentSummary(request).ToString();
+      //      var s = Sungero.Docflow.PublicFunctions.OfficialDocument.GetStateView(request).ToString();
+      var s = Functions.BaseSRQ.GetApprovalStatus(request);
       return "{'status':"+s+"'}";
     }
 

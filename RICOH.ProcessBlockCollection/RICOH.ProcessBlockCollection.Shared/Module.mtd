@@ -1,0 +1,95 @@
+{
+  "$type": "Sungero.Metadata.ModuleMetadata, Sungero.Metadata",
+  "NameGuid": "07dc390f-0e65-4dd4-9783-525ce0f82068",
+  "Name": "ProcessBlockCollection",
+  "AsyncHandlers": [],
+  "Blocks": [
+    {
+      "$type": "Sungero.Metadata.ScriptBlockMetadata, Sungero.Workflow.Shared",
+      "NameGuid": "53317cae-37e1-4607-b17a-d06fe40593d3",
+      "Name": "SendMail",
+      "BaseGuid": "1f76cc5d-f096-4062-b34a-51b3c02269f2",
+      "HandledEvents": [
+        "SendMailExecute"
+      ],
+      "Properties": [
+        {
+          "$type": "Sungero.Metadata.StringBlockPropertyMetadata, Sungero.Metadata",
+          "NameGuid": "6815bfec-4427-4a84-ab93-c905fc626cfe",
+          "Name": "Subject",
+          "PreviousPropertyGuid": "5dc92a72-3a65-4872-bc04-0aa7ec353b05"
+        },
+        {
+          "$type": "Sungero.Metadata.StringBlockPropertyMetadata, Sungero.Metadata",
+          "NameGuid": "3b8c3e35-0d2a-4e61-b1d9-2ea7da6a57ca",
+          "Name": "To",
+          "PreviousPropertyGuid": "6815bfec-4427-4a84-ab93-c905fc626cfe"
+        },
+        {
+          "$type": "Sungero.Metadata.StringBlockPropertyMetadata, Sungero.Metadata",
+          "NameGuid": "330f4473-7299-4d9b-9bff-2fe6e032d82a",
+          "Name": "Body",
+          "PreviousPropertyGuid": "3b8c3e35-0d2a-4e61-b1d9-2ea7da6a57ca"
+        }
+      ]
+    }
+  ],
+  "ClientAssemblyName": "RICOH.ProcessBlockCollection.Client",
+  "ClientBaseAssemblyName": "RICOH.ProcessBlockCollection.ClientBase",
+  "ClientBaseNamespace": "RICOH.ProcessBlockCollection.ClientBase",
+  "ClientNamespace": "RICOH.ProcessBlockCollection.Client",
+  "Code": "Process",
+  "CompanyCode": "RICOH",
+  "Cover": {
+    "NameGuid": "15ce75e4-358b-4cac-93da-ad75c2b208b7",
+    "Actions": [],
+    "Background": null,
+    "Footer": {
+      "NameGuid": "e85a56a0-49fc-42f3-b715-de518306d903",
+      "BackgroundPosition": "Stretch"
+    },
+    "Groups": [],
+    "Header": {
+      "NameGuid": "65477977-4058-45e4-bf28-8a16576d6a08",
+      "BackgroundPosition": "Stretch"
+    },
+    "RemoteControls": [],
+    "Tabs": []
+  },
+  "Dependencies": [
+    {
+      "Id": "597c698c-dff4-472e-97e4-805c4350174b",
+      "IsSolutionModule": true,
+      "MaxVersion": "",
+      "MinVersion": ""
+    }
+  ],
+  "IconResourcesKeys": [],
+  "Importance": "Medium",
+  "InterfaceAssemblyName": "Sungero.Domain.Interfaces",
+  "InterfaceNamespace": "RICOH.ProcessBlockCollection",
+  "IsolatedAssemblyName": "RICOH.ProcessBlockCollection.Isolated",
+  "IsolatedNamespace": "RICOH.ProcessBlockCollection.Isolated",
+  "IsVisible": false,
+  "PublicStructures": [],
+  "ResourceInterfaceAssemblyName": "Sungero.Domain.Interfaces",
+  "ResourceInterfaceNamespace": "RICOH.ProcessBlockCollection",
+  "ResourcesKeys": [],
+  "ServerAssemblyName": "RICOH.ProcessBlockCollection.Server",
+  "ServerNamespace": "RICOH.ProcessBlockCollection.Server",
+  "SharedAssemblyName": "RICOH.ProcessBlockCollection.Shared",
+  "SharedNamespace": "RICOH.ProcessBlockCollection.Shared",
+  "SpecialFolders": [],
+  "Version": "0.0.1.0",
+  "Widgets": [],
+  "Versions": [
+    {
+      "Type": "ModuleMetadata",
+      "Number": 8
+    },
+    {
+      "Type": "DomainApi",
+      "Number": 3
+    }
+  ]
+}

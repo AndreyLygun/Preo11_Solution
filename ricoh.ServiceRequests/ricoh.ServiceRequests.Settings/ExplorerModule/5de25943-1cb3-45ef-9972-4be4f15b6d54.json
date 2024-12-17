@@ -1,0 +1,9 @@
+{
+  "$type": "Sungero.DataExport.ExportingObject, Sungero.DataExport",
+  "Uuid": "5de25943-1cb3-45ef-9972-4be4f15b6d54",
+  "ModuleNameGuid": "5de25943-1cb3-45ef-9972-4be4f15b6d54",
+  "HelpCode": "ricoh_ServiceRequests",
+  "Status": "Active",
+  "SortingPriority": "High",
+  "StoreAsDefaultSetting": true
+}

@@ -16,6 +16,8 @@ namespace ricoh.ServiceRequests.Constants
     public static readonly Guid Permission4Employee = Guid.Parse("AAC62686-D5B1-45CD-8984-0D5CEBCC4E41");       
     [Public]
     public static readonly Guid StopPermanentPass4Employee = Guid.Parse("9D51F4F4-A83F-4809-AC10-92233FBD64B0");       
+    [Public]
+    public static readonly Guid WokrPermission = Guid.Parse("3154D122-8ED4-43A3-93EE-FEA682BBABF0");     
 
     // Машины
     [Public]

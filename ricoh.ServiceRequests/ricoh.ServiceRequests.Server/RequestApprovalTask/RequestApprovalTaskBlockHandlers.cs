@@ -20,7 +20,6 @@ namespace ricoh.ServiceRequests.Server.RequestApprovalTaskBlocks
       var visitors2delete = Visitors.GetAll().Where(v => Equals(v.Request, request));
       foreach(var visitor in visitors2delete)
         Visitors.Delete(visitor);
-      
       foreach(var name in names) {
         if (string.IsNullOrWhiteSpace(name)) continue;
         var visitor = Visitors.Create();
