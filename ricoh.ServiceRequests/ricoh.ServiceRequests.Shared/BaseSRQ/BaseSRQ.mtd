@@ -1025,6 +1025,15 @@
       "IsEnabled": false,
       "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToTextBinder",
       "PreviousPropertyGuid": "8e4a66f1-bf30-4ae5-990a-b1e8f4b93c7c"
+    },
+    {
+      "$type": "Sungero.Metadata.StringPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "df04a9ba-42bb-4f0a-8917-bec9108240b3",
+      "Name": "ExternalURL",
+      "Code": "ExternalURL",
+      "Length": 1000,
+      "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToStringBinder",
+      "PreviousPropertyGuid": "4532dfc0-cff5-4a53-a5ef-8acd6528c8c0"
     }
   ],
   "PublicStructures": [],

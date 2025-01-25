@@ -31,6 +31,8 @@ namespace ricoh.ServiceRequests.Constants
     [Public]
     public static readonly Guid Pass4AssetsMovingGuid = Guid.Parse("3FED4EE8-1BA7-4AF7-925D-65CD116D99C4");  
     [Public]
+    public static readonly Guid Pass4AssetsInternalMovingGuid = Guid.Parse("4C5F5034-8C84-4A1D-9F4A-6B05AC79CD3C");     
+    [Public]
     public static readonly Guid Pass4PermanentAssetsMoving = Guid.Parse("4ADC05D4-A2E6-48E2-B939-35A43EF3A21D");  
     
 

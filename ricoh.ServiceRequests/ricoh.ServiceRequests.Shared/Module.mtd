@@ -273,7 +273,7 @@
       "PreviousItemId": "a112c6db-f89f-4cc2-970e-19d91a67af42"
     },
     {
-      "ItemId": "d13d196b-504f-486c-a866-2e0cc972519e",
+      "ItemId": "241d8dd5-432a-4761-9659-b96dbf73af48",
       "PreviousItemId": "81a92bbf-8b60-4306-99ef-f57a3663cbc9"
     }
   ],
@@ -293,6 +293,14 @@
     "IsVisible"
   ],
   "PublicConstants": [
+    {
+      "Name": "Pass4AssetsInternalMovingGuid",
+      "ParentClasses": [
+        "Module"
+      ],
+      "TypeName": "System.Guid",
+      "Value": "new System.Guid(\"4C5F5034-8C84-4A1D-9F4A-6B05AC79CD3C\")"
+    },
     {
       "Name": "Pass4AssetsMovingGuid",
       "ParentClasses": [
@@ -411,7 +419,7 @@
   "SharedAssemblyName": "ricoh.ServiceRequests.Shared",
   "SharedNamespace": "ricoh.ServiceRequests.Shared",
   "SpecialFolders": [],
-  "Version": "0.0.1.10",
+  "Version": "0.0.1.12",
   "Widgets": [],
   "Versions": [
     {

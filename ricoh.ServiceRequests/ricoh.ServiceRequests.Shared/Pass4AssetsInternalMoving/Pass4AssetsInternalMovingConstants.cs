@@ -3,7 +3,7 @@ using Sungero.Core;
 
 namespace ricoh.ServiceRequests.Constants
 {
-  public static class Report
+  public static class Pass4AssetsInternalMoving
   {
 
   }

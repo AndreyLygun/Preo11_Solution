@@ -190,4 +190,7 @@
   <data name="Action_Send2ProcessApprovalConfirmationDescription" xml:space="preserve">
     <value />
   </data>
+  <data name="Property_ExternalURL" xml:space="preserve">
+    <value>Ссылка на документ во внешней системе</value>
+  </data>
 </root>

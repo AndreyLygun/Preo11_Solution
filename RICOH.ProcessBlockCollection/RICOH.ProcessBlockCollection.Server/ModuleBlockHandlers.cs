@@ -15,6 +15,7 @@ namespace RICOH.ProcessBlockCollection.Server.ProcessBlockCollectionBlocks
       var message = Mail.CreateMailMessage();
       message.To.Add(_block.To);
       message.Subject = _block.Subject;
+      message.Body = _block.Body;
       Mail.Send(message);
     }
   }

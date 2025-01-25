@@ -27,18 +27,19 @@ namespace ricoh.ServiceRequests.Server
       BaseSRQs.AccessRights.Save();
       var SequrityRole = CreateRole(Constants.Module.SecurityRequestsRoleName);
       // Люди
-      CreateDocumentType("Разовый пропуск", Pass4Visitor.ClassTypeGuid, Constants.Module.Pass4VisitorGuid);
-      CreateDocumentType("Пропуск для сотрудника", PermanentPass4Employee.ClassTypeGuid, Constants.Module.PermanentPass4Employee);
+      CreateDocumentType("Разовый пропуск для посетителя", Pass4Visitor.ClassTypeGuid, Constants.Module.Pass4VisitorGuid);
+      CreateDocumentType("Постоянный пропуск для сотрудника", PermanentPass4Employee.ClassTypeGuid, Constants.Module.PermanentPass4Employee);
       CreateDocumentType("Временный доступ для сотрудника", Permission4Employee.ClassTypeGuid, Constants.Module.Permission4Employee);      
       CreateDocumentType("Блокировка пропуска для сотрудников", StopPermanentPass4Employee.ClassTypeGuid, Constants.Module.StopPermanentPass4Employee);
       CreateDocumentType("Временный доступ для выполнения работ", WorkPermission.ClassTypeGuid, Constants.Module.WokrPermission);
       // Машины
       CreateDocumentType("Разовый автомобильный пропуск", Pass4VisitorCar.ClassTypeGuid, Constants.Module.Pass4VisitorCarGuid);    
       CreateDocumentType("Постоянный автомобильный пропуск", PermanentPass4Car.ClassTypeGuid, Constants.Module.PermanentPass4Car);      
-      CreateDocumentType("Блокировка автомобильных пропуска", StopPermanentPass4Car.ClassTypeGuid, Constants.Module.StopPermanentPass4Car);
+      CreateDocumentType("Блокировка автомобильного пропуска", StopPermanentPass4Car.ClassTypeGuid, Constants.Module.StopPermanentPass4Car);
       // ТМЦ
-      CreateDocumentType("Разовый пропуск на перемещение ТМЦ", Pass4AssetsMoving.ClassTypeGuid, Constants.Module.Pass4AssetsMovingGuid);
-      CreateDocumentType("Постоянный пропуск на перемещение ТМЦ", Pass4PermanentAssetsMoving.ClassTypeGuid, Constants.Module.Pass4PermanentAssetsMoving);
+      CreateDocumentType("Разовый пропуск на ввоз-вывоз ТМЦ", Pass4AssetsMoving.ClassTypeGuid, Constants.Module.Pass4AssetsMovingGuid);
+      CreateDocumentType("Разовый пропуск на внутреннее перемещение ТМЦ", Pass4AssetsMoving.ClassTypeGuid, Constants.Module.Pass4AssetsInternalMovingGuid);
+      CreateDocumentType("Постоянный пропуск на ввоз-вывоз ТМЦ", Pass4PermanentAssetsMoving.ClassTypeGuid, Constants.Module.Pass4PermanentAssetsMoving);
 
       
       Sites.AccessRights.Grant(Roles.AllUsers, DefaultAccessRightsTypes.Read);

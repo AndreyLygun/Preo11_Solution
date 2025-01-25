@@ -58,70 +58,7 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Enum_MovingDirection_MovingIn" xml:space="preserve">
-    <value>Ввоз</value>
-  </data>
-  <data name="Enum_MovingDirection_MovingOut" xml:space="preserve">
-    <value>Вывоз</value>
-  </data>
-  <data name="Enum_MovingDirection_CarryingIn" xml:space="preserve">
-    <value>Внос</value>
-  </data>
-  <data name="Enum_MovingDirection_CarryingOut" xml:space="preserve">
-    <value>Вынос</value>
-  </data>
-  <data name="DisplayName" xml:space="preserve">
-    <value>Разовый пропуск на перемещение ТМЦ</value>
-  </data>
-  <data name="AccusativeDisplayName" xml:space="preserve">
-    <value>Разовый пропуск на перемещение ТМЦ</value>
-  </data>
-  <data name="CollectionDisplayName" xml:space="preserve">
-    <value>Разовые пропуск на перемещение ТМЦ</value>
-  </data>
-  <data name="Property_LoadingSite" xml:space="preserve">
-    <value>Место раз/выгрузки</value>
-  </data>
-  <data name="ControlGroup_09ccc211857f4ac99c47134e3f3b8f18" xml:space="preserve">
-    <value>Перевозчик</value>
-  </data>
-  <data name="ControlGroup_f6a25717401a4613b620c5155cd5dab5" xml:space="preserve">
-    <value>Сведения о ТМЦ</value>
-  </data>
-  <data name="ControlGroup_406e14dc17444a7f85d8f6eef8abaa3f" xml:space="preserve">
-    <value>Main</value>
-  </data>
-  <data name="Property_Inventory" xml:space="preserve">
-    <value>Перечень ТМЦ</value>
-  </data>
-  <data name="Property_TimeSpan" xml:space="preserve">
-    <value>Время</value>
-  </data>
-  <data name="Property_CarModel" xml:space="preserve">
-    <value>Модель автомобиля</value>
-  </data>
-  <data name="Property_CarNumber" xml:space="preserve">
-    <value>Номер автомобиля</value>
-  </data>
-  <data name="ControlGroup_edc742810fc34ba8bcebbc443bc51b4e" xml:space="preserve">
-    <value>Перемещение</value>
-  </data>
-  <data name="ControlGroup_cefff33298044ed794774335dd705afc" xml:space="preserve">
-    <value>Перемещение</value>
-  </data>
-  <data name="Property_Floor" xml:space="preserve">
-    <value>Этаж</value>
-  </data>
-  <data name="Property_StorageRoom" xml:space="preserve">
-    <value>Using Storage Room</value>
-  </data>
-  <data name="Property_Elevator" xml:space="preserve">
-    <value>Using Elevator</value>
-  </data>
-  <data name="Property_MovingDirection" xml:space="preserve">
-    <value>Направление перемещения</value>
-  </data>
-  <data name="Property_BuildingMaterials" xml:space="preserve">
-    <value>Есть строительные материалы</value>
+  <data name="Property_Size" xml:space="preserve">
+    <value>Габариты</value>
   </data>
 </root>

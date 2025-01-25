@@ -4,7 +4,7 @@ using System.Linq;
 using Sungero.Core;
 using Sungero.CoreEntities;
 
-namespace ricoh.ServiceRequests.Structures.Report
+namespace ricoh.ServiceRequests.Structures.Pass4AssetsInternalMoving
 {
 
 }
