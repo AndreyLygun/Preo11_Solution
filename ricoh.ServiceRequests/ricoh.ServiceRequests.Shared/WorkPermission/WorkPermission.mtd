@@ -184,8 +184,12 @@
   ],
   "IconResourcesKeys": [],
   "IntegrationServiceName": "ServiceRequestsWorkPermission",
+  "IsVisible": false,
   "OpenCardByDefaultInCollection": true,
   "OperationsClass": "",
+  "Overridden": [
+    "IsVisible"
+  ],
   "Properties": [
     {
       "$type": "Sungero.Metadata.CollectionPropertyMetadata, Sungero.Metadata",

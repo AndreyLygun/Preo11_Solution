@@ -21,6 +21,14 @@
       "GenerateHandler": true,
       "LargeIconName": "Action_Send2ProcessApproval_large_d29824262a57476991c0b4dd5840b141.png",
       "SmallIconName": "Action_Send2ProcessApproval_small_d29824262a57476991c0b4dd5840b141.png"
+    },
+    {
+      "NameGuid": "1d1d59e7-b6e2-4985-a497-3f1feaae8571",
+      "Name": "ShowPrintForm",
+      "ActionArea": "Card",
+      "GenerateHandler": true,
+      "LargeIconName": null,
+      "SmallIconName": null
     }
   ],
   "BaseGuid": "58cca102-1e97-4f07-b6ac-fd866a8b7cb1",
@@ -1286,6 +1294,14 @@
         "Name": "ActionButton1",
         "ActionGuid": "d2982426-2a57-4769-91c0-b4dd5840b141",
         "Index": 51,
+        "ParentGuid": "08286ff4-2571-4150-955e-571c1c352ff9"
+      },
+      {
+        "$type": "Sungero.Metadata.RibbonActionButtonMetadata, Sungero.Metadata",
+        "NameGuid": "ad1b4159-37c5-4b10-a3e2-91f81cddaca6",
+        "Name": "ShowReport",
+        "ActionGuid": "1d1d59e7-b6e2-4985-a497-3f1feaae8571",
+        "Index": 52,
         "ParentGuid": "08286ff4-2571-4150-955e-571c1c352ff9"
       }
     ],

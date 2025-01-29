@@ -1,0 +1,45 @@
+{
+  "$type": "Sungero.Metadata.ReportMetadata, Sungero.Reporting.Shared",
+  "NameGuid": "7d1f6fe4-c84d-430d-b9fb-8590ebf90445",
+  "Name": "Pass4AssetsMovingReport",
+  "AccessRightsMode": "NoRight",
+  "AssociatedGuid": "b2d7bcc9-21a9-48bc-9c15-0f5aa8684f5e",
+  "BaseGuid": "cef9a810-3f30-4eca-9fe3-30992af0b818",
+  "DataSources": [
+    {
+      "NameGuid": "c3dda859-280a-4bb1-a402-7f42ca299aea",
+      "Name": "Request",
+      "EntityType": "b2d7bcc9-21a9-48bc-9c15-0f5aa8684f5e"
+    }
+  ],
+  "DefaultExportFormat": "Pdf",
+  "ExportFormats": [
+    "Pdf"
+  ],
+  "HandledEvents": [
+    "BeforeExecuteClient"
+  ],
+  "IconResourcesKeys": [],
+  "IntegrationServiceName": "ServiceRequestsPass4AssetsMovingReport",
+  "Overridden": [
+    "AccessRightsMode",
+    "PublicConstants",
+    "PublicStructures",
+    "DisplayName",
+    "DataSources",
+    "Parameters",
+    "HandledEvents"
+  ],
+  "Parameters": [
+    {
+      "NameGuid": "1bfd6cab-d751-43e8-82e0-d2e9102edf72",
+      "Name": "Entity",
+      "EntityType": "b2d7bcc9-21a9-48bc-9c15-0f5aa8684f5e",
+      "InternalDataTypeName": "ricoh.ServiceRequests.IPass4AssetsMoving, Sungero.Domain.Interfaces",
+      "IsRequired": true
+    }
+  ],
+  "PublicStructures": [],
+  "ResourcesKeys": [],
+  "Versions": []
+}

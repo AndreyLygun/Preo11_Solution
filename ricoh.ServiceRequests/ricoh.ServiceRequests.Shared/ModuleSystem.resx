@@ -101,10 +101,10 @@
     <value>Список компаний, сотрудники которых могут создавать заявки</value>
   </data>
   <data name="CoverAction_Pass4AssetsMoving" xml:space="preserve">
-    <value>Разовые пропуска на перемещение ТМЦ</value>
+    <value>Разовые пропуска на ввоз-вывоз ТМЦ</value>
   </data>
   <data name="CoverDescription_Pass4AssetsMoving" xml:space="preserve">
-    <value>Заявка на разовые пропуска на ввоз, вывоз, внос, вынос товарно-материальных ценностей</value>
+    <value>Заявки на разовые пропуска на ввоз, вывоз, внос, вынос товарно-материальных ценностей</value>
   </data>
   <data name="CoverAction_Sites" xml:space="preserve">
     <value>Sites</value>
@@ -174,5 +174,11 @@
   </data>
   <data name="CoverDescription_WorkPermission" xml:space="preserve">
     <value>Выполнение работ на территории БЦ, в т.ч. с отключением пожарной сигнализации</value>
+  </data>
+  <data name="CoverAction_Pass4InternalMoving" xml:space="preserve">
+    <value>Разовые пропуска на внутреннее перемещение ТМЦ</value>
+  </data>
+  <data name="CoverDescription_Pass4InternalMoving" xml:space="preserve">
+    <value>Заявки на перемещение ТМЦ внутри бизнес-центра</value>
   </data>
 </root>

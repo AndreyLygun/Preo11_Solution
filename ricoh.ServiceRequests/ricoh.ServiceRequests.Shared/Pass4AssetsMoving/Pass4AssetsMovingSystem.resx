@@ -71,13 +71,13 @@
     <value>Вынос</value>
   </data>
   <data name="DisplayName" xml:space="preserve">
-    <value>Разовый пропуск на перемещение ТМЦ</value>
+    <value>Разовый пропуск на ввоз-вывоз ТМЦ</value>
   </data>
   <data name="AccusativeDisplayName" xml:space="preserve">
-    <value>Разовый пропуск на перемещение ТМЦ</value>
+    <value>Разовый пропуск на ввоз-вывоз ТМЦ</value>
   </data>
   <data name="CollectionDisplayName" xml:space="preserve">
-    <value>Разовые пропуск на перемещение ТМЦ</value>
+    <value>Разовые пропуска на ввоз-вывоз ТМЦ</value>
   </data>
   <data name="Property_LoadingSite" xml:space="preserve">
     <value>Место раз/выгрузки</value>

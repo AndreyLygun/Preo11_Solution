@@ -43,7 +43,7 @@ namespace ricoh.ServiceRequests.Server
     }
     
 
-    public new Sungero.Core.StateView GetApprovalStatus() {
+    public Sungero.Core.StateView GetApprovalStatus() {
       // это код, который был написан для отображения статуса согласования по перекытой DocumentReviewTasl
       // В связи с появлением в коробке задачи типа "Согласоавние по процессу"необходимость в этом коде отпала
       var stateView = StateView.Create();

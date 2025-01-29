@@ -10,6 +10,15 @@ namespace ricoh.ServiceRequests.Client
 
   partial class BaseSRQActions
   {
+    public virtual void ShowPrintForm(Sungero.Domain.Client.ExecuteActionArgs e)
+    {
+    }
+
+    public virtual bool CanShowPrintForm(Sungero.Domain.Client.CanExecuteActionArgs e)
+    {
+      return Users.Current.IncludedIn(Roles.Administrators);
+    }
+
     public virtual void Send2ProcessApproval(Sungero.Domain.Client.ExecuteActionArgs e)
     {
       _obj.Save();

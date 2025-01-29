@@ -3,6 +3,17 @@
   "NameGuid": "b2d7bcc9-21a9-48bc-9c15-0f5aa8684f5e",
   "Name": "Pass4AssetsMoving",
   "AccessRightsMode": "Both",
+  "Actions": [
+    {
+      "NameGuid": "1d1d59e7-b6e2-4985-a497-3f1feaae8571",
+      "Name": "ShowPrintForm",
+      "GenerateHandler": true,
+      "IsAncestorMetadata": true,
+      "Overridden": [
+        "GenerateHandler"
+      ]
+    }
+  ],
   "BaseGuid": "ac86d580-b326-4345-a0bd-7277d2f47ad0",
   "CanBeNavigationPropertyType": true,
   "CreationAreaMetadata": {
@@ -319,7 +330,8 @@
   ],
   "HandledEvents": [
     "CreatedServer",
-    "BeforeSaveServer"
+    "BeforeSaveServer",
+    "AfterSaveServer"
   ],
   "IconResourcesKeys": [],
   "IntegrationServiceName": "ServiceRequestsPass4AssetsMoving",
@@ -388,7 +400,6 @@
       "Code": "TimeSpan",
       "EntityGuid": "46d20a39-e6c1-4e02-89f7-c5f85eec8088",
       "FlatListInStandaloneLookup": true,
-      "IsRequired": true,
       "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.DropDownEditorToNavigationBinder",
       "PreviousPropertyGuid": "63c2ca4a-4c2c-4e39-89ee-2d99fa6aef00"
     },

@@ -80,7 +80,7 @@
   "SharedAssemblyName": "RICOH.ProcessBlockCollection.Shared",
   "SharedNamespace": "RICOH.ProcessBlockCollection.Shared",
   "SpecialFolders": [],
-  "Version": "0.0.1.2",
+  "Version": "0.0.1.6",
   "Widgets": [],
   "Versions": [
     {

@@ -38,7 +38,7 @@ namespace ricoh.ServiceRequests.Server
       CreateDocumentType("Блокировка автомобильного пропуска", StopPermanentPass4Car.ClassTypeGuid, Constants.Module.StopPermanentPass4Car);
       // ТМЦ
       CreateDocumentType("Разовый пропуск на ввоз-вывоз ТМЦ", Pass4AssetsMoving.ClassTypeGuid, Constants.Module.Pass4AssetsMovingGuid);
-      CreateDocumentType("Разовый пропуск на внутреннее перемещение ТМЦ", Pass4AssetsMoving.ClassTypeGuid, Constants.Module.Pass4AssetsInternalMovingGuid);
+      CreateDocumentType("Разовый пропуск на внутреннее перемещение ТМЦ", Pass4AssetsInternalMoving.ClassTypeGuid, Constants.Module.Pass4AssetsInternalMovingGuid);
       CreateDocumentType("Постоянный пропуск на ввоз-вывоз ТМЦ", Pass4PermanentAssetsMoving.ClassTypeGuid, Constants.Module.Pass4PermanentAssetsMoving);
 
       

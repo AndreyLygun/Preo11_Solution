@@ -193,4 +193,19 @@
   <data name="Property_ExternalURL" xml:space="preserve">
     <value>Ссылка на документ во внешней системе</value>
   </data>
+  <data name="Action_ShowPrintForm" xml:space="preserve">
+    <value>Печатная форма</value>
+  </data>
+  <data name="Action_ShowPrintFormDescription" xml:space="preserve">
+    <value>Показать печатную форму заявки</value>
+  </data>
+  <data name="Action_ShowPrintFormHint" xml:space="preserve">
+    <value>Показать печатную форму заявки</value>
+  </data>
+  <data name="Action_ShowPrintFormConfirmationMessage" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Action_ShowPrintFormConfirmationDescription" xml:space="preserve">
+    <value />
+  </data>
 </root>
