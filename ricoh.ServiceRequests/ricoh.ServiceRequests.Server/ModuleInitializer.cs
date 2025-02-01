@@ -31,7 +31,7 @@ namespace ricoh.ServiceRequests.Server
       CreateDocumentType("Постоянный пропуск для сотрудника", PermanentPass4Employee.ClassTypeGuid, Constants.Module.PermanentPass4Employee);
       CreateDocumentType("Временный доступ для сотрудника", Permission4Employee.ClassTypeGuid, Constants.Module.Permission4Employee);      
       CreateDocumentType("Блокировка пропуска для сотрудников", StopPermanentPass4Employee.ClassTypeGuid, Constants.Module.StopPermanentPass4Employee);
-      CreateDocumentType("Временный доступ для выполнения работ", WorkPermission.ClassTypeGuid, Constants.Module.WokrPermission);
+      CreateDocumentType("Заявка на выполнение работ", WorkPermission.ClassTypeGuid, Constants.Module.WokrPermission);
       // Машины
       CreateDocumentType("Разовый автомобильный пропуск", Pass4VisitorCar.ClassTypeGuid, Constants.Module.Pass4VisitorCarGuid);    
       CreateDocumentType("Постоянный автомобильный пропуск", PermanentPass4Car.ClassTypeGuid, Constants.Module.PermanentPass4Car);      

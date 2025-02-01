@@ -10,6 +10,8 @@ namespace ricoh.ServiceRequests.Client
 
   partial class BaseSRQActions
   {
+
+    
     public virtual void ShowPrintForm(Sungero.Domain.Client.ExecuteActionArgs e)
     {
     }

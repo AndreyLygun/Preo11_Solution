@@ -25,6 +25,7 @@
       "Name": "Name",
       "CanBeSearch": false,
       "Code": "Name",
+      "IsRequired": true,
       "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToStringBinder",
       "PreviousPropertyGuid": "d4128abd-f364-4907-a885-8b97dc768833"
     },

@@ -65,7 +65,7 @@
     <value>Организация-исполнитель</value>
   </data>
   <data name="Property_Sites" xml:space="preserve">
-    <value>Место работ</value>
+    <value>Помещения</value>
   </data>
   <data name="Property_FromDateTime" xml:space="preserve">
     <value>Начало работ</value>
@@ -80,12 +80,24 @@
     <value>Фамилии работников</value>
   </data>
   <data name="DisplayName" xml:space="preserve">
-    <value>Заявка на доступ для выполнения работ</value>
+    <value>Заявка на проведение работ</value>
   </data>
   <data name="AccusativeDisplayName" xml:space="preserve">
-    <value>Заявку на доступ для выполнения работ</value>
+    <value>Заявку на проведение работ</value>
   </data>
   <data name="CollectionDisplayName" xml:space="preserve">
-    <value>Заявки на доступ для выполнения работ</value>
+    <value>Заявки на проведение работ</value>
+  </data>
+  <data name="Property_Site" xml:space="preserve">
+    <value>Место проведения работ</value>
+  </data>
+  <data name="Property_ResponsibleName" xml:space="preserve">
+    <value>Ответственный</value>
+  </data>
+  <data name="Control_5a9e062898e846fdb3d3156aaf9c7fc8_EmptyText" xml:space="preserve">
+    <value>за выполнение работ</value>
+  </data>
+  <data name="ControlGroup_edc742810fc34ba8bcebbc443bc51b4e" xml:space="preserve">
+    <value>ОПИСАНИЕ РАБОТ</value>
   </data>
 </root>

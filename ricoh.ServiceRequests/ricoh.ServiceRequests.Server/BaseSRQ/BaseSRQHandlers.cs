@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using Sungero.Content.Shared;
 using Sungero.Core;
 using Sungero.CoreEntities;
 using ricoh.ServiceRequests.BaseSRQ;
@@ -32,6 +33,11 @@ namespace ricoh.ServiceRequests
         _obj.AccessRights.Grant(_obj.Renter, DefaultAccessRightsTypes.FullAccess);
       }
       base.BeforeSave(e);      
+      var template = Sungero.Content.ElectronicDocumentTemplates.GetAll(tpl => tpl.DocumentType.Value.ToString() == _obj.DocumentKind.DocumentType.DocumentTypeGuid).FirstOrDefault();
+      if (template != null) {
+        if (_obj.HasVersions) _obj.DeleteVersion(_obj.LastVersion);
+        Sungero.Content.Shared.ElectronicDocumentUtils.CreateVersionFrom(_obj, template);   
+      }
     }
 
     public override void Created(Sungero.Domain.CreatedEventArgs e)

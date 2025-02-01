@@ -8,7 +8,7 @@
         <property name="View" isnull="true" iskey="true">
           <property name="LinesPerRowMode">None</property>
           <property name="ColumnChooserState" isnull="true" iskey="true">
-            <property name="Location">975,-102</property>
+            <property name="Location">975,-150</property>
             <property name="Size">220,250</property>
           </property>
           <property name="AllowMoveColumnToDropArea">false</property>
@@ -54,8 +54,8 @@
             <property name="Name">Pass4AssetsMoving_Inventory_Size</property>
             <property name="FieldName">Size</property>
             <property name="VisibleIndex">3</property>
-            <property name="Width">82</property>
-            <property name="ActualWidth">7*</property>
+            <property name="Width">59</property>
+            <property name="ActualWidth">5*</property>
           </property>
         </property>
         <property name="GroupSummarySortInfo" iskey="true" value="0" />
