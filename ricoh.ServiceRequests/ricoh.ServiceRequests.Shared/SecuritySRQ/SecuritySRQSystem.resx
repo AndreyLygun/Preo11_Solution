@@ -112,4 +112,13 @@
   <data name="Property_Visitors" xml:space="preserve">
     <value>Посетители</value>
   </data>
+  <data name="Property_Approved1" xml:space="preserve">
+    <value>Согласование 1 уровень</value>
+  </data>
+  <data name="Property_Approved2" xml:space="preserve">
+    <value>Согласование 2 уровень</value>
+  </data>
+  <data name="Property_Approved3" xml:space="preserve">
+    <value>Согласование 3 уровень</value>
+  </data>
 </root>

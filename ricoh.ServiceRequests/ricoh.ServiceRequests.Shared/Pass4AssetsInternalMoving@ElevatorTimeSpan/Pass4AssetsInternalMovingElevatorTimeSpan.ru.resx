@@ -58,13 +58,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Property_StorageRoom" xml:space="preserve">
-    <value>Через комнату хранения</value>
-  </data>
-  <data name="Property_Elevator" xml:space="preserve">
-    <value>Требуется грузовой лифт</value>
-  </data>
-  <data name="Property_ElevatorTimeSpanString" xml:space="preserve">
-    <value>Время использования лифта - для шаблона</value>
-  </data>
 </root>

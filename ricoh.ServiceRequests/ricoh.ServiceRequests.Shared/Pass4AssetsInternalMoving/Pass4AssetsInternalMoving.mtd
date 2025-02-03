@@ -104,32 +104,6 @@
           "Settings": []
         },
         {
-          "$type": "Sungero.Metadata.ControlMetadata, Sungero.Metadata",
-          "NameGuid": "9d802d25-1b82-452b-8226-fd88cd57c738",
-          "Name": "Elevator",
-          "ColumnNumber": 0,
-          "ColumnSpan": 1,
-          "DataBinderTypeName": "Sungero.Presentation.CommonDataBinders.BooleanEditorToBooleanBinder",
-          "ParentGuid": "0f2a7c50-8866-44ef-a705-9c3af5c7eb6b",
-          "PropertyGuid": "bb33f7f3-48d3-4f45-ae2b-b37e78d8af8b",
-          "RowNumber": 1,
-          "RowSpan": 1,
-          "Settings": []
-        },
-        {
-          "$type": "Sungero.Metadata.ControlMetadata, Sungero.Metadata",
-          "NameGuid": "f629b602-3926-477e-9945-0dcbe0d4cc6b",
-          "Name": "TimeSpan",
-          "ColumnNumber": 0,
-          "ColumnSpan": 1,
-          "DataBinderTypeName": "Sungero.Presentation.CommonDataBinders.DropDownEditorToNavigationBinder",
-          "ParentGuid": "0f2a7c50-8866-44ef-a705-9c3af5c7eb6b",
-          "PropertyGuid": "0052fe1d-bc0e-40cb-9af7-9cc73e389274",
-          "RowNumber": 2,
-          "RowSpan": 1,
-          "Settings": []
-        },
-        {
           "$type": "Sungero.Metadata.ControlGroupMetadata, Sungero.Metadata",
           "NameGuid": "b69b4d39-68cf-4f04-b9f4-06d36d8dc525",
           "Name": "Assets",
@@ -166,6 +140,68 @@
           "RowNumber": 1,
           "RowSpan": 1,
           "Settings": []
+        },
+        {
+          "$type": "Sungero.Metadata.ControlGroupMetadata, Sungero.Metadata",
+          "NameGuid": "2f3c2e9e-f180-422a-8cf5-6b798b8e86f2",
+          "Name": "ControlGroup",
+          "ColumnDefinitions": [
+            {
+              "Percentage": 33.33
+            },
+            {
+              "Percentage": 66.66
+            }
+          ],
+          "ColumnNumber": 0,
+          "ColumnSpan": 1,
+          "ParentGuid": "0f2a7c50-8866-44ef-a705-9c3af5c7eb6b",
+          "RowNumber": 1,
+          "RowSpan": 1
+        },
+        {
+          "$type": "Sungero.Metadata.ControlMetadata, Sungero.Metadata",
+          "NameGuid": "9d802d25-1b82-452b-8226-fd88cd57c738",
+          "Name": "Elevator",
+          "ColumnNumber": 0,
+          "ColumnSpan": 1,
+          "DataBinderTypeName": "Sungero.Presentation.CommonDataBinders.BooleanEditorToBooleanBinder",
+          "ParentGuid": "2f3c2e9e-f180-422a-8cf5-6b798b8e86f2",
+          "PropertyGuid": "bb33f7f3-48d3-4f45-ae2b-b37e78d8af8b",
+          "RowNumber": 0,
+          "RowSpan": 1,
+          "Settings": []
+        },
+        {
+          "$type": "Sungero.Metadata.ControlMetadata, Sungero.Metadata",
+          "NameGuid": "4476f5b3-32e1-4e20-ba6b-d4eddd920e5f",
+          "Name": "ElevatorTimeSpanString",
+          "ColumnNumber": 1,
+          "ColumnSpan": 1,
+          "DataBinderTypeName": "Sungero.Presentation.CommonDataBinders.MultiSelectEditorToCollectionBinder",
+          "ParentGuid": "2f3c2e9e-f180-422a-8cf5-6b798b8e86f2",
+          "PropertyGuid": "8239b3ab-a278-495c-b143-e37d39111174",
+          "RowNumber": 0,
+          "RowSpan": 1,
+          "Settings": [
+            {
+              "Name": "NavigationPropertyGuid",
+              "Value": "45554356-608d-408c-ac92-330a02fdc563"
+            }
+          ]
+        },
+        {
+          "$type": "Sungero.Metadata.ControlMetadata, Sungero.Metadata",
+          "NameGuid": "8018a729-c49c-40a4-9026-519e2b5594d7",
+          "Name": "StorageRoom",
+          "ColumnNumber": 1,
+          "ColumnSpan": 1,
+          "DataBinderTypeName": "Sungero.Presentation.CommonDataBinders.BooleanEditorToBooleanBinder",
+          "ParentGuid": "0f2a7c50-8866-44ef-a705-9c3af5c7eb6b",
+          "PropertyGuid": "fc3ac847-2793-4e8d-8d0e-493f3b863105",
+          "RowNumber": 1,
+          "RowSpan": 1,
+          "Settings": []
         }
       ],
       "IsAncestorMetadata": true,
@@ -181,8 +217,12 @@
   ],
   "IconResourcesKeys": [],
   "IntegrationServiceName": "ServiceRequestsPass4AssetsInternalMoving",
+  "IsVisible": false,
   "OpenCardByDefaultInCollection": true,
   "OperationsClass": "",
+  "Overridden": [
+    "IsVisible"
+  ],
   "Properties": [
     {
       "$type": "Sungero.Metadata.CollectionPropertyMetadata, Sungero.Metadata",
@@ -221,6 +261,9 @@
       "NameGuid": "5ad1fadf-1fe8-4a1c-8b96-96efbabc30f4",
       "Name": "BuildingMaterials",
       "Code": "BuildingMater1",
+      "HandledEvents": [
+        "ChangedShared"
+      ],
       "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.BooleanEditorToBooleanBinder",
       "PreviousPropertyGuid": "1fadf8e4-761e-4ef8-825f-97c768ea2f76",
       "Versions": []
@@ -234,7 +277,7 @@
       "FlatListInStandaloneLookup": true,
       "IsRequired": true,
       "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.DropDownEditorToNavigationBinder",
-      "PreviousPropertyGuid": "5ad1fadf-1fe8-4a1c-8b96-96efbabc30f4",
+      "PreviousPropertyGuid": "863693bb-5dde-42b6-8dd7-a3f7649c5081",
       "Versions": []
     },
     {
@@ -270,6 +313,44 @@
       "Code": "To",
       "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToStringBinder",
       "PreviousPropertyGuid": "87785621-381b-42d2-9621-6ffc95d15a1c"
+    },
+    {
+      "$type": "Sungero.Metadata.StringPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "863693bb-5dde-42b6-8dd7-a3f7649c5081",
+      "Name": "BuildingMaterialsString",
+      "CanBeSearch": false,
+      "Code": "BuildingMater2",
+      "IsEnabled": false,
+      "IsShowedInList": false,
+      "IsVisibility": false,
+      "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToStringBinder",
+      "PreviousPropertyGuid": "5ad1fadf-1fe8-4a1c-8b96-96efbabc30f4"
+    },
+    {
+      "$type": "Sungero.Metadata.CollectionPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "8239b3ab-a278-495c-b143-e37d39111174",
+      "Name": "ElevatorTimeSpan",
+      "Code": "Pass4AssetsIn1",
+      "EntityGuid": "2cd92adb-2b31-4d71-8c87-97d7f6738db3",
+      "HandledEvents": [
+        "ChangedShared"
+      ],
+      "IsShowedInList": false,
+      "PreviousPropertyGuid": "9ef72dd0-290d-44c4-afdc-6ccfbcdb8c64",
+      "Versions": []
+    },
+    {
+      "$type": "Sungero.Metadata.StringPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "b648a3f8-91a8-476e-b7c8-94886da49f02",
+      "Name": "ElevatorTimeSpanString",
+      "CanBeSearch": false,
+      "Code": "ElevatorTimeS1",
+      "IsEnabled": false,
+      "IsShowedInList": false,
+      "IsVisibility": false,
+      "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToStringBinder",
+      "PreviousPropertyGuid": "8239b3ab-a278-495c-b143-e37d39111174",
+      "Versions": []
     }
   ],
   "PublicStructures": [],

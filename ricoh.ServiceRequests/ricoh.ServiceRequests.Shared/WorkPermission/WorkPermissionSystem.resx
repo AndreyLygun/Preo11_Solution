@@ -74,7 +74,7 @@
     <value>Окончание работ</value>
   </data>
   <data name="Property_DisableAFA" xml:space="preserve">
-    <value>Требуется отключение АПС </value>
+    <value>Отключение АПС </value>
   </data>
   <data name="Property_Visitors" xml:space="preserve">
     <value>Фамилии работников</value>
@@ -99,5 +99,8 @@
   </data>
   <data name="ControlGroup_edc742810fc34ba8bcebbc443bc51b4e" xml:space="preserve">
     <value>ОПИСАНИЕ РАБОТ</value>
+  </data>
+  <data name="Property_DisableAFAString" xml:space="preserve">
+    <value>Отключение АПС (для шаблона)</value>
   </data>
 </root>

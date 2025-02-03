@@ -62,13 +62,77 @@
           "$type": "Sungero.Metadata.ControlGroupMetadata, Sungero.Metadata",
           "NameGuid": "ff41af42-82df-4c38-b59a-4ec3bf4f7dfc",
           "Name": "ControlGroup",
+          "ColumnDefinitions": [
+            {
+              "Percentage": 33.33
+            },
+            {
+              "Percentage": 33.33
+            },
+            {
+              "Percentage": 33.33
+            }
+          ],
           "ColumnSpan": 1,
           "GroupType": "WithTitleNoBorder",
           "IsAncestorMetadata": true,
           "Overridden": [
             "GroupType",
-            "ColumnSpan"
+            "ColumnSpan",
+            "ColumnDefinitions"
           ]
+        },
+        {
+          "$type": "Sungero.Metadata.ControlMetadata, Sungero.Metadata",
+          "NameGuid": "728707c6-c818-4f18-bef6-0a7a944b547e",
+          "Name": "ResponsiblePhone",
+          "ColumnNumber": 2,
+          "DataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToStringBinder",
+          "IsAncestorMetadata": true,
+          "Overridden": [
+            "ColumnNumber"
+          ],
+          "PropertyGuid": "0b3c6401-e5a5-4c4f-868f-0d91b7245971",
+          "Settings": []
+        },
+        {
+          "$type": "Sungero.Metadata.ControlMetadata, Sungero.Metadata",
+          "NameGuid": "e3c11b9a-d1ae-45e5-a65e-8ac188b21d56",
+          "Name": "ResponsibleMail",
+          "ColumnNumber": 1,
+          "DataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToStringBinder",
+          "IsAncestorMetadata": true,
+          "Overridden": [
+            "ColumnNumber"
+          ],
+          "PropertyGuid": "790c685a-998f-4ea8-9d23-382e1d5e58b2",
+          "Settings": []
+        },
+        {
+          "$type": "Sungero.Metadata.ControlMetadata, Sungero.Metadata",
+          "NameGuid": "6d07fc54-ce05-45f3-af9d-38552ba79592",
+          "Name": "Approved2",
+          "ColumnNumber": 1,
+          "DataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToStringBinder",
+          "IsAncestorMetadata": true,
+          "Overridden": [
+            "ColumnNumber"
+          ],
+          "PropertyGuid": "63f43f24-49e0-410a-8a77-265d6f21c4db",
+          "Settings": []
+        },
+        {
+          "$type": "Sungero.Metadata.ControlMetadata, Sungero.Metadata",
+          "NameGuid": "af475278-128e-4848-8b7b-5f1223f16509",
+          "Name": "Approved3",
+          "ColumnNumber": 2,
+          "DataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToStringBinder",
+          "IsAncestorMetadata": true,
+          "Overridden": [
+            "ColumnNumber"
+          ],
+          "PropertyGuid": "e4edb7e2-18fd-4151-9aab-cdc387756ba1",
+          "Settings": []
         },
         {
           "$type": "Sungero.Metadata.ControlMetadata, Sungero.Metadata",

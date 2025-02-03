@@ -114,7 +114,7 @@
           "DataBinderTypeName": "Sungero.Presentation.CommonDataBinders.TextEditorToTextBinder",
           "ParentGuid": "edc74281-0fc3-4ba8-bceb-bc443bc51b4e",
           "PropertyGuid": "86687293-f45f-422d-b733-0378f739144d",
-          "RowNumber": 0,
+          "RowNumber": 1,
           "RowSpan": 1,
           "Settings": []
         },
@@ -127,7 +127,7 @@
           "DataBinderTypeName": "Sungero.Presentation.CommonDataBinders.DateTimeEditorToDateTimeBinder",
           "ParentGuid": "edc74281-0fc3-4ba8-bceb-bc443bc51b4e",
           "PropertyGuid": "fcb24c78-d024-4315-b1c6-85ab324b7f6e",
-          "RowNumber": 1,
+          "RowNumber": 2,
           "RowSpan": 1,
           "Settings": []
         },
@@ -140,7 +140,7 @@
           "DataBinderTypeName": "Sungero.Presentation.CommonDataBinders.DateTimeEditorToDateTimeBinder",
           "ParentGuid": "edc74281-0fc3-4ba8-bceb-bc443bc51b4e",
           "PropertyGuid": "3165470c-0990-421a-bb8c-90bd70c37ed9",
-          "RowNumber": 1,
+          "RowNumber": 2,
           "RowSpan": 1,
           "Settings": []
         },
@@ -179,7 +179,7 @@
           "DataBinderTypeName": "Sungero.Presentation.CommonDataBinders.BooleanEditorToBooleanBinder",
           "ParentGuid": "edc74281-0fc3-4ba8-bceb-bc443bc51b4e",
           "PropertyGuid": "47f92736-aca2-4f14-ad8a-5652cf50beca",
-          "RowNumber": 2,
+          "RowNumber": 0,
           "RowSpan": 1,
           "Settings": []
         },
@@ -200,6 +200,19 @@
               "Value": 40
             }
           ]
+        },
+        {
+          "$type": "Sungero.Metadata.ControlMetadata, Sungero.Metadata",
+          "NameGuid": "366c99ee-9d30-4632-90ad-3e682d5fd033",
+          "Name": "DisableAFAString",
+          "ColumnNumber": 1,
+          "ColumnSpan": 1,
+          "DataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToStringBinder",
+          "ParentGuid": "edc74281-0fc3-4ba8-bceb-bc443bc51b4e",
+          "PropertyGuid": "93b7392d-43e8-41b2-b093-e7e0efe15508",
+          "RowNumber": 0,
+          "RowSpan": 1,
+          "Settings": []
         }
       ],
       "IsAncestorMetadata": true,
@@ -298,6 +311,11 @@
       "NameGuid": "47f92736-aca2-4f14-ad8a-5652cf50beca",
       "Name": "DisableAFA",
       "Code": "DisableAFA",
+      "HandledEvents": [
+        "ChangedShared"
+      ],
+      "IsLoadEagerly": true,
+      "IsShowedInList": false,
       "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.BooleanEditorToBooleanBinder",
       "PreviousPropertyGuid": "3165470c-0990-421a-bb8c-90bd70c37ed9"
     },
@@ -309,6 +327,18 @@
       "Length": 999,
       "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToStringBinder",
       "PreviousPropertyGuid": "446b771a-3730-493e-a36b-88eca6b5486b"
+    },
+    {
+      "$type": "Sungero.Metadata.StringPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "93b7392d-43e8-41b2-b093-e7e0efe15508",
+      "Name": "DisableAFAString",
+      "CanBeSearch": false,
+      "Code": "DisableAFAStri",
+      "IsEnabled": false,
+      "IsShowedInList": false,
+      "IsVisibility": false,
+      "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToStringBinder",
+      "PreviousPropertyGuid": "47f92736-aca2-4f14-ad8a-5652cf50beca"
     }
   ],
   "PublicStructures": [],

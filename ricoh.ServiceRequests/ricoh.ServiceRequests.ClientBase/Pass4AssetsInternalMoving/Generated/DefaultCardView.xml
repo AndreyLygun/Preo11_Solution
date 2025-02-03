@@ -8,7 +8,7 @@
         <property name="View" isnull="true" iskey="true">
           <property name="LinesPerRowMode">None</property>
           <property name="ColumnChooserState" isnull="true" iskey="true">
-            <property name="Location">864,-2</property>
+            <property name="Location">963,-2</property>
             <property name="Size">220,250</property>
           </property>
           <property name="AllowMoveColumnToDropArea">false</property>
@@ -26,32 +26,40 @@
         <property name="GroupCount">0</property>
         <property name="Columns" iskey="true" value="4">
           <property name="Item1" isnull="true" iskey="true">
+            <property name="ExtendedVisibleIndex">0</property>
             <property name="Visible">true</property>
             <property name="Name">Pass4AssetsInternalMoving_Inventory_Name</property>
             <property name="FieldName">Name</property>
             <property name="VisibleIndex">0</property>
-            <property name="ActualWidth">NaN</property>
+            <property name="Width">81</property>
+            <property name="ActualWidth">32*</property>
           </property>
           <property name="Item2" isnull="true" iskey="true">
+            <property name="ExtendedVisibleIndex">2</property>
             <property name="Visible">true</property>
             <property name="Name">Pass4AssetsInternalMoving_Inventory_Quantity</property>
             <property name="FieldName">Quantity</property>
-            <property name="VisibleIndex">1</property>
-            <property name="ActualWidth">NaN</property>
+            <property name="VisibleIndex">2</property>
+            <property name="Width">105</property>
+            <property name="ActualWidth">14*</property>
           </property>
           <property name="Item3" isnull="true" iskey="true">
+            <property name="ExtendedVisibleIndex">3</property>
             <property name="Visible">true</property>
             <property name="Name">Pass4AssetsInternalMoving_Inventory_Note</property>
             <property name="FieldName">Note</property>
-            <property name="VisibleIndex">2</property>
-            <property name="ActualWidth">NaN</property>
+            <property name="VisibleIndex">3</property>
+            <property name="Width">105</property>
+            <property name="ActualWidth">9*</property>
           </property>
           <property name="Item4" isnull="true" iskey="true">
+            <property name="ExtendedVisibleIndex">1</property>
             <property name="Visible">true</property>
             <property name="Name">Pass4AssetsInternalMoving_Inventory_Size</property>
             <property name="FieldName">Size</property>
-            <property name="VisibleIndex">3</property>
-            <property name="ActualWidth">NaN</property>
+            <property name="VisibleIndex">1</property>
+            <property name="Width">81</property>
+            <property name="ActualWidth">18*</property>
           </property>
         </property>
         <property name="GroupSummarySortInfo" iskey="true" value="0" />

@@ -10,6 +10,11 @@ namespace ricoh.ServiceRequests
   partial class Pass4AssetsMovingSharedHandlers
   {
 
+    public virtual void BuildingMaterialsChanged(Sungero.Domain.Shared.BooleanPropertyChangedEventArgs e)
+    {
+      _obj.BuildingMaterialsString = (_obj.BuildingMaterials??false)?"Да":"Нет";
+    }
+
     public virtual void ElevatorChanged(Sungero.Domain.Shared.BooleanPropertyChangedEventArgs e)
     {
       _obj.ElevatorString = (_obj.Elevator??true)?"Требуется":"Не требуется";

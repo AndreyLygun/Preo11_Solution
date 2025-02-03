@@ -128,7 +128,7 @@
     <value>Список ТМЦ в виде строки - для использования в шаблоне</value>
   </data>
   <data name="Property_ElevatorTimeSpan" xml:space="preserve">
-    <value>Использование лифта</value>
+    <value>Время использования лифта</value>
   </data>
   <data name="ControlGroup_093f188ef94442019d23e123c1f77f54" xml:space="preserve">
     <value />
@@ -141,5 +141,8 @@
   </data>
   <data name="Property_ElevatorString" xml:space="preserve">
     <value>Лифт для шаблона</value>
+  </data>
+  <data name="Property_BuildingMaterialsString" xml:space="preserve">
+    <value>Строительные материалы для шаблона</value>
   </data>
 </root>

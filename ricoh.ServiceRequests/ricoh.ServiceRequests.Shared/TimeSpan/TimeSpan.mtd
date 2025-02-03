@@ -43,6 +43,19 @@
           "RowNumber": 0,
           "RowSpan": 1,
           "Settings": []
+        },
+        {
+          "$type": "Sungero.Metadata.ControlMetadata, Sungero.Metadata",
+          "NameGuid": "c78ae0b0-6020-449c-a117-a4e81958e732",
+          "Name": "Status",
+          "ColumnNumber": 0,
+          "ColumnSpan": 1,
+          "DataBinderTypeName": "Sungero.Presentation.CommonDataBinders.DropDownEditorToEnumerationBinder",
+          "ParentGuid": "954cd79d-5432-458c-8f80-3877002cfe62",
+          "PropertyGuid": "1dcedc29-5140-4770-ac92-eabc212326a1",
+          "RowNumber": 1,
+          "RowSpan": 1,
+          "Settings": []
         }
       ]
     }
@@ -52,6 +65,7 @@
   "IconResourcesKeys": [],
   "IntegrationServiceName": "ServiceRequestsTimeSpan",
   "IsCacheable": true,
+  "IsStatusEnabled": true,
   "IsVisible": false,
   "OperationsClass": "",
   "Overridden": [
@@ -60,9 +74,20 @@
     "HideFromNavigationEditorCreationArea",
     "IsCacheable",
     "CanBeSearch",
-    "HideFromCreationArea"
+    "HideFromCreationArea",
+    "IsStatusEnabled"
   ],
   "Properties": [
+    {
+      "$type": "Sungero.Metadata.EnumPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "1dcedc29-5140-4770-ac92-eabc212326a1",
+      "Name": "Status",
+      "IsAncestorMetadata": true,
+      "Overridden": [
+        "IsVisibility",
+        "IsShowedInList"
+      ]
+    },
     {
       "$type": "Sungero.Metadata.StringPropertyMetadata, Sungero.Metadata",
       "NameGuid": "82943891-0b10-4d3b-9273-6ff5709aeca9",
