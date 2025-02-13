@@ -121,4 +121,10 @@
   <data name="Property_Approved3" xml:space="preserve">
     <value>Согласование 3 уровень</value>
   </data>
+  <data name="Property_CarModel" xml:space="preserve">
+    <value>Модель автомобиля</value>
+  </data>
+  <data name="Property_CarNumber" xml:space="preserve">
+    <value>Госномер автомобиля</value>
+  </data>
 </root>

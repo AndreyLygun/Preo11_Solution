@@ -47,7 +47,8 @@ namespace ricoh.ServiceRequests
         if (String.IsNullOrWhiteSpace(item.Name)) continue;
         s = s + item.Name + " \t("
           + "Размер: " + (String.IsNullOrWhiteSpace(item.Size)?"не указан":item.Size) + ") "
-          + "\tКол-во: " + (String.IsNullOrWhiteSpace(item.Quantity)?"не указано":item.Quantity) + "\r";
+          + "\tКол-во: " + (String.IsNullOrWhiteSpace(item.Quantity)?"не указано":item.Quantity) 
+          + (String.IsNullOrWhiteSpace(item.Note)?(", " + item.Note):"") + "\r";
       }
       _obj.InventoryString  = s;
     }

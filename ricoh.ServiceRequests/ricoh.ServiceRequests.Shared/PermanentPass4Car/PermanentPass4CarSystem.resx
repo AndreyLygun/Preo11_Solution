@@ -67,16 +67,25 @@
   <data name="CollectionDisplayName" xml:space="preserve">
     <value>Постоянные автомобильные пропуска</value>
   </data>
-  <data name="Property_CarModel" xml:space="preserve">
-    <value>Модель автомобиля</value>
+  <data name="Property_CarModelOld" xml:space="preserve">
+    <value>Модель автомобиля (уст_</value>
   </data>
-  <data name="Property_CarNumber" xml:space="preserve">
-    <value>Гос.номер автомобиля</value>
+  <data name="Property_CarNumberOld" xml:space="preserve">
+    <value>Госномер автомобиля (уст.)</value>
   </data>
   <data name="Property_ParkingPlace" xml:space="preserve">
     <value>Парковочное место</value>
   </data>
   <data name="Property_NeedPrintedPass" xml:space="preserve">
     <value>Требуется иготовить </value>
+  </data>
+  <data name="Enum_NeedPrintedPass_Yes" xml:space="preserve">
+    <value>Да</value>
+  </data>
+  <data name="Enum_NeedPrintedPass_No" xml:space="preserve">
+    <value>Нет</value>
+  </data>
+  <data name="Property_ParkingFloor" xml:space="preserve">
+    <value>Парковка на уровне</value>
   </data>
 </root>

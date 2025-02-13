@@ -391,6 +391,23 @@
       "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToStringBinder",
       "PreviousPropertyGuid": "63f43f24-49e0-410a-8a77-265d6f21c4db",
       "Versions": []
+    },
+    {
+      "$type": "Sungero.Metadata.StringPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "aa103be1-53c9-4dd7-ba10-8b0b7dfa8cc8",
+      "Name": "CarModel",
+      "Code": "CarModel3",
+      "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToStringBinder",
+      "PreviousPropertyGuid": "e4edb7e2-18fd-4151-9aab-cdc387756ba1"
+    },
+    {
+      "$type": "Sungero.Metadata.StringPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "3ad989df-aa30-4c44-84ec-32d85fa5ceb9",
+      "Name": "CarNumber",
+      "Code": "CarNumber1",
+      "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToStringBinder",
+      "PreviousPropertyGuid": "aa103be1-53c9-4dd7-ba10-8b0b7dfa8cc8",
+      "Versions": []
     }
   ],
   "PublicStructures": [],

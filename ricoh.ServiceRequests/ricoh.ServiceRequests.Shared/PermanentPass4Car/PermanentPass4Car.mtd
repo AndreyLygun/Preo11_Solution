@@ -30,46 +30,68 @@
           "$type": "Sungero.Metadata.ControlGroupMetadata, Sungero.Metadata",
           "NameGuid": "edc74281-0fc3-4ba8-bceb-bc443bc51b4e",
           "Name": "Additional",
+          "ColumnDefinitions": [
+            {
+              "Percentage": 50.0
+            },
+            {
+              "Percentage": 50.0
+            }
+          ],
           "IsAncestorMetadata": true,
           "Overridden": [
-            "Controls"
+            "Controls",
+            "ColumnDefinitions"
           ]
         },
         {
           "$type": "Sungero.Metadata.ControlMetadata, Sungero.Metadata",
-          "NameGuid": "781231a1-944f-4db8-beff-c3866c2b1b94",
-          "Name": "CarModel",
-          "ColumnNumber": 0,
+          "NameGuid": "54756010-2301-4946-bca7-d7fe33fa23d6",
+          "Name": "ParkingPlace",
+          "ColumnNumber": 1,
           "ColumnSpan": 1,
           "DataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToStringBinder",
           "ParentGuid": "edc74281-0fc3-4ba8-bceb-bc443bc51b4e",
-          "PropertyGuid": "4f06cffa-20fd-4e1d-b97f-6a1e3c02643b",
+          "PropertyGuid": "c7107bbb-76ca-429e-8fe8-05e9f8e13312",
+          "RowNumber": 2,
+          "RowSpan": 1,
+          "Settings": []
+        },
+        {
+          "$type": "Sungero.Metadata.ControlMetadata, Sungero.Metadata",
+          "NameGuid": "703e2d6f-1816-489d-8174-6611159ef34f",
+          "Name": "CarModel1",
+          "ColumnNumber": 0,
+          "ColumnSpan": 2,
+          "DataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToStringBinder",
+          "ParentGuid": "edc74281-0fc3-4ba8-bceb-bc443bc51b4e",
+          "PropertyGuid": "aa103be1-53c9-4dd7-ba10-8b0b7dfa8cc8",
           "RowNumber": 0,
           "RowSpan": 1,
           "Settings": []
         },
         {
           "$type": "Sungero.Metadata.ControlMetadata, Sungero.Metadata",
-          "NameGuid": "d1318516-0c5e-4991-8f4d-90aadeb8d1a8",
-          "Name": "CarNumber",
+          "NameGuid": "b32a4abf-dd1e-4c6f-8c6c-b31d359e8659",
+          "Name": "CarNumber1",
           "ColumnNumber": 0,
-          "ColumnSpan": 1,
+          "ColumnSpan": 2,
           "DataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToStringBinder",
           "ParentGuid": "edc74281-0fc3-4ba8-bceb-bc443bc51b4e",
-          "PropertyGuid": "bff66cc6-cabc-449e-ab7d-933c3b6d2c0e",
+          "PropertyGuid": "3ad989df-aa30-4c44-84ec-32d85fa5ceb9",
           "RowNumber": 1,
           "RowSpan": 1,
           "Settings": []
         },
         {
           "$type": "Sungero.Metadata.ControlMetadata, Sungero.Metadata",
-          "NameGuid": "54756010-2301-4946-bca7-d7fe33fa23d6",
-          "Name": "ParkingPlace",
+          "NameGuid": "80e6d9e2-6305-4277-8a15-9953377eb4d7",
+          "Name": "ParkingFloor",
           "ColumnNumber": 0,
           "ColumnSpan": 1,
-          "DataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToStringBinder",
+          "DataBinderTypeName": "Sungero.Presentation.CommonDataBinders.DropDownEditorToNavigationBinder",
           "ParentGuid": "edc74281-0fc3-4ba8-bceb-bc443bc51b4e",
-          "PropertyGuid": "c7107bbb-76ca-429e-8fe8-05e9f8e13312",
+          "PropertyGuid": "4a83fbc5-0129-422b-9334-ea65d748e9db",
           "RowNumber": 2,
           "RowSpan": 1,
           "Settings": []
@@ -95,6 +117,16 @@
   ],
   "Properties": [
     {
+      "$type": "Sungero.Metadata.NavigationPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "4532dfc0-cff5-4a53-a5ef-8acd6528c8c0",
+      "Name": "Medium",
+      "IsAncestorMetadata": true,
+      "Overridden": [
+        "PreviousPropertyGuid"
+      ],
+      "PreviousPropertyGuid": "4a83fbc5-0129-422b-9334-ea65d748e9db"
+    },
+    {
       "$type": "Sungero.Metadata.CollectionPropertyMetadata, Sungero.Metadata",
       "NameGuid": "56cbe741-880f-4e6f-9567-343d08494b59",
       "Name": "Versions",
@@ -119,16 +151,24 @@
     {
       "$type": "Sungero.Metadata.StringPropertyMetadata, Sungero.Metadata",
       "NameGuid": "4f06cffa-20fd-4e1d-b97f-6a1e3c02643b",
-      "Name": "CarModel",
+      "Name": "CarModelOld",
+      "CanBeSearch": false,
       "Code": "CarModel2",
+      "IsEnabled": false,
+      "IsShowedInList": false,
+      "IsVisibility": false,
       "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToStringBinder",
       "PreviousPropertyGuid": "72da0048-dcc4-4230-90b9-d470be94727e"
     },
     {
       "$type": "Sungero.Metadata.StringPropertyMetadata, Sungero.Metadata",
       "NameGuid": "bff66cc6-cabc-449e-ab7d-933c3b6d2c0e",
-      "Name": "CarNumber",
-      "Code": "CarNumber2",
+      "Name": "CarNumberOld",
+      "CanBeSearch": false,
+      "Code": "CarNumberOld2",
+      "IsEnabled": false,
+      "IsShowedInList": false,
+      "IsVisibility": false,
       "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToStringBinder",
       "PreviousPropertyGuid": "4f06cffa-20fd-4e1d-b97f-6a1e3c02643b"
     },
@@ -141,12 +181,38 @@
       "PreviousPropertyGuid": "bff66cc6-cabc-449e-ab7d-933c3b6d2c0e"
     },
     {
-      "$type": "Sungero.Metadata.StringPropertyMetadata, Sungero.Metadata",
+      "$type": "Sungero.Metadata.EnumPropertyMetadata, Sungero.Metadata",
       "NameGuid": "84dccb05-79d7-40be-b6cd-5059042c2b21",
       "Name": "NeedPrintedPass",
       "Code": "NeedPrintedPas",
-      "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToStringBinder",
+      "DirectValues": [
+        {
+          "NameGuid": "5d55a72c-12a9-42f0-a321-48b542f6189c",
+          "Name": "Yes",
+          "Code": "Yes"
+        },
+        {
+          "NameGuid": "1a5c1641-39ae-4651-8f65-c5bb6ec3d889",
+          "Name": "No",
+          "Code": "No"
+        }
+      ],
+      "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.DropDownEditorToEnumerationBinder",
       "PreviousPropertyGuid": "c7107bbb-76ca-429e-8fe8-05e9f8e13312"
+    },
+    {
+      "$type": "Sungero.Metadata.NavigationPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "4a83fbc5-0129-422b-9334-ea65d748e9db",
+      "Name": "ParkingFloor",
+      "CanBeSearch": false,
+      "Code": "ParkingFloor",
+      "EntityGuid": "8d45c2b2-8e20-4fc4-8539-432b7a299a46",
+      "FlatListInStandaloneLookup": true,
+      "HandledEvents": [
+        "LookupServer"
+      ],
+      "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.DropDownEditorToNavigationBinder",
+      "PreviousPropertyGuid": "84dccb05-79d7-40be-b6cd-5059042c2b21"
     }
   ],
   "PublicStructures": [],

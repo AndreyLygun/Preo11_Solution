@@ -30,9 +30,11 @@
           "$type": "Sungero.Metadata.ControlGroupMetadata, Sungero.Metadata",
           "NameGuid": "edc74281-0fc3-4ba8-bceb-bc443bc51b4e",
           "Name": "Additional",
+          "GroupType": "GroupBox",
           "IsAncestorMetadata": true,
           "Overridden": [
-            "Controls"
+            "Controls",
+            "GroupType"
           ]
         },
         {
@@ -88,27 +90,14 @@
         },
         {
           "$type": "Sungero.Metadata.ControlMetadata, Sungero.Metadata",
-          "NameGuid": "f5e3bdac-5104-4279-97d4-4830006fa797",
-          "Name": "CarNumber",
+          "NameGuid": "a8ac2dab-1fef-47ef-93c4-611f2f7d5c31",
+          "Name": "CarNumber1",
           "ColumnNumber": 0,
           "ColumnSpan": 1,
           "DataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToStringBinder",
           "ParentGuid": "edc74281-0fc3-4ba8-bceb-bc443bc51b4e",
-          "PropertyGuid": "a9c3e6fe-531e-4532-a139-190fdfa1201d",
+          "PropertyGuid": "3ad989df-aa30-4c44-84ec-32d85fa5ceb9",
           "RowNumber": 0,
-          "RowSpan": 1,
-          "Settings": []
-        },
-        {
-          "$type": "Sungero.Metadata.ControlMetadata, Sungero.Metadata",
-          "NameGuid": "f0352c85-6002-4300-8d48-5473e6a22e79",
-          "Name": "ParkingPlace",
-          "ColumnNumber": 0,
-          "ColumnSpan": 1,
-          "DataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToStringBinder",
-          "ParentGuid": "edc74281-0fc3-4ba8-bceb-bc443bc51b4e",
-          "PropertyGuid": "b7cabcf3-4213-4838-90e2-fa1e85178af7",
-          "RowNumber": 1,
           "RowSpan": 1,
           "Settings": []
         }
@@ -157,8 +146,12 @@
     {
       "$type": "Sungero.Metadata.StringPropertyMetadata, Sungero.Metadata",
       "NameGuid": "a9c3e6fe-531e-4532-a139-190fdfa1201d",
-      "Name": "CarNumber",
-      "Code": "CarNumber3",
+      "Name": "CarNumberOld",
+      "CanBeSearch": false,
+      "Code": "CarNumberOld1",
+      "IsEnabled": false,
+      "IsShowedInList": false,
+      "IsVisibility": false,
       "Length": 50,
       "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToStringBinder",
       "PreviousPropertyGuid": "72da0048-dcc4-4230-90b9-d470be94727e"

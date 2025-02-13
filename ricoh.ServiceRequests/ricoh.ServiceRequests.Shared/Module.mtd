@@ -17,7 +17,8 @@
         "NameGuid": "461f45f8-90aa-46b0-b88c-c752a65b642a",
         "Name": "Visitors",
         "EntityTypeId": "7aff79f7-1e7f-43e8-853e-84eb5af7aaa8",
-        "GroupId": "b0c7919b-6a02-4af6-ad0e-0d8eb4ff00d0"
+        "GroupId": "b0c7919b-6a02-4af6-ad0e-0d8eb4ff00d0",
+        "IsVisible": false
       },
       {
         "$type": "Sungero.Metadata.CoverEntityListActionMetadata, Sungero.Metadata",
@@ -95,7 +96,7 @@
         "Name": "AllRequests",
         "EntityTypeId": "ac86d580-b326-4345-a0bd-7277d2f47ad0",
         "GroupId": "b0c7919b-6a02-4af6-ad0e-0d8eb4ff00d0",
-        "PreviousItemGuid": "461f45f8-90aa-46b0-b88c-c752a65b642a"
+        "PreviousItemGuid": "db76cd7f-56f1-4e55-9c6c-008e41ebdf6a"
       },
       {
         "$type": "Sungero.Metadata.CoverEntityListActionMetadata, Sungero.Metadata",
@@ -111,6 +112,14 @@
         "Name": "Renters",
         "EntityTypeId": "97222148-c6d3-40d0-bf61-47f03dbbdf54",
         "GroupId": "dd243d0b-97f7-44de-8783-5d610ecd6230"
+      },
+      {
+        "$type": "Sungero.Metadata.CoverEntityListActionMetadata, Sungero.Metadata",
+        "NameGuid": "db76cd7f-56f1-4e55-9c6c-008e41ebdf6a",
+        "Name": "Auto",
+        "EntityTypeId": "2560a3ed-af5b-41bb-bde2-b99f9acf12ce",
+        "GroupId": "b0c7919b-6a02-4af6-ad0e-0d8eb4ff00d0",
+        "PreviousItemGuid": "461f45f8-90aa-46b0-b88c-c752a65b642a"
       },
       {
         "$type": "Sungero.Metadata.CoverEntityListActionMetadata, Sungero.Metadata",
@@ -285,8 +294,12 @@
       "PreviousItemId": "81a92bbf-8b60-4306-99ef-f57a3663cbc9"
     },
     {
-      "ItemId": "7d1f6fe4-c84d-430d-b9fb-8590ebf90445",
+      "ItemId": "2560a3ed-af5b-41bb-bde2-b99f9acf12ce",
       "PreviousItemId": "241d8dd5-432a-4761-9659-b96dbf73af48"
+    },
+    {
+      "ItemId": "7d1f6fe4-c84d-430d-b9fb-8590ebf90445",
+      "PreviousItemId": "2560a3ed-af5b-41bb-bde2-b99f9acf12ce"
     }
   ],
   "HandledEvents": [
@@ -434,7 +447,7 @@
   "SharedAssemblyName": "ricoh.ServiceRequests.Shared",
   "SharedNamespace": "ricoh.ServiceRequests.Shared",
   "SpecialFolders": [],
-  "Version": "0.0.1.16",
+  "Version": "0.0.1.18",
   "Widgets": [],
   "Versions": [
     {

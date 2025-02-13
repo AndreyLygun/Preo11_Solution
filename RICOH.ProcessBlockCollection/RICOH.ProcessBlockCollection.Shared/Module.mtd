@@ -32,6 +32,35 @@
           "PreviousPropertyGuid": "3b8c3e35-0d2a-4e61-b1d9-2ea7da6a57ca"
         }
       ]
+    },
+    {
+      "$type": "Sungero.Metadata.ScriptBlockMetadata, Sungero.Workflow.Shared",
+      "NameGuid": "e102f34a-69ec-4d3b-9605-8c40e3152730",
+      "Name": "ProcessCarPass",
+      "BaseGuid": "1f76cc5d-f096-4062-b34a-51b3c02269f2",
+      "HandledEvents": [
+        "ProcessCarPassExecute"
+      ],
+      "Properties": [
+        {
+          "$type": "Sungero.Metadata.EnumBlockPropertyMetadata, Sungero.Metadata",
+          "NameGuid": "bd9d7409-e3c3-44b2-a0d1-61b82f292765",
+          "Name": "Action",
+          "DirectValues": [
+            {
+              "NameGuid": "3e9a48c0-17d9-4032-9c62-e355f3d58ba9",
+              "Name": "Add",
+              "Code": "Add"
+            },
+            {
+              "NameGuid": "1c9df390-62a4-4119-83ec-79749142ed14",
+              "Name": "Remove",
+              "Code": "Remove"
+            }
+          ],
+          "PreviousPropertyGuid": "5dc92a72-3a65-4872-bc04-0aa7ec353b05"
+        }
+      ]
     }
   ],
   "ClientAssemblyName": "RICOH.ProcessBlockCollection.Client",
@@ -80,7 +109,7 @@
   "SharedAssemblyName": "RICOH.ProcessBlockCollection.Shared",
   "SharedNamespace": "RICOH.ProcessBlockCollection.Shared",
   "SpecialFolders": [],
-  "Version": "0.0.1.6",
+  "Version": "0.0.1.8",
   "Widgets": [],
   "Versions": [
     {

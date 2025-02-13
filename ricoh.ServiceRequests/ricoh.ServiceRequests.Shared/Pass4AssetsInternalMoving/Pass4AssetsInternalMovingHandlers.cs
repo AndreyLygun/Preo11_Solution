@@ -10,6 +10,19 @@ namespace ricoh.ServiceRequests
   partial class Pass4AssetsInternalMovingSharedHandlers
   {
 
+    public virtual void InventoryChanged(Sungero.Domain.Shared.CollectionPropertyChangedEventArgs e)
+    {
+      var s = "";
+      foreach(var item in _obj.Inventory) {
+        if (String.IsNullOrWhiteSpace(item.Name)) continue;
+        s = s + item.Name + " \t("
+          + "Размер: " + (String.IsNullOrWhiteSpace(item.Size)?"не указан":item.Size) + ") "
+          + "\tКол-во: " + (String.IsNullOrWhiteSpace(item.Quantity)?"не указано":item.Quantity)
+          + (String.IsNullOrWhiteSpace(item.Note)?(", " + item.Note):"")  + "\r";
+      }
+      _obj.InventoryString  = s;
+    }
+
     public virtual void ElevatorTimeSpanChanged(Sungero.Domain.Shared.CollectionPropertyChangedEventArgs e)
     {
       if (_obj.ElevatorTimeSpan.Count > 0) {

@@ -123,7 +123,7 @@
           "HeaderLocation": "Top",
           "ParentGuid": "09ccc211-857f-4ac9-9c47-134e3f3b8f18",
           "PropertyGuid": "d583953e-2bce-4c08-a587-dbabb0524e79",
-          "RowNumber": 1,
+          "RowNumber": 2,
           "RowSpan": 1,
           "Settings": []
         },
@@ -328,6 +328,32 @@
               "Value": "39c955ad-5cc6-452e-bc2e-e2dac982d645"
             }
           ]
+        },
+        {
+          "$type": "Sungero.Metadata.ControlMetadata, Sungero.Metadata",
+          "NameGuid": "716599d7-fa9a-41c0-877d-b21cba4e28fd",
+          "Name": "CarModel1",
+          "ColumnNumber": 0,
+          "ColumnSpan": 1,
+          "DataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToStringBinder",
+          "ParentGuid": "09ccc211-857f-4ac9-9c47-134e3f3b8f18",
+          "PropertyGuid": "aa103be1-53c9-4dd7-ba10-8b0b7dfa8cc8",
+          "RowNumber": 1,
+          "RowSpan": 1,
+          "Settings": []
+        },
+        {
+          "$type": "Sungero.Metadata.ControlMetadata, Sungero.Metadata",
+          "NameGuid": "86941cb7-7bd8-4439-8427-4d23076d1977",
+          "Name": "CarNumber",
+          "ColumnNumber": 1,
+          "ColumnSpan": 1,
+          "DataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToStringBinder",
+          "ParentGuid": "09ccc211-857f-4ac9-9c47-134e3f3b8f18",
+          "PropertyGuid": "3ad989df-aa30-4c44-84ec-32d85fa5ceb9",
+          "RowNumber": 1,
+          "RowSpan": 1,
+          "Settings": []
         }
       ],
       "IsAncestorMetadata": true,
@@ -421,16 +447,22 @@
     {
       "$type": "Sungero.Metadata.StringPropertyMetadata, Sungero.Metadata",
       "NameGuid": "e365854a-34f4-40f7-bede-9de4269f6bc2",
-      "Name": "CarModel",
-      "Code": "CarModel",
+      "Name": "CarModelOld",
+      "CanBeSearch": false,
+      "Code": "CarModelOld1",
+      "IsShowedInList": false,
+      "IsVisibility": false,
       "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToStringBinder",
       "PreviousPropertyGuid": "8e0cde21-1997-4535-a2a4-981e0f2574df"
     },
     {
       "$type": "Sungero.Metadata.StringPropertyMetadata, Sungero.Metadata",
       "NameGuid": "d3ad244a-ad66-44b3-a8fd-602be7273f26",
-      "Name": "CarNumber",
-      "Code": "CarNumber",
+      "Name": "CarNumberOld",
+      "CanBeSearch": false,
+      "Code": "CarNumberOld3",
+      "IsShowedInList": false,
+      "IsVisibility": false,
       "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToStringBinder",
       "PreviousPropertyGuid": "e365854a-34f4-40f7-bede-9de4269f6bc2"
     },
@@ -524,14 +556,14 @@
       "PreviousPropertyGuid": "78c1b0d2-05da-4b6d-a6f6-7cf57e3237d6"
     },
     {
-      "$type": "Sungero.Metadata.StringPropertyMetadata, Sungero.Metadata",
+      "$type": "Sungero.Metadata.TextPropertyMetadata, Sungero.Metadata",
       "NameGuid": "78c1b0d2-05da-4b6d-a6f6-7cf57e3237d6",
       "Name": "InventoryString",
-      "CanBeSearch": false,
       "Code": "InventoryStrin",
       "IsEnabled": false,
       "IsShowedInList": false,
-      "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToStringBinder",
+      "IsVisibility": false,
+      "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToTextBinder",
       "PreviousPropertyGuid": "63c2ca4a-4c2c-4e39-89ee-2d99fa6aef00"
     },
     {

@@ -252,6 +252,9 @@
       "Name": "Inventory",
       "Code": "Pass4AssetsInt",
       "EntityGuid": "daca2cc7-e015-4549-a0ff-d7834dbf0933",
+      "HandledEvents": [
+        "ChangedShared"
+      ],
       "IsShowedInList": false,
       "PreviousPropertyGuid": "df04a9ba-42bb-4f0a-8917-bec9108240b3",
       "Versions": []
@@ -265,17 +268,20 @@
         "ChangedShared"
       ],
       "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.BooleanEditorToBooleanBinder",
-      "PreviousPropertyGuid": "1fadf8e4-761e-4ef8-825f-97c768ea2f76",
+      "PreviousPropertyGuid": "20709988-452f-45c4-bdb8-b8fb7767124b",
       "Versions": []
     },
     {
       "$type": "Sungero.Metadata.NavigationPropertyMetadata, Sungero.Metadata",
       "NameGuid": "0052fe1d-bc0e-40cb-9af7-9cc73e389274",
       "Name": "TimeSpan",
+      "CanBeSearch": false,
       "Code": "TimeSpan1",
       "EntityGuid": "46d20a39-e6c1-4e02-89f7-c5f85eec8088",
       "FlatListInStandaloneLookup": true,
-      "IsRequired": true,
+      "IsEnabled": false,
+      "IsShowedInList": false,
+      "IsVisibility": false,
       "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.DropDownEditorToNavigationBinder",
       "PreviousPropertyGuid": "863693bb-5dde-42b6-8dd7-a3f7649c5081",
       "Versions": []
@@ -285,6 +291,7 @@
       "NameGuid": "fc3ac847-2793-4e8d-8d0e-493f3b863105",
       "Name": "StorageRoom",
       "Code": "StorageRoom1",
+      "IsLoadEagerly": true,
       "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.BooleanEditorToBooleanBinder",
       "PreviousPropertyGuid": "0052fe1d-bc0e-40cb-9af7-9cc73e389274",
       "Versions": []
@@ -351,6 +358,16 @@
       "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToStringBinder",
       "PreviousPropertyGuid": "8239b3ab-a278-495c-b143-e37d39111174",
       "Versions": []
+    },
+    {
+      "$type": "Sungero.Metadata.TextPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "20709988-452f-45c4-bdb8-b8fb7767124b",
+      "Name": "InventoryString",
+      "Code": "InventoryStri1",
+      "IsEnabled": false,
+      "IsShowedInList": false,
+      "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToTextBinder",
+      "PreviousPropertyGuid": "1fadf8e4-761e-4ef8-825f-97c768ea2f76"
     }
   ],
   "PublicStructures": [],

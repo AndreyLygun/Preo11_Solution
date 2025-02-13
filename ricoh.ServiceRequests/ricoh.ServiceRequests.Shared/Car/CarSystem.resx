@@ -58,31 +58,37 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Property_Name" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="Property_CarModel" xml:space="preserve">
+    <value>Модель</value>
+  </data>
+  <data name="Property_CarNumber" xml:space="preserve">
+    <value>Номер</value>
+  </data>
+  <data name="Property_ValidFrom" xml:space="preserve">
+    <value>Действителен с</value>
+  </data>
+  <data name="Property_ValidTill" xml:space="preserve">
+    <value>Дейтвителен до</value>
+  </data>
+  <data name="Property_Renter" xml:space="preserve">
+    <value>Арендатор</value>
+  </data>
+  <data name="Property_Pass" xml:space="preserve">
+    <value>Пропуск</value>
+  </data>
   <data name="DisplayName" xml:space="preserve">
-    <value>Разовый автомобильный пропуск</value>
+    <value>Автомобиль</value>
   </data>
   <data name="AccusativeDisplayName" xml:space="preserve">
-    <value>Разовый автомобильный пропуск</value>
+    <value>Автомобиль</value>
   </data>
   <data name="CollectionDisplayName" xml:space="preserve">
-    <value>Разовые автомобильные пропуска</value>
+    <value>Автомобили на въезд</value>
   </data>
-  <data name="Property_CarModelOld" xml:space="preserve">
-    <value>Модель автомобиля (уст.)</value>
-  </data>
-  <data name="Property_CarNumberOld" xml:space="preserve">
-    <value>Госномер автомобиля (уст.)</value>
-  </data>
-  <data name="Operation_Operation" xml:space="preserve">
-    <value />
-  </data>
-  <data name="ControlGroup_edc742810fc34ba8bcebbc443bc51b4e" xml:space="preserve">
-    <value>Информация о посещении</value>
-  </data>
-  <data name="Property_PrivateParking" xml:space="preserve">
-    <value>На парковку аренадатора</value>
-  </data>
-  <data name="Property_ValidOnDateTime" xml:space="preserve">
-    <value>Дата и время въезда</value>
+  <data name="Instruction" xml:space="preserve">
+    <value>Список автомобилей, для которых были оформлены пропуски на въезд</value>
   </data>
 </root>

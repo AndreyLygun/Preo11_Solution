@@ -97,11 +97,11 @@
   <data name="Property_TimeSpan" xml:space="preserve">
     <value>Время (устарело)</value>
   </data>
-  <data name="Property_CarModel" xml:space="preserve">
-    <value>Модель автомобиля</value>
+  <data name="Property_CarModelOld" xml:space="preserve">
+    <value>Модель автомобиля(уст.)</value>
   </data>
-  <data name="Property_CarNumber" xml:space="preserve">
-    <value>Номер автомобиля</value>
+  <data name="Property_CarNumberOld" xml:space="preserve">
+    <value>Номер автомобиля (уст.)</value>
   </data>
   <data name="ControlGroup_edc742810fc34ba8bcebbc443bc51b4e" xml:space="preserve">
     <value>Перемещение</value>
@@ -125,7 +125,7 @@
     <value>Есть строительные материалы</value>
   </data>
   <data name="Property_InventoryString" xml:space="preserve">
-    <value>Список ТМЦ в виде строки - для использования в шаблоне</value>
+    <value>Список ТМЦ (строка)</value>
   </data>
   <data name="Property_ElevatorTimeSpan" xml:space="preserve">
     <value>Время использования лифта</value>

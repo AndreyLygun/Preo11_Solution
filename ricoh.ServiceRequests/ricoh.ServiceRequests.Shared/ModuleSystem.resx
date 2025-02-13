@@ -181,4 +181,16 @@
   <data name="CoverDescription_Pass4InternalMoving" xml:space="preserve">
     <value>Заявки на перемещение ТМЦ внутри бизнес-центра</value>
   </data>
+  <data name="CoverAction_Auto" xml:space="preserve">
+    <value>Автомобили</value>
+  </data>
+  <data name="CoverDescription_Auto" xml:space="preserve">
+    <value>Автомобили, которые могут проехать на территорию бизнес центра - по пропускам для ввоза-вывоза ТМЦ и гостевым автопропускам</value>
+  </data>
+  <data name="Block_9cd0299cbd5d4b73a5dd7cfec9137858_Property_f4b72c12b66a488d873d79e31938369b_Enum_b5245141711c48d8a2bd3ecb5a974daf" xml:space="preserve">
+    <value>Добавить</value>
+  </data>
+  <data name="Block_9cd0299cbd5d4b73a5dd7cfec9137858_Property_f4b72c12b66a488d873d79e31938369b_Enum_b142bfcc304f4c3191df39224065bbd5" xml:space="preserve">
+    <value>Удалить</value>
+  </data>
 </root>

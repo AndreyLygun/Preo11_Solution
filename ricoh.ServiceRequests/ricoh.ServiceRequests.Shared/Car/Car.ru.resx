@@ -58,31 +58,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="DisplayName" xml:space="preserve">
-    <value>Разовый автомобильный пропуск</value>
-  </data>
-  <data name="AccusativeDisplayName" xml:space="preserve">
-    <value>Разовый автомобильный пропуск</value>
-  </data>
-  <data name="CollectionDisplayName" xml:space="preserve">
-    <value>Разовые автомобильные пропуска</value>
-  </data>
-  <data name="Property_CarModelOld" xml:space="preserve">
-    <value>Модель автомобиля (уст.)</value>
-  </data>
-  <data name="Property_CarNumberOld" xml:space="preserve">
-    <value>Госномер автомобиля (уст.)</value>
-  </data>
-  <data name="Operation_Operation" xml:space="preserve">
-    <value />
-  </data>
-  <data name="ControlGroup_edc742810fc34ba8bcebbc443bc51b4e" xml:space="preserve">
-    <value>Информация о посещении</value>
-  </data>
-  <data name="Property_PrivateParking" xml:space="preserve">
-    <value>На парковку аренадатора</value>
-  </data>
-  <data name="Property_ValidOnDateTime" xml:space="preserve">
-    <value>Дата и время въезда</value>
-  </data>
 </root>

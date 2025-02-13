@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using Sungero.Core;
 using Sungero.CoreEntities;
-using Sungero.Workflow;
+using ricoh.ServiceRequests.Car;
 
-namespace RICOH.ServiceRequests.Servcer.ProcessCarPassBlocks
+namespace ricoh.ServiceRequests.Shared
 {
-  partial class ProcessCarPass
+  partial class CarFunctions
   {
 
   }

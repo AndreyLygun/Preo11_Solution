@@ -76,4 +76,16 @@
   <data name="Block_53317cae37e14607b17ad06fe40593d3_Property_330f447372994d9b9bff2fe6e032d82a" xml:space="preserve">
     <value>Текст письма</value>
   </data>
+  <data name="Block_e102f34a69ec4d3b96058c40e3152730" xml:space="preserve">
+    <value>Добавить/удалить авто</value>
+  </data>
+  <data name="Block_e102f34a69ec4d3b96058c40e3152730_Property_bd9d7409e3c344b2a0d161b82f292765" xml:space="preserve">
+    <value>Действие</value>
+  </data>
+  <data name="Block_e102f34a69ec4d3b96058c40e3152730_Property_bd9d7409e3c344b2a0d161b82f292765_Enum_3e9a48c017d940329c62e355f3d58ba9" xml:space="preserve">
+    <value>Добавить</value>
+  </data>
+  <data name="Block_e102f34a69ec4d3b96058c40e3152730_Property_bd9d7409e3c344b2a0d161b82f292765_Enum_1c9df39062a4411983ec79749142ed14" xml:space="preserve">
+    <value>Удалить</value>
+  </data>
 </root>

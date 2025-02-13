@@ -7,6 +7,16 @@ using ricoh.ServiceRequests.PermanentPass4Car;
 
 namespace ricoh.ServiceRequests
 {
+  partial class PermanentPass4CarParkingFloorPropertyFilteringServerHandler<T>
+  {
+
+    public virtual IQueryable<T> ParkingFloorFiltering(IQueryable<T> query, Sungero.Domain.PropertyFilteringEventArgs e)
+    {
+      query = query.Where(s => s.Type.Equals(Site.Type.ParkingSite));
+      return query;
+    }
+  }
+
   partial class PermanentPass4CarServerHandlers
   {
 
