@@ -58,46 +58,10 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Description" xml:space="preserve">
+    <value />
+  </data>
   <data name="DisplayName" xml:space="preserve">
-    <value>Блокировка постоянного автомобильного пропуска</value>
-  </data>
-  <data name="AccusativeDisplayName" xml:space="preserve">
-    <value>Блокировку постоянного автомобильного пропуска</value>
-  </data>
-  <data name="CollectionDisplayName" xml:space="preserve">
-    <value>Блокировки постоянного автомобильного пропуска</value>
-  </data>
-  <data name="Property_CarNumberOld" xml:space="preserve">
-    <value>Госномер автомобиля (уст)</value>
-  </data>
-  <data name="Property_ParkingPlaceOld" xml:space="preserve">
-    <value>Парковочное место (уст)</value>
-  </data>
-  <data name="Resource_5a9e062898e846fdb3d3156aaf9c7fc8" xml:space="preserve">
-    <value />
-  </data>
-  <data name="Control_5a9e062898e846fdb3d3156aaf9c7fc8_EmptyText" xml:space="preserve">
-    <value>за посетителя сотрудника</value>
-  </data>
-  <data name="Resource_728707c6c8184f18bef60a7a944b547e" xml:space="preserve">
-    <value />
-  </data>
-  <data name="Control_728707c6c8184f18bef60a7a944b547e_EmptyText" xml:space="preserve">
-    <value>для связи в случае необходимости</value>
-  </data>
-  <data name="Resource_e3c11b9ad1ae45e5a65e8ac188b21d56" xml:space="preserve">
-    <value />
-  </data>
-  <data name="Control_e3c11b9ad1ae45e5a65e8ac188b21d56_EmptyText" xml:space="preserve">
-    <value />
-  </data>
-  <data name="ControlGroup_edc742810fc34ba8bcebbc443bc51b4e" xml:space="preserve">
-    <value>БЛОКИРОВКА ДЛЯ АВТОМОБИЛЯ</value>
-  </data>
-  <data name="Property_ParkingFloorOld" xml:space="preserve">
-    <value>Парковка на уровне (уст)</value>
-  </data>
-  <data name="Property_ValidOn" xml:space="preserve">
-    <value>Заблокировать с</value>
+    <value>Постоянный автопропуск</value>
   </data>
 </root>

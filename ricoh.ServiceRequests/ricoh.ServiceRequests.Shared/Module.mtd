@@ -62,7 +62,7 @@
       {
         "$type": "Sungero.Metadata.CoverEntityListActionMetadata, Sungero.Metadata",
         "NameGuid": "95454f77-b985-44cc-836a-f19134b32fcf",
-        "Name": "BlockPermanentPass4Car",
+        "Name": "StopPermanentPass4Car",
         "EntityTypeId": "c7247ffd-04e2-4dc1-ba06-f062e5debe3c",
         "GroupId": "c61d61bf-78ee-472a-9151-9406d7aa21f3",
         "PreviousItemGuid": "fba21431-92b5-4429-91ef-b915a4e80fc0"
@@ -300,6 +300,10 @@
     {
       "ItemId": "7d1f6fe4-c84d-430d-b9fb-8590ebf90445",
       "PreviousItemId": "2560a3ed-af5b-41bb-bde2-b99f9acf12ce"
+    },
+    {
+      "ItemId": "0ad8f36a-2cde-4b18-9549-e17d9e51c7b4",
+      "PreviousItemId": "7d1f6fe4-c84d-430d-b9fb-8590ebf90445"
     }
   ],
   "HandledEvents": [
@@ -447,7 +451,7 @@
   "SharedAssemblyName": "ricoh.ServiceRequests.Shared",
   "SharedNamespace": "ricoh.ServiceRequests.Shared",
   "SpecialFolders": [],
-  "Version": "0.0.1.18",
+  "Version": "0.0.1.22",
   "Widgets": [],
   "Versions": [
     {

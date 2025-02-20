@@ -85,4 +85,7 @@
   <data name="Property_ValidOnDateTime" xml:space="preserve">
     <value>Дата и время въезда</value>
   </data>
+  <data name="Property_Duration" xml:space="preserve">
+    <value>Продолжительность парковки (час)</value>
+  </data>
 </root>

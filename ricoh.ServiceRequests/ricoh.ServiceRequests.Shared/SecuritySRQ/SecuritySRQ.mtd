@@ -408,6 +408,27 @@
       "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToStringBinder",
       "PreviousPropertyGuid": "aa103be1-53c9-4dd7-ba10-8b0b7dfa8cc8",
       "Versions": []
+    },
+    {
+      "$type": "Sungero.Metadata.StringPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "6ab4b5a1-5760-4e09-be52-f663da48d901",
+      "Name": "ParkingPlace",
+      "Code": "ParkingPlace2",
+      "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToStringBinder",
+      "PreviousPropertyGuid": "3ad989df-aa30-4c44-84ec-32d85fa5ceb9",
+      "Versions": []
+    },
+    {
+      "$type": "Sungero.Metadata.NavigationPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "fb67613a-bb27-4ca6-b8d7-d1147ece123a",
+      "Name": "ParkingFloor",
+      "CanBeSearch": false,
+      "Code": "ParkingFloor2",
+      "EntityGuid": "8d45c2b2-8e20-4fc4-8539-432b7a299a46",
+      "FlatListInStandaloneLookup": true,
+      "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.DropDownEditorToNavigationBinder",
+      "PreviousPropertyGuid": "6ab4b5a1-5760-4e09-be52-f663da48d901",
+      "Versions": []
     }
   ],
   "PublicStructures": [],

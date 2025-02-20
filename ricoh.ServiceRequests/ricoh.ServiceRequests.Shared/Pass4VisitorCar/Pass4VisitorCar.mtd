@@ -143,7 +143,7 @@
           "DataBinderTypeName": "Sungero.Presentation.CommonDataBinders.TextEditorToTextBinder",
           "ParentGuid": "edc74281-0fc3-4ba8-bceb-bc443bc51b4e",
           "PropertyGuid": "d583953e-2bce-4c08-a587-dbabb0524e79",
-          "RowNumber": 2,
+          "RowNumber": 3,
           "RowSpan": 1,
           "Settings": [
             {
@@ -173,12 +173,12 @@
           "$type": "Sungero.Metadata.ControlMetadata, Sungero.Metadata",
           "NameGuid": "a4d2f4d3-a2d9-40ed-a075-c0af6f6e9711",
           "Name": "PrivateParking",
-          "ColumnNumber": 1,
+          "ColumnNumber": 0,
           "ColumnSpan": 1,
           "DataBinderTypeName": "Sungero.Presentation.CommonDataBinders.BooleanEditorToBooleanBinder",
           "ParentGuid": "edc74281-0fc3-4ba8-bceb-bc443bc51b4e",
           "PropertyGuid": "412b82a9-0d18-4b97-bc50-3018c631c98b",
-          "RowNumber": 0,
+          "RowNumber": 1,
           "RowSpan": 1,
           "Settings": []
         },
@@ -191,7 +191,7 @@
           "DataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToStringBinder",
           "ParentGuid": "edc74281-0fc3-4ba8-bceb-bc443bc51b4e",
           "PropertyGuid": "aa103be1-53c9-4dd7-ba10-8b0b7dfa8cc8",
-          "RowNumber": 1,
+          "RowNumber": 2,
           "RowSpan": 1,
           "Settings": []
         },
@@ -204,7 +204,20 @@
           "DataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToStringBinder",
           "ParentGuid": "edc74281-0fc3-4ba8-bceb-bc443bc51b4e",
           "PropertyGuid": "3ad989df-aa30-4c44-84ec-32d85fa5ceb9",
-          "RowNumber": 1,
+          "RowNumber": 2,
+          "RowSpan": 1,
+          "Settings": []
+        },
+        {
+          "$type": "Sungero.Metadata.ControlMetadata, Sungero.Metadata",
+          "NameGuid": "559cc574-244e-4439-98ba-c5c9a9b66004",
+          "Name": "Duration",
+          "ColumnNumber": 1,
+          "ColumnSpan": 1,
+          "DataBinderTypeName": "Sungero.Presentation.CommonDataBinders.NumericEditorToIntAndDoubleBinder",
+          "ParentGuid": "edc74281-0fc3-4ba8-bceb-bc443bc51b4e",
+          "PropertyGuid": "a1cbbe2e-be36-4dc8-8609-20131c0dadab",
+          "RowNumber": 0,
           "RowSpan": 1,
           "Settings": []
         }
@@ -298,6 +311,14 @@
       "IsRequired": true,
       "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.DateTimeEditorToDateTimeBinder",
       "PreviousPropertyGuid": "412b82a9-0d18-4b97-bc50-3018c631c98b"
+    },
+    {
+      "$type": "Sungero.Metadata.DoublePropertyMetadata, Sungero.Metadata",
+      "NameGuid": "a1cbbe2e-be36-4dc8-8609-20131c0dadab",
+      "Name": "Duration",
+      "Code": "Duration",
+      "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.NumericEditorToIntAndDoubleBinder",
+      "PreviousPropertyGuid": "3ad989df-aa30-4c44-84ec-32d85fa5ceb9"
     }
   ],
   "PublicStructures": [],

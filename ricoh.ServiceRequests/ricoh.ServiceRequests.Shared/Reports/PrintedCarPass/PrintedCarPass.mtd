@@ -1,0 +1,45 @@
+{
+  "$type": "Sungero.Metadata.ReportMetadata, Sungero.Reporting.Shared",
+  "NameGuid": "0ad8f36a-2cde-4b18-9549-e17d9e51c7b4",
+  "Name": "PrintedCarPass",
+  "AccessRightsMode": "NoRight",
+  "AssociatedGuid": "4a82dc79-85fe-40b9-a5ab-b5592f293aa7",
+  "BaseGuid": "cef9a810-3f30-4eca-9fe3-30992af0b818",
+  "DataSources": [
+    {
+      "NameGuid": "58a5e772-bc1c-45a9-a32d-d8d2cf3f841f",
+      "Name": "Pass",
+      "EntityType": "4a82dc79-85fe-40b9-a5ab-b5592f293aa7"
+    }
+  ],
+  "DefaultExportFormat": "Pdf",
+  "ExportFormats": [
+    "Pdf"
+  ],
+  "HandledEvents": [
+    "BeforeExecuteClient"
+  ],
+  "IconResourcesKeys": [],
+  "IntegrationServiceName": "ServiceRequestsPass4AssetsMovingReport",
+  "Overridden": [
+    "AccessRightsMode",
+    "PublicConstants",
+    "PublicStructures",
+    "DisplayName",
+    "DataSources",
+    "Parameters",
+    "HandledEvents"
+  ],
+  "Parameters": [
+    {
+      "NameGuid": "6fad9be4-0968-4a2b-a2ea-ab01a5f6914f",
+      "Name": "Entity",
+      "EntityType": "4a82dc79-85fe-40b9-a5ab-b5592f293aa7",
+      "InternalDataTypeName": "ricoh.ServiceRequests.IPermanentPass4Car, Sungero.Domain.Interfaces",
+      "IsRequired": true
+    }
+  ],
+  "PublicStructures": [],
+  "ResourcesKeys": [],
+  "Versions": []
+}

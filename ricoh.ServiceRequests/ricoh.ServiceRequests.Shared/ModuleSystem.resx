@@ -77,7 +77,7 @@
     <value>Автомобильные пропуска</value>
   </data>
   <data name="CoverDescription_PermanentPass4Car" xml:space="preserve">
-    <value>Заявки на изготовление постоянных автомобильных пропусков</value>
+    <value>Заявки на оформление и продление постоянных автомобильных пропусков</value>
   </data>
   <data name="CoverAction_PermanentPass4Car" xml:space="preserve">
     <value>Постоянный автомобильный пропуск</value>
@@ -148,10 +148,10 @@
   <data name="CoverGroup_Passes4Employee" xml:space="preserve">
     <value>Сотрудники и гости</value>
   </data>
-  <data name="CoverDescription_BlockPermanentPass4Car" xml:space="preserve">
-    <value>Заявки на блокировку пропусков для автомобилей арендаторов</value>
+  <data name="CoverDescription_StopPermanentPass4Car" xml:space="preserve">
+    <value>Заявки на блокировку постоянных автомобильных пропусков</value>
   </data>
-  <data name="CoverAction_BlockPermanentPass4Car" xml:space="preserve">
+  <data name="CoverAction_StopPermanentPass4Car" xml:space="preserve">
     <value>Блокировка автомобильных пропусков</value>
   </data>
   <data name="CoverAction_Permission4Employee" xml:space="preserve">

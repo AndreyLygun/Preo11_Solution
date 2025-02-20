@@ -10,5 +10,16 @@ namespace ricoh.ServiceRequests
   partial class PermanentPass4CarClientHandlers
   {
 
+    public override void Showing(Sungero.Presentation.FormShowingEventArgs e)
+    {
+      base.Showing(e);
+      _obj.State.Properties.ValidFrom.IsVisible = (_obj.Action == PermanentPass4Car.Action.NewPass);
+    }
+
+    public virtual void ActionValueInput(Sungero.Presentation.EnumerationValueInputEventArgs e)
+    {
+      var action = e.NewValue;
+      _obj.State.Properties.ValidFrom.IsVisible = (_obj.Action == PermanentPass4Car.Action.NewPass);
+    }
   }
 }
