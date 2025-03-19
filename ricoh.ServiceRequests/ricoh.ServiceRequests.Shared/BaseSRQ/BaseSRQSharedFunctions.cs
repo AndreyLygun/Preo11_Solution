@@ -10,5 +10,8 @@ namespace ricoh.ServiceRequests.Shared
   partial class BaseSRQFunctions
   {
 
+
+    
+
   }
 }

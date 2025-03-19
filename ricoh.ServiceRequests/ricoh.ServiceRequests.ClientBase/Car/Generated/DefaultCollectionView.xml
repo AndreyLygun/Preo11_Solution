@@ -25,16 +25,15 @@
         </property>
         <property name="GroupSummary" iskey="true" value="0" />
         <property name="GroupCount">0</property>
-        <property name="Columns" iskey="true" value="9">
+        <property name="Columns" iskey="true" value="11">
           <property name="Item1" isnull="true" iskey="true">
-            <property name="ExtendedVisibleIndex">0</property>
             <property name="MinWidth">32</property>
             <property name="FixedWidth">true</property>
             <property name="Visible">true</property>
             <property name="FieldName">T</property>
             <property name="VisibleIndex">0</property>
-            <property name="Width">48</property>
-            <property name="ActualWidth">5*</property>
+            <property name="Width">32</property>
+            <property name="ActualWidth">3*</property>
           </property>
           <property name="Item2" isnull="true" iskey="true">
             <property name="ExtendedVisibleIndex">1</property>
@@ -58,7 +57,7 @@
             <property name="Name">Car_CarModel</property>
             <property name="FieldName">CarModel</property>
             <property name="VisibleIndex">2</property>
-            <property name="ActualWidth">20*</property>
+            <property name="ActualWidth">15*</property>
           </property>
           <property name="Item5" isnull="true" iskey="true">
             <property name="ExtendedVisibleIndex">3</property>
@@ -98,6 +97,18 @@
             <property name="Name">Car_Pass</property>
             <property name="FieldName">Pass.DisplayValue</property>
             <property name="VisibleIndex">7</property>
+            <property name="ActualWidth">NaN</property>
+          </property>
+          <property name="Item10" isnull="true" iskey="true">
+            <property name="Visible">false</property>
+            <property name="Name">Car_ParkingPlace</property>
+            <property name="FieldName">ParkingPlace</property>
+            <property name="ActualWidth">NaN</property>
+          </property>
+          <property name="Item11" isnull="true" iskey="true">
+            <property name="Visible">false</property>
+            <property name="Name">Car_ParkingFloor</property>
+            <property name="FieldName">ParkingFloor.DisplayValue</property>
             <property name="ActualWidth">NaN</property>
           </property>
         </property>

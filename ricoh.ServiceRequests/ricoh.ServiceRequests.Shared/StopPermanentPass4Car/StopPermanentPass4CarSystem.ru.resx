@@ -76,4 +76,7 @@
   <data name="Control_e3c11b9ad1ae45e5a65e8ac188b21d56_EmptyText" xml:space="preserve">
     <value />
   </data>
+  <data name="Property_Action" xml:space="preserve">
+    <value>Действие</value>
+  </data>
 </root>

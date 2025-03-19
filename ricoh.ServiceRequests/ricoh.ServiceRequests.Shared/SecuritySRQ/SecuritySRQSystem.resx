@@ -127,10 +127,10 @@
   <data name="Property_CarNumber" xml:space="preserve">
     <value>Госномер автомобиля</value>
   </data>
+  <data name="Property_ParkingPlaceOld" xml:space="preserve">
+    <value>Парковочное место (уст)</value>
+  </data>
   <data name="Property_ParkingPlace" xml:space="preserve">
     <value>Парковочное место</value>
-  </data>
-  <data name="Property_ParkingFloor" xml:space="preserve">
-    <value>Парковка на уровне</value>
   </data>
 </root>

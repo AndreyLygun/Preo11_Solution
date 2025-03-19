@@ -256,7 +256,9 @@
   ],
   "HandledEvents": [
     "CreatedServer",
-    "FilteringServer"
+    "FilteringServer",
+    "AfterSaveServer",
+    "BeforeSaveServer"
   ],
   "IconResourcesKeys": [],
   "IntegrationServiceName": "ServiceRequestsSecuritySRQ",
@@ -295,6 +297,7 @@
       "NameGuid": "4e17fc93-a403-4c9a-94e6-ebff510c87e9",
       "Name": "ResponsibleName",
       "Code": "ResponsibleNa1",
+      "IsLoadEagerly": true,
       "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToStringBinder",
       "PreviousPropertyGuid": "68dad006-1c67-4816-b487-c2af07a1776f"
     },
@@ -303,6 +306,7 @@
       "NameGuid": "0b3c6401-e5a5-4c4f-868f-0d91b7245971",
       "Name": "ResponsiblePhone",
       "Code": "ResponsiblePh1",
+      "IsLoadEagerly": true,
       "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToStringBinder",
       "PreviousPropertyGuid": "4e17fc93-a403-4c9a-94e6-ebff510c87e9"
     },
@@ -311,6 +315,7 @@
       "NameGuid": "1c37e2dc-73bf-48b7-8175-2f4de23755d1",
       "Name": "ValidFrom",
       "Code": "ValidFrom1",
+      "IsLoadEagerly": true,
       "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.DateTimeEditorToDateTimeBinder",
       "PreviousPropertyGuid": "790c685a-998f-4ea8-9d23-382e1d5e58b2"
     },
@@ -331,6 +336,7 @@
       "HandledEvents": [
         "ChangedShared"
       ],
+      "IsLoadEagerly": true,
       "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.DateTimeEditorToDateTimeBinder",
       "PreviousPropertyGuid": "3ff332cf-beba-4c28-833e-8a34f6a8c4c5"
     },
@@ -339,6 +345,7 @@
       "NameGuid": "790c685a-998f-4ea8-9d23-382e1d5e58b2",
       "Name": "ResponsibleMail",
       "Code": "ResponsibleMai",
+      "IsLoadEagerly": true,
       "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToStringBinder",
       "PreviousPropertyGuid": "0b3c6401-e5a5-4c4f-868f-0d91b7245971",
       "Versions": []
@@ -348,6 +355,7 @@
       "NameGuid": "d583953e-2bce-4c08-a587-dbabb0524e79",
       "Name": "Visitors",
       "Code": "Visitors",
+      "IsLoadEagerly": true,
       "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToTextBinder",
       "PreviousPropertyGuid": "72da0048-dcc4-4230-90b9-d470be94727e"
     },
@@ -397,6 +405,7 @@
       "NameGuid": "aa103be1-53c9-4dd7-ba10-8b0b7dfa8cc8",
       "Name": "CarModel",
       "Code": "CarModel3",
+      "IsLoadEagerly": true,
       "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToStringBinder",
       "PreviousPropertyGuid": "e4edb7e2-18fd-4151-9aab-cdc387756ba1"
     },
@@ -405,6 +414,7 @@
       "NameGuid": "3ad989df-aa30-4c44-84ec-32d85fa5ceb9",
       "Name": "CarNumber",
       "Code": "CarNumber1",
+      "IsLoadEagerly": true,
       "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToStringBinder",
       "PreviousPropertyGuid": "aa103be1-53c9-4dd7-ba10-8b0b7dfa8cc8",
       "Versions": []
@@ -412,8 +422,12 @@
     {
       "$type": "Sungero.Metadata.StringPropertyMetadata, Sungero.Metadata",
       "NameGuid": "6ab4b5a1-5760-4e09-be52-f663da48d901",
-      "Name": "ParkingPlace",
+      "Name": "ParkingPlaceOld",
+      "CanBeSearch": false,
       "Code": "ParkingPlace2",
+      "IsEnabled": false,
+      "IsShowedInList": false,
+      "IsVisibility": false,
       "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToStringBinder",
       "PreviousPropertyGuid": "3ad989df-aa30-4c44-84ec-32d85fa5ceb9",
       "Versions": []
@@ -421,14 +435,33 @@
     {
       "$type": "Sungero.Metadata.NavigationPropertyMetadata, Sungero.Metadata",
       "NameGuid": "fb67613a-bb27-4ca6-b8d7-d1147ece123a",
-      "Name": "ParkingFloor",
+      "Name": "ParkingPlace",
       "CanBeSearch": false,
-      "Code": "ParkingFloor2",
-      "EntityGuid": "8d45c2b2-8e20-4fc4-8539-432b7a299a46",
+      "Code": "ParkingPlace",
+      "EntityGuid": "33deea65-1d95-44dd-a39d-9a7252b1b99a",
       "FlatListInStandaloneLookup": true,
+      "HandledEvents": [
+        "LookupServer"
+      ],
+      "IsLoadEagerly": true,
       "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.DropDownEditorToNavigationBinder",
+      "NeedPassEntityToLookupEvent": true,
       "PreviousPropertyGuid": "6ab4b5a1-5760-4e09-be52-f663da48d901",
       "Versions": []
+    }
+  ],
+  "PublicFunctions": [
+    {
+      "Name": "AddOrUpdateCar",
+      "Parameters": [
+        {
+          "Name": "securitySRQ",
+          "ParameterType": "global::ricoh.ServiceRequests.ISecuritySRQ",
+          "ParameterTypeFullName": "ricoh.ServiceRequests.ISecuritySRQ, Sungero.Domain.Interfaces"
+        }
+      ],
+      "ReturnType": "void",
+      "ReturnTypeFullName": "System.Void"
     }
   ],
   "PublicStructures": [],

@@ -59,19 +59,19 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="DisplayName" xml:space="preserve">
-    <value>Блокировка постоянного автомобильного пропуска</value>
+    <value>Блокировка постоянного автопропуска</value>
   </data>
   <data name="AccusativeDisplayName" xml:space="preserve">
-    <value>Блокировку постоянного автомобильного пропуска</value>
+    <value>Блокировку постоянного автопропуска</value>
   </data>
   <data name="CollectionDisplayName" xml:space="preserve">
-    <value>Блокировки постоянного автомобильного пропуска</value>
+    <value>Блокировки постоянного автопропуска</value>
   </data>
-  <data name="Property_CarNumberOld" xml:space="preserve">
-    <value>Госномер автомобиля (уст)</value>
+  <data name="Enum_Action_StopPass" xml:space="preserve">
+    <value>Продлить существующий пропуск</value>
   </data>
-  <data name="Property_ParkingPlaceOld" xml:space="preserve">
-    <value>Парковочное место (уст)</value>
+  <data name="Property_Action" xml:space="preserve">
+    <value>Требуемое действие</value>
   </data>
   <data name="Resource_5a9e062898e846fdb3d3156aaf9c7fc8" xml:space="preserve">
     <value />
@@ -94,10 +94,34 @@
   <data name="ControlGroup_edc742810fc34ba8bcebbc443bc51b4e" xml:space="preserve">
     <value>БЛОКИРОВКА ДЛЯ АВТОМОБИЛЯ</value>
   </data>
-  <data name="Property_ParkingFloorOld" xml:space="preserve">
-    <value>Парковка на уровне (уст)</value>
+  <data name="Enum_Action_NewPrinted" xml:space="preserve">
+    <value>Изготовить новый бумажный пропуск</value>
+  </data>
+  <data name="Enum_Action_NewNFC" xml:space="preserve">
+    <value>Оформить новую электронную карту</value>
   </data>
   <data name="Property_ValidOn" xml:space="preserve">
     <value>Заблокировать с</value>
+  </data>
+  <data name="Enum_Action_ChangeCar" xml:space="preserve">
+    <value>Переоформить на другой автомобиль</value>
+  </data>
+  <data name="Property_PermanentPass4Car" xml:space="preserve">
+    <value>Изменяемый пропуск</value>
+  </data>
+  <data name="Property_Property" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Enum_Property_StopPass" xml:space="preserve">
+    <value>Заблокрировать пропуск</value>
+  </data>
+  <data name="Enum_Action_NewPaper" xml:space="preserve">
+    <value>Изготовить бумажный пропуск</value>
+  </data>
+  <data name="Enum_Property_NewNFC" xml:space="preserve">
+    <value>Выдать электронный пропуск</value>
+  </data>
+  <data name="Control_b22759891f374a699e7319cc088b7492_EmptyText" xml:space="preserve">
+    <value>Нажмите на три точки справа, чтобы выбрать пропуск</value>
   </data>
 </root>

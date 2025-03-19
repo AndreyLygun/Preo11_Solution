@@ -46,6 +46,10 @@ namespace ricoh.ServiceRequests.Server
       Sites.AccessRights.Save();
       Renters.AccessRights.Grant(Roles.AllUsers, DefaultAccessRightsTypes.Read);
       Renters.AccessRights.Save();
+      ParkingPlaces.AccessRights.Grant(SequrityRole, DefaultAccessRightsTypes.FullAccess);
+      ParkingPlaces.AccessRights.Grant(Roles.AllUsers, DefaultAccessRightsTypes.Read);
+      ParkingPlaces.AccessRights.Save();
+      
       
       TimeSpans.AccessRights.Grant(Roles.AllUsers, DefaultAccessRightsTypes.Read);
       TimeSpans.AccessRights.Save();

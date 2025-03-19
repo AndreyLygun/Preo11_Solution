@@ -3,7 +3,7 @@ using Sungero.Core;
 
 namespace ricoh.ServiceRequests.Constants
 {
-  public static class PrintedCarPass
+  public static class ParkingPlace
   {
 
   }

@@ -2,6 +2,7 @@
   "$type": "Sungero.Metadata.EntityMetadata, Sungero.Metadata",
   "NameGuid": "2560a3ed-af5b-41bb-bde2-b99f9acf12ce",
   "Name": "Car",
+  "AccessRightsMode": "Both",
   "BaseGuid": "04581d26-0780-4cfd-b3cd-c2cafc5798b0",
   "CanBeNavigationPropertyType": true,
   "CanBeUsedInIntegration": true,
@@ -16,8 +17,39 @@
   "FilterPanel": {
     "NameGuid": "b0125fbd-3b91-4dbb-914a-689276216404",
     "Name": "FilterPanel",
-    "Controls": [],
-    "IsAncestorMetadata": true
+    "Controls": [
+      {
+        "$type": "Sungero.Metadata.FilterGroupMetadata, Sungero.Metadata",
+        "NameGuid": "6e914925-0b54-4f26-b515-d9f14c477acd",
+        "Name": "ValidOn"
+      },
+      {
+        "$type": "Sungero.Metadata.FilterListMetadata, Sungero.Metadata",
+        "NameGuid": "3d451424-4cc6-49a3-9df4-eafd95e4cb73",
+        "Name": "Days",
+        "IsMultiSelect": true,
+        "ParentGuid": "6e914925-0b54-4f26-b515-d9f14c477acd"
+      },
+      {
+        "$type": "Sungero.Metadata.FilterListItemMetadata, Sungero.Metadata",
+        "NameGuid": "d6efd8e6-3e80-40b2-bd91-ff1daa76fe85",
+        "Name": "Today",
+        "IsSelected": true,
+        "ParentGuid": "3d451424-4cc6-49a3-9df4-eafd95e4cb73"
+      },
+      {
+        "$type": "Sungero.Metadata.FilterListItemMetadata, Sungero.Metadata",
+        "NameGuid": "8b92e4b1-0de2-4cea-98ed-11f7a3edaee5",
+        "Name": "Tomorrow",
+        "ParentGuid": "3d451424-4cc6-49a3-9df4-eafd95e4cb73",
+        "PreviousGuid": "d6efd8e6-3e80-40b2-bd91-ff1daa76fe85"
+      }
+    ],
+    "IsAncestorMetadata": true,
+    "Overridden": [
+      "IsEnabled",
+      "Controls"
+    ]
   },
   "Forms": [
     {
@@ -115,12 +147,39 @@
           "RowNumber": 2,
           "RowSpan": 1,
           "Settings": []
+        },
+        {
+          "$type": "Sungero.Metadata.ControlMetadata, Sungero.Metadata",
+          "NameGuid": "8e70200b-3566-4e7b-bcab-13d6f7a2c777",
+          "Name": "ParkingFloor",
+          "ColumnNumber": 0,
+          "ColumnSpan": 1,
+          "DataBinderTypeName": "Sungero.Presentation.CommonDataBinders.DropDownEditorToNavigationBinder",
+          "ParentGuid": "601299a8-e50a-44c9-a56b-16b543c4aced",
+          "PropertyGuid": "5e90272e-aaf0-4e40-86f9-067b88d72496",
+          "RowNumber": 3,
+          "RowSpan": 1,
+          "Settings": []
+        },
+        {
+          "$type": "Sungero.Metadata.ControlMetadata, Sungero.Metadata",
+          "NameGuid": "523dcc2a-9ff9-4e0f-bd98-47c0d6b26568",
+          "Name": "ParkingPlace",
+          "ColumnNumber": 1,
+          "ColumnSpan": 1,
+          "DataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToStringBinder",
+          "ParentGuid": "601299a8-e50a-44c9-a56b-16b543c4aced",
+          "PropertyGuid": "9e69ce6c-8821-4f2e-afdb-87112ad4012b",
+          "RowNumber": 3,
+          "RowSpan": 1,
+          "Settings": []
         }
       ]
     }
   ],
   "HandledEvents": [
-    "BeforeSaveServer"
+    "BeforeSaveServer",
+    "FilteringServer"
   ],
   "IconResourcesKeys": [],
   "IntegrationServiceName": "ServiceRequestsCar",
@@ -128,7 +187,9 @@
   "OperationsClass": "",
   "Overridden": [
     "IsAutoCreated",
-    "CanBeUsedInIntegration"
+    "CanBeUsedInIntegration",
+    "IsVisible",
+    "AccessRightsMode"
   ],
   "Properties": [
     {
@@ -191,6 +252,32 @@
       "FlatListInStandaloneLookup": true,
       "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.DropDownEditorToNavigationBinder",
       "PreviousPropertyGuid": "e1e863e7-6bf8-4853-8ea7-ceef6df04173"
+    },
+    {
+      "$type": "Sungero.Metadata.StringPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "9e69ce6c-8821-4f2e-afdb-87112ad4012b",
+      "Name": "ParkingPlaceOld",
+      "CanBeSearch": false,
+      "Code": "ParkingPlaceOl",
+      "IsEnabled": false,
+      "IsShowedInList": false,
+      "IsVisibility": false,
+      "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToStringBinder",
+      "PreviousPropertyGuid": "e2933505-39d9-4393-a5d2-5f7b99d6637b",
+      "Versions": []
+    },
+    {
+      "$type": "Sungero.Metadata.NavigationPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "5e90272e-aaf0-4e40-86f9-067b88d72496",
+      "Name": "ParkingPlace",
+      "CanBeSearch": false,
+      "Code": "ParkingPlace",
+      "EntityGuid": "33deea65-1d95-44dd-a39d-9a7252b1b99a",
+      "FlatListInStandaloneLookup": true,
+      "IsLoadEagerly": true,
+      "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.DropDownEditorToNavigationBinder",
+      "PreviousPropertyGuid": "9e69ce6c-8821-4f2e-afdb-87112ad4012b",
+      "Versions": []
     }
   ],
   "PublicStructures": [],

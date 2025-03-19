@@ -27,8 +27,8 @@
       "Name": "ShowPrintForm",
       "ActionArea": "Card",
       "GenerateHandler": true,
-      "LargeIconName": null,
-      "SmallIconName": null
+      "LargeIconName": "Action_ShowPrintForm_large_1d1d59e7b6e24985a4973f1feaae8571.png",
+      "SmallIconName": "Action_ShowPrintForm_small_1d1d59e7b6e24985a4973f1feaae8571.png"
     }
   ],
   "BaseGuid": "58cca102-1e97-4f07-b6ac-fd866a8b7cb1",

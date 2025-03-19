@@ -143,7 +143,7 @@
           "DataBinderTypeName": "Sungero.Presentation.CommonDataBinders.TextEditorToTextBinder",
           "ParentGuid": "edc74281-0fc3-4ba8-bceb-bc443bc51b4e",
           "PropertyGuid": "d583953e-2bce-4c08-a587-dbabb0524e79",
-          "RowNumber": 3,
+          "RowNumber": 5,
           "RowSpan": 1,
           "Settings": [
             {
@@ -171,19 +171,6 @@
         },
         {
           "$type": "Sungero.Metadata.ControlMetadata, Sungero.Metadata",
-          "NameGuid": "a4d2f4d3-a2d9-40ed-a075-c0af6f6e9711",
-          "Name": "PrivateParking",
-          "ColumnNumber": 0,
-          "ColumnSpan": 1,
-          "DataBinderTypeName": "Sungero.Presentation.CommonDataBinders.BooleanEditorToBooleanBinder",
-          "ParentGuid": "edc74281-0fc3-4ba8-bceb-bc443bc51b4e",
-          "PropertyGuid": "412b82a9-0d18-4b97-bc50-3018c631c98b",
-          "RowNumber": 1,
-          "RowSpan": 1,
-          "Settings": []
-        },
-        {
-          "$type": "Sungero.Metadata.ControlMetadata, Sungero.Metadata",
           "NameGuid": "83ffa4e4-af6b-4198-8c60-6b2c99e695c5",
           "Name": "CarModel1",
           "ColumnNumber": 0,
@@ -191,7 +178,7 @@
           "DataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToStringBinder",
           "ParentGuid": "edc74281-0fc3-4ba8-bceb-bc443bc51b4e",
           "PropertyGuid": "aa103be1-53c9-4dd7-ba10-8b0b7dfa8cc8",
-          "RowNumber": 2,
+          "RowNumber": 4,
           "RowSpan": 1,
           "Settings": []
         },
@@ -204,7 +191,7 @@
           "DataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToStringBinder",
           "ParentGuid": "edc74281-0fc3-4ba8-bceb-bc443bc51b4e",
           "PropertyGuid": "3ad989df-aa30-4c44-84ec-32d85fa5ceb9",
-          "RowNumber": 2,
+          "RowNumber": 4,
           "RowSpan": 1,
           "Settings": []
         },
@@ -212,12 +199,38 @@
           "$type": "Sungero.Metadata.ControlMetadata, Sungero.Metadata",
           "NameGuid": "559cc574-244e-4439-98ba-c5c9a9b66004",
           "Name": "Duration",
-          "ColumnNumber": 1,
+          "ColumnNumber": 0,
           "ColumnSpan": 1,
           "DataBinderTypeName": "Sungero.Presentation.CommonDataBinders.NumericEditorToIntAndDoubleBinder",
           "ParentGuid": "edc74281-0fc3-4ba8-bceb-bc443bc51b4e",
           "PropertyGuid": "a1cbbe2e-be36-4dc8-8609-20131c0dadab",
-          "RowNumber": 0,
+          "RowNumber": 2,
+          "RowSpan": 1,
+          "Settings": []
+        },
+        {
+          "$type": "Sungero.Metadata.ControlMetadata, Sungero.Metadata",
+          "NameGuid": "b963d6fb-498a-47d7-aa9b-95a5354dd01c",
+          "Name": "ParkingFloor",
+          "ColumnNumber": 0,
+          "ColumnSpan": 1,
+          "DataBinderTypeName": "Sungero.Presentation.CommonDataBinders.DropDownEditorToNavigationBinder",
+          "ParentGuid": "edc74281-0fc3-4ba8-bceb-bc443bc51b4e",
+          "PropertyGuid": "fb67613a-bb27-4ca6-b8d7-d1147ece123a",
+          "RowNumber": 3,
+          "RowSpan": 1,
+          "Settings": []
+        },
+        {
+          "$type": "Sungero.Metadata.ControlMetadata, Sungero.Metadata",
+          "NameGuid": "e992b488-225f-4a67-a49d-e7a1f89abc2f",
+          "Name": "ParkingType",
+          "ColumnNumber": 0,
+          "ColumnSpan": 1,
+          "DataBinderTypeName": "Sungero.Presentation.CommonDataBinders.DropDownEditorToEnumerationBinder",
+          "ParentGuid": "edc74281-0fc3-4ba8-bceb-bc443bc51b4e",
+          "PropertyGuid": "2e0a803f-edb1-45f8-ba0f-e6ffc022851c",
+          "RowNumber": 1,
           "RowSpan": 1,
           "Settings": []
         }
@@ -242,6 +255,18 @@
   ],
   "Properties": [
     {
+      "$type": "Sungero.Metadata.NavigationPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "484b2831-3657-4987-a035-a98617aadc2c",
+      "Name": "Renter",
+      "HandledEvents": [
+        "ValueInputClient"
+      ],
+      "IsAncestorMetadata": true,
+      "Overridden": [
+        "HandledEvents"
+      ]
+    },
+    {
       "$type": "Sungero.Metadata.CollectionPropertyMetadata, Sungero.Metadata",
       "NameGuid": "56cbe741-880f-4e6f-9567-343d08494b59",
       "Name": "Versions",
@@ -264,38 +289,13 @@
       "Versions": []
     },
     {
-      "$type": "Sungero.Metadata.StringPropertyMetadata, Sungero.Metadata",
-      "NameGuid": "47425861-bbaf-4de6-b774-98b6c2f1ec18",
-      "Name": "CarModelOld",
-      "CanBeSearch": false,
-      "Code": "CarModelOld",
-      "IsEnabled": false,
-      "IsShowedInList": false,
-      "IsVisibility": false,
-      "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToStringBinder",
-      "PreviousPropertyGuid": "72da0048-dcc4-4230-90b9-d470be94727e"
-    },
-    {
-      "$type": "Sungero.Metadata.StringPropertyMetadata, Sungero.Metadata",
-      "NameGuid": "0411ef2b-3635-4a05-accb-c02a51452143",
-      "Name": "CarNumberOld",
-      "CanBeSearch": false,
-      "Code": "CarNumberOld",
-      "IsEnabled": false,
-      "IsShowedInList": false,
-      "IsVisibility": false,
-      "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToStringBinder",
-      "PreviousPropertyGuid": "47425861-bbaf-4de6-b774-98b6c2f1ec18"
-    },
-    {
       "$type": "Sungero.Metadata.BooleanPropertyMetadata, Sungero.Metadata",
       "NameGuid": "412b82a9-0d18-4b97-bc50-3018c631c98b",
-      "Name": "PrivateParking",
+      "Name": "PrivateParkingOld",
       "Code": "PrivateParking",
       "IsLoadEagerly": true,
-      "IsRequired": true,
       "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.BooleanEditorToBooleanBinder",
-      "PreviousPropertyGuid": "0411ef2b-3635-4a05-accb-c02a51452143"
+      "PreviousPropertyGuid": "d583953e-2bce-4c08-a587-dbabb0524e79"
     },
     {
       "$type": "Sungero.Metadata.DateTimePropertyMetadata, Sungero.Metadata",
@@ -308,7 +308,6 @@
         "ChangedShared"
       ],
       "IsLoadEagerly": true,
-      "IsRequired": true,
       "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.DateTimeEditorToDateTimeBinder",
       "PreviousPropertyGuid": "412b82a9-0d18-4b97-bc50-3018c631c98b"
     },
@@ -319,6 +318,29 @@
       "Code": "Duration",
       "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.NumericEditorToIntAndDoubleBinder",
       "PreviousPropertyGuid": "3ad989df-aa30-4c44-84ec-32d85fa5ceb9"
+    },
+    {
+      "$type": "Sungero.Metadata.EnumPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "2e0a803f-edb1-45f8-ba0f-e6ffc022851c",
+      "Name": "ParkingType",
+      "Code": "ParkingType",
+      "DirectValues": [
+        {
+          "NameGuid": "72c86503-1d90-4615-a005-f57ffc0f12a5",
+          "Name": "PrivateParking",
+          "Code": "PrivateParking"
+        },
+        {
+          "NameGuid": "0c6374f3-dae6-4726-91cd-03a04f338539",
+          "Name": "CommonParking",
+          "Code": "CommonParking"
+        }
+      ],
+      "HandledEvents": [
+        "ValueInputClient"
+      ],
+      "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.DropDownEditorToEnumerationBinder",
+      "PreviousPropertyGuid": "a1cbbe2e-be36-4dc8-8609-20131c0dadab"
     }
   ],
   "PublicStructures": [],

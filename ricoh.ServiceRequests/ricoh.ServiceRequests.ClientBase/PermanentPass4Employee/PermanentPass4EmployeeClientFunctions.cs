@@ -10,5 +10,12 @@ namespace ricoh.ServiceRequests.Client
   partial class PermanentPass4EmployeeFunctions
   {
 
+    /// <summary>
+    /// 
+    /// </summary>       
+    public void OpenPhoto()
+    {
+    }
+
   }
 }

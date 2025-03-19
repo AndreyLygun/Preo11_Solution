@@ -7,8 +7,4 @@ using ricoh.ServiceRequests.StopPermanentPass4Car;
 
 namespace ricoh.ServiceRequests
 {
-  partial class StopPermanentPass4CarSharedHandlers
-  {
-
-  }
 }

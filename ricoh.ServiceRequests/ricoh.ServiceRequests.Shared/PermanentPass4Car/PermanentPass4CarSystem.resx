@@ -67,15 +67,6 @@
   <data name="CollectionDisplayName" xml:space="preserve">
     <value>Постоянные автомобильные пропуска</value>
   </data>
-  <data name="Property_CarModelOld" xml:space="preserve">
-    <value>Модель автомобиля (уст)</value>
-  </data>
-  <data name="Property_CarNumberOld" xml:space="preserve">
-    <value>Госномер автомобиля (уст.)</value>
-  </data>
-  <data name="Property_ParkingPlaceOld" xml:space="preserve">
-    <value>Парковочное место (уст)</value>
-  </data>
   <data name="Property_NeedPrintedPass" xml:space="preserve">
     <value>Требуется иготовить пропуск</value>
   </data>
@@ -85,16 +76,7 @@
   <data name="Enum_NeedPrintedPass_No" xml:space="preserve">
     <value>Нет</value>
   </data>
-  <data name="Property_ParkingFloorOld" xml:space="preserve">
-    <value>Парковка на уровне (уст)</value>
-  </data>
-  <data name="Property_Action" xml:space="preserve">
-    <value>Требуемое действие</value>
-  </data>
-  <data name="Enum_Action_NewPass" xml:space="preserve">
-    <value>Выпустить новый пропуск</value>
-  </data>
-  <data name="Enum_Action_ContinuePass" xml:space="preserve">
+  <data name="Enum_Action_StopPass" xml:space="preserve">
     <value>Продлить существующий пропуск</value>
   </data>
   <data name="ControlGroup_edc742810fc34ba8bcebbc443bc51b4e" xml:space="preserve">

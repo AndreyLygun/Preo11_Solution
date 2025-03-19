@@ -67,22 +67,34 @@
   <data name="CollectionDisplayName" xml:space="preserve">
     <value>Пропуска для сотрудников</value>
   </data>
-  <data name="ControlGroup_3aacd9b5a4c54b0f96bca9bd641f34ef" xml:space="preserve">
-    <value />
+  <data name="Action_DownloadPhotos" xml:space="preserve">
+    <value>Скачать фотографии</value>
   </data>
   <data name="Property_EmployeePhoto" xml:space="preserve">
-    <value>Фото сотрудника</value>
+    <value>Фото сотрудников</value>
   </data>
   <data name="Property_EmployeeName" xml:space="preserve">
     <value>ФИО сотрудника</value>
   </data>
-  <data name="Property_EmployeePosition" xml:space="preserve">
-    <value>Должность сотрудника</value>
+  <data name="Property_EmployeePhotoFileName" xml:space="preserve">
+    <value>Название файла с фотографиями</value>
   </data>
-  <data name="Property_EmployeesInAttachedFile" xml:space="preserve">
-    <value>Список сотрудников находится в прикреплённом файле</value>
+  <data name="ControlGroup_edc742810fc34ba8bcebbc443bc51b4e" xml:space="preserve">
+    <value>Сотрудники</value>
   </data>
-  <data name="ControlGroup_cc00e22674bc4c099b3776cda5fda785" xml:space="preserve">
+  <data name="Property_Employees" xml:space="preserve">
+    <value>Cотрудники</value>
+  </data>
+  <data name="Action_DownloadPhotosDescription" xml:space="preserve">
+    <value>Скачать фотографии для пропусков</value>
+  </data>
+  <data name="Action_DownloadPhotosHint" xml:space="preserve">
+    <value>Скачать фотографии для пропусков</value>
+  </data>
+  <data name="Action_DownloadPhotosConfirmationMessage" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Action_DownloadPhotosConfirmationDescription" xml:space="preserve">
     <value />
   </data>
 </root>

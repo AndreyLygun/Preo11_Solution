@@ -65,13 +65,13 @@
     <value>Модель</value>
   </data>
   <data name="Property_CarNumber" xml:space="preserve">
-    <value>Номер</value>
+    <value>Госномер</value>
   </data>
   <data name="Property_ValidFrom" xml:space="preserve">
     <value>Действителен с</value>
   </data>
   <data name="Property_ValidTill" xml:space="preserve">
-    <value>Дейтвителен до</value>
+    <value>Дейcтвителен до</value>
   </data>
   <data name="Property_Renter" xml:space="preserve">
     <value>Арендатор</value>
@@ -89,6 +89,24 @@
     <value>Автомобили на въезд</value>
   </data>
   <data name="Instruction" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Property_ParkingPlaceOld" xml:space="preserve">
+    <value>Парковочное место</value>
+  </data>
+  <data name="Property_ParkingPlace" xml:space="preserve">
+    <value>Парковочное место</value>
+  </data>
+  <data name="AdditionalInfoTemplate" xml:space="preserve">
     <value>Список автомобилей, для которых были оформлены пропуски на въезд</value>
+  </data>
+  <data name="FilterPanel_ValidOn_6e9149250b544f26b515d9f14c477acd" xml:space="preserve">
+    <value>Действителен на</value>
+  </data>
+  <data name="FilterPanel_Today_d6efd8e63e8040b2bd91ff1daa76fe85" xml:space="preserve">
+    <value>Сегодня</value>
+  </data>
+  <data name="FilterPanel_Tomorrow_8b92e4b10de24cea98ed11f7a3edaee5" xml:space="preserve">
+    <value>Завтра</value>
   </data>
 </root>

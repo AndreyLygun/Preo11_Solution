@@ -35,9 +35,11 @@
   "IconResourcesKeys": [],
   "IntegrationServiceName": "ServiceRequestsRenter",
   "IsVisible": false,
+  "LookupMode": "Popup",
   "OperationsClass": "",
   "Overridden": [
-    "IsVisible"
+    "IsVisible",
+    "LookupMode"
   ],
   "Properties": [
     {

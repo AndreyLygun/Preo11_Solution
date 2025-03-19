@@ -13,18 +13,12 @@ namespace ricoh.ServiceRequests
     public override void BeforeSave(Sungero.Domain.BeforeSaveEventArgs e)
     {
       base.BeforeSave(e);
-      if (_obj.EmployeesInAttachedFile??false) {
-        _obj.Subject = "Несколько сотрудников";
-      } else {
-        _obj.Subject = _obj.EmployeeName + " (" + _obj.EmployeePosition + ")";
-      }
-
-    }
-
-    public override void Created(Sungero.Domain.CreatedEventArgs e)
-    {
-      base.Created(e);
-      _obj.EmployeesInAttachedFile = false;
+      var names = new List<string>();
+      foreach(var emp in _obj.Employees) {
+        if (!string.IsNullOrWhiteSpace(emp.Name))
+          names.Add(emp.Name.Split(' ')[0]);
+        }
+      _obj.Subject = Functions.Module.List2SmartStr(names, 5, 50);
     }
   }
 

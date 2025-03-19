@@ -17,8 +17,7 @@
         "NameGuid": "461f45f8-90aa-46b0-b88c-c752a65b642a",
         "Name": "Visitors",
         "EntityTypeId": "7aff79f7-1e7f-43e8-853e-84eb5af7aaa8",
-        "GroupId": "b0c7919b-6a02-4af6-ad0e-0d8eb4ff00d0",
-        "IsVisible": false
+        "GroupId": "b0c7919b-6a02-4af6-ad0e-0d8eb4ff00d0"
       },
       {
         "$type": "Sungero.Metadata.CoverEntityListActionMetadata, Sungero.Metadata",
@@ -73,7 +72,7 @@
         "Name": "TimeSpans",
         "EntityTypeId": "46d20a39-e6c1-4e02-89f7-c5f85eec8088",
         "GroupId": "dd243d0b-97f7-44de-8783-5d610ecd6230",
-        "PreviousItemGuid": "e71373ae-cd0b-4671-bae2-a372035e1d6d"
+        "PreviousItemGuid": "cf0bd2bf-864a-4944-af95-46fba5182928"
       },
       {
         "$type": "Sungero.Metadata.CoverEntityListActionMetadata, Sungero.Metadata",
@@ -112,6 +111,14 @@
         "Name": "Renters",
         "EntityTypeId": "97222148-c6d3-40d0-bf61-47f03dbbdf54",
         "GroupId": "dd243d0b-97f7-44de-8783-5d610ecd6230"
+      },
+      {
+        "$type": "Sungero.Metadata.CoverEntityListActionMetadata, Sungero.Metadata",
+        "NameGuid": "cf0bd2bf-864a-4944-af95-46fba5182928",
+        "Name": "ParkingPlaces",
+        "EntityTypeId": "33deea65-1d95-44dd-a39d-9a7252b1b99a",
+        "GroupId": "dd243d0b-97f7-44de-8783-5d610ecd6230",
+        "PreviousItemGuid": "e71373ae-cd0b-4671-bae2-a372035e1d6d"
       },
       {
         "$type": "Sungero.Metadata.CoverEntityListActionMetadata, Sungero.Metadata",
@@ -298,12 +305,12 @@
       "PreviousItemId": "241d8dd5-432a-4761-9659-b96dbf73af48"
     },
     {
-      "ItemId": "7d1f6fe4-c84d-430d-b9fb-8590ebf90445",
+      "ItemId": "33deea65-1d95-44dd-a39d-9a7252b1b99a",
       "PreviousItemId": "2560a3ed-af5b-41bb-bde2-b99f9acf12ce"
     },
     {
-      "ItemId": "0ad8f36a-2cde-4b18-9549-e17d9e51c7b4",
-      "PreviousItemId": "7d1f6fe4-c84d-430d-b9fb-8590ebf90445"
+      "ItemId": "7d1f6fe4-c84d-430d-b9fb-8590ebf90445",
+      "PreviousItemId": "33deea65-1d95-44dd-a39d-9a7252b1b99a"
     }
   ],
   "HandledEvents": [
@@ -451,7 +458,7 @@
   "SharedAssemblyName": "ricoh.ServiceRequests.Shared",
   "SharedNamespace": "ricoh.ServiceRequests.Shared",
   "SpecialFolders": [],
-  "Version": "0.0.1.22",
+  "Version": "0.0.1.29",
   "Widgets": [],
   "Versions": [
     {
