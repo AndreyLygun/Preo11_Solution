@@ -309,8 +309,12 @@
       "PreviousItemId": "2560a3ed-af5b-41bb-bde2-b99f9acf12ce"
     },
     {
-      "ItemId": "7d1f6fe4-c84d-430d-b9fb-8590ebf90445",
+      "ItemId": "26058965-01c0-4b03-8b93-82474c22b088",
       "PreviousItemId": "33deea65-1d95-44dd-a39d-9a7252b1b99a"
+    },
+    {
+      "ItemId": "7d1f6fe4-c84d-430d-b9fb-8590ebf90445",
+      "PreviousItemId": "26058965-01c0-4b03-8b93-82474c22b088"
     }
   ],
   "HandledEvents": [
@@ -457,8 +461,65 @@
   "ServerNamespace": "ricoh.ServiceRequests.Server",
   "SharedAssemblyName": "ricoh.ServiceRequests.Shared",
   "SharedNamespace": "ricoh.ServiceRequests.Shared",
-  "SpecialFolders": [],
-  "Version": "0.0.1.29",
+  "SpecialFolders": [
+    {
+      "NameGuid": "26058965-01c0-4b03-8b93-82474c22b088",
+      "Name": "Cars",
+      "DefaultContentType": "ac86d580-b326-4345-a0bd-7277d2f47ad0",
+      "DisplayType": "Module",
+      "FilterPanel": {
+        "NameGuid": "65b12fa3-6993-446e-a83f-abcb6a85f514",
+        "Name": "FilterPanel",
+        "Controls": [
+          {
+            "$type": "Sungero.Metadata.FilterGroupMetadata, Sungero.Metadata",
+            "NameGuid": "27bb333b-9c23-411c-93c9-d09fd7e7d777",
+            "Name": "Group"
+          },
+          {
+            "$type": "Sungero.Metadata.FilterNavigationMetadata, Sungero.Metadata",
+            "NameGuid": "5e25b375-d991-4935-bb7a-862032f8f18e",
+            "Name": "Renter",
+            "EntityGuid": "97222148-c6d3-40d0-bf61-47f03dbbdf54",
+            "ParentGuid": "27bb333b-9c23-411c-93c9-d09fd7e7d777"
+          },
+          {
+            "$type": "Sungero.Metadata.FilterListMetadata, Sungero.Metadata",
+            "NameGuid": "3a8f6c44-b2fc-48db-b792-7204598730c3",
+            "Name": "Date",
+            "ParentGuid": "27bb333b-9c23-411c-93c9-d09fd7e7d777",
+            "PreviousGuid": "5e25b375-d991-4935-bb7a-862032f8f18e"
+          },
+          {
+            "$type": "Sungero.Metadata.FilterListItemMetadata, Sungero.Metadata",
+            "NameGuid": "e7e8e0e2-9d78-4e2d-a663-e00e01738f17",
+            "Name": "Today",
+            "ParentGuid": "3a8f6c44-b2fc-48db-b792-7204598730c3"
+          },
+          {
+            "$type": "Sungero.Metadata.FilterListItemMetadata, Sungero.Metadata",
+            "NameGuid": "28e1faa3-85c4-401f-97c0-178232a265fd",
+            "Name": "Tomorrow",
+            "ParentGuid": "3a8f6c44-b2fc-48db-b792-7204598730c3",
+            "PreviousGuid": "e7e8e0e2-9d78-4e2d-a663-e00e01738f17"
+          }
+        ]
+      },
+      "HandledEvents": [
+        "DataQueryServer"
+      ],
+      "IsShow": false,
+      "Kind": "Computable",
+      "NeedShowMarkedCount": false,
+      "OpenCardByDefault": true,
+      "SupportedDescendantsTypes": [
+        "b2d7bcc9-21a9-48bc-9c15-0f5aa8684f5e",
+        "8ce2b667-494d-443b-b389-a653002d304c",
+        "4a82dc79-85fe-40b9-a5ab-b5592f293aa7"
+      ]
+    }
+  ],
+  "Version": "0.0.1.30",
   "Widgets": [],
   "Versions": [
     {

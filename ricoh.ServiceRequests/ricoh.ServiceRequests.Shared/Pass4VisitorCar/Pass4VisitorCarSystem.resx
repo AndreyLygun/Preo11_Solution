@@ -59,13 +59,13 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="DisplayName" xml:space="preserve">
-    <value>Разовый автомобильный пропуск</value>
+    <value>Заявка на гостеваую парковку</value>
   </data>
   <data name="AccusativeDisplayName" xml:space="preserve">
-    <value>Разовый автомобильный пропуск</value>
+    <value>Заявка на гостеваую парковку</value>
   </data>
   <data name="CollectionDisplayName" xml:space="preserve">
-    <value>Разовые автомобильные пропуска</value>
+    <value>Заявки на гостеваую парковку</value>
   </data>
   <data name="Enum_ParkingType_PrivateParking" xml:space="preserve">
     <value>Парковка арендатора</value>

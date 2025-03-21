@@ -119,6 +119,19 @@
           "RowNumber": 0,
           "RowSpan": 1,
           "Settings": []
+        },
+        {
+          "$type": "Sungero.Metadata.ControlMetadata, Sungero.Metadata",
+          "NameGuid": "d692e985-17b4-4cd0-a0e9-d6c3ba2099a9",
+          "Name": "Visitors",
+          "ColumnNumber": 0,
+          "ColumnSpan": 2,
+          "DataBinderTypeName": "Sungero.Presentation.CommonDataBinders.TextEditorToTextBinder",
+          "ParentGuid": "edc74281-0fc3-4ba8-bceb-bc443bc51b4e",
+          "PropertyGuid": "d583953e-2bce-4c08-a587-dbabb0524e79",
+          "RowNumber": 4,
+          "RowSpan": 1,
+          "Settings": []
         }
       ],
       "IsAncestorMetadata": true,
@@ -150,7 +163,7 @@
       "Overridden": [
         "PreviousPropertyGuid"
       ],
-      "PreviousPropertyGuid": "84dccb05-79d7-40be-b6cd-5059042c2b21"
+      "PreviousPropertyGuid": "d583953e-2bce-4c08-a587-dbabb0524e79"
     },
     {
       "$type": "Sungero.Metadata.CollectionPropertyMetadata, Sungero.Metadata",
@@ -192,7 +205,28 @@
         }
       ],
       "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.DropDownEditorToEnumerationBinder",
-      "PreviousPropertyGuid": "d583953e-2bce-4c08-a587-dbabb0524e79"
+      "PreviousPropertyGuid": "fb67613a-bb27-4ca6-b8d7-d1147ece123a"
+    },
+    {
+      "$type": "Sungero.Metadata.EnumPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "12576f53-edc1-468f-bd56-7be5506f4449",
+      "Name": "NeedNFCPass",
+      "Code": "NeedNFCPass",
+      "DirectValues": [
+        {
+          "NameGuid": "5d55a72c-12a9-42f0-a321-48b542f6189c",
+          "Name": "Yes",
+          "Code": "Yes"
+        },
+        {
+          "NameGuid": "1a5c1641-39ae-4651-8f65-c5bb6ec3d889",
+          "Name": "No",
+          "Code": "No"
+        }
+      ],
+      "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.DropDownEditorToEnumerationBinder",
+      "PreviousPropertyGuid": "84dccb05-79d7-40be-b6cd-5059042c2b21",
+      "Versions": []
     }
   ],
   "PublicStructures": [],

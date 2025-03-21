@@ -22,9 +22,11 @@ namespace ricoh.ServiceRequests
     public override void BeforeSave(Sungero.Domain.BeforeSaveEventArgs e)
     {
       base.BeforeSave(e);      
-      string action = "Постоянная парковка ";
-      var subject = action + _obj.CarModel + "/" +_obj.CarNumber;;
-      _obj.Subject = subject.Substring(0, Math.Min(subject.Length, 250));           
+      var subject = _obj.CarModel + " / " +_obj.CarNumber;
+      _obj.Subject = subject.Substring(0, Math.Min(subject.Length, 120));
+      var ValidOn = _obj.ValidOn.Value.ToShortDateString();
+      var parkingPlace = "место " + _obj.ParkingPlace?.Name;
+      _obj.Name = $"Постоянная парковка ({_obj.Renter.Name} на {ValidOn}: {_obj.Subject}, {parkingPlace})";      
     }
   }
 

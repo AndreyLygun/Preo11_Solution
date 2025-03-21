@@ -62,13 +62,13 @@
     <value>Сведения о ТМЦ</value>
   </data>
   <data name="DisplayName" xml:space="preserve">
-    <value>Постоянный пропуск на перемещение ТМЦ</value>
+    <value>Постоянный пропуск на ввоз-вывоз ТМЦ</value>
   </data>
   <data name="AccusativeDisplayName" xml:space="preserve">
-    <value>Постоянный пропуск на перемещение ТМЦ</value>
+    <value>Постоянный пропуск на ввоз-вывоз ТМЦ</value>
   </data>
   <data name="CollectionDisplayName" xml:space="preserve">
-    <value>Постоянные пропуск на перемещение ТМЦ</value>
+    <value>Постоянный пропуск на ввоз-вывоз ТМЦ</value>
   </data>
   <data name="Property_Cars" xml:space="preserve">
     <value>Транспортные средства</value>

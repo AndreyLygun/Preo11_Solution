@@ -19,15 +19,19 @@ namespace ricoh.ServiceRequests
       foreach(var asset in  _obj.Inventory.Take(4)) {
         assets.Add(asset.Name);
       }
-      _obj.Subject = "Внутр.перемещение ТМЦ"
-        + " (" + Functions.Module.List2SmartStr(assets, 3, 250)+")";      
+      var assetsNames = Functions.Module.List2SmartStr(assets, 3, 250);
+      var ValidOn = _obj.ValidOn.Value.ToShortDateString();
+      _obj.Subject = assetsNames;
+      _obj.Name = $"Внутр.перемещение ТМЦ ({_obj.Renter.Name} на {ValidOn}: {assetsNames})";
     }
+    
+
 
     public override void Created(Sungero.Domain.CreatedEventArgs e)
     {
       base.Created(e);
       _obj.Elevator = false;
-      _obj.StorageRoom = false;      
+      _obj.StorageRoom = false;
     }
   }
 

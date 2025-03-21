@@ -199,4 +199,22 @@
   <data name="CoverDescription_ParkingPlaces" xml:space="preserve">
     <value>Парковочные места и их закрепление за арендаторами.</value>
   </data>
+  <data name="sf_26058965_01c0_4b03_8b93_82474c22b088" xml:space="preserve">
+    <value>Автомобили</value>
+  </data>
+  <data name="FilterPanel_Renter_5e25b375d9914935bb7a862032f8f18e" xml:space="preserve">
+    <value>Арендатор</value>
+  </data>
+  <data name="FilterPanel_Group_27bb333b9c23411c93c9d09fd7e7d777" xml:space="preserve">
+    <value>Отбор</value>
+  </data>
+  <data name="FilterPanel_Date_3a8f6c44b2fc48dbb7927204598730c3" xml:space="preserve">
+    <value>Дата</value>
+  </data>
+  <data name="FilterPanel_Today_e7e8e0e29d784e2da663e00e01738f17" xml:space="preserve">
+    <value>Сегодня</value>
+  </data>
+  <data name="FilterPanel_Tomorrow_28e1faa385c4401f97c0178232a265fd" xml:space="preserve">
+    <value>Завтра</value>
+  </data>
 </root>

@@ -18,8 +18,10 @@ namespace ricoh.ServiceRequests
       if (visitors.Count() > 4) {
         _obj.Subject = "Количество посетителей: " + visitors.Count();
       } else {
-        _obj.Subject = "Посетители: " + Functions.Module.List2SmartStr(visitors.ToList(), 4, 120);
+        _obj.Subject = Functions.Module.List2SmartStr(visitors.ToList(), 4, 120);
       }
+      var ValidOn = _obj.ValidOn.Value.ToShortDateString();
+      _obj.Name = $"Посетители ({_obj.Renter.Name} на {ValidOn}: {_obj.Subject})";        
     }
   }
 

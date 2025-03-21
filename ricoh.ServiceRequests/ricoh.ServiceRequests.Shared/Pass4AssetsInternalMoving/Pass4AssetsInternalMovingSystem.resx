@@ -86,13 +86,13 @@
     <value>СВЕДЕНИЯ О ТМЦ</value>
   </data>
   <data name="DisplayName" xml:space="preserve">
-    <value>Разовый пропуск на внутреннее перемещение ТМЦ</value>
+    <value>Внутреннее перемещение ТМЦ</value>
   </data>
   <data name="AccusativeDisplayName" xml:space="preserve">
-    <value>Разовый пропуск на внутреннее перемещение ТМЦ</value>
+    <value>Внутреннее перемещение ТМЦ</value>
   </data>
   <data name="CollectionDisplayName" xml:space="preserve">
-    <value>Разовые пропуска на внутреннее перемещение ТМЦ</value>
+    <value>Внутренние перемещения ТМЦ</value>
   </data>
   <data name="Property_ElevatorTimeSpanString" xml:space="preserve">
     <value>Время использования лифта - для шаблона</value>

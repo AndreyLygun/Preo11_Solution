@@ -59,13 +59,13 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="DisplayName" xml:space="preserve">
-    <value>Гостевой пропуск</value>
+    <value>Пропуск для посетителей</value>
   </data>
   <data name="AccusativeDisplayName" xml:space="preserve">
-    <value>Гостевой пропуск</value>
+    <value>Пропуск для посетителей</value>
   </data>
   <data name="CollectionDisplayName" xml:space="preserve">
-    <value>Гостевые пропуска</value>
+    <value>Заявки на пропуска для посетителей</value>
   </data>
   <data name="ControlGroup_edc742810fc34ba8bcebbc443bc51b4e" xml:space="preserve">
     <value>Сведения о посещении</value>

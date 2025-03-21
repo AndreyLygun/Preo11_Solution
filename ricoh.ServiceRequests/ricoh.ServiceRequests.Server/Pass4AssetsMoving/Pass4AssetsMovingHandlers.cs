@@ -32,9 +32,12 @@ namespace ricoh.ServiceRequests
       var assets = new List<string> {};
       foreach(var asset in  _obj.Inventory.Take(4)) {
         assets.Add(asset.Name);
-      }
-      _obj.Subject = _obj.Info.Properties.MovingDirection.GetLocalizedValue(_obj.MovingDirection)
-        + " (" + Functions.Module.List2SmartStr(assets, 3, 250)+")";
+      }     
+      var assetsNames = Functions.Module.List2SmartStr(assets, 3, 250);
+      var direction = _obj.Info.Properties.MovingDirection.GetLocalizedValue(_obj.MovingDirection); 
+      var ValidOn = _obj.ValidOn.Value.ToShortDateString();
+      _obj.Subject = $"{direction} ТМЦ ({assetsNames})";      
+      _obj.Name = $"{direction} ТМЦ ({_obj.Renter.Name} на {ValidOn}: {assetsNames})";      
     }
 
 //      //Sungero.Docflow.DocumentComparisonInfo.ProcessingStatus.Started
