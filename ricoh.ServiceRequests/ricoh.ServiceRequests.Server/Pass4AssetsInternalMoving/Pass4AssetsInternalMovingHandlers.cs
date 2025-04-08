@@ -30,8 +30,6 @@ namespace ricoh.ServiceRequests
     public override void Created(Sungero.Domain.CreatedEventArgs e)
     {
       base.Created(e);
-      _obj.Elevator = false;
-      _obj.StorageRoom = false;
     }
   }
 

@@ -36,10 +36,11 @@ namespace ricoh.ServiceRequests.Server
       CreateDocumentType("Заявка на гостевую парковку", Pass4VisitorCar.ClassTypeGuid, Constants.Module.Pass4VisitorCarGuid);    
       CreateDocumentType("Заявка на постоянную парковку", PermanentPass4Car.ClassTypeGuid, Constants.Module.PermanentPass4Car);      
       CreateDocumentType("Блокировка автомобильного пропуска", StopPermanentPass4Car.ClassTypeGuid, Constants.Module.StopPermanentPass4Car);
+      CreateDocumentType("Изменение постоянной парковки", ChangePermanentParking.ClassTypeGuid, Constants.Module.ChangePermanentParking);
       // ТМЦ
       CreateDocumentType("Разовый ввоз-вывоз ТМЦ", Pass4AssetsMoving.ClassTypeGuid, Constants.Module.Pass4AssetsMovingGuid);
       CreateDocumentType("Внутреннее перемещение ТМЦ", Pass4AssetsInternalMoving.ClassTypeGuid, Constants.Module.Pass4AssetsInternalMovingGuid);
-      CreateDocumentType("Постоянный пропуск на ввоз-вывоз ТМЦ", Pass4PermanentAssetsMoving.ClassTypeGuid, Constants.Module.Pass4PermanentAssetsMoving);
+      CreateDocumentType("Постоянный пропуск на ввоз-вывоз ТМЦ",  Pass4AssetsPermanentMoving.ClassTypeGuid, Constants.Module.Pass4AssetsPermanentMoving);
 
       
       Sites.AccessRights.Grant(Roles.AllUsers, DefaultAccessRightsTypes.Read);
@@ -88,6 +89,7 @@ namespace ricoh.ServiceRequests.Server
     }
     
     public void CreateDocumentType(string Name, Guid ClassTypeGuid, Guid ClassKindGuid) {
+      InitializationLogger.Debug(Name + " " + ClassKindGuid.ToString());
       Sungero.Docflow.PublicInitializationFunctions.Module.CreateDocumentType(Name, ClassTypeGuid, Sungero.Docflow.DocumentType.DocumentFlow.Incoming, false);
       Sungero.Docflow.PublicInitializationFunctions.Module.CreateDocumentKind(Name, Name, Sungero.Docflow.DocumentKind.NumberingType.NotNumerable,
                                                                               Sungero.Docflow.DocumentType.DocumentFlow.Incoming, true, true,

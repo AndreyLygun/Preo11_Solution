@@ -1,0 +1,91 @@
+{
+  "$type": "Sungero.Metadata.EntityMetadata, Sungero.Metadata",
+  "NameGuid": "0d41e3a4-b9ab-4bce-aa94-679c3c34b05a",
+  "Name": "ParkingPlaceCars",
+  "AccessRightsMode": "NoRight",
+  "BaseGuid": "a3d38bf5-0414-41f6-bb33-a4621d2e5a60",
+  "CanBeNavigationPropertyType": true,
+  "Code": "ParkingPlaceCa",
+  "ExtraSearchProperties": [],
+  "IsChildEntity": true,
+  "Properties": [
+    {
+      "$type": "Sungero.Metadata.NavigationPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "6ff84db0-b84d-4aa0-9adc-0338f48500ed",
+      "Name": "ParkingPlace",
+      "CanBeSearch": false,
+      "Code": "ParkingPlace",
+      "EntityGuid": "33deea65-1d95-44dd-a39d-9a7252b1b99a",
+      "IsReferenceToRootEntity": true,
+      "IsShowedInList": false
+    },
+    {
+      "$type": "Sungero.Metadata.StringPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "7dc6caa8-ddfb-42d7-b58f-f6ebcadeb75b",
+      "Name": "Model",
+      "CanBeSearch": false,
+      "Code": "Model",
+      "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToStringBinder",
+      "PreviousPropertyGuid": "6ff84db0-b84d-4aa0-9adc-0338f48500ed",
+      "Versions": []
+    },
+    {
+      "$type": "Sungero.Metadata.StringPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "f5363180-61cd-43da-9ce5-a89d771a9e14",
+      "Name": "Number",
+      "CanBeSearch": false,
+      "Code": "Number",
+      "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToStringBinder",
+      "PreviousPropertyGuid": "7dc6caa8-ddfb-42d7-b58f-f6ebcadeb75b",
+      "Versions": []
+    },
+    {
+      "$type": "Sungero.Metadata.StringPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "f3d297b3-ef7e-4859-a0ce-916e98e6d27a",
+      "Name": "Note",
+      "CanBeSearch": false,
+      "Code": "Note",
+      "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToStringBinder",
+      "PreviousPropertyGuid": "f5363180-61cd-43da-9ce5-a89d771a9e14",
+      "Versions": []
+    },
+    {
+      "$type": "Sungero.Metadata.StringPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "78167650-35fc-436e-9a41-51fcb962923f",
+      "Name": "Changed",
+      "CanBeSearch": false,
+      "Code": "Changed",
+      "IsEnabled": false,
+      "IsShowedInList": false,
+      "IsVisibility": false,
+      "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToStringBinder",
+      "PreviousPropertyGuid": "f3d297b3-ef7e-4859-a0ce-916e98e6d27a"
+    }
+  ],
+  "PublicStructures": [],
+  "RibbonCardMetadata": {
+    "NameGuid": "5b3ebcdc-d51e-42d9-b7ec-3d21b436bb31",
+    "Name": "RibbonCard",
+    "Categories": [],
+    "Elements": [],
+    "Groups": [],
+    "IsAncestorMetadata": true,
+    "Pages": [],
+    "RibbonKind": "Card"
+  },
+  "RibbonCollectionMetadata": {
+    "NameGuid": "4faf3759-1858-4ffa-bae3-ea02f2bd491e",
+    "Name": "RibbonCollection",
+    "Categories": [],
+    "Elements": [],
+    "Groups": [],
+    "IsAncestorMetadata": true,
+    "Pages": []
+  },
+  "Versions": [
+    {
+      "Type": "EntityMetadata",
+      "Number": 12
+    }
+  ]
+}

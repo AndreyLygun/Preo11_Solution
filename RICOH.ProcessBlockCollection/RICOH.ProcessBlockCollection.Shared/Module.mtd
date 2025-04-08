@@ -109,7 +109,7 @@
   "SharedAssemblyName": "RICOH.ProcessBlockCollection.Shared",
   "SharedNamespace": "RICOH.ProcessBlockCollection.Shared",
   "SpecialFolders": [],
-  "Version": "0.0.1.20",
+  "Version": "0.0.1.21",
   "Widgets": [],
   "Versions": [
     {

@@ -67,11 +67,11 @@
   <data name="Property_TimeSpan" xml:space="preserve">
     <value>Время использовани лифта (не используется)</value>
   </data>
-  <data name="Property_StorageRoom" xml:space="preserve">
-    <value>Using Storage Room</value>
+  <data name="Property_OldStorageRoom" xml:space="preserve">
+    <value>Using Storage Room (уст)</value>
   </data>
-  <data name="Property_Elevator" xml:space="preserve">
-    <value>Using Elevator</value>
+  <data name="Property_OldElevator" xml:space="preserve">
+    <value>Using Elevator (уст)</value>
   </data>
   <data name="Property_From" xml:space="preserve">
     <value>Откуда</value>
@@ -98,7 +98,7 @@
     <value>Время использования лифта - для шаблона</value>
   </data>
   <data name="Property_ElevatorTimeSpan" xml:space="preserve">
-    <value>Время использования лифта</value>
+    <value>Время использования лифта </value>
   </data>
   <data name="Property_BuildingMaterialsString" xml:space="preserve">
     <value>Строительные материалы для шаблона</value>
@@ -108,5 +108,23 @@
   </data>
   <data name="Property_InventoryString" xml:space="preserve">
     <value>Список ТМЦ (строка)</value>
+  </data>
+  <data name="Property_Elevator" xml:space="preserve">
+    <value>Через грузовой лифт</value>
+  </data>
+  <data name="Enum_Elevator_Yes" xml:space="preserve">
+    <value>Да</value>
+  </data>
+  <data name="Enum_Elevator_No" xml:space="preserve">
+    <value>Нет</value>
+  </data>
+  <data name="Property_StorageRoom" xml:space="preserve">
+    <value>Через комнату временного хранения</value>
+  </data>
+  <data name="Enum_StorageRoom_Yes" xml:space="preserve">
+    <value>Да</value>
+  </data>
+  <data name="Enum_StorageRoom_No" xml:space="preserve">
+    <value>Нет</value>
   </data>
 </root>

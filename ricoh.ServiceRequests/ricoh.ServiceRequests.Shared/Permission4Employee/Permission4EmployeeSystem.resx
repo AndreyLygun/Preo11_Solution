@@ -79,4 +79,7 @@
   <data name="ControlGroup_d23277aebd834073b183e26bd3bb22a5" xml:space="preserve">
     <value />
   </data>
+  <data name="Property_Access" xml:space="preserve">
+    <value>Доступ</value>
+  </data>
 </root>

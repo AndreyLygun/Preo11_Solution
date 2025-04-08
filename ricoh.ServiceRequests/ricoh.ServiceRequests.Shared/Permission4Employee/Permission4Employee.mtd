@@ -91,10 +91,10 @@
           "Name": "ControlGroup",
           "ColumnDefinitions": [
             {
-              "Percentage": 50.0
+              "Percentage": 66.66
             },
             {
-              "Percentage": 50.0
+              "Percentage": 33.33
             }
           ],
           "ColumnNumber": 0,
@@ -128,6 +128,24 @@
           "RowNumber": 0,
           "RowSpan": 1,
           "Settings": []
+        },
+        {
+          "$type": "Sungero.Metadata.ControlMetadata, Sungero.Metadata",
+          "NameGuid": "8cb1fc92-78f4-41cb-8abb-286d1982c3dd",
+          "Name": "Access",
+          "ColumnNumber": 0,
+          "ColumnSpan": 2,
+          "DataBinderTypeName": "Sungero.Presentation.CommonDataBinders.MultiSelectEditorToCollectionBinder",
+          "ParentGuid": "d23277ae-bd83-4073-b183-e26bd3bb22a5",
+          "PropertyGuid": "9a5dad86-8fa7-49d6-bdf9-523e2729cce0",
+          "RowNumber": 1,
+          "RowSpan": 1,
+          "Settings": [
+            {
+              "Name": "NavigationPropertyGuid",
+              "Value": "41e8d9fd-0bda-4e7b-b7be-cf5ecec5ea9a"
+            }
+          ]
         }
       ],
       "IsAncestorMetadata": true,
@@ -194,6 +212,15 @@
       "Code": "Permisssion",
       "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToStringBinder",
       "PreviousPropertyGuid": "f65391b4-3e9b-4622-9e88-8e605d2bee60"
+    },
+    {
+      "$type": "Sungero.Metadata.CollectionPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "9a5dad86-8fa7-49d6-bdf9-523e2729cce0",
+      "Name": "Access",
+      "Code": "Permission4Emp",
+      "EntityGuid": "82e56b20-c248-4f97-a2de-b783a30b85ef",
+      "IsShowedInList": false,
+      "PreviousPropertyGuid": "fb67613a-bb27-4ca6-b8d7-d1147ece123a"
     }
   ],
   "PublicStructures": [],

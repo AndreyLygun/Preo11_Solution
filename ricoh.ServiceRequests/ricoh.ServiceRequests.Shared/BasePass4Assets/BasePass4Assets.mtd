@@ -1,0 +1,189 @@
+{
+  "$type": "Sungero.Metadata.DocumentMetadata, Sungero.Content.Shared",
+  "NameGuid": "84c23c67-02bf-4e5d-b167-40f26b108ce0",
+  "Name": "BasePass4Assets",
+  "AccessRightsMode": "Both",
+  "BaseGuid": "ac86d580-b326-4345-a0bd-7277d2f47ad0",
+  "CanBeNavigationPropertyType": true,
+  "CreationAreaMetadata": {
+    "NameGuid": "7322020b-3299-4fba-b9b0-4c995bd2e401",
+    "Name": "CreationArea",
+    "Buttons": [],
+    "IsAncestorMetadata": true,
+    "Versions": []
+  },
+  "ExtraSearchProperties": [],
+  "FilterPanel": {
+    "NameGuid": "80d3ce1a-9a72-443a-8b6c-6c6eef0c8d0f",
+    "Name": "FilterPanel",
+    "Controls": [],
+    "IsAncestorMetadata": true,
+    "Versions": []
+  },
+  "Forms": [
+    {
+      "$type": "Sungero.Metadata.StandaloneFormMetadata, Sungero.Metadata",
+      "NameGuid": "fa03f748-4397-42ef-bdc2-22119af7bf7f",
+      "Name": "Card",
+      "Controls": [
+        {
+          "$type": "Sungero.Metadata.ControlGroupMetadata, Sungero.Metadata",
+          "NameGuid": "b8017e22-88d6-43da-8d6d-8d11917b1dd6",
+          "Name": "Additional",
+          "IsAncestorMetadata": true,
+          "Overridden": [
+            "ColumnDefinitions",
+            "SharedNestedGroupsAlignment"
+          ],
+          "SharedNestedGroupsAlignment": true,
+          "Versions": []
+        },
+        {
+          "$type": "Sungero.Metadata.ControlGroupMetadata, Sungero.Metadata",
+          "NameGuid": "edc74281-0fc3-4ba8-bceb-bc443bc51b4e",
+          "Name": "Additional",
+          "ColumnSpan": 1,
+          "GroupType": "GroupBox",
+          "IsAncestorMetadata": true,
+          "Overridden": [
+            "Controls",
+            "ColumnSpan",
+            "SharedNestedGroupsAlignment",
+            "GroupType"
+          ],
+          "SharedNestedGroupsAlignment": true
+        },
+        {
+          "$type": "Sungero.Metadata.ControlGroupMetadata, Sungero.Metadata",
+          "NameGuid": "ff41af42-82df-4c38-b59a-4ec3bf4f7dfc",
+          "Name": "ControlGroup",
+          "ColumnSpan": 1,
+          "GroupType": "GroupBox",
+          "IsAncestorMetadata": true,
+          "Overridden": [
+            "ColumnSpan"
+          ]
+        },
+        {
+          "$type": "Sungero.Metadata.ControlMetadata, Sungero.Metadata",
+          "NameGuid": "96c19d54-da51-4fdb-b0d4-4cfa14322951",
+          "Name": "Assets",
+          "ColumnNumber": 0,
+          "ColumnSpan": 1,
+          "DataBinderTypeName": "Sungero.Presentation.CommonDataBinders.GridControlToChildCollectionBinder",
+          "ParentGuid": "edc74281-0fc3-4ba8-bceb-bc443bc51b4e",
+          "PropertyGuid": "4a741532-43b0-4c74-8055-3ff0f7968190",
+          "RowNumber": 0,
+          "RowSpan": 1,
+          "Settings": [
+            {
+              "Name": "Height",
+              "Value": 150
+            }
+          ]
+        },
+        {
+          "$type": "Sungero.Metadata.ControlGroupMetadata, Sungero.Metadata",
+          "NameGuid": "dba38989-2d60-4407-88fc-40decd986a48",
+          "Name": "Additional",
+          "ColumnNumber": 0,
+          "ColumnSpan": 1,
+          "ParentGuid": "edc74281-0fc3-4ba8-bceb-bc443bc51b4e",
+          "RowNumber": 1,
+          "RowSpan": 1
+        }
+      ],
+      "IsAncestorMetadata": true,
+      "Overridden": [
+        "SettingsResourceKey"
+      ],
+      "Versions": []
+    }
+  ],
+  "IconResourcesKeys": [],
+  "IntegrationServiceName": "ServiceRequestsPass4Assets",
+  "IsAbstract": true,
+  "OpenCardByDefaultInCollection": true,
+  "OperationsClass": "",
+  "Properties": [
+    {
+      "$type": "Sungero.Metadata.CollectionPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "56cbe741-880f-4e6f-9567-343d08494b59",
+      "Name": "Versions",
+      "EntityGuid": "6e6a72d1-c1f8-4572-b1a6-c374bdaeb558",
+      "IsAncestorMetadata": true,
+      "Overridden": [
+        "EntityGuid"
+      ],
+      "Versions": []
+    },
+    {
+      "$type": "Sungero.Metadata.CollectionPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "15280407-331e-42f6-b263-041a495b66cd",
+      "Name": "Tracking",
+      "EntityGuid": "a87abf67-e755-4b0a-be7e-f30ebd03b504",
+      "IsAncestorMetadata": true,
+      "Overridden": [
+        "EntityGuid"
+      ],
+      "Versions": []
+    },
+    {
+      "$type": "Sungero.Metadata.CollectionPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "4a741532-43b0-4c74-8055-3ff0f7968190",
+      "Name": "Assets",
+      "Code": "BasePass4Asset",
+      "EntityGuid": "fd023ae6-9d17-4f2d-951a-77ab6c9066e3",
+      "HandledEvents": [
+        "ChangedShared"
+      ],
+      "IsShowedInList": false,
+      "PreviousPropertyGuid": "fb67613a-bb27-4ca6-b8d7-d1147ece123a",
+      "Versions": []
+    },
+    {
+      "$type": "Sungero.Metadata.TextPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "54560298-8df2-4a34-9805-0cb0d263b810",
+      "Name": "AssetsString",
+      "CanBeSearch": false,
+      "Code": "AssetsString",
+      "IsEnabled": false,
+      "IsShowedInList": false,
+      "IsVisibility": false,
+      "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToTextBinder",
+      "PreviousPropertyGuid": "4a741532-43b0-4c74-8055-3ff0f7968190",
+      "Versions": []
+    }
+  ],
+  "PublicStructures": [],
+  "ResourcesKeys": [],
+  "RibbonCardMetadata": {
+    "NameGuid": "e96548dd-7548-4230-aa8e-e115bc35f7de",
+    "Name": "RibbonCard",
+    "Categories": [],
+    "Elements": [],
+    "Groups": [],
+    "IsAncestorMetadata": true,
+    "Pages": [],
+    "RibbonKind": "Card"
+  },
+  "RibbonCollectionMetadata": {
+    "NameGuid": "833f02a3-08bc-4b1e-aa01-4573e3493163",
+    "Name": "RibbonCollection",
+    "Categories": [],
+    "Elements": [],
+    "Groups": [],
+    "IsAncestorMetadata": true,
+    "Pages": []
+  },
+  "Versions": [
+    {
+      "Type": "DocumentMetadata",
+      "Number": 2
+    },
+    {
+      "Type": "EntityMetadata",
+      "Number": 12
+    }
+  ]
+}

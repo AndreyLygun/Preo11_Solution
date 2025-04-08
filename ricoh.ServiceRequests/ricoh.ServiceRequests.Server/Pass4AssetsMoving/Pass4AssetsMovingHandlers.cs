@@ -40,52 +40,9 @@ namespace ricoh.ServiceRequests
       _obj.Name = $"{direction} ТМЦ ({_obj.Renter.Name} на {ValidOn}: {assetsNames})";      
     }
 
-//      //Sungero.Docflow.DocumentComparisonInfo.ProcessingStatus.Started
-//      base.BeforeSaveHistory(e);
-//      var x = e.Action;
-//      var report = Reports.GetPass4AssetsMovingReport();
-//      report.Entity = _obj;
-//      if (_obj.HasVersions)
-//      {
-//        report.ExportTo(_obj.LastVersion);
-//        _obj.LastVersion.Save();
-//      }
-//      else
-//        report.ExportTo(_obj);
-//      _obj.Save();           
-    
-    // Добавляем вложение с текстом заявки
-    //      var inventory = "";
-    //      foreach (var inv in _obj.Inventory) {
-    //        inventory += "\n\r" + inv.Name + " (Размер: " + inv.Size + ", кол-во: " + inv.Quantity + ")";
-    //      }
-    //      var descrption =  "Арендатор: " + _obj.Renter.Name +
-    //        "\n\rАвтор заявки: " + _obj.Creator +
-    //        "\n\rОтветственный сотрудник: " + _obj.ResponsibleName + " / " + _obj.ResponsiblePhone + ", " + _obj.ResponsibleMail +
-    //        "\n\rЗАЯВКА ----------------------------" +
-    //        "\n\rНаправление перемещения: " + _obj.Info.Properties.MovingDirection.GetLocalizedValue(_obj.MovingDirection) +
-    //        "\n\rДата перемещения: " + _obj.ValidOn.ToString() +
-    //        "\n\rМесто разгрузки: " + _obj.LoadingSite.Name +
-    //        "\n\rВремя ввоза-вывоза: " + _obj.TimeSpan.Name +
-    //        "\n\rЭтаж: " + _obj.Floor +
-    //        "\n\rГрузовой лифт: " + (_obj.Elevator.Value?"Да":"Нет") +
-    //        "\n\rКомната временного хранения: " + (_obj.StorageRoom.Value?"Да":"Нет") +
-    //        "\n\rТМЦ --------------------------------" +
-    //        inventory +
-    //        "\n\rПЕРЕВОЗЧИК -------------------------" +
-    //        "\n\rАвтомобиль: " + _obj.CarModel + ", г/н " + _obj.CarNumber +
-    //        "\n\rГрузчики:" +
-    //        "\n\r" + _obj.Visitors;
-    //      var ext = "txt";
-    //      Functions.BaseSRQ.UpdateVersion(_obj, descrption, "txt");
-    //  }
-
     public override void Created(Sungero.Domain.CreatedEventArgs e)
     {
       base.Created(e);
-      _obj.Elevator = false;
-      _obj.StorageRoom = false;
-      _obj.BuildingMaterials = false;
     }
   }
 

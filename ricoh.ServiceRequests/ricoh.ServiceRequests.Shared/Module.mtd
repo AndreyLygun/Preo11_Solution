@@ -101,7 +101,7 @@
         "$type": "Sungero.Metadata.CoverEntityListActionMetadata, Sungero.Metadata",
         "NameGuid": "bfb92820-217f-4b73-b219-fa8be06ba177",
         "Name": "PermanentAssetMovin",
-        "EntityTypeId": "091d6865-e645-4477-b925-46edcae77bd2",
+        "EntityTypeId": "f43c57ea-12d8-43f8-b7a1-0d5259c4277b",
         "GroupId": "5fb4d075-5b05-46ee-980f-fa0a1c230b9e",
         "PreviousItemGuid": "5e7d0f67-dd9e-440c-9d1a-f7772f60535a"
       },
@@ -313,8 +313,20 @@
       "PreviousItemId": "33deea65-1d95-44dd-a39d-9a7252b1b99a"
     },
     {
-      "ItemId": "7d1f6fe4-c84d-430d-b9fb-8590ebf90445",
+      "ItemId": "84c23c67-02bf-4e5d-b167-40f26b108ce0",
       "PreviousItemId": "26058965-01c0-4b03-8b93-82474c22b088"
+    },
+    {
+      "ItemId": "f43c57ea-12d8-43f8-b7a1-0d5259c4277b",
+      "PreviousItemId": "84c23c67-02bf-4e5d-b167-40f26b108ce0"
+    },
+    {
+      "ItemId": "0322118b-ccaf-4b52-9078-c3b592ddf9c3",
+      "PreviousItemId": "f43c57ea-12d8-43f8-b7a1-0d5259c4277b"
+    },
+    {
+      "ItemId": "7d1f6fe4-c84d-430d-b9fb-8590ebf90445",
+      "PreviousItemId": "0322118b-ccaf-4b52-9078-c3b592ddf9c3"
     }
   ],
   "HandledEvents": [
@@ -337,6 +349,14 @@
   ],
   "PublicConstants": [
     {
+      "Name": "ChangePermanentParking",
+      "ParentClasses": [
+        "Module"
+      ],
+      "TypeName": "System.Guid",
+      "Value": "new System.Guid(\"6A8A2C77-1839-4A23-8B11-2348B5E0693E\")"
+    },
+    {
       "Name": "Pass4AssetsInternalMovingGuid",
       "ParentClasses": [
         "Module"
@@ -351,6 +371,14 @@
       ],
       "TypeName": "System.Guid",
       "Value": "new System.Guid(\"3FED4EE8-1BA7-4AF7-925D-65CD116D99C4\")"
+    },
+    {
+      "Name": "Pass4AssetsPermanentMoving",
+      "ParentClasses": [
+        "Module"
+      ],
+      "TypeName": "System.Guid",
+      "Value": "new System.Guid(\"5B971A91-4605-46EE-A89E-66E98F9566FE\")"
     },
     {
       "Name": "Pass4PermanentAssetsMoving",
@@ -519,7 +547,7 @@
       ]
     }
   ],
-  "Version": "0.0.1.30",
+  "Version": "0.0.1.31",
   "Widgets": [],
   "Versions": [
     {

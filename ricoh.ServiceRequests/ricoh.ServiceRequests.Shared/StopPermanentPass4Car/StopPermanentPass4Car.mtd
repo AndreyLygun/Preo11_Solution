@@ -5,6 +5,8 @@
   "AccessRightsMode": "Both",
   "BaseGuid": "ac86d580-b326-4345-a0bd-7277d2f47ad0",
   "CanBeNavigationPropertyType": true,
+  "CanBeSearch": false,
+  "CanBeUsedInIntegration": false,
   "CreationAreaMetadata": {
     "NameGuid": "7322020b-3299-4fba-b9b0-4c995bd2e401",
     "Name": "CreationArea",
@@ -175,13 +177,18 @@
     "AfterSaveServer",
     "RefreshClient"
   ],
+  "HideFromCreationArea": true,
   "IconResourcesKeys": [],
   "IntegrationServiceName": "ServiceRequestsStopPermanentPass4Car",
   "IsVisible": false,
-  "OpenCardByDefaultInCollection": true,
   "OperationsClass": "",
   "Overridden": [
-    "IsVisible"
+    "IsVisible",
+    "CanBeSearch",
+    "HideFromCreationArea",
+    "NeedWriteHistory",
+    "OpenCardByDefaultInCollection",
+    "CanBeUsedInIntegration"
   ],
   "Properties": [
     {

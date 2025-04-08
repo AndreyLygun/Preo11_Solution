@@ -1,0 +1,68 @@
+{
+  "$type": "Sungero.Metadata.EntityMetadata, Sungero.Metadata",
+  "NameGuid": "0557ccc5-f840-4caa-b861-4672faddc5f6",
+  "Name": "ParkingPlaceDrivers",
+  "AccessRightsMode": "NoRight",
+  "BaseGuid": "a3d38bf5-0414-41f6-bb33-a4621d2e5a60",
+  "CanBeNavigationPropertyType": true,
+  "Code": "ParkingPlaceDr",
+  "ExtraSearchProperties": [],
+  "IsChildEntity": true,
+  "Properties": [
+    {
+      "$type": "Sungero.Metadata.NavigationPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "2dbe3e88-164c-490d-ab05-2137a21d97d5",
+      "Name": "ParkingPlace",
+      "CanBeSearch": false,
+      "Code": "ParkingPlace",
+      "EntityGuid": "33deea65-1d95-44dd-a39d-9a7252b1b99a",
+      "IsReferenceToRootEntity": true,
+      "IsShowedInList": false
+    },
+    {
+      "$type": "Sungero.Metadata.StringPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "9b4c9558-cee0-4158-afcd-d0ea3080450d",
+      "Name": "Name",
+      "CanBeSearch": false,
+      "Code": "Name",
+      "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToStringBinder",
+      "PreviousPropertyGuid": "2dbe3e88-164c-490d-ab05-2137a21d97d5"
+    },
+    {
+      "$type": "Sungero.Metadata.StringPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "c5e7ac6a-03ec-44ec-bbc6-4402ddfe5cce",
+      "Name": "Changed",
+      "CanBeSearch": false,
+      "Code": "Changed",
+      "IsEnabled": false,
+      "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToStringBinder",
+      "PreviousPropertyGuid": "9b4c9558-cee0-4158-afcd-d0ea3080450d"
+    }
+  ],
+  "PublicStructures": [],
+  "RibbonCardMetadata": {
+    "NameGuid": "0df05292-8258-4fde-b469-631b1554eb01",
+    "Name": "RibbonCard",
+    "Categories": [],
+    "Elements": [],
+    "Groups": [],
+    "IsAncestorMetadata": true,
+    "Pages": [],
+    "RibbonKind": "Card"
+  },
+  "RibbonCollectionMetadata": {
+    "NameGuid": "7c9e7e25-07a7-49db-a144-77dbe45b58fd",
+    "Name": "RibbonCollection",
+    "Categories": [],
+    "Elements": [],
+    "Groups": [],
+    "IsAncestorMetadata": true,
+    "Pages": []
+  },
+  "Versions": [
+    {
+      "Type": "EntityMetadata",
+      "Number": 12
+    }
+  ]
+}

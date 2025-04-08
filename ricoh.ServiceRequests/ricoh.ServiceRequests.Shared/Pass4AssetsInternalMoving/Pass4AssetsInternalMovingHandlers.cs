@@ -26,14 +26,12 @@ namespace ricoh.ServiceRequests
     public virtual void ElevatorTimeSpanChanged(Sungero.Domain.Shared.CollectionPropertyChangedEventArgs e)
     {
       if (_obj.ElevatorTimeSpan.Count > 0) {
-        _obj.Elevator = true;
         var s = "";
         foreach(var span in _obj.ElevatorTimeSpan) {
-          s = s + span.Name + "; ";
+          s = s + span.Name + "; ";          
         }
         _obj.ElevatorTimeSpanString = s;
       } else {
-        _obj.Elevator = false;
         _obj.ElevatorTimeSpanString = "Лифт не требуется";
       }
     }

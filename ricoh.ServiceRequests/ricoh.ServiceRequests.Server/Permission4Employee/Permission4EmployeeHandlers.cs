@@ -7,6 +7,16 @@ using ricoh.ServiceRequests.Permission4Employee;
 
 namespace ricoh.ServiceRequests
 {
+  partial class Permission4EmployeeAccessSitePropertyFilteringServerHandler<T>
+  {
+
+    public virtual IQueryable<T> AccessSiteFiltering(IQueryable<T> query, Sungero.Domain.PropertyFilteringEventArgs e)
+    {
+      query = query.Where(s => s.Type == Site.Type.PassSite);
+      return query;
+    }
+  }
+
   partial class Permission4EmployeeServerHandlers
   {
 

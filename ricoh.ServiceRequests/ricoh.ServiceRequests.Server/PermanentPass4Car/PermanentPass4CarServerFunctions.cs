@@ -10,5 +10,15 @@ namespace ricoh.ServiceRequests.Server
   partial class PermanentPass4CarFunctions
   {
 
+    /// <summary>
+    /// 
+    /// </summary>       
+    /// 
+    [Public, Remote]
+    public static IChangePermanentParking CreateChangingRequest()
+    {
+      return ChangePermanentParkings.Create();      
+    }
+
   }
 }

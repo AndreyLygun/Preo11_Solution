@@ -10,33 +10,16 @@ namespace ricoh.ServiceRequests
   partial class Pass4AssetsMovingSharedHandlers
   {
 
-    public virtual void BuildingMaterialsChanged(Sungero.Domain.Shared.BooleanPropertyChangedEventArgs e)
-    {
-      _obj.BuildingMaterialsString = (_obj.BuildingMaterials??false)?"Да":"Нет";
-    }
-
-    public virtual void ElevatorChanged(Sungero.Domain.Shared.BooleanPropertyChangedEventArgs e)
-    {
-      _obj.ElevatorString = (_obj.Elevator??true)?"Требуется":"Не требуется";
-    }
-
-    public virtual void StorageRoomChanged(Sungero.Domain.Shared.BooleanPropertyChangedEventArgs e)
-    {
-      _obj.StorageRoomString = (_obj.StorageRoom??true)?"Требуется":"Не требуется";
-    }
-
     public virtual void ElevatorTimeSpanChanged(Sungero.Domain.Shared.CollectionPropertyChangedEventArgs e)
     {
       if (_obj.ElevatorTimeSpan.Count > 0) {
-        _obj.Elevator = true;
         var s = "";
         foreach(var span in _obj.ElevatorTimeSpan) {
           s = s + span.Name + "; ";
         }
         _obj.ElevatorTimeSpanString = s;
       } else {
-        _obj.Elevator = false;
-        _obj.ElevatorTimeSpanString = "Лифт не требуется";
+        _obj.ElevatorTimeSpanString = "не указано";
       }
     }
 

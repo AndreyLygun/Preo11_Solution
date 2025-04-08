@@ -9,6 +9,18 @@ namespace ricoh.ServiceRequests.Client
 {
   partial class PermanentPass4CarActions
   {
+    public virtual void CreateChangingRequest(Sungero.Domain.Client.ExecuteActionArgs e)
+    {
+      var changingRequest = Functions.PermanentPass4Car.Remote.CreateChangingRequest();
+      changingRequest.PermanentParkingPass = _obj;
+      changingRequest.Show();
+    }
+
+    public virtual bool CanCreateChangingRequest(Sungero.Domain.Client.CanExecuteActionArgs e)
+    {
+      return _obj.RequestState == BaseSRQ.RequestState.Approved;
+    }
+
     public override void ShowPrintForm(Sungero.Domain.Client.ExecuteActionArgs e)
     {      
     }

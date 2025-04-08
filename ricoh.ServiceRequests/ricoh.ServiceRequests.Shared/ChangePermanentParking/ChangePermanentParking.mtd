@@ -1,0 +1,285 @@
+{
+  "$type": "Sungero.Metadata.DocumentMetadata, Sungero.Content.Shared",
+  "NameGuid": "0322118b-ccaf-4b52-9078-c3b592ddf9c3",
+  "Name": "ChangePermanentParking",
+  "AccessRightsMode": "Both",
+  "BaseGuid": "ac86d580-b326-4345-a0bd-7277d2f47ad0",
+  "CanBeNavigationPropertyType": true,
+  "CreationAreaMetadata": {
+    "NameGuid": "7322020b-3299-4fba-b9b0-4c995bd2e401",
+    "Name": "CreationArea",
+    "Buttons": [],
+    "IsAncestorMetadata": true,
+    "Versions": []
+  },
+  "ExtraSearchProperties": [],
+  "FilterPanel": {
+    "NameGuid": "80d3ce1a-9a72-443a-8b6c-6c6eef0c8d0f",
+    "Name": "FilterPanel",
+    "Controls": [],
+    "IsAncestorMetadata": true,
+    "Versions": []
+  },
+  "Forms": [
+    {
+      "$type": "Sungero.Metadata.StandaloneFormMetadata, Sungero.Metadata",
+      "NameGuid": "fa03f748-4397-42ef-bdc2-22119af7bf7f",
+      "Name": "Card",
+      "Controls": [
+        {
+          "$type": "Sungero.Metadata.ControlGroupMetadata, Sungero.Metadata",
+          "NameGuid": "b8017e22-88d6-43da-8d6d-8d11917b1dd6",
+          "Name": "Additional",
+          "IsAncestorMetadata": true,
+          "Overridden": [
+            "ColumnDefinitions"
+          ],
+          "Versions": []
+        },
+        {
+          "$type": "Sungero.Metadata.ControlGroupMetadata, Sungero.Metadata",
+          "NameGuid": "edc74281-0fc3-4ba8-bceb-bc443bc51b4e",
+          "Name": "Additional",
+          "ColumnDefinitions": [
+            {
+              "Percentage": 66.66
+            },
+            {
+              "Percentage": 33.33
+            }
+          ],
+          "ColumnSpan": 1,
+          "IsAncestorMetadata": true,
+          "Overridden": [
+            "Controls",
+            "ColumnSpan",
+            "ColumnDefinitions"
+          ]
+        },
+        {
+          "$type": "Sungero.Metadata.ControlGroupMetadata, Sungero.Metadata",
+          "NameGuid": "ff41af42-82df-4c38-b59a-4ec3bf4f7dfc",
+          "Name": "ControlGroup",
+          "ColumnSpan": 1,
+          "GroupType": "GroupBox",
+          "IsAncestorMetadata": true,
+          "Overridden": [
+            "ColumnSpan"
+          ]
+        },
+        {
+          "$type": "Sungero.Metadata.ControlMetadata, Sungero.Metadata",
+          "NameGuid": "cd36d962-7785-42df-9dc1-147ee5b6000e",
+          "Name": "PermanentParkingPass",
+          "ColumnNumber": 0,
+          "ColumnSpan": 1,
+          "DataBinderTypeName": "Sungero.Presentation.CommonDataBinders.DropDownEditorToNavigationBinder",
+          "ParentGuid": "edc74281-0fc3-4ba8-bceb-bc443bc51b4e",
+          "PropertyGuid": "367b6d8a-c494-4765-b20d-2c2a12b523b6",
+          "RowNumber": 0,
+          "RowSpan": 1,
+          "Settings": []
+        },
+        {
+          "$type": "Sungero.Metadata.ControlMetadata, Sungero.Metadata",
+          "NameGuid": "9c7c2d89-6980-494d-a4c1-255c850d4032",
+          "Name": "NeedNFC",
+          "ColumnNumber": 1,
+          "ColumnSpan": 1,
+          "DataBinderTypeName": "Sungero.Presentation.CommonDataBinders.DropDownEditorToEnumerationBinder",
+          "ParentGuid": "edc74281-0fc3-4ba8-bceb-bc443bc51b4e",
+          "PropertyGuid": "99026f8d-5ce4-45fd-9cfa-1cb257c152fd",
+          "RowNumber": 0,
+          "RowSpan": 1,
+          "Settings": []
+        },
+        {
+          "$type": "Sungero.Metadata.ControlMetadata, Sungero.Metadata",
+          "NameGuid": "1aec695a-2815-414b-ba38-737052ce32ec",
+          "Name": "Cars",
+          "ColumnNumber": 0,
+          "ColumnSpan": 2,
+          "DataBinderTypeName": "Sungero.Presentation.CommonDataBinders.GridControlToChildCollectionBinder",
+          "ParentGuid": "edc74281-0fc3-4ba8-bceb-bc443bc51b4e",
+          "PropertyGuid": "3b98b41b-3243-47f1-ab41-68c3a97c8dab",
+          "RowNumber": 1,
+          "RowSpan": 1,
+          "Settings": [
+            {
+              "Name": "Height",
+              "Value": 150
+            }
+          ]
+        },
+        {
+          "$type": "Sungero.Metadata.ControlMetadata, Sungero.Metadata",
+          "NameGuid": "c674e7af-e60a-4c6a-96a8-c4b41112d9e1",
+          "Name": "Visitors",
+          "ColumnNumber": 0,
+          "ColumnSpan": 2,
+          "DataBinderTypeName": "Sungero.Presentation.CommonDataBinders.TextEditorToTextBinder",
+          "ParentGuid": "edc74281-0fc3-4ba8-bceb-bc443bc51b4e",
+          "PropertyGuid": "d583953e-2bce-4c08-a587-dbabb0524e79",
+          "RowNumber": 2,
+          "RowSpan": 1,
+          "Settings": []
+        }
+      ],
+      "IsAncestorMetadata": true,
+      "Overridden": [
+        "SettingsResourceKey"
+      ],
+      "Versions": []
+    }
+  ],
+  "IconResourcesKeys": [],
+  "IntegrationServiceName": "ServiceRequestsChangePermanentParking",
+  "OpenCardByDefaultInCollection": true,
+  "OperationsClass": "",
+  "Properties": [
+    {
+      "$type": "Sungero.Metadata.EnumPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "9d4e3771-7349-436b-bb59-cc4afabea7c2",
+      "Name": "RequestState",
+      "HandledEvents": [
+        "ChangedShared"
+      ],
+      "IsAncestorMetadata": true,
+      "Overridden": [
+        "HandledEvents"
+      ]
+    },
+    {
+      "$type": "Sungero.Metadata.NavigationPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "484b2831-3657-4987-a035-a98617aadc2c",
+      "Name": "Renter",
+      "HandledEvents": [
+        "ChangedShared"
+      ],
+      "IsAncestorMetadata": true,
+      "Overridden": [
+        "HandledEvents"
+      ]
+    },
+    {
+      "$type": "Sungero.Metadata.CollectionPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "56cbe741-880f-4e6f-9567-343d08494b59",
+      "Name": "Versions",
+      "EntityGuid": "d6f374c3-c220-41e6-9d1f-01c765fabf5e",
+      "IsAncestorMetadata": true,
+      "Overridden": [
+        "EntityGuid"
+      ],
+      "Versions": []
+    },
+    {
+      "$type": "Sungero.Metadata.CollectionPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "15280407-331e-42f6-b263-041a495b66cd",
+      "Name": "Tracking",
+      "EntityGuid": "992dfa14-2c0a-4db3-8229-ceeb02b0d28e",
+      "IsAncestorMetadata": true,
+      "Overridden": [
+        "EntityGuid"
+      ],
+      "Versions": []
+    },
+    {
+      "$type": "Sungero.Metadata.NavigationPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "fb67613a-bb27-4ca6-b8d7-d1147ece123a",
+      "Name": "ParkingPlace",
+      "HandledEvents": [
+        "ChangedShared"
+      ],
+      "IsAncestorMetadata": true,
+      "Overridden": [
+        "HandledEvents"
+      ],
+      "Versions": []
+    },
+    {
+      "$type": "Sungero.Metadata.CollectionPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "3b98b41b-3243-47f1-ab41-68c3a97c8dab",
+      "Name": "Cars",
+      "Code": "ChangePermanen",
+      "EntityGuid": "901f33e1-f303-4609-836e-eb106caaddc3",
+      "HandledEvents": [
+        "AddedShared"
+      ],
+      "IsShowedInList": false,
+      "PreviousPropertyGuid": "367b6d8a-c494-4765-b20d-2c2a12b523b6",
+      "Versions": []
+    },
+    {
+      "$type": "Sungero.Metadata.EnumPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "99026f8d-5ce4-45fd-9cfa-1cb257c152fd",
+      "Name": "NeedNFC",
+      "Code": "NeedNFC",
+      "DirectValues": [
+        {
+          "NameGuid": "5d55a72c-12a9-42f0-a321-48b542f6189c",
+          "Name": "Yes",
+          "Code": "Yes"
+        },
+        {
+          "NameGuid": "1a5c1641-39ae-4651-8f65-c5bb6ec3d889",
+          "Name": "No",
+          "Code": "No"
+        }
+      ],
+      "IsLoadEagerly": true,
+      "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.DropDownEditorToEnumerationBinder",
+      "PreviousPropertyGuid": "3b98b41b-3243-47f1-ab41-68c3a97c8dab",
+      "Versions": []
+    },
+    {
+      "$type": "Sungero.Metadata.NavigationPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "367b6d8a-c494-4765-b20d-2c2a12b523b6",
+      "Name": "PermanentParkingPass",
+      "CanBeSearch": false,
+      "Code": "PermanentParki",
+      "EntityGuid": "4a82dc79-85fe-40b9-a5ab-b5592f293aa7",
+      "FlatListInStandaloneLookup": true,
+      "HandledEvents": [
+        "ChangedShared",
+        "LookupServer"
+      ],
+      "IsEnabled": false,
+      "IsShowedInList": false,
+      "IsVisibility": false,
+      "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.DropDownEditorToNavigationBinder",
+      "NeedPassEntityToLookupEvent": true,
+      "PreviousPropertyGuid": "fb67613a-bb27-4ca6-b8d7-d1147ece123a"
+    }
+  ],
+  "PublicStructures": [],
+  "ResourcesKeys": [],
+  "RibbonCardMetadata": {
+    "NameGuid": "ee3ba1e4-9c1e-4361-8e7f-acb678c2ab30",
+    "Name": "RibbonCard",
+    "Categories": [],
+    "Elements": [],
+    "Groups": [],
+    "IsAncestorMetadata": true,
+    "Pages": [],
+    "RibbonKind": "Card"
+  },
+  "RibbonCollectionMetadata": {
+    "NameGuid": "0049aa81-a8a0-47b7-bf05-7bb779f1c23a",
+    "Name": "RibbonCollection",
+    "Categories": [],
+    "Elements": [],
+    "Groups": [],
+    "IsAncestorMetadata": true,
+    "Pages": []
+  },
+  "Versions": [
+    {
+      "Type": "DocumentMetadata",
+      "Number": 2
+    },
+    {
+      "Type": "EntityMetadata",
+      "Number": 12
+    }
+  ]
+}

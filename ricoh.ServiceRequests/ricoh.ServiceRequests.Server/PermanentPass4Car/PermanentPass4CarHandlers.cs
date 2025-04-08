@@ -7,6 +7,17 @@ using ricoh.ServiceRequests.PermanentPass4Car;
 
 namespace ricoh.ServiceRequests
 {
+  partial class PermanentPass4CarParkingPlacePropertyFilteringServerHandler<T>
+  {
+
+    public override IQueryable<T> ParkingPlaceFiltering(IQueryable<T> query, Sungero.Domain.PropertyFilteringEventArgs e)
+    {
+      query = base.ParkingPlaceFiltering(query, e);
+      query = query.Where(place => place.Pass == null);
+      return query;
+    }
+  }
+
 
   partial class PermanentPass4CarServerHandlers
   {
@@ -22,11 +33,8 @@ namespace ricoh.ServiceRequests
     public override void BeforeSave(Sungero.Domain.BeforeSaveEventArgs e)
     {
       base.BeforeSave(e);      
-      var subject = _obj.CarModel + " / " +_obj.CarNumber;
-      _obj.Subject = subject.Substring(0, Math.Min(subject.Length, 120));
-      var ValidOn = _obj.ValidOn.Value.ToShortDateString();
-      var parkingPlace = "место " + _obj.ParkingPlace?.Name;
-      _obj.Name = $"Постоянная парковка ({_obj.Renter.Name} на {ValidOn}: {_obj.Subject}, {parkingPlace})";      
+      var subject = "Постоянная парковка " + _obj.ParkingPlace.Name;
+      _obj.Name = $"Постоянная парковка ({_obj.Renter.Name}): {_obj.ParkingPlace.Name}";      
     }
   }
 

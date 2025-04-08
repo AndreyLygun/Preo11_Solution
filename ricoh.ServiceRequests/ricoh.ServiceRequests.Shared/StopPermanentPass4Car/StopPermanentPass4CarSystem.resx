@@ -59,16 +59,16 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="DisplayName" xml:space="preserve">
-    <value>Блокировка постоянного автопропуска</value>
+    <value>Уст (Изменение постоянной парковки)</value>
   </data>
   <data name="AccusativeDisplayName" xml:space="preserve">
-    <value>Блокировку постоянного автопропуска</value>
+    <value>----</value>
   </data>
   <data name="CollectionDisplayName" xml:space="preserve">
-    <value>Блокировки постоянного автопропуска</value>
+    <value>----</value>
   </data>
-  <data name="Enum_Action_StopPass" xml:space="preserve">
-    <value>Продлить существующий пропуск</value>
+  <data name="Enum_Action_NewPaper" xml:space="preserve">
+    <value>Изготовить новый ламинат</value>
   </data>
   <data name="Property_Action" xml:space="preserve">
     <value>Требуемое действие</value>
@@ -97,7 +97,7 @@
   <data name="Enum_Action_NewPrinted" xml:space="preserve">
     <value>Изготовить новый бумажный пропуск</value>
   </data>
-  <data name="Enum_Action_NewNFC" xml:space="preserve">
+  <data name="Enum_Action_AddDriver" xml:space="preserve">
     <value>Оформить новую электронную карту</value>
   </data>
   <data name="Property_ValidOn" xml:space="preserve">
@@ -115,7 +115,7 @@
   <data name="Enum_Property_StopPass" xml:space="preserve">
     <value>Заблокрировать пропуск</value>
   </data>
-  <data name="Enum_Action_NewPaper" xml:space="preserve">
+  <data name="Enum_Action_AddCar" xml:space="preserve">
     <value>Изготовить бумажный пропуск</value>
   </data>
   <data name="Enum_Property_NewNFC" xml:space="preserve">
@@ -123,5 +123,11 @@
   </data>
   <data name="Control_b22759891f374a699e7319cc088b7492_EmptyText" xml:space="preserve">
     <value>Нажмите на три точки справа, чтобы выбрать пропуск</value>
+  </data>
+  <data name="Enum_Action_StopPass" xml:space="preserve">
+    <value>Заблокировать</value>
+  </data>
+  <data name="Enum_Action_NewNFC" xml:space="preserve">
+    <value>Новый электронный пропуск</value>
   </data>
 </root>

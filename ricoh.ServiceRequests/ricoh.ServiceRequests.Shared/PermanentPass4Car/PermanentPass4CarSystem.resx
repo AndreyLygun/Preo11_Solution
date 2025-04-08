@@ -67,20 +67,20 @@
   <data name="CollectionDisplayName" xml:space="preserve">
     <value>Постоянные автомобильные пропуска</value>
   </data>
-  <data name="Property_NeedPrintedPass" xml:space="preserve">
-    <value>Требуется иготовить пропуск</value>
+  <data name="Action_CreateChangingRequestConfirmationMessage" xml:space="preserve">
+    <value />
   </data>
-  <data name="Enum_NeedPrintedPass_Yes" xml:space="preserve">
-    <value>Да</value>
+  <data name="Action_CreateChangingRequestHint" xml:space="preserve">
+    <value>Создать заявку на изменение парковки</value>
   </data>
-  <data name="Enum_NeedPrintedPass_No" xml:space="preserve">
-    <value>Нет</value>
+  <data name="Action_CreateChangingRequestDescription" xml:space="preserve">
+    <value>Создать заявку на изменение парковки</value>
   </data>
-  <data name="Enum_NeedNFCPass_Yes" xml:space="preserve">
-    <value>Да</value>
+  <data name="Property_CarsString" xml:space="preserve">
+    <value>Автомобили (для шаблона)</value>
   </data>
-  <data name="Property_NeedNFCPass" xml:space="preserve">
-    <value>Требуется электронный пропуск</value>
+  <data name="Action_CreateChangingRequest" xml:space="preserve">
+    <value>Заявка на изменение</value>
   </data>
   <data name="Enum_Action_StopPass" xml:space="preserve">
     <value>Продлить существующий пропуск</value>
@@ -94,7 +94,10 @@
   <data name="Property_Visitors" xml:space="preserve">
     <value>Водители</value>
   </data>
-  <data name="Enum_NeedNFCPass_No" xml:space="preserve">
-    <value>Нет</value>
+  <data name="Property_Cars" xml:space="preserve">
+    <value>Автомобили</value>
+  </data>
+  <data name="Action_CreateChangingRequestConfirmationDescription" xml:space="preserve">
+    <value />
   </data>
 </root>
