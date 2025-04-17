@@ -121,7 +121,7 @@
   <data name="Enum_RequestState_Done" xml:space="preserve">
     <value>Done</value>
   </data>
-  <data name="FilterPanel_filter_33e1d1389d3c433eb8829e1907383c61" xml:space="preserve">
+  <data name="FilterPanel_Renter_33e1d1389d3c433eb8829e1907383c61" xml:space="preserve">
     <value>Арендатор</value>
   </data>
   <data name="FilterPanel_Renter_49f088acc6a54fc7b280e95fe6853f1b" xml:space="preserve">
@@ -207,5 +207,8 @@
   </data>
   <data name="Action_ShowPrintFormConfirmationDescription" xml:space="preserve">
     <value />
+  </data>
+  <data name="FilterPanel_Kind_9fe4b8e7eb3e427fb31aa8129880a880" xml:space="preserve">
+    <value>Вид заявки</value>
   </data>
 </root>

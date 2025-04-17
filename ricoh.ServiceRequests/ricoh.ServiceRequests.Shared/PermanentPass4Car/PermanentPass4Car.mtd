@@ -161,20 +161,6 @@
   "Properties": [
     {
       "$type": "Sungero.Metadata.NavigationPropertyMetadata, Sungero.Metadata",
-      "NameGuid": "fb67613a-bb27-4ca6-b8d7-d1147ece123a",
-      "Name": "ParkingPlace",
-      "HandledEvents": [
-        "ChangedShared",
-        "LookupServer"
-      ],
-      "IsAncestorMetadata": true,
-      "Overridden": [
-        "HandledEvents"
-      ],
-      "Versions": []
-    },
-    {
-      "$type": "Sungero.Metadata.NavigationPropertyMetadata, Sungero.Metadata",
       "NameGuid": "4532dfc0-cff5-4a53-a5ef-8acd6528c8c0",
       "Name": "Medium",
       "IsAncestorMetadata": true,

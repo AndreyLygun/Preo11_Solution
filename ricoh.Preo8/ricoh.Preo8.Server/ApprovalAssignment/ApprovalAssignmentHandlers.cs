@@ -7,5 +7,4 @@ using ricoh.Preo8.ApprovalAssignment;
 
 namespace ricoh.Preo8
 {
-
 }

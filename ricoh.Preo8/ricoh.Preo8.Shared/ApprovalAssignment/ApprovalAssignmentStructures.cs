@@ -4,7 +4,7 @@ using System.Linq;
 using Sungero.Core;
 using Sungero.CoreEntities;
 
-namespace ricoh.Preo8.Structures.ApprovalAssignment
+namespace ricoh.Preo8.Structures.Docflow.ApprovalAssignment
 {
 
 }

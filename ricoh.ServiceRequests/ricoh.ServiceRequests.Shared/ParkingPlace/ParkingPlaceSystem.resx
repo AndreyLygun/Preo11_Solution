@@ -115,9 +115,6 @@
   <data name="Action_FreePlaceConfirmationDescription" xml:space="preserve">
     <value>Во всех выбранных местах будет удалена информация о закреплении за арендатором</value>
   </data>
-  <data name="Property_Pass" xml:space="preserve">
-    <value>Постоянный пропуск</value>
-  </data>
   <data name="Property_Cars" xml:space="preserve">
     <value>Автомобили</value>
   </data>
@@ -126,5 +123,8 @@
   </data>
   <data name="Property_Number" xml:space="preserve">
     <value>Номер</value>
+  </data>
+  <data name="Property_NfcNumber" xml:space="preserve">
+    <value>Номер электронной карты</value>
   </data>
 </root>

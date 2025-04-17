@@ -70,6 +70,66 @@
     {
       "ItemId": "e64283ca-112c-4be4-9c06-047bab68cfe0",
       "PreviousItemId": "80fbedac-1a23-40d4-aec5-7c59b92b5eb1"
+    },
+    {
+      "ItemId": "b00c0a44-fc47-449e-9eb5-9512d7a3623e",
+      "PreviousItemId": "e64283ca-112c-4be4-9c06-047bab68cfe0"
+    },
+    {
+      "ItemId": "374d2805-173a-4f34-8eb5-640f7011c050",
+      "PreviousItemId": "b00c0a44-fc47-449e-9eb5-9512d7a3623e"
+    },
+    {
+      "ItemId": "5a2d85de-2948-4e09-952b-64b38e7c0853",
+      "PreviousItemId": "374d2805-173a-4f34-8eb5-640f7011c050"
+    },
+    {
+      "ItemId": "4de70974-e33c-4484-8f12-2d2f5578c1ff",
+      "PreviousItemId": "5a2d85de-2948-4e09-952b-64b38e7c0853"
+    },
+    {
+      "ItemId": "ca098d29-8dbb-4897-9183-73362c902b0f",
+      "PreviousItemId": "4de70974-e33c-4484-8f12-2d2f5578c1ff"
+    },
+    {
+      "ItemId": "ffcc5f20-2a17-4bbd-992b-c4a4e1241cf5",
+      "PreviousItemId": "ca098d29-8dbb-4897-9183-73362c902b0f"
+    },
+    {
+      "ItemId": "1a0acd8d-5553-437e-8436-3f003ede4ab4",
+      "PreviousItemId": "ffcc5f20-2a17-4bbd-992b-c4a4e1241cf5"
+    },
+    {
+      "ItemId": "c0d328e0-5630-407d-9446-77dbc522aef6",
+      "PreviousItemId": "1a0acd8d-5553-437e-8436-3f003ede4ab4"
+    },
+    {
+      "ItemId": "87860584-75df-4e5a-996d-480623b0f722",
+      "PreviousItemId": "c0d328e0-5630-407d-9446-77dbc522aef6"
+    },
+    {
+      "ItemId": "8b70591d-db43-4436-87e6-eb4927d73747",
+      "PreviousItemId": "87860584-75df-4e5a-996d-480623b0f722"
+    },
+    {
+      "ItemId": "1091671d-9737-4612-b5a2-1187346c1723",
+      "PreviousItemId": "8b70591d-db43-4436-87e6-eb4927d73747"
+    },
+    {
+      "ItemId": "4597b917-b425-497b-ab6b-96d680a4aa2e",
+      "PreviousItemId": "1091671d-9737-4612-b5a2-1187346c1723"
+    },
+    {
+      "ItemId": "9cf7d388-d0a9-46a6-831e-80542d95558c",
+      "PreviousItemId": "4597b917-b425-497b-ab6b-96d680a4aa2e"
+    },
+    {
+      "ItemId": "b82b8556-4433-4c8d-960c-1a80db68c209",
+      "PreviousItemId": "9cf7d388-d0a9-46a6-831e-80542d95558c"
+    },
+    {
+      "ItemId": "bdbf7e3f-67ea-43b1-8e41-6cef9f05cd04",
+      "PreviousItemId": "b82b8556-4433-4c8d-960c-1a80db68c209"
     }
   ],
   "IconResourcesKeys": [],
@@ -88,7 +148,7 @@
   "SharedAssemblyName": "ricoh.Preo8.Shared",
   "SharedNamespace": "ricoh.Preo8.Shared",
   "SpecialFolders": [],
-  "Version": "0.0.1.31",
+  "Version": "0.0.1.32",
   "Widgets": [],
   "Versions": [
     {

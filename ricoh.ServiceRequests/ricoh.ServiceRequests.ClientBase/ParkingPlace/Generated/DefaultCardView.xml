@@ -35,8 +35,8 @@
             <property name="Name">ParkingPlace_Cars_Model</property>
             <property name="FieldName">Model</property>
             <property name="VisibleIndex">0</property>
-            <property name="Width">178</property>
-            <property name="ActualWidth">15*</property>
+            <property name="Width">166</property>
+            <property name="ActualWidth">14*</property>
           </property>
           <property name="Item2" isnull="true" iskey="true">
             <property name="Visible">true</property>
@@ -88,8 +88,8 @@
             <property name="Name">ParkingPlace_Drivers_Name</property>
             <property name="FieldName">Name</property>
             <property name="VisibleIndex">0</property>
-            <property name="Width">522</property>
-            <property name="ActualWidth">44*</property>
+            <property name="Width">510</property>
+            <property name="ActualWidth">43*</property>
           </property>
           <property name="Item2" isnull="true" iskey="true">
             <property name="Visible">true</property>

@@ -9,8 +9,20 @@ using ricoh.ServiceRequests.Shared;
 
 namespace ricoh.ServiceRequests
 {
+  partial class Pass4AssetsMovingFilteringServerHandler<T>
+  {
+
+    public override IQueryable<T> PreFiltering(IQueryable<T> query, Sungero.Domain.PreFilteringEventArgs e)
+    {
+      query = base.PreFiltering(query, e);
+      return query;
+    }
+  }
+
   partial class Pass4AssetsMovingFloorPropertyFilteringServerHandler<T>
   {
+
+
   }
 
   partial class Pass4AssetsMovingLoadingSitePropertyFilteringServerHandler<T>

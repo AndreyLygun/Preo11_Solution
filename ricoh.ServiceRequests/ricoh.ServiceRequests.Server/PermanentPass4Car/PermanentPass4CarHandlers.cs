@@ -7,16 +7,6 @@ using ricoh.ServiceRequests.PermanentPass4Car;
 
 namespace ricoh.ServiceRequests
 {
-  partial class PermanentPass4CarParkingPlacePropertyFilteringServerHandler<T>
-  {
-
-    public override IQueryable<T> ParkingPlaceFiltering(IQueryable<T> query, Sungero.Domain.PropertyFilteringEventArgs e)
-    {
-      query = base.ParkingPlaceFiltering(query, e);
-      query = query.Where(place => place.Pass == null);
-      return query;
-    }
-  }
 
 
   partial class PermanentPass4CarServerHandlers

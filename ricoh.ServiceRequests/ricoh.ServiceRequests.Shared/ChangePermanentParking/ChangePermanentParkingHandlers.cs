@@ -27,7 +27,7 @@ namespace ricoh.ServiceRequests
       if (Equals(e.OldValue, e.NewValue)) return;
       _obj.Cars.Clear();
       _obj.Visitors = "";
-      if (_obj.PermanentParkingPass == null) return;
+      if (_obj.ParkingPlace == null) return;
       foreach(var car in _obj.ParkingPlace.Cars) {
         var newCar = _obj.Cars.AddNew();
         newCar.Model = car.Model;
@@ -44,23 +44,22 @@ namespace ricoh.ServiceRequests
     {
       base.RequestStateChanged(e);
       if ((e.NewValue == BaseSRQ.RequestState.Approved) && (e.OldValue != BaseSRQ.RequestState.Approved)) {
-        if (_obj.PermanentParkingPass == null) return;
-
-        var permanentParking = _obj.PermanentParkingPass;
-        permanentParking.Visitors = _obj.Visitors;
-        permanentParking.Cars.Clear();
+        if (_obj.ParkingPlace == null) return;    
+        var parking = _obj.ParkingPlace;
+        parking.Cars.Clear();
         foreach(var car in _obj.Cars) {
-          var newCar = permanentParking.Cars.AddNew();
+          var newCar = parking.Cars.AddNew();
           newCar.Model = car.Model;
           newCar.Number = car.Number;
+          newCar.Changed = _obj.Name;
         }
+        foreach(var driver in _obj.Visitors.Split('\r')) {
+          var newDriver = parking.Drivers.AddNew();
+          newDriver.Name = driver;
+          newDriver.Changed = _obj.Name;
+        }          
         _obj.PermanentParkingPass.Save();
       }
-    }
-
-    public override void RenterChanged(ricoh.ServiceRequests.Shared.BaseSRQRenterChangedEventArgs e)
-    {
-      base.RenterChanged(e);
     }
 
     public virtual void PermanentParkingPassChanged(ricoh.ServiceRequests.Shared.ChangePermanentParkingPermanentParkingPassChangedEventArgs e)

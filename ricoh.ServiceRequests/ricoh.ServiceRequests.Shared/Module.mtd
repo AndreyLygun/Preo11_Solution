@@ -32,7 +32,8 @@
         "NameGuid": "5ba7f133-edda-4a89-a827-2abe0dc8d000",
         "Name": "Pass4Cars",
         "EntityTypeId": "8ce2b667-494d-443b-b389-a653002d304c",
-        "GroupId": "c61d61bf-78ee-472a-9151-9406d7aa21f3"
+        "GroupId": "c61d61bf-78ee-472a-9151-9406d7aa21f3",
+        "PreviousItemGuid": "bfd352a8-531f-45de-98e1-a13ba93c20f8"
       },
       {
         "$type": "Sungero.Metadata.CoverEntityListActionMetadata, Sungero.Metadata",
@@ -61,10 +62,10 @@
       {
         "$type": "Sungero.Metadata.CoverEntityListActionMetadata, Sungero.Metadata",
         "NameGuid": "95454f77-b985-44cc-836a-f19134b32fcf",
-        "Name": "StopPermanentPass4Car",
-        "EntityTypeId": "c7247ffd-04e2-4dc1-ba06-f062e5debe3c",
+        "Name": "ChangePermanentParking",
+        "EntityTypeId": "0322118b-ccaf-4b52-9078-c3b592ddf9c3",
         "GroupId": "c61d61bf-78ee-472a-9151-9406d7aa21f3",
-        "PreviousItemGuid": "fba21431-92b5-4429-91ef-b915a4e80fc0"
+        "PreviousItemGuid": "5ba7f133-edda-4a89-a827-2abe0dc8d000"
       },
       {
         "$type": "Sungero.Metadata.CoverEntityListActionMetadata, Sungero.Metadata",
@@ -72,7 +73,7 @@
         "Name": "TimeSpans",
         "EntityTypeId": "46d20a39-e6c1-4e02-89f7-c5f85eec8088",
         "GroupId": "dd243d0b-97f7-44de-8783-5d610ecd6230",
-        "PreviousItemGuid": "cf0bd2bf-864a-4944-af95-46fba5182928"
+        "PreviousItemGuid": "e71373ae-cd0b-4671-bae2-a372035e1d6d"
       },
       {
         "$type": "Sungero.Metadata.CoverEntityListActionMetadata, Sungero.Metadata",
@@ -107,18 +108,17 @@
       },
       {
         "$type": "Sungero.Metadata.CoverEntityListActionMetadata, Sungero.Metadata",
+        "NameGuid": "bfd352a8-531f-45de-98e1-a13ba93c20f8",
+        "Name": "Parkings",
+        "EntityTypeId": "33deea65-1d95-44dd-a39d-9a7252b1b99a",
+        "GroupId": "c61d61bf-78ee-472a-9151-9406d7aa21f3"
+      },
+      {
+        "$type": "Sungero.Metadata.CoverEntityListActionMetadata, Sungero.Metadata",
         "NameGuid": "c307cbc6-53b6-4cc8-973d-3084f7c94cbe",
         "Name": "Renters",
         "EntityTypeId": "97222148-c6d3-40d0-bf61-47f03dbbdf54",
         "GroupId": "dd243d0b-97f7-44de-8783-5d610ecd6230"
-      },
-      {
-        "$type": "Sungero.Metadata.CoverEntityListActionMetadata, Sungero.Metadata",
-        "NameGuid": "cf0bd2bf-864a-4944-af95-46fba5182928",
-        "Name": "ParkingPlaces",
-        "EntityTypeId": "33deea65-1d95-44dd-a39d-9a7252b1b99a",
-        "GroupId": "dd243d0b-97f7-44de-8783-5d610ecd6230",
-        "PreviousItemGuid": "e71373ae-cd0b-4671-bae2-a372035e1d6d"
       },
       {
         "$type": "Sungero.Metadata.CoverEntityListActionMetadata, Sungero.Metadata",
@@ -142,14 +142,6 @@
         "Name": "Pass4Visitors",
         "EntityTypeId": "69be0496-74a8-4dc6-9972-020d73d8a139",
         "GroupId": "a74a8579-f128-41fa-be85-7368fc39504a"
-      },
-      {
-        "$type": "Sungero.Metadata.CoverEntityListActionMetadata, Sungero.Metadata",
-        "NameGuid": "fba21431-92b5-4429-91ef-b915a4e80fc0",
-        "Name": "PermanentPass4Car",
-        "EntityTypeId": "4a82dc79-85fe-40b9-a5ab-b5592f293aa7",
-        "GroupId": "c61d61bf-78ee-472a-9151-9406d7aa21f3",
-        "PreviousItemGuid": "5ba7f133-edda-4a89-a827-2abe0dc8d000"
       }
     ],
     "Background": null,
@@ -547,7 +539,7 @@
       ]
     }
   ],
-  "Version": "0.0.1.31",
+  "Version": "0.0.1.32",
   "Widgets": [],
   "Versions": [
     {

@@ -331,7 +331,8 @@
   ],
   "HandledEvents": [
     "CreatedServer",
-    "BeforeSaveServer"
+    "BeforeSaveServer",
+    "PreFilteringServer"
   ],
   "IconResourcesKeys": [],
   "IntegrationServiceName": "ServiceRequestsPass4AssetsMoving",

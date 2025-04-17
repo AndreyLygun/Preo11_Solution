@@ -35,6 +35,8 @@
       "CanBeSearch": false,
       "Code": "Changed",
       "IsEnabled": false,
+      "IsShowedInList": false,
+      "IsVisibility": false,
       "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToStringBinder",
       "PreviousPropertyGuid": "9b4c9558-cee0-4158-afcd-d0ea3080450d"
     }

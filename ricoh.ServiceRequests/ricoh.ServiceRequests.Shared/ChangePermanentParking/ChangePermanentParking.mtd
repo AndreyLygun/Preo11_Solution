@@ -69,19 +69,6 @@
         },
         {
           "$type": "Sungero.Metadata.ControlMetadata, Sungero.Metadata",
-          "NameGuid": "cd36d962-7785-42df-9dc1-147ee5b6000e",
-          "Name": "PermanentParkingPass",
-          "ColumnNumber": 0,
-          "ColumnSpan": 1,
-          "DataBinderTypeName": "Sungero.Presentation.CommonDataBinders.DropDownEditorToNavigationBinder",
-          "ParentGuid": "edc74281-0fc3-4ba8-bceb-bc443bc51b4e",
-          "PropertyGuid": "367b6d8a-c494-4765-b20d-2c2a12b523b6",
-          "RowNumber": 0,
-          "RowSpan": 1,
-          "Settings": []
-        },
-        {
-          "$type": "Sungero.Metadata.ControlMetadata, Sungero.Metadata",
           "NameGuid": "9c7c2d89-6980-494d-a4c1-255c850d4032",
           "Name": "NeedNFC",
           "ColumnNumber": 1,
@@ -123,6 +110,19 @@
           "RowNumber": 2,
           "RowSpan": 1,
           "Settings": []
+        },
+        {
+          "$type": "Sungero.Metadata.ControlMetadata, Sungero.Metadata",
+          "NameGuid": "43dc1a83-f304-473a-a028-c4fdd49e89c4",
+          "Name": "ParkingPlace",
+          "ColumnNumber": 0,
+          "ColumnSpan": 1,
+          "DataBinderTypeName": "Sungero.Presentation.CommonDataBinders.DropDownEditorToNavigationBinder",
+          "ParentGuid": "edc74281-0fc3-4ba8-bceb-bc443bc51b4e",
+          "PropertyGuid": "fb67613a-bb27-4ca6-b8d7-d1147ece123a",
+          "RowNumber": 0,
+          "RowSpan": 1,
+          "Settings": []
         }
       ],
       "IsAncestorMetadata": true,
@@ -141,18 +141,6 @@
       "$type": "Sungero.Metadata.EnumPropertyMetadata, Sungero.Metadata",
       "NameGuid": "9d4e3771-7349-436b-bb59-cc4afabea7c2",
       "Name": "RequestState",
-      "HandledEvents": [
-        "ChangedShared"
-      ],
-      "IsAncestorMetadata": true,
-      "Overridden": [
-        "HandledEvents"
-      ]
-    },
-    {
-      "$type": "Sungero.Metadata.NavigationPropertyMetadata, Sungero.Metadata",
-      "NameGuid": "484b2831-3657-4987-a035-a98617aadc2c",
-      "Name": "Renter",
       "HandledEvents": [
         "ChangedShared"
       ],

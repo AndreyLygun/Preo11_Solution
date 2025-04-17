@@ -36,49 +36,7 @@
   "FilterPanel": {
     "NameGuid": "80d3ce1a-9a72-443a-8b6c-6c6eef0c8d0f",
     "Name": "FilterPanel",
-    "Controls": [
-      {
-        "$type": "Sungero.Metadata.FilterGroupMetadata, Sungero.Metadata",
-        "NameGuid": "396641f2-3d5e-406a-923a-387e4872b58d",
-        "Name": "ValidOn",
-        "PreviousGuid": "33e1d138-9d3c-433e-b882-9e1907383c61"
-      },
-      {
-        "$type": "Sungero.Metadata.FilterListItemMetadata, Sungero.Metadata",
-        "NameGuid": "7a85b8d5-0fcf-4c86-a319-c97998bb5e09",
-        "Name": "Today",
-        "ParentGuid": "915df3c1-45cf-47d4-943c-0262af3a768f"
-      },
-      {
-        "$type": "Sungero.Metadata.FilterListItemMetadata, Sungero.Metadata",
-        "NameGuid": "b412b911-ef24-4e51-ad80-52de49c62951",
-        "Name": "Tomorrow",
-        "ParentGuid": "915df3c1-45cf-47d4-943c-0262af3a768f",
-        "PreviousGuid": "7a85b8d5-0fcf-4c86-a319-c97998bb5e09"
-      },
-      {
-        "$type": "Sungero.Metadata.FilterListItemMetadata, Sungero.Metadata",
-        "NameGuid": "0089a97d-1511-4aa0-96f7-d2945f932362",
-        "Name": "Any",
-        "ParentGuid": "915df3c1-45cf-47d4-943c-0262af3a768f",
-        "PreviousGuid": "b412b911-ef24-4e51-ad80-52de49c62951"
-      },
-      {
-        "$type": "Sungero.Metadata.FilterDateRangeMetadata, Sungero.Metadata",
-        "NameGuid": "7c2f4cd6-fe72-4c35-b4d3-10ea5c818ab6",
-        "Name": "DateRange",
-        "IsVisible": false,
-        "MasterControlId": "0089a97d-1511-4aa0-96f7-d2945f932362",
-        "ParentGuid": "396641f2-3d5e-406a-923a-387e4872b58d",
-        "PreviousGuid": "915df3c1-45cf-47d4-943c-0262af3a768f"
-      },
-      {
-        "$type": "Sungero.Metadata.FilterListMetadata, Sungero.Metadata",
-        "NameGuid": "915df3c1-45cf-47d4-943c-0262af3a768f",
-        "Name": "ValidOnFlagsList",
-        "ParentGuid": "396641f2-3d5e-406a-923a-387e4872b58d"
-      }
-    ],
+    "Controls": [],
     "IsAncestorMetadata": true,
     "IsEnabled": false,
     "Overridden": [

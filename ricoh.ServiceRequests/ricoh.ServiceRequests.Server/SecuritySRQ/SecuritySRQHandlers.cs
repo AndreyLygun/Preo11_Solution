@@ -26,12 +26,6 @@ namespace ricoh.ServiceRequests
     {
       if (_filter == null) return query;
       query = base.Filtering(query, e);
-      if (_filter.Today) {
-        query = query.Where(r => Calendar.Between(Calendar.Today, r.ValidFrom??Calendar.SqlMinValue, r.ValidTill??Calendar.SqlMaxValue));
-      }
-      if (_filter.Tomorrow) {
-        query = query.Where(r => Calendar.Between(Calendar.Today.NextDay(), r.ValidFrom??Calendar.SqlMinValue, r.ValidTill??Calendar.SqlMaxValue));
-      }
       return query;
     }
   }

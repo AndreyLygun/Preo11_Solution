@@ -10,14 +10,6 @@ namespace ricoh.ServiceRequests
   partial class PermanentPass4CarSharedHandlers
   {
 
-    public override void ParkingPlaceChanged(ricoh.ServiceRequests.Shared.SecuritySRQParkingPlaceChangedEventArgs e)
-    {
-      base.ParkingPlaceChanged(e);
-      if (_obj.ParkingPlace != null)
-        _obj.ParkingPlace.Pass = _obj;
-      _obj.ParkingPlace.Save();
-    }
-
     public virtual void CarsChanged(Sungero.Domain.Shared.CollectionPropertyChangedEventArgs e)
     {
       _obj.CarsString = "";

@@ -188,7 +188,7 @@
       {
         "$type": "Sungero.Metadata.FilterGroupMetadata, Sungero.Metadata",
         "NameGuid": "33e1d138-9d3c-433e-b882-9e1907383c61",
-        "Name": "filter"
+        "Name": "Renter"
       },
       {
         "$type": "Sungero.Metadata.FilterNavigationMetadata, Sungero.Metadata",
@@ -196,6 +196,19 @@
         "Name": "Renter",
         "EntityGuid": "97222148-c6d3-40d0-bf61-47f03dbbdf54",
         "ParentGuid": "33e1d138-9d3c-433e-b882-9e1907383c61"
+      },
+      {
+        "$type": "Sungero.Metadata.FilterGroupMetadata, Sungero.Metadata",
+        "NameGuid": "9fe4b8e7-eb3e-427f-b31a-a8129880a880",
+        "Name": "Kind",
+        "PreviousGuid": "33e1d138-9d3c-433e-b882-9e1907383c61"
+      },
+      {
+        "$type": "Sungero.Metadata.FilterNavigationMetadata, Sungero.Metadata",
+        "NameGuid": "3e84f09e-11f2-4be8-9aae-393598ea05da",
+        "Name": "DocumentKind",
+        "EntityGuid": "14a59623-89a2-4ea8-b6e9-2ad4365f358c",
+        "ParentGuid": "9fe4b8e7-eb3e-427f-b31a-a8129880a880"
       }
     ],
     "IsAncestorMetadata": true,
@@ -479,7 +492,6 @@
   "HandledEvents": [
     "CreatedServer",
     "BeforeSaveServer",
-    "FilteringServer",
     "ShowingClient"
   ],
   "IconResourcesKeys": [],

@@ -76,12 +76,6 @@
   <data name="CoverGroup_Passses4Car" xml:space="preserve">
     <value>Автомобильные пропуска</value>
   </data>
-  <data name="CoverDescription_PermanentPass4Car" xml:space="preserve">
-    <value>Заявки на оформление и продление постоянных автомобильных пропусков</value>
-  </data>
-  <data name="CoverAction_PermanentPass4Car" xml:space="preserve">
-    <value>Постоянный автомобильный пропуск</value>
-  </data>
   <data name="CoverAction_Pass4Visitors" xml:space="preserve">
     <value>Разовые пропуска</value>
   </data>
@@ -92,7 +86,7 @@
     <value>Разовый автомобильный пропуск</value>
   </data>
   <data name="CoverDescription_Pass4Cars" xml:space="preserve">
-    <value>Заявку на выдачу разового пропуска для въезда автомобилей</value>
+    <value>Заявки на выдачу разового пропуска для въезда автомобилей на гостевую парковку или на парковку для арендаторов</value>
   </data>
   <data name="CoverAction_Renters" xml:space="preserve">
     <value>Арендаторы</value>
@@ -148,11 +142,11 @@
   <data name="CoverGroup_Passes4Employee" xml:space="preserve">
     <value>Сотрудники и гости</value>
   </data>
-  <data name="CoverDescription_StopPermanentPass4Car" xml:space="preserve">
-    <value>Заявки на блокировку постоянных автомобильных пропусков</value>
+  <data name="CoverDescription_ChangePermanentParking" xml:space="preserve">
+    <value>Заявки на изменение состава автомобилей на постоянной паркеовки, выдачу электронных пропусков и ламинатов</value>
   </data>
-  <data name="CoverAction_StopPermanentPass4Car" xml:space="preserve">
-    <value>Блокировка автомобильных пропусков</value>
+  <data name="CoverAction_ChangePermanentParking" xml:space="preserve">
+    <value>Изменения на постоянной парковке</value>
   </data>
   <data name="CoverAction_Permission4Employee" xml:space="preserve">
     <value>Временный доступ для сотрудника</value>
@@ -193,12 +187,6 @@
   <data name="Block_9cd0299cbd5d4b73a5dd7cfec9137858_Property_f4b72c12b66a488d873d79e31938369b_Enum_b142bfcc304f4c3191df39224065bbd5" xml:space="preserve">
     <value>Удалить</value>
   </data>
-  <data name="CoverAction_ParkingPlaces" xml:space="preserve">
-    <value>Парковочные места</value>
-  </data>
-  <data name="CoverDescription_ParkingPlaces" xml:space="preserve">
-    <value>Парковочные места и их закрепление за арендаторами.</value>
-  </data>
   <data name="sf_26058965_01c0_4b03_8b93_82474c22b088" xml:space="preserve">
     <value>Автомобили</value>
   </data>
@@ -216,5 +204,11 @@
   </data>
   <data name="FilterPanel_Tomorrow_28e1faa385c4401f97c0178232a265fd" xml:space="preserve">
     <value>Завтра</value>
+  </data>
+  <data name="CoverAction_Parkings" xml:space="preserve">
+    <value>Парковочные места</value>
+  </data>
+  <data name="CoverDescription_Parkings" xml:space="preserve">
+    <value>Места на парковке для арендаторов</value>
   </data>
 </root>

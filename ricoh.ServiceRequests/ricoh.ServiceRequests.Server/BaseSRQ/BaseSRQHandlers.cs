@@ -8,20 +8,6 @@ using ricoh.ServiceRequests.BaseSRQ;
 
 namespace ricoh.ServiceRequests
 {
-  partial class BaseSRQFilteringServerHandler<T>
-  {
-
-    public override IQueryable<T> Filtering(IQueryable<T> query, Sungero.Domain.FilteringEventArgs e)
-    {
-      if (_filter == null)
-        return query;
-      query = base.Filtering(query, e);
-      if (_filter.Renter!=null) {
-        query = query.Where(r => r.Renter.Equals(_filter.Renter));
-      }
-      return query;
-    }
-  }
 
 
   partial class BaseSRQServerHandlers
