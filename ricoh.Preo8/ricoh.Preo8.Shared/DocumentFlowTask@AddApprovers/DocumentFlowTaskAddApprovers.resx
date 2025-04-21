@@ -58,37 +58,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="DisplayName" xml:space="preserve">
-    <value>Заявка на гостевую парковку</value>
-  </data>
-  <data name="AccusativeDisplayName" xml:space="preserve">
-    <value>Заявка на гостевую парковку</value>
-  </data>
-  <data name="CollectionDisplayName" xml:space="preserve">
-    <value>Заявки на гостевую парковку</value>
-  </data>
-  <data name="Enum_ParkingType_PrivateParking" xml:space="preserve">
-    <value>Парковка арендатора</value>
-  </data>
-  <data name="Property_ParkingType" xml:space="preserve">
-    <value>Вид парковки</value>
-  </data>
-  <data name="Operation_Operation" xml:space="preserve">
-    <value />
-  </data>
-  <data name="ControlGroup_edc742810fc34ba8bcebbc443bc51b4e" xml:space="preserve">
-    <value>Информация о посещении</value>
-  </data>
-  <data name="Property_PrivateParkingOld" xml:space="preserve">
-    <value>На парковку аренадатора (уст)</value>
-  </data>
-  <data name="Property_ValidOnDateTime" xml:space="preserve">
-    <value>Дата и время въезда</value>
-  </data>
-  <data name="Property_Duration" xml:space="preserve">
-    <value>Продолжительность парковки (час)</value>
-  </data>
-  <data name="Enum_ParkingType_CommonParking" xml:space="preserve">
-    <value>Общая парковка</value>
-  </data>
 </root>

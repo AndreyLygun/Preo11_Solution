@@ -124,4 +124,7 @@
   <data name="Enum_RequestState_Denied" xml:space="preserve">
     <value>Отказ</value>
   </data>
+  <data name="Property_Id" xml:space="preserve">
+    <value>№</value>
+  </data>
 </root>

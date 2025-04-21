@@ -3,10 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using Sungero.Core;
 using Sungero.CoreEntities;
-using ricoh.Preo8.ApprovalTask;
+using ricoh.Preo8.DocumentFlowTask;
 
-namespace ricoh.Preo8
+namespace ricoh.Preo8.Client
 {
-
-
 }

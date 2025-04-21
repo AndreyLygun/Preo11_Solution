@@ -30,6 +30,21 @@
           "NameGuid": "330f4473-7299-4d9b-9bff-2fe6e032d82a",
           "Name": "Body",
           "PreviousPropertyGuid": "3b8c3e35-0d2a-4e61-b1d9-2ea7da6a57ca"
+        },
+        {
+          "$type": "Sungero.Metadata.NavigationBlockPropertyMetadata, Sungero.Metadata",
+          "NameGuid": "d0f5b61e-4895-4d65-9e60-d49a5fe13c8c",
+          "Name": "ToEmployee",
+          "EntityGuid": "b7905516-2be5-4931-961c-cb38d5677565",
+          "IsCollection": true,
+          "PreviousPropertyGuid": "330f4473-7299-4d9b-9bff-2fe6e032d82a"
+        },
+        {
+          "$type": "Sungero.Metadata.NavigationBlockPropertyMetadata, Sungero.Metadata",
+          "NameGuid": "44e93bc4-73b3-44d8-bc09-5c1ac3348411",
+          "Name": "DocumentToAttach",
+          "EntityGuid": "030d8d67-9b94-4f0d-bcc6-691016eb70f3",
+          "PreviousPropertyGuid": "d0f5b61e-4895-4d65-9e60-d49a5fe13c8c"
         }
       ]
     },
@@ -109,7 +124,7 @@
   "SharedAssemblyName": "RICOH.ProcessBlockCollection.Shared",
   "SharedNamespace": "RICOH.ProcessBlockCollection.Shared",
   "SpecialFolders": [],
-  "Version": "0.0.1.22",
+  "Version": "0.0.1.24",
   "Widgets": [],
   "Versions": [
     {

@@ -43,7 +43,7 @@ namespace ricoh.ServiceRequests.Server
     }
 
     /// <summary>
-    /// 
+    /// Создаёт и запускает задачу на согласование по процессу
     /// </summary>
     [Public(WebApiRequestType = RequestType.Post)]
     public void StartDocumentReviewTask(long requestId) {
@@ -52,7 +52,23 @@ namespace ricoh.ServiceRequests.Server
       task.Start();
     }
     
-    /// 
+    /// <summary>
+    /// Прекращает задачу по согласованию указанного документа
+    /// </summary>
+    [Public(WebApiRequestType = RequestType.Post)]
+    public void AbortDocumentReviewTask(long requestId, string Reason) {
+      var request = BaseSRQs.Get(requestId);
+      if (request == null) return;
+      var tasks = Sungero.DocflowApproval.PublicFunctions.Module.Remote.GetDocumentFlowTasks(request);
+      foreach (var task in tasks) {
+        task.AbortingReason = Reason;
+        task.Abort();        
+      }
+    }
+    
+    
+    /// <summary>
+    /// Возвращает в сервисе интеграции информацию о статусе согласования заявки
     /// </summary>
     [Public(WebApiRequestType = RequestType.Post)]
     public string GetApprovalStatus(long requestId) {

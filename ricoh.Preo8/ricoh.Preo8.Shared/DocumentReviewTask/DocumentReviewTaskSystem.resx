@@ -58,9 +58,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Block_d50744a946584d8dba40b52a57fe2f09" xml:space="preserve">
-    <value>Согласование заявки</value>
-  </data>
   <data name="Block_a3d9f0524acb4589933ca5fc1e87899e" xml:space="preserve">
     <value>Обработка списка посетителей</value>
   </data>

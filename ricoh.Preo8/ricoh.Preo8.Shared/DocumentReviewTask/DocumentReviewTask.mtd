@@ -62,16 +62,6 @@
   ],
   "Blocks": [
     {
-      "$type": "Sungero.Metadata.AssignmentBlockMetadata, Sungero.Workflow.Shared",
-      "NameGuid": "d50744a9-4658-4d8d-ba40-b52a57fe2f09",
-      "Name": "ApprovalBlockricoh",
-      "BaseGuid": "9cc122a7-f93b-4053-9219-cd2f22af0365",
-      "EntityType": "80fbedac-1a23-40d4-aec5-7c59b92b5eb1",
-      "HandledEvents": [
-        "ApprovalBlockricohCompleteAssignment"
-      ]
-    },
-    {
       "$type": "Sungero.Metadata.ScriptBlockMetadata, Sungero.Workflow.Shared",
       "NameGuid": "a3d9f052-4acb-4589-933c-a5fc1e87899e",
       "Name": "ProcessVisitorsricoh",
@@ -219,10 +209,6 @@
       ],
       "Versions": []
     }
-  ],
-  "HandledEvents": [
-    "BeforeAbortServer",
-    "CreatedServer"
   ],
   "IconResourcesKeys": [],
   "IsVisibleThreadText": true,

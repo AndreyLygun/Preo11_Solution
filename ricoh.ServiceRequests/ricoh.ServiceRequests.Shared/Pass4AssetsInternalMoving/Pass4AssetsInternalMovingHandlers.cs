@@ -36,10 +36,5 @@ namespace ricoh.ServiceRequests
       }
     }
 
-    public virtual void BuildingMaterialsChanged(Sungero.Domain.Shared.BooleanPropertyChangedEventArgs e)
-    {
-      _obj.BuildingMaterialsString = (_obj.BuildingMaterials??false)?"Да":"Нет";
-    }
-
   }
 }

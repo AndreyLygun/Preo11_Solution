@@ -27,18 +27,6 @@ namespace ricoh.Preo8.Server.DocumentReviewTaskBlocks
     }
   }
 
-
-
-  partial class ApprovalBlockricohHandlers
-  {
-
-    public virtual void ApprovalBlockricohCompleteAssignment(ricoh.Preo8.IApprovalAssignment assignment)
-    {
-//      var assigments = ApprovalAssignments.GetAll(a => == _block
-      
-    }
-  }
-
   partial class ChangeRequestStatusBlockricohHandlers
   {
     public virtual void ChangeRequestStatusBlockricohExecute()

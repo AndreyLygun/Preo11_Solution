@@ -1,0 +1,119 @@
+{
+  "_Description_fe0b6fa4d9494c08bfa7c841e759b3ae": {
+    "ru-RU": "Пропуска на вход, въезд, внос-вынос, работы, парковку и пр."
+  },
+  "_Title_fe0b6fa4d9494c08bfa7c841e759b3ae": {
+    "ru-RU": "Сервисные заявки"
+  },
+  "Action_Description_0af8c74728414ac2bbfce47ae4d07d3e": {
+    "ru-RU": "Компании, сотрудники которых имеют возможность создавать заявки"
+  },
+  "Action_Description_111a204056984fb8932641519c581455": {
+    "ru-RU": "Заявки на перемещение ТМЦ внутри БЦ"
+  },
+  "Action_Description_167c66592d7749a9bc1c9fe96ed2e72b": {
+    "ru-RU": "Информация об арендаторах, автомобилях и водителях, которые могут использовать парковочные места."
+  },
+  "Action_Description_1f4615aefb69448795980a7b277f3eba": {
+    "ru-RU": "Заявки на оформление пропусков на постоянную парковку для автомобилей арендаторов БЦ"
+  },
+  "Action_Description_41f75f4df0984461b1edc5cafe9a42ed": {
+    "ru-RU": "Оформление разовые автомобильных пропусков для арендаторов БЦ"
+  },
+  "Action_Description_6825be8a653a4f2cbd97bd9771f21484": {
+    "ru-RU": "Заявки на оформление дополнительного доступа на территорию БЦ для отдельных сотрудников"
+  },
+  "Action_Description_9736adadfa9c433193d9cb98a4669855": {
+    "ru-RU": "Вход, въезд, парковки, ввоз-вывоз ТМЦ, разрешение на проведение работ и пр."
+  },
+  "Action_Description_985a88776a474ad89132241f2f919fa1": {
+    "ru-RU": "Заявки на разовый ввоз-вывоз ТМЦ"
+  },
+  "Action_Description_bf1fbdad2652425ea43878fa06e44a84": {
+    "ru-RU": "Разрешение на выполнение работ на территории БЦ"
+  },
+  "Action_Description_c0813728606e45be954dc01f6a8e8905": {
+    "ru-RU": "Оформление пропусков на регулярный ввоз-вывоз ТМЦ"
+  },
+  "Action_Description_dab537514544405bb6248202ede715ad": {
+    "ru-RU": "Разовые пропуска для гостей арендаторов БЦ"
+  },
+  "Action_Description_f35c23c563014dffb7722e825bd752d6": {
+    "ru-RU": "Заявки на изготовление пропусков для сотрудников арендаторов БЦ"
+  },
+  "Action_Title_0af8c74728414ac2bbfce47ae4d07d3e": {
+    "en-US": "Action",
+    "ru-RU": "Арендаторы"
+  },
+  "Action_Title_111a204056984fb8932641519c581455": {
+    "en-US": "Action",
+    "ru-RU": "Перемещение ТМЦ"
+  },
+  "Action_Title_167c66592d7749a9bc1c9fe96ed2e72b": {
+    "en-US": "Action",
+    "ru-RU": "Парковочные места"
+  },
+  "Action_Title_1f4615aefb69448795980a7b277f3eba": {
+    "en-US": "Action",
+    "ru-RU": "Постоянная парковка"
+  },
+  "Action_Title_41f75f4df0984461b1edc5cafe9a42ed": {
+    "en-US": "Action",
+    "ru-RU": "Гостевая парковка"
+  },
+  "Action_Title_6825be8a653a4f2cbd97bd9771f21484": {
+    "en-US": "Action",
+    "ru-RU": "Дополнительный доступ для сотрудников"
+  },
+  "Action_Title_9736adadfa9c433193d9cb98a4669855": {
+    "en-US": "Action",
+    "ru-RU": "Все заявки"
+  },
+  "Action_Title_985a88776a474ad89132241f2f919fa1": {
+    "en-US": "Action",
+    "ru-RU": "Ввоз-вывоз ТМЦ"
+  },
+  "Action_Title_bf1fbdad2652425ea43878fa06e44a84": {
+    "en-US": "Action",
+    "ru-RU": "Работы на территории БЦ"
+  },
+  "Action_Title_c0813728606e45be954dc01f6a8e8905": {
+    "en-US": "Action",
+    "ru-RU": "Заявка на поставщика"
+  },
+  "Action_Title_dab537514544405bb6248202ede715ad": {
+    "en-US": "Action",
+    "ru-RU": "Посетители"
+  },
+  "Action_Title_f35c23c563014dffb7722e825bd752d6": {
+    "en-US": "Action",
+    "ru-RU": "Пропуска для сотрудников"
+  },
+  "Description": {},
+  "Group_Title_21e43ab923294deead81d6731972adbc": {
+    "en-US": "Group",
+    "ru-RU": "Товарно-метариальные ценности"
+  },
+  "Group_Title_6b2b7a85775147c4b499b417918dc4cc": {
+    "en-US": "Group",
+    "ru-RU": "Сотрудники и гости"
+  },
+  "Group_Title_9f06947d985f48c2bff44918ae9090f1": {
+    "en-US": "Group",
+    "ru-RU": "Общий"
+  },
+  "Group_Title_faea279183644eadb6d5f4ad5877d7cf": {
+    "en-US": "Group",
+    "ru-RU": "Настройка"
+  },
+  "Group_Title_fe4d5c036b924504964bb6d4805f313f": {
+    "en-US": "Group",
+    "ru-RU": "Парковки и автомобили"
+  },
+  "Name": {
+    "ru-RU": "Сервисные заявки"
+  },
+  "Tab_Title_ad974cc6bc4a417db8ecbacdb05a9d3f": {
+    "en-US": "Tab"
+  }
+}

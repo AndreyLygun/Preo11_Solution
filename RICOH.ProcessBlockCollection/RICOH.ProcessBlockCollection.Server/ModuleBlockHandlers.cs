@@ -41,7 +41,7 @@ namespace RICOH.ProcessBlockCollection.Server.ProcessBlockCollectionBlocks
       } else if (_block.Action.Equals(ProcessBlockCollectionBlocks.ProcessCarPassHandlers.Action.Remove ))  {
         foreach(var car in cars) {
           ricoh.ServiceRequests.Cars.Delete(car);
-        }        
+        }
       }
       
       
@@ -55,9 +55,20 @@ namespace RICOH.ProcessBlockCollection.Server.ProcessBlockCollectionBlocks
     public virtual void SendMailExecute()
     {
       var message = Mail.CreateMailMessage();
-      message.To.Add(_block.To);
       message.Subject = _block.Subject;
       message.Body = _block.Body;
+      message.IsBodyHtml = true;
+      message.To.Add(_block.To);
+      foreach(var employee in _block.ToEmployee)
+        if (!string.IsNullOrWhiteSpace(employee.Email))
+          message.To.Add(employee.Email);
+      if (_block.DocumentToAttach != null) {
+        if (_block.DocumentToAttach.HasVersions)
+          message.AddAttachment(_block.DocumentToAttach.LastVersion);
+        else
+          Logger.DebugFormat("В блоке {0} в документе {1} отсутствует версия для отправке на почту {3}", 
+                             _block.Id, _block.DocumentToAttach.Name, string.Join(",", message.To));
+      }
       Mail.Send(message);
     }
   }

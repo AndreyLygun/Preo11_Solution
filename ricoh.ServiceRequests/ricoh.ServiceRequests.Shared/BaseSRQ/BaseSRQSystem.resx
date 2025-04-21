@@ -211,4 +211,7 @@
   <data name="FilterPanel_Kind_9fe4b8e7eb3e427fb31aa8129880a880" xml:space="preserve">
     <value>Вид заявки</value>
   </data>
+  <data name="Property_Id" xml:space="preserve">
+    <value>N</value>
+  </data>
 </root>

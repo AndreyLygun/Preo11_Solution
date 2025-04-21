@@ -71,7 +71,7 @@
     <value>Тема</value>
   </data>
   <data name="Block_53317cae37e14607b17ad06fe40593d3_Property_3b8c3e350d2a4e61b1d92ea7da6a57ca" xml:space="preserve">
-    <value>Кому</value>
+    <value>Кому (E-mail)</value>
   </data>
   <data name="Block_53317cae37e14607b17ad06fe40593d3_Property_330f447372994d9b9bff2fe6e032d82a" xml:space="preserve">
     <value>Текст письма</value>
@@ -87,5 +87,11 @@
   </data>
   <data name="Block_e102f34a69ec4d3b96058c40e3152730_Property_bd9d7409e3c344b2a0d161b82f292765_Enum_1c9df39062a4411983ec79749142ed14" xml:space="preserve">
     <value>Удалить</value>
+  </data>
+  <data name="Block_53317cae37e14607b17ad06fe40593d3_Property_d0f5b61e48954d659e60d49a5fe13c8c" xml:space="preserve">
+    <value>Кому (пользователи)</value>
+  </data>
+  <data name="Block_53317cae37e14607b17ad06fe40593d3_Property_44e93bc473b344d8bc095c1ac3348411" xml:space="preserve">
+    <value>Документ для вложения</value>
   </data>
 </root>

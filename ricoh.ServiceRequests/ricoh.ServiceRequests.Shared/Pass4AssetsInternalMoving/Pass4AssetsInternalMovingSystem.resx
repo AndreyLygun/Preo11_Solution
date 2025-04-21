@@ -61,10 +61,10 @@
   <data name="Property_Inventory" xml:space="preserve">
     <value>Перечень ТМЦ</value>
   </data>
-  <data name="Property_BuildingMaterials" xml:space="preserve">
-    <value>Стройматериалы</value>
+  <data name="Property_OldBuildingMaterials" xml:space="preserve">
+    <value>Стройматериалы (уст)</value>
   </data>
-  <data name="Property_TimeSpan" xml:space="preserve">
+  <data name="Property_OldTimeSpan" xml:space="preserve">
     <value>Время использовани лифта (не используется)</value>
   </data>
   <data name="Property_OldStorageRoom" xml:space="preserve">
@@ -100,8 +100,8 @@
   <data name="Property_ElevatorTimeSpan" xml:space="preserve">
     <value>Время использования лифта </value>
   </data>
-  <data name="Property_BuildingMaterialsString" xml:space="preserve">
-    <value>Строительные материалы для шаблона</value>
+  <data name="Property_OldBuildingMaterialsString" xml:space="preserve">
+    <value>Строительные материалы для шаблона (уст)</value>
   </data>
   <data name="ControlGroup_2f3c2e9ef180422a8cf56b798b8e86f2" xml:space="preserve">
     <value />
@@ -125,6 +125,15 @@
     <value>Да</value>
   </data>
   <data name="Enum_StorageRoom_No" xml:space="preserve">
+    <value>Нет</value>
+  </data>
+  <data name="Property_BuildingMaterials" xml:space="preserve">
+    <value>Есть стройматериалы</value>
+  </data>
+  <data name="Enum_BuildingMaterials_Yes" xml:space="preserve">
+    <value>Да</value>
+  </data>
+  <data name="Enum_BuildingMaterials_No" xml:space="preserve">
     <value>Нет</value>
   </data>
 </root>

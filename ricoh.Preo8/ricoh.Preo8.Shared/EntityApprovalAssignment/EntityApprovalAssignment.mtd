@@ -3,6 +3,18 @@
   "NameGuid": "e64283ca-112c-4be4-9c06-047bab68cfe0",
   "Name": "EntityApprovalAssignment",
   "AccessRightsMode": "Instance",
+  "Actions": [
+    {
+      "NameGuid": "760e62a9-42bb-4dda-8f6b-08e43e07f9f9",
+      "Name": "ExtendDeadline",
+      "GenerateHandler": true,
+      "IsAncestorMetadata": true,
+      "Overridden": [
+        "GenerateHandler"
+      ],
+      "Versions": []
+    }
+  ],
   "AttachmentGroups": [
     {
       "NameGuid": "cfb16663-ca56-431f-b10c-3867caa88a0e",
@@ -100,7 +112,21 @@
     "NameGuid": "cdd34925-6a20-489c-80c3-2649acf7ad28",
     "Name": "RibbonCard",
     "Categories": [],
-    "Elements": [],
+    "Elements": [
+      {
+        "$type": "Sungero.Metadata.RibbonActionButtonMetadata, Sungero.Metadata",
+        "NameGuid": "32ad792f-316f-47ff-b1ad-a6456409bee1",
+        "Name": "ExtendDeadline",
+        "ActionGuid": "760e62a9-42bb-4dda-8f6b-08e43e07f9f9",
+        "ButtonSize": "Large",
+        "Index": 0,
+        "IsAncestorMetadata": true,
+        "Overridden": [
+          "IsVisible"
+        ],
+        "ParentGuid": "75a2372b-608c-4c61-91b1-19b72a478731"
+      }
+    ],
     "Groups": [],
     "IsAncestorMetadata": true,
     "Pages": [],

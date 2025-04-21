@@ -130,6 +130,10 @@
     {
       "ItemId": "bdbf7e3f-67ea-43b1-8e41-6cef9f05cd04",
       "PreviousItemId": "b82b8556-4433-4c8d-960c-1a80db68c209"
+    },
+    {
+      "ItemId": "68644dde-3f93-41a0-81e1-a38c9b89cf87",
+      "PreviousItemId": "bdbf7e3f-67ea-43b1-8e41-6cef9f05cd04"
     }
   ],
   "IconResourcesKeys": [],
@@ -148,7 +152,7 @@
   "SharedAssemblyName": "ricoh.Preo8.Shared",
   "SharedNamespace": "ricoh.Preo8.Shared",
   "SpecialFolders": [],
-  "Version": "0.0.1.32",
+  "Version": "0.0.1.34",
   "Widgets": [],
   "Versions": [
     {
