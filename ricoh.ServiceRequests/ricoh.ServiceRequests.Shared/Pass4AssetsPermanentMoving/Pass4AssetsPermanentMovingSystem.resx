@@ -91,4 +91,7 @@
   <data name="ControlGroup_09bc3e217a954db1804ee15903e2398c" xml:space="preserve">
     <value>Сведения о ТМЦ</value>
   </data>
+  <data name="Property_CarsString" xml:space="preserve">
+    <value>Автомобили для шаблона</value>
+  </data>
 </root>

@@ -7,8 +7,6 @@ using ricoh.ServiceRequests.Permission4Employee;
 
 namespace ricoh.ServiceRequests
 {
-  partial class Permission4EmployeeSharedHandlers
-  {
 
-  }
+
 }

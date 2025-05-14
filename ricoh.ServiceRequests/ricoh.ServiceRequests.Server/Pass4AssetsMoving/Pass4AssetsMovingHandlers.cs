@@ -49,7 +49,7 @@ namespace ricoh.ServiceRequests
       var direction = _obj.Info.Properties.MovingDirection.GetLocalizedValue(_obj.MovingDirection); 
       var ValidOn = _obj.ValidOn.Value.ToShortDateString();
       _obj.Subject = $"{direction} ТМЦ ({assetsNames})";      
-      _obj.Name = $"{direction} ТМЦ ({_obj.Renter.Name} на {ValidOn}: {assetsNames})";      
+      _obj.Name = string.Format("Заявка № {0} от {1}: {2}", _obj.Id, _obj.Renter, _obj.Subject);
     }
 
     public override void Created(Sungero.Domain.CreatedEventArgs e)

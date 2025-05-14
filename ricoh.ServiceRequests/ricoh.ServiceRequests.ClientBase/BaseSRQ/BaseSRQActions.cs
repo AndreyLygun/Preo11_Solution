@@ -10,6 +10,15 @@ namespace ricoh.ServiceRequests.Client
 
   partial class BaseSRQActions
   {
+    public virtual void CloseRequest(Sungero.Domain.Client.ExecuteActionArgs e)
+    {
+    }
+
+    public virtual bool CanCloseRequest(Sungero.Domain.Client.CanExecuteActionArgs e)
+    {
+      return false;
+    }
+
 
     
     public virtual void ShowPrintForm(Sungero.Domain.Client.ExecuteActionArgs e)

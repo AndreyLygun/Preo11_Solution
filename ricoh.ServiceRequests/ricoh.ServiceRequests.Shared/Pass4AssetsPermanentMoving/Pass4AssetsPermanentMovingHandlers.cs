@@ -7,8 +7,5 @@ using ricoh.ServiceRequests.Pass4AssetsPermanentMoving;
 
 namespace ricoh.ServiceRequests
 {
-  partial class Pass4AssetsPermanentMovingSharedHandlers
-  {
 
-  }
 }

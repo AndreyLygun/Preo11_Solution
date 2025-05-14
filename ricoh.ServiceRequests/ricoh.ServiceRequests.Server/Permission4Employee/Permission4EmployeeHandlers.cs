@@ -22,8 +22,14 @@ namespace ricoh.ServiceRequests
 
     public override void BeforeSave(Sungero.Domain.BeforeSaveEventArgs e)
     {
-      base.BeforeSave(e);
-      _obj.Subject = _obj.Permisssion + " / " + _obj.Employee;
+      base.BeforeSave(e);      
+      _obj.Subject = string.Format("Дополнительный доступ ({0})", _obj.Employee);
+      _obj.Name = string.Format("Заявка № {0} от {1}: {2}", _obj.Id, _obj.Renter, _obj.Subject);
+      string[] sites = new string[_obj.Access.Count];
+      foreach(var item in _obj.Access) {
+        sites.Append(item.Site.Name);
+      }
+      _obj.AccessStr = string.Join(",", sites);            
     }
   }
 

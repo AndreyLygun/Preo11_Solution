@@ -61,4 +61,7 @@
   <data name="Property_Name" xml:space="preserve">
     <value>Название</value>
   </data>
+  <data name="Action_FreePlaceConfirmationDescription" xml:space="preserve">
+    <value>Во всех выбранных местах будет удалена информация о закреплении за арендатором, включая список автомобилей и водителей. </value>
+  </data>
 </root>

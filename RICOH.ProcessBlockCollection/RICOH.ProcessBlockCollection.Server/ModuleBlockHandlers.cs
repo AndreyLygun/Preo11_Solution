@@ -66,7 +66,7 @@ namespace RICOH.ProcessBlockCollection.Server.ProcessBlockCollectionBlocks
         if (_block.DocumentToAttach.HasVersions)
           message.AddAttachment(_block.DocumentToAttach.LastVersion);
         else
-          Logger.DebugFormat("В блоке {0} в документе {1} отсутствует версия для отправке на почту {3}", 
+          Logger.DebugFormat("В блоке {0} в документе {1} отсутствует версия для отправке на почту {2}", 
                              _block.Id, _block.DocumentToAttach.Name, string.Join(",", message.To));
       }
       Mail.Send(message);

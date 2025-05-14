@@ -14,7 +14,7 @@ namespace ricoh.ServiceRequests
     {
       if (!Equals(_obj.Renter, Renters.Null))
         query = query.Where(site => site.Renter.Equals(_obj.Renter));
-          else query = query.Where(site => false); // Арендатор в завявке не выбран, поэтому возвращаем пустой список.
+      else query = query.Where(site => false); // Арендатор в завявке не выбран, поэтому возвращаем пустой список.
       return query;
     }
   }
@@ -25,7 +25,14 @@ namespace ricoh.ServiceRequests
     public override IQueryable<T> Filtering(IQueryable<T> query, Sungero.Domain.FilteringEventArgs e)
     {
       if (_filter == null) return query;
-      query = base.Filtering(query, e);
+      query = base.Filtering(query, e);      
+      var minDate = Calendar.SqlMinValue;
+      var maxDate = Calendar.SqlMaxValue;
+      var today = Calendar.UserToday;
+      if (_filter.Today) query = query.Where(r => Calendar.Between(today, r.ValidFrom??minDate, r.ValidTill??maxDate));
+      if (_filter.Tomorrow) query = query.Where(r => Calendar.Between(today.AddDays(1), r.ValidFrom??minDate, r.ValidTill??maxDate));
+      if (_filter.ThisWeek) query = query.Where(r => (today.BeginningOfWeek() <= (r.ValidTill??maxDate) && today.EndOfWeek() >= (r.ValidFrom??minDate)));
+      if (_filter.Dates) query = query.Where(r => ((_filter.DateRangeFrom??minDate) <= (r.ValidTill??maxDate) && (_filter.DateRangeTo??maxDate) >= (r.ValidFrom??minDate)));
       return query;
     }
   }

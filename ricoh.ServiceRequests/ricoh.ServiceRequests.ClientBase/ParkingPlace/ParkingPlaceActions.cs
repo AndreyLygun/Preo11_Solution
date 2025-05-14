@@ -18,7 +18,7 @@ namespace ricoh.ServiceRequests.Client
 
     public virtual void FixPlace2Renter(Sungero.Domain.Client.ExecuteActionArgs e)
     {
-      var dialog = Dialogs.CreateInputDialog("Введите адрес");
+      var dialog = Dialogs.CreateInputDialog("Изменение арендатора");
       dialog.Buttons.AddOkCancel();
       var renter=dialog.AddSelect("Выберите арендатора", true, Renters.Null);
       var res = dialog.Show();
@@ -27,6 +27,9 @@ namespace ricoh.ServiceRequests.Client
         var place = ParkingPlaces.As(item);
         if (place != null) {
           place.Renter = renter.Value;
+          place.Cars.Clear();
+          place.Drivers.Clear();
+          place.NfcNumber = "";
           place.Save();
         }
       }
@@ -39,10 +42,13 @@ namespace ricoh.ServiceRequests.Client
 
     public virtual void FreePlace(Sungero.Domain.Client.ExecuteActionArgs e)
     {
-      foreach(var site in _objs) {
-        if (site != null) {
-          site.Renter = Renters.Null;
-          site.Save();
+      foreach(var place in _objs) {
+        if (place != null) {
+          place.Renter = Renters.Null;
+          place.Cars.Clear();
+          place.Drivers.Clear();
+          place.NfcNumber = "";
+          place.Save();
         }
       }
     }

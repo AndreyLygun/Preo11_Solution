@@ -121,4 +121,25 @@
   <data name="Property_ParkingPlace" xml:space="preserve">
     <value>Парковочное место</value>
   </data>
+  <data name="FilterPanel_ValidOn_07a26198e9704ee581d7ed084967929d" xml:space="preserve">
+    <value>Действителен на</value>
+  </data>
+  <data name="FilterPanel_Today_0c6847a8aa9b4c5ca5572595d0a592de" xml:space="preserve">
+    <value>Сегодня</value>
+  </data>
+  <data name="FilterPanel_Tomorrow_38b292170b11419684b8fc4fd5ccfd76" xml:space="preserve">
+    <value>Завтра</value>
+  </data>
+  <data name="FilterPanel_ThisWeek_91ec004609004ee889ba1e1d52cc78de" xml:space="preserve">
+    <value>Текущая неделя</value>
+  </data>
+  <data name="FilterPanel_Dates_6263c51932504df2924043a47ba4cf52" xml:space="preserve">
+    <value>Даты</value>
+  </data>
+  <data name="FilterPanel_DateRange_9765110030744aae80d087cd407e47f1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="FilterPanel_Any_09e1b57ac59d49c490f8b580e59c66ac" xml:space="preserve">
+    <value>Без ограничений</value>
+  </data>
 </root>

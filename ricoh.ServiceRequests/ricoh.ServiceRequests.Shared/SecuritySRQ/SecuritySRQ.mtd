@@ -3,6 +3,17 @@
   "NameGuid": "ac86d580-b326-4345-a0bd-7277d2f47ad0",
   "Name": "SecuritySRQ",
   "AccessRightsMode": "Both",
+  "Actions": [
+    {
+      "NameGuid": "24ed9bd1-b973-4734-9426-aea87c354a44",
+      "Name": "CloseRequest",
+      "GenerateHandler": true,
+      "IsAncestorMetadata": true,
+      "Overridden": [
+        "GenerateHandler"
+      ]
+    }
+  ],
   "BaseGuid": "b1ad4b49-11d3-4b05-8faa-77aa2c2d31ee",
   "CanBeNavigationPropertyType": true,
   "CanBeSearch": true,
@@ -36,9 +47,64 @@
   "FilterPanel": {
     "NameGuid": "80d3ce1a-9a72-443a-8b6c-6c6eef0c8d0f",
     "Name": "FilterPanel",
-    "Controls": [],
+    "Controls": [
+      {
+        "$type": "Sungero.Metadata.FilterGroupMetadata, Sungero.Metadata",
+        "NameGuid": "07a26198-e970-4ee5-81d7-ed084967929d",
+        "Name": "ValidOn",
+        "PreviousGuid": "33e1d138-9d3c-433e-b882-9e1907383c61"
+      },
+      {
+        "$type": "Sungero.Metadata.FilterListMetadata, Sungero.Metadata",
+        "NameGuid": "27546019-9d32-470e-9b34-955476fab589",
+        "Name": "ValidOnFlags",
+        "ParentGuid": "07a26198-e970-4ee5-81d7-ed084967929d"
+      },
+      {
+        "$type": "Sungero.Metadata.FilterListItemMetadata, Sungero.Metadata",
+        "NameGuid": "0c6847a8-aa9b-4c5c-a557-2595d0a592de",
+        "Name": "Today",
+        "ParentGuid": "27546019-9d32-470e-9b34-955476fab589",
+        "PreviousGuid": "09e1b57a-c59d-49c4-90f8-b580e59c66ac"
+      },
+      {
+        "$type": "Sungero.Metadata.FilterListItemMetadata, Sungero.Metadata",
+        "NameGuid": "38b29217-0b11-4196-84b8-fc4fd5ccfd76",
+        "Name": "Tomorrow",
+        "ParentGuid": "27546019-9d32-470e-9b34-955476fab589",
+        "PreviousGuid": "0c6847a8-aa9b-4c5c-a557-2595d0a592de"
+      },
+      {
+        "$type": "Sungero.Metadata.FilterListItemMetadata, Sungero.Metadata",
+        "NameGuid": "91ec0046-0900-4ee8-89ba-1e1d52cc78de",
+        "Name": "ThisWeek",
+        "ParentGuid": "27546019-9d32-470e-9b34-955476fab589",
+        "PreviousGuid": "38b29217-0b11-4196-84b8-fc4fd5ccfd76"
+      },
+      {
+        "$type": "Sungero.Metadata.FilterDateRangeMetadata, Sungero.Metadata",
+        "NameGuid": "97651100-3074-4aae-80d0-87cd407e47f1",
+        "Name": "DateRange",
+        "MasterControlId": "6263c519-3250-4df2-9240-43a47ba4cf52",
+        "ParentGuid": "07a26198-e970-4ee5-81d7-ed084967929d",
+        "PreviousGuid": "27546019-9d32-470e-9b34-955476fab589"
+      },
+      {
+        "$type": "Sungero.Metadata.FilterListItemMetadata, Sungero.Metadata",
+        "NameGuid": "6263c519-3250-4df2-9240-43a47ba4cf52",
+        "Name": "Dates",
+        "ParentGuid": "27546019-9d32-470e-9b34-955476fab589",
+        "PreviousGuid": "91ec0046-0900-4ee8-89ba-1e1d52cc78de"
+      },
+      {
+        "$type": "Sungero.Metadata.FilterListItemMetadata, Sungero.Metadata",
+        "NameGuid": "09e1b57a-c59d-49c4-90f8-b580e59c66ac",
+        "Name": "Any",
+        "IsSelected": true,
+        "ParentGuid": "27546019-9d32-470e-9b34-955476fab589"
+      }
+    ],
     "IsAncestorMetadata": true,
-    "IsEnabled": false,
     "Overridden": [
       "Controls",
       "IsEnabled"
@@ -420,6 +486,30 @@
       ],
       "ReturnType": "void",
       "ReturnTypeFullName": "System.Void"
+    },
+    {
+      "Name": "CloseRequestWithCarInfo",
+      "IsRemote": true,
+      "Parameters": [
+        {
+          "Name": "securitySRQ",
+          "ParameterType": "global::ricoh.ServiceRequests.ISecuritySRQ",
+          "ParameterTypeFullName": "ricoh.ServiceRequests.ISecuritySRQ, Sungero.Domain.Interfaces"
+        },
+        {
+          "Name": "carModel",
+          "ParameterType": "global::System.String",
+          "ParameterTypeFullName": "System.String"
+        },
+        {
+          "Name": "carNumber",
+          "ParameterType": "global::System.String",
+          "ParameterTypeFullName": "System.String"
+        }
+      ],
+      "Placement": "Shared",
+      "ReturnType": "void",
+      "ReturnTypeFullName": "System.Void"
     }
   ],
   "PublicStructures": [],
@@ -438,6 +528,16 @@
         "Index": 20,
         "IsAncestorMetadata": true,
         "IsVisible": false,
+        "Overridden": [
+          "IsVisible"
+        ],
+        "ParentGuid": "ab56c73d-5e95-4014-b359-86c97643f13c"
+      },
+      {
+        "NameGuid": "3fb1ac9f-a0d9-428e-bf68-2b41267d1b42",
+        "Name": "Sign",
+        "Index": 21,
+        "IsAncestorMetadata": true,
         "Overridden": [
           "IsVisible"
         ],

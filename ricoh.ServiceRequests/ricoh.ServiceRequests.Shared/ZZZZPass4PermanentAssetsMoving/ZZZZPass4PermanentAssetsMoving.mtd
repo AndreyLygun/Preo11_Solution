@@ -115,7 +115,7 @@
           "HeaderLocation": "Top",
           "ParentGuid": "edc74281-0fc3-4ba8-bceb-bc443bc51b4e",
           "PropertyGuid": "f2e5aeaf-c460-416b-aef1-6c0d9a70ebe0",
-          "RowNumber": 1,
+          "RowNumber": 2,
           "RowSpan": 1,
           "Settings": [
             {
@@ -134,7 +134,7 @@
           "HeaderLocation": "Top",
           "ParentGuid": "edc74281-0fc3-4ba8-bceb-bc443bc51b4e",
           "PropertyGuid": "14598cde-d740-485c-b6b8-b98375b50c43",
-          "RowNumber": 2,
+          "RowNumber": 3,
           "RowSpan": 1,
           "Settings": [
             {
@@ -142,6 +142,19 @@
               "Value": 150
             }
           ]
+        },
+        {
+          "$type": "Sungero.Metadata.ControlMetadata, Sungero.Metadata",
+          "NameGuid": "c0734101-f8fc-4bbd-8a18-26a7e73a920f",
+          "Name": "CarModel",
+          "ColumnNumber": 0,
+          "ColumnSpan": 1,
+          "DataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToStringBinder",
+          "ParentGuid": "edc74281-0fc3-4ba8-bceb-bc443bc51b4e",
+          "PropertyGuid": "aa103be1-53c9-4dd7-ba10-8b0b7dfa8cc8",
+          "RowNumber": 1,
+          "RowSpan": 1,
+          "Settings": []
         }
       ],
       "IsAncestorMetadata": true,
@@ -155,6 +168,7 @@
     "BeforeSaveServer"
   ],
   "HideFromCreationArea": true,
+  "HideFromNavigationEditorCreationArea": true,
   "IconResourcesKeys": [],
   "IntegrationServiceName": "ServiceRequestsPass4PermanentAssetsMoving",
   "IsVisible": false,
@@ -165,7 +179,8 @@
     "NeedWriteHistory",
     "OpenCardByDefaultInCollection",
     "CanBeUsedInIntegration",
-    "HideFromCreationArea"
+    "HideFromCreationArea",
+    "HideFromNavigationEditorCreationArea"
   ],
   "Properties": [
     {

@@ -7,6 +7,20 @@ using ricoh.ServiceRequests.Pass4AssetsMoving;
 
 namespace ricoh.ServiceRequests.Client
 {
+  partial class Pass4AssetsMovingActions
+  {
+    public override void CloseRequest(Sungero.Domain.Client.ExecuteActionArgs e)
+    {
+      base.CloseRequest(e);
+    }
+
+    public override bool CanCloseRequest(Sungero.Domain.Client.CanExecuteActionArgs e)
+    {
+      return true;
+    }
+
+  }
+
 
 
 

@@ -77,10 +77,13 @@
           "Name": "Additional",
           "ColumnDefinitions": [
             {
-              "Percentage": 50.0
+              "Percentage": 33.33
             },
             {
-              "Percentage": 50.0
+              "Percentage": 33.33
+            },
+            {
+              "Percentage": 33.33
             }
           ],
           "ColumnSpan": 1,
@@ -110,7 +113,7 @@
           "NameGuid": "e9a396a9-1dc0-41c8-a60d-1c3c3f0bb5ac",
           "Name": "Work",
           "ColumnNumber": 0,
-          "ColumnSpan": 2,
+          "ColumnSpan": 3,
           "DataBinderTypeName": "Sungero.Presentation.CommonDataBinders.TextEditorToTextBinder",
           "ParentGuid": "edc74281-0fc3-4ba8-bceb-bc443bc51b4e",
           "PropertyGuid": "86687293-f45f-422d-b733-0378f739144d",
@@ -149,7 +152,7 @@
           "NameGuid": "6786960e-1d04-4dca-b99a-f9827063750e",
           "Name": "Contractor",
           "ColumnNumber": 0,
-          "ColumnSpan": 2,
+          "ColumnSpan": 3,
           "DataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToStringBinder",
           "ParentGuid": "edc74281-0fc3-4ba8-bceb-bc443bc51b4e",
           "PropertyGuid": "cac8ca8f-4bb8-4e07-a32c-1cd0fa5062ce",
@@ -162,7 +165,7 @@
           "NameGuid": "710ed937-91ac-4fa1-930d-8b19406322ab",
           "Name": "Visitors",
           "ColumnNumber": 0,
-          "ColumnSpan": 2,
+          "ColumnSpan": 3,
           "DataBinderTypeName": "Sungero.Presentation.CommonDataBinders.TextEditorToTextBinder",
           "ParentGuid": "edc74281-0fc3-4ba8-bceb-bc443bc51b4e",
           "PropertyGuid": "d583953e-2bce-4c08-a587-dbabb0524e79",
@@ -176,9 +179,9 @@
           "Name": "DisableAFA",
           "ColumnNumber": 0,
           "ColumnSpan": 1,
-          "DataBinderTypeName": "Sungero.Presentation.CommonDataBinders.BooleanEditorToBooleanBinder",
+          "DataBinderTypeName": "Sungero.Presentation.CommonDataBinders.DropDownEditorToEnumerationBinder",
           "ParentGuid": "edc74281-0fc3-4ba8-bceb-bc443bc51b4e",
-          "PropertyGuid": "47f92736-aca2-4f14-ad8a-5652cf50beca",
+          "PropertyGuid": "cef8b24f-dcca-4e92-a959-567271db9fd1",
           "RowNumber": 0,
           "RowSpan": 1,
           "Settings": []
@@ -188,7 +191,7 @@
           "NameGuid": "a9e8c99c-6054-408f-b60e-bbd930fe7886",
           "Name": "Control",
           "ColumnNumber": 0,
-          "ColumnSpan": 2,
+          "ColumnSpan": 3,
           "DataBinderTypeName": "Sungero.Presentation.CommonDataBinders.TextEditorToTextBinder",
           "ParentGuid": "edc74281-0fc3-4ba8-bceb-bc443bc51b4e",
           "PropertyGuid": "8e71f285-c5df-4d4d-9ec6-e1c16c1e14fb",
@@ -200,19 +203,6 @@
               "Value": 40
             }
           ]
-        },
-        {
-          "$type": "Sungero.Metadata.ControlMetadata, Sungero.Metadata",
-          "NameGuid": "366c99ee-9d30-4632-90ad-3e682d5fd033",
-          "Name": "DisableAFAString",
-          "ColumnNumber": 1,
-          "ColumnSpan": 1,
-          "DataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToStringBinder",
-          "ParentGuid": "edc74281-0fc3-4ba8-bceb-bc443bc51b4e",
-          "PropertyGuid": "93b7392d-43e8-41b2-b093-e7e0efe15508",
-          "RowNumber": 0,
-          "RowSpan": 1,
-          "Settings": []
         }
       ],
       "IsAncestorMetadata": true,
@@ -273,15 +263,6 @@
       "PreviousPropertyGuid": "86687293-f45f-422d-b733-0378f739144d"
     },
     {
-      "$type": "Sungero.Metadata.CollectionPropertyMetadata, Sungero.Metadata",
-      "NameGuid": "446b771a-3730-493e-a36b-88eca6b5486b",
-      "Name": "Sites",
-      "Code": "WorkPermission",
-      "EntityGuid": "3663399b-33c7-4fd3-9801-5c5b113be1f9",
-      "IsShowedInList": false,
-      "PreviousPropertyGuid": "cac8ca8f-4bb8-4e07-a32c-1cd0fa5062ce"
-    },
-    {
       "$type": "Sungero.Metadata.DateTimePropertyMetadata, Sungero.Metadata",
       "NameGuid": "fcb24c78-d024-4315-b1c6-85ab324b7f6e",
       "Name": "FromDateTime",
@@ -307,38 +288,34 @@
       "Versions": []
     },
     {
-      "$type": "Sungero.Metadata.BooleanPropertyMetadata, Sungero.Metadata",
-      "NameGuid": "47f92736-aca2-4f14-ad8a-5652cf50beca",
-      "Name": "DisableAFA",
-      "Code": "DisableAFA",
-      "HandledEvents": [
-        "ChangedShared"
-      ],
-      "IsLoadEagerly": true,
-      "IsShowedInList": false,
-      "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.BooleanEditorToBooleanBinder",
-      "PreviousPropertyGuid": "3165470c-0990-421a-bb8c-90bd70c37ed9"
-    },
-    {
       "$type": "Sungero.Metadata.StringPropertyMetadata, Sungero.Metadata",
       "NameGuid": "8e71f285-c5df-4d4d-9ec6-e1c16c1e14fb",
       "Name": "Site",
       "Code": "Site",
       "Length": 999,
       "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToStringBinder",
-      "PreviousPropertyGuid": "446b771a-3730-493e-a36b-88eca6b5486b"
+      "PreviousPropertyGuid": "cac8ca8f-4bb8-4e07-a32c-1cd0fa5062ce"
     },
     {
-      "$type": "Sungero.Metadata.StringPropertyMetadata, Sungero.Metadata",
-      "NameGuid": "93b7392d-43e8-41b2-b093-e7e0efe15508",
-      "Name": "DisableAFAString",
-      "CanBeSearch": false,
-      "Code": "DisableAFAStri",
-      "IsEnabled": false,
-      "IsShowedInList": false,
-      "IsVisibility": false,
-      "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToStringBinder",
-      "PreviousPropertyGuid": "47f92736-aca2-4f14-ad8a-5652cf50beca"
+      "$type": "Sungero.Metadata.EnumPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "cef8b24f-dcca-4e92-a959-567271db9fd1",
+      "Name": "DisableAFA",
+      "Code": "DisableAFA",
+      "DirectValues": [
+        {
+          "NameGuid": "5d55a72c-12a9-42f0-a321-48b542f6189c",
+          "Name": "Yes",
+          "Code": "Yes"
+        },
+        {
+          "NameGuid": "1a5c1641-39ae-4651-8f65-c5bb6ec3d889",
+          "Name": "No",
+          "Code": "No"
+        }
+      ],
+      "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.DropDownEditorToEnumerationBinder",
+      "PreviousPropertyGuid": "3165470c-0990-421a-bb8c-90bd70c37ed9",
+      "Versions": []
     }
   ],
   "PublicStructures": [],

@@ -12,16 +12,16 @@ namespace ricoh.ServiceRequests
 
     public override void BeforeSave(Sungero.Domain.BeforeSaveEventArgs e)
     {
-      base.BeforeSave(e);      
-      if (string.IsNullOrWhiteSpace(_obj.Visitors)) return;      
+      base.BeforeSave(e);
+      if (string.IsNullOrWhiteSpace(_obj.Visitors)) return;
       var visitors = _obj.Visitors.Split('\n');
-      if (visitors.Count() > 4) {
-        _obj.Subject = "Количество посетителей: " + visitors.Count();
-      } else {
-        _obj.Subject = Functions.Module.List2SmartStr(visitors.ToList(), 4, 120);
-      }
       var ValidOn = _obj.ValidOn.Value.ToShortDateString();
-      _obj.Name = $"Посетители ({_obj.Renter.Name} на {ValidOn}: {_obj.Subject})";        
+      if (visitors.Count() > 4) {
+        _obj.Subject = string.Format("Посетители на {0}: {1} чел",  ValidOn, visitors.Count());
+      } else {
+        _obj.Subject = string.Format("Посетители на {0}: {1}",  ValidOn, Functions.Module.List2SmartStr(visitors.ToList(), 4, 120));
+      }
+      _obj.Name = string.Format("Заявка № {0} от {1}: {2}", _obj.Id, _obj.Renter, _obj.Subject);
     }
   }
 

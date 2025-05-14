@@ -181,6 +181,9 @@
       "Versions": []
     }
   ],
+  "HandledEvents": [
+    "BeforeSaveServer"
+  ],
   "IconResourcesKeys": [],
   "IntegrationServiceName": "ServiceRequestsPass4AssetsPermanentMoving",
   "OpenCardByDefaultInCollection": true,
@@ -235,6 +238,19 @@
       "Name": "Carrier",
       "Code": "Carrier",
       "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToStringBinder",
+      "PreviousPropertyGuid": "839794b1-0709-49c9-9f81-2c0d891c3235"
+    },
+    {
+      "$type": "Sungero.Metadata.TextPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "839794b1-0709-49c9-9f81-2c0d891c3235",
+      "Name": "CarsString",
+      "CanBeSearch": false,
+      "Code": "CarsString1",
+      "IsEnabled": false,
+      "IsLoadEagerly": true,
+      "IsShowedInList": false,
+      "IsVisibility": false,
+      "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToTextBinder",
       "PreviousPropertyGuid": "f7d4e489-676e-4350-9008-fc210e68f452"
     }
   ],

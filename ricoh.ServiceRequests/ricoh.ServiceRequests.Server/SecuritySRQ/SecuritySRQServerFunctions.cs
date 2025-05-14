@@ -11,6 +11,26 @@ namespace ricoh.ServiceRequests.Server
   {
 
     /// <summary>
+    /// Записывает в заявку модель и номер автомобиля, меняет статус на Closed.
+    /// Срабатывает независимо от наличия у пользователя прав на заявку
+    /// </summary>
+    /// <param name="CarModel"></param>
+    /// <param name="CarNumber"></param>
+    
+    [Remote, Public]
+    public void CloseRequestWithCarInfo(string carModel, string carNumber)
+    {
+      Sungero.Core.AccessRights.AllowRead(() => {
+                                            _obj.ClosedOn = Calendar.UserNow;
+                                            _obj.RequestState = ServiceRequests.BaseSRQ.RequestState.Done;
+                                            _obj.CarNumber = carNumber;
+                                            _obj.CarModel = carModel;
+                                            _obj.Save();
+                                          });
+    }
+
+
+    /// <summary>
     /// 
     /// </summary>
     /// 

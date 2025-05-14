@@ -42,10 +42,10 @@
           "Name": "Additional",
           "ColumnDefinitions": [
             {
-              "Percentage": 66.66
+              "Percentage": 44.45
             },
             {
-              "Percentage": 33.33
+              "Percentage": 55.55
             }
           ],
           "ColumnSpan": 1,
@@ -71,12 +71,12 @@
           "$type": "Sungero.Metadata.ControlMetadata, Sungero.Metadata",
           "NameGuid": "9c7c2d89-6980-494d-a4c1-255c850d4032",
           "Name": "NeedNFC",
-          "ColumnNumber": 1,
+          "ColumnNumber": 0,
           "ColumnSpan": 1,
           "DataBinderTypeName": "Sungero.Presentation.CommonDataBinders.DropDownEditorToEnumerationBinder",
           "ParentGuid": "edc74281-0fc3-4ba8-bceb-bc443bc51b4e",
           "PropertyGuid": "99026f8d-5ce4-45fd-9cfa-1cb257c152fd",
-          "RowNumber": 0,
+          "RowNumber": 1,
           "RowSpan": 1,
           "Settings": []
         },
@@ -89,7 +89,7 @@
           "DataBinderTypeName": "Sungero.Presentation.CommonDataBinders.GridControlToChildCollectionBinder",
           "ParentGuid": "edc74281-0fc3-4ba8-bceb-bc443bc51b4e",
           "PropertyGuid": "3b98b41b-3243-47f1-ab41-68c3a97c8dab",
-          "RowNumber": 1,
+          "RowNumber": 2,
           "RowSpan": 1,
           "Settings": [
             {
@@ -107,7 +107,7 @@
           "DataBinderTypeName": "Sungero.Presentation.CommonDataBinders.TextEditorToTextBinder",
           "ParentGuid": "edc74281-0fc3-4ba8-bceb-bc443bc51b4e",
           "PropertyGuid": "d583953e-2bce-4c08-a587-dbabb0524e79",
-          "RowNumber": 2,
+          "RowNumber": 3,
           "RowSpan": 1,
           "Settings": []
         },
@@ -131,6 +131,9 @@
       ],
       "Versions": []
     }
+  ],
+  "HandledEvents": [
+    "BeforeSaveServer"
   ],
   "IconResourcesKeys": [],
   "IntegrationServiceName": "ServiceRequestsChangePermanentParking",
@@ -194,7 +197,7 @@
         "AddedShared"
       ],
       "IsShowedInList": false,
-      "PreviousPropertyGuid": "367b6d8a-c494-4765-b20d-2c2a12b523b6",
+      "PreviousPropertyGuid": "fb67613a-bb27-4ca6-b8d7-d1147ece123a",
       "Versions": []
     },
     {
@@ -218,25 +221,6 @@
       "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.DropDownEditorToEnumerationBinder",
       "PreviousPropertyGuid": "3b98b41b-3243-47f1-ab41-68c3a97c8dab",
       "Versions": []
-    },
-    {
-      "$type": "Sungero.Metadata.NavigationPropertyMetadata, Sungero.Metadata",
-      "NameGuid": "367b6d8a-c494-4765-b20d-2c2a12b523b6",
-      "Name": "PermanentParkingPass",
-      "CanBeSearch": false,
-      "Code": "PermanentParki",
-      "EntityGuid": "4a82dc79-85fe-40b9-a5ab-b5592f293aa7",
-      "FlatListInStandaloneLookup": true,
-      "HandledEvents": [
-        "ChangedShared",
-        "LookupServer"
-      ],
-      "IsEnabled": false,
-      "IsShowedInList": false,
-      "IsVisibility": false,
-      "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.DropDownEditorToNavigationBinder",
-      "NeedPassEntityToLookupEvent": true,
-      "PreviousPropertyGuid": "fb67613a-bb27-4ca6-b8d7-d1147ece123a"
     }
   ],
   "PublicStructures": [],

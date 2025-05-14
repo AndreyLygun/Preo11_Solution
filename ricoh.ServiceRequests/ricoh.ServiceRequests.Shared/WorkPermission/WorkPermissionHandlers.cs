@@ -10,11 +10,6 @@ namespace ricoh.ServiceRequests
   partial class WorkPermissionSharedHandlers
   {
 
-    public virtual void DisableAFAChanged(Sungero.Domain.Shared.BooleanPropertyChangedEventArgs e)
-    {
-      _obj.DisableAFAString = (_obj.DisableAFA??false)?"Да":"Нет";
-    }
-
     public virtual void TillDateTimeChanged(Sungero.Domain.Shared.DateTimePropertyChangedEventArgs e)
     {
       _obj.ValidTill = _obj.TillDateTime;

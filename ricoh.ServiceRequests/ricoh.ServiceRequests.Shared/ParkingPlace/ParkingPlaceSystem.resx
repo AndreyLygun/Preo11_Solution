@@ -95,10 +95,10 @@
     <value>Закрепить места за арендатором</value>
   </data>
   <data name="Action_FixPlace2RenterConfirmationMessage" xml:space="preserve">
-    <value />
+    <value>Изменить арендатора в выбранных парковочных местах?</value>
   </data>
   <data name="Action_FixPlace2RenterConfirmationDescription" xml:space="preserve">
-    <value />
+    <value>Во всех выбранных парковочных местах будет очищена информациях о выданном электронном пропуске, автомобилях и водителях.</value>
   </data>
   <data name="Action_FreePlace" xml:space="preserve">
     <value>Освободить место</value>
@@ -113,7 +113,7 @@
     <value>Снять закрепление места?</value>
   </data>
   <data name="Action_FreePlaceConfirmationDescription" xml:space="preserve">
-    <value>Во всех выбранных местах будет удалена информация о закреплении за арендатором</value>
+    <value>Во всех выбранных местах будет удалена информация о закреплении за арендатором, включая номер электронного пропуска, список автомобилей и водителей. </value>
   </data>
   <data name="Property_Cars" xml:space="preserve">
     <value>Автомобили</value>

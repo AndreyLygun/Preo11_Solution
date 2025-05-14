@@ -481,6 +481,28 @@
       "WebApiRequestType": "Post"
     },
     {
+      "Name": "List2SmartStr",
+      "Parameters": [
+        {
+          "Name": "list",
+          "ParameterType": "global::System.Collections.Generic.List<global::System.String>",
+          "ParameterTypeFullName": "System.Collections.Generic.List"
+        },
+        {
+          "Name": "max",
+          "ParameterType": "global::System.Int32",
+          "ParameterTypeFullName": "System.Int32"
+        },
+        {
+          "Name": "maxLen",
+          "ParameterType": "global::System.Int32",
+          "ParameterTypeFullName": "System.Int32"
+        }
+      ],
+      "ReturnType": "global::System.String",
+      "ReturnTypeFullName": "System.String"
+    },
+    {
       "Name": "StartDocumentReviewTask",
       "Parameters": [
         {
@@ -492,6 +514,23 @@
       "ReturnType": "void",
       "ReturnTypeFullName": "System.Void",
       "WebApiRequestType": "Post"
+    },
+    {
+      "Name": "TrimText",
+      "Parameters": [
+        {
+          "Name": "text",
+          "ParameterType": "global::System.String",
+          "ParameterTypeFullName": "System.String"
+        },
+        {
+          "Name": "length",
+          "ParameterType": "global::System.Int32",
+          "ParameterTypeFullName": "System.Int32"
+        }
+      ],
+      "ReturnType": "global::System.String",
+      "ReturnTypeFullName": "System.String"
     }
   ],
   "PublicStructures": [],
@@ -560,7 +599,7 @@
       ]
     }
   ],
-  "Version": "0.0.1.34",
+  "Version": "0.0.1.37",
   "Widgets": [],
   "Versions": [
     {

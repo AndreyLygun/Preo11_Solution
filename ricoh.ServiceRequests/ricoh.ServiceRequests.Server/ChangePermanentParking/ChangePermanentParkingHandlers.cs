@@ -7,18 +7,16 @@ using ricoh.ServiceRequests.ChangePermanentParking;
 
 namespace ricoh.ServiceRequests
 {
-  partial class ChangePermanentParkingPermanentParkingPassPropertyFilteringServerHandler<T>
+  partial class ChangePermanentParkingServerHandlers
   {
 
-    public virtual IQueryable<T> PermanentParkingPassFiltering(IQueryable<T> query, Sungero.Domain.PropertyFilteringEventArgs e)
+    public override void BeforeSave(Sungero.Domain.BeforeSaveEventArgs e)
     {
-      if (_obj.Renter != null) {
-        query = query.Where(r => r.Renter.Equals(_obj.Renter));
-      } else {
-        query = query.Where(r => false);
-      }
-      return query;
+      base.BeforeSave(e);
+      _obj.Subject  = string.Format("Изменение на парковочном месте {0}", _obj.ParkingPlace.Name);
+      _obj.Name = string.Format("Заявка № {0} от {1}: {2}", _obj.Id, _obj.Renter, _obj.Subject);
     }
   }
+
 
 }

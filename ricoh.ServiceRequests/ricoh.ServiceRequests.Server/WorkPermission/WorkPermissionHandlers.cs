@@ -13,30 +13,8 @@ namespace ricoh.ServiceRequests
     public override void BeforeSave(Sungero.Domain.BeforeSaveEventArgs e)
     {
       base.BeforeSave(e);
-      if (String.IsNullOrEmpty(_obj.Work)) {
-        _obj.Subject = _obj.DocumentKind.Name;
-      } else {
-        if (_obj.Work?.Length>50) {
-          _obj.Subject = _obj.Work.Substring(0, 50) + "... ";
-        } else {
-          _obj.Subject = _obj.Work;
-        }
-        if (_obj.Site?.Length>50) {
-          _obj.Subject = _obj.Subject + " (" + _obj.Site.Substring(0, 50) + "...)";
-        } else if (!String.IsNullOrEmpty(_obj.Site)) {
-          _obj.Subject = _obj.Subject + " (" + _obj.Site + ")";
-        }       
-      }
-    }
-  }
-
-  partial class WorkPermissionSitesFloorPropertyFilteringServerHandler<T>
-  {
-
-    public virtual IQueryable<T> SitesFloorFiltering(IQueryable<T> query, Sungero.Domain.PropertyFilteringEventArgs e)
-    {
-      query = query.Where(s => s.Type == ServiceRequests.Site.Type.PassSite);
-      return query;
+      _obj.Subject = "Выполнение работ (" + ServiceRequests.PublicFunctions.Module.TrimText(_obj.Work, 50) + ")";
+      _obj.Name = string.Format("Заявка № {0} от {1}: {2}", _obj.Id, _obj.Renter, _obj.Subject);
     }
   }
 

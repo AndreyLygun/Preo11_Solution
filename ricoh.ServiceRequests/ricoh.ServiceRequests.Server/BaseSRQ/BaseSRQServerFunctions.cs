@@ -13,13 +13,13 @@ namespace ricoh.ServiceRequests.Server
 
     /// <summary>
     /// Возвращает true, если заявка находится в одном из "согласованных" состоянии (согласовано, исполнено), false, если заявка является черновиком, на согласовани или отказано
-    /// </summary>       
-    ///     
+    /// </summary>
+    ///
     public bool isAllowed()
     {
       return _obj.RequestState == ServiceRequests.BaseSRQ.RequestState.Approved
-          || _obj.RequestState == ServiceRequests.BaseSRQ.RequestState.Done
-          || _obj.RequestState == ServiceRequests.BaseSRQ.RequestState.Closed;
+        || _obj.RequestState == ServiceRequests.BaseSRQ.RequestState.Done
+        || _obj.RequestState == ServiceRequests.BaseSRQ.RequestState.Closed;
     }
 
 

@@ -3,6 +3,17 @@
   "NameGuid": "8ce2b667-494d-443b-b389-a653002d304c",
   "Name": "Pass4VisitorCar",
   "AccessRightsMode": "Both",
+  "Actions": [
+    {
+      "NameGuid": "24ed9bd1-b973-4734-9426-aea87c354a44",
+      "Name": "CloseRequest",
+      "GenerateHandler": true,
+      "IsAncestorMetadata": true,
+      "Overridden": [
+        "GenerateHandler"
+      ]
+    }
+  ],
   "BaseGuid": "ac86d580-b326-4345-a0bd-7277d2f47ad0",
   "CanBeNavigationPropertyType": true,
   "CreationAreaMetadata": {

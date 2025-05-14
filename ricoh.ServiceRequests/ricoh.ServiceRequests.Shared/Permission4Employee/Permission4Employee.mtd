@@ -52,12 +52,17 @@
           "Name": "Employee",
           "ColumnNumber": 0,
           "ColumnSpan": 1,
-          "DataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToStringBinder",
+          "DataBinderTypeName": "Sungero.Presentation.CommonDataBinders.TextEditorToTextBinder",
           "ParentGuid": "edc74281-0fc3-4ba8-bceb-bc443bc51b4e",
           "PropertyGuid": "2699e219-f7a8-45ab-b6e4-efe1b2c7803f",
           "RowNumber": 0,
           "RowSpan": 1,
-          "Settings": []
+          "Settings": [
+            {
+              "Name": "Height",
+              "Value": 10
+            }
+          ]
         },
         {
           "$type": "Sungero.Metadata.ControlMetadata, Sungero.Metadata",
@@ -69,19 +74,6 @@
           "ParentGuid": "edc74281-0fc3-4ba8-bceb-bc443bc51b4e",
           "PropertyGuid": "f65391b4-3e9b-4622-9e88-8e605d2bee60",
           "RowNumber": 1,
-          "RowSpan": 1,
-          "Settings": []
-        },
-        {
-          "$type": "Sungero.Metadata.ControlMetadata, Sungero.Metadata",
-          "NameGuid": "43ee2100-5464-4d5d-931e-0b85b09cfd8b",
-          "Name": "Permisssion",
-          "ColumnNumber": 0,
-          "ColumnSpan": 1,
-          "DataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToStringBinder",
-          "ParentGuid": "edc74281-0fc3-4ba8-bceb-bc443bc51b4e",
-          "PropertyGuid": "fb2189e4-a097-424e-8058-2f1af2116149",
-          "RowNumber": 2,
           "RowSpan": 1,
           "Settings": []
         },
@@ -100,7 +92,7 @@
           "ColumnNumber": 0,
           "ColumnSpan": 1,
           "ParentGuid": "edc74281-0fc3-4ba8-bceb-bc443bc51b4e",
-          "RowNumber": 3,
+          "RowNumber": 2,
           "RowSpan": 1
         },
         {
@@ -190,11 +182,11 @@
       "Versions": []
     },
     {
-      "$type": "Sungero.Metadata.StringPropertyMetadata, Sungero.Metadata",
+      "$type": "Sungero.Metadata.TextPropertyMetadata, Sungero.Metadata",
       "NameGuid": "2699e219-f7a8-45ab-b6e4-efe1b2c7803f",
       "Name": "Employee",
       "Code": "Employee",
-      "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToStringBinder",
+      "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToTextBinder",
       "PreviousPropertyGuid": "72da0048-dcc4-4230-90b9-d470be94727e"
     },
     {
@@ -221,6 +213,18 @@
       "EntityGuid": "82e56b20-c248-4f97-a2de-b783a30b85ef",
       "IsShowedInList": false,
       "PreviousPropertyGuid": "fb67613a-bb27-4ca6-b8d7-d1147ece123a"
+    },
+    {
+      "$type": "Sungero.Metadata.StringPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "2887ca37-a65c-4d5c-8cc4-61448d68b2f9",
+      "Name": "AccessStr",
+      "CanBeSearch": false,
+      "Code": "AccessStr",
+      "IsEnabled": false,
+      "IsShowedInList": false,
+      "IsVisibility": false,
+      "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToStringBinder",
+      "PreviousPropertyGuid": "9a5dad86-8fa7-49d6-bdf9-523e2729cce0"
     }
   ],
   "PublicStructures": [],

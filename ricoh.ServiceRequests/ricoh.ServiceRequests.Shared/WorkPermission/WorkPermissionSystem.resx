@@ -64,17 +64,11 @@
   <data name="Property_Contractor" xml:space="preserve">
     <value>Организация-исполнитель</value>
   </data>
-  <data name="Property_Sites" xml:space="preserve">
-    <value>Помещения</value>
-  </data>
   <data name="Property_FromDateTime" xml:space="preserve">
     <value>Начало работ</value>
   </data>
   <data name="Property_TillDateTime" xml:space="preserve">
     <value>Окончание работ</value>
-  </data>
-  <data name="Property_DisableAFA" xml:space="preserve">
-    <value>Отключение АПС </value>
   </data>
   <data name="Property_Visitors" xml:space="preserve">
     <value>Фамилии работников</value>
@@ -100,7 +94,13 @@
   <data name="ControlGroup_edc742810fc34ba8bcebbc443bc51b4e" xml:space="preserve">
     <value>ОПИСАНИЕ РАБОТ</value>
   </data>
-  <data name="Property_DisableAFAString" xml:space="preserve">
-    <value>Отключение АПС (для шаблона)</value>
+  <data name="Property_DisableAFA" xml:space="preserve">
+    <value>Требуется отключение АПС</value>
+  </data>
+  <data name="Enum_DisableAFA_Yes" xml:space="preserve">
+    <value>Да</value>
+  </data>
+  <data name="Enum_DisableAFA_No" xml:space="preserve">
+    <value>Нет</value>
   </data>
 </root>

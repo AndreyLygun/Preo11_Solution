@@ -10,6 +10,7 @@
       "GenerateHandler": true,
       "IsMultiSelectAction": true,
       "LargeIconName": "",
+      "NeedConfirmation": true,
       "NeedRefreshCollectionAfterExecute": true,
       "SmallIconName": "",
       "Versions": []

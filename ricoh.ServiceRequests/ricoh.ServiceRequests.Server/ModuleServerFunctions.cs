@@ -11,11 +11,14 @@ namespace ricoh.ServiceRequests.Server
   {
 
     /// <summary>
-    /// 
+    /// Обрезает текст text до длины length. Если текст обрезан, в конце добавляется многоточие.
     /// </summary>
-    public string TrimStringTo(string text, int length)
+    /// 
+    [Public]
+    public string TrimText(string text, int length)
     {
-      return text.Substring(0, Math.Min(length, text.Length));
+      if (text.Length <= length) return text;
+      return text.Substring(0, Math.Min(length-1, text.Length)) + "\x2026";
     }
 
     /// <summary>
@@ -23,7 +26,8 @@ namespace ricoh.ServiceRequests.Server
     /// </summary>
     /// list - список строк, из которых составляем строку
     /// max - количество элементов, которые должны перейти в строку. Если элементов в списке больше, то в конце строки добавляется "и др."
-    /// maxLen - максимальная длина строки на выходе. Если добавлении очередного элемента из списка длина строки превышает maxLen, то в конце строки добавляется "и дрю"
+    /// maxLen - максимальная длина строки на выходе. Если при добавлении очередного элемента из списка длина строки превышает maxLen, то в конце строки добавляется "и др."
+    [Public]
     public string List2SmartStr(List<string> list, int max, int maxLen)
     {
       string result = "";
