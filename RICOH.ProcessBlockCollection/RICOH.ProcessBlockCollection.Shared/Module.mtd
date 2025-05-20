@@ -12,6 +12,18 @@
       "HandledEvents": [
         "SendMailExecute"
       ],
+      "OutProperties": [
+        {
+          "$type": "Sungero.Metadata.EnumBlockPropertyMetadata, Sungero.Metadata",
+          "NameGuid": "bdff51bf-44a5-428b-8657-7168456cf781",
+          "Name": "ExecutionResult",
+          "DirectValues": [],
+          "IsAncestorMetadata": true,
+          "Overridden": [
+            "Values"
+          ]
+        }
+      ],
       "Properties": [
         {
           "$type": "Sungero.Metadata.StringBlockPropertyMetadata, Sungero.Metadata",
@@ -124,7 +136,7 @@
   "SharedAssemblyName": "RICOH.ProcessBlockCollection.Shared",
   "SharedNamespace": "RICOH.ProcessBlockCollection.Shared",
   "SpecialFolders": [],
-  "Version": "0.0.1.27",
+  "Version": "0.0.1.28",
   "Widgets": [],
   "Versions": [
     {

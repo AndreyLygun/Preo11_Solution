@@ -22,7 +22,7 @@ namespace ricoh.ServiceRequests
       var assetsNames = Functions.Module.List2SmartStr(assets, 3, 250);
       var ValidOn = _obj.ValidOn.Value.ToShortDateString();
       _obj.Subject = assetsNames;
-      _obj.Name = $"Внутр.перемещение ТМЦ ({_obj.Renter.Name} на {ValidOn}: {assetsNames})";
+      _obj.Name = string.Format("Заявка № {0} от {1}: перемещ.ТМЦ ({2})", _obj.Id, _obj.Renter, _obj.Subject);
     }
     
 

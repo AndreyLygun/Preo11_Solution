@@ -53,6 +53,8 @@ namespace ricoh.ServiceRequests.Server
     public void StartDocumentReviewTask(long requestId) {
       var request = BaseSRQs.Get(requestId);
       var task = Sungero.DocflowApproval.PublicFunctions.Module.Remote.CreateDocumentFlowTask(request);
+      task.DisplayValue = "Согласование " + request.Name;
+      task.ActiveText = "Согласуйте заявку от " + request.Renter.Name;
       task.Start();
     }
     

@@ -48,8 +48,8 @@ namespace ricoh.ServiceRequests
       var assetsNames = Functions.Module.List2SmartStr(assets, 3, 250);
       var direction = _obj.Info.Properties.MovingDirection.GetLocalizedValue(_obj.MovingDirection); 
       var ValidOn = _obj.ValidOn.Value.ToShortDateString();
-      _obj.Subject = $"{direction} ТМЦ ({assetsNames})";      
-      _obj.Name = string.Format("Заявка № {0} от {1}: {2}", _obj.Id, _obj.Renter, _obj.Subject);
+      _obj.Subject = $"{direction} ({assetsNames})";      
+      _obj.Name = string.Format("Заявка № {0} от {1}: {2} ({3})", _obj.Id, _obj.Renter, direction,assetsNames);
     }
 
     public override void Created(Sungero.Domain.CreatedEventArgs e)
