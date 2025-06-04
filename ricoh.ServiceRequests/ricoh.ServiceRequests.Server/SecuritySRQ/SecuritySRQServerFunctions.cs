@@ -9,20 +9,29 @@ namespace ricoh.ServiceRequests.Server
 {
   partial class SecuritySRQFunctions
   {
+    
+
+    
 
     /// <summary>
-    /// Записывает в заявку модель и номер автомобиля, меняет статус на Closed.
+    /// Записывает в заявку информацию о закрытии, модель и номер автомобиля, меняет статус на Closed.
     /// Срабатывает независимо от наличия у пользователя прав на заявку
     /// </summary>
+    /// <param name="comment">Комментарий к закрыти</param>/// 
     /// <param name="CarModel"></param>
     /// <param name="CarNumber"></param>
     
     [Remote, Public]
-    public void CloseRequestWithCarInfo(string carModel, string carNumber)
+    public void CloseRequestWithCarInfo(string comment, string carModel, string carNumber)
     {
+      comment = string.Format("Закрыто {0} {1}, {2} {3}", 
+                                  Calendar.Now.ToShortDateString(),
+                                  Calendar.Now.ToShortTimeString(), 
+                                  Users.Current.DisplayValue,
+                                  string.IsNullOrWhiteSpace(comment)?"":$", ({comment})");
       Sungero.Core.AccessRights.AllowRead(() => {
-                                            _obj.ClosedOn = Calendar.UserNow;
-                                            _obj.RequestState = ServiceRequests.BaseSRQ.RequestState.Done;
+                                            _obj.ClosingInfo = comment;
+                                            _obj.RequestState = ServiceRequests.BaseSRQ.RequestState.Closed;
                                             _obj.CarNumber = carNumber;
                                             _obj.CarModel = carModel;
                                             _obj.Save();

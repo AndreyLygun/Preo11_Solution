@@ -283,9 +283,6 @@
       "Name": "Cars",
       "Code": "ParkingPlaceCa",
       "EntityGuid": "0d41e3a4-b9ab-4bce-aa94-679c3c34b05a",
-      "HandledEvents": [
-        "AddedShared"
-      ],
       "IsShowedInList": false,
       "PreviousPropertyGuid": "7a0cfcf5-5141-4c2f-978d-35ee00b96d6f",
       "Versions": []
@@ -296,9 +293,6 @@
       "Name": "Drivers",
       "Code": "ParkingPlaceDr",
       "EntityGuid": "0557ccc5-f840-4caa-b861-4672faddc5f6",
-      "HandledEvents": [
-        "AddedShared"
-      ],
       "IsShowedInList": false,
       "PreviousPropertyGuid": "8d9f9646-d002-4365-ab35-119bb31a4ce1"
     },

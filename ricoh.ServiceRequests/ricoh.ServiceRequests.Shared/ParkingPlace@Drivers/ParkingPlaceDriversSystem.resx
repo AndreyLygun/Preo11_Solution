@@ -61,7 +61,4 @@
   <data name="Property_Name" xml:space="preserve">
     <value>Имя</value>
   </data>
-  <data name="Property_Changed" xml:space="preserve">
-    <value>Добавлен</value>
-  </data>
 </root>

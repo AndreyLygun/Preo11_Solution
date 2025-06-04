@@ -87,13 +87,10 @@
           "Name": "ControlGroup",
           "ColumnDefinitions": [
             {
-              "Percentage": 33.33
+              "Percentage": 50.0
             },
             {
-              "Percentage": 33.33
-            },
-            {
-              "Percentage": 33.33
+              "Percentage": 50.0
             }
           ],
           "ColumnSpan": 1,

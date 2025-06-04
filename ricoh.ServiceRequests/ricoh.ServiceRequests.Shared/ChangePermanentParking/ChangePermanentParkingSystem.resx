@@ -74,7 +74,7 @@
     <value>Автомобили</value>
   </data>
   <data name="Property_NeedNFC" xml:space="preserve">
-    <value>Перевыпустить электронную карту</value>
+    <value>Выпустить эл. карту</value>
   </data>
   <data name="Enum_NeedNFC_Yes" xml:space="preserve">
     <value>Да</value>
@@ -84,5 +84,8 @@
   </data>
   <data name="Property_Visitors" xml:space="preserve">
     <value>Водители</value>
+  </data>
+  <data name="Property_CarsString" xml:space="preserve">
+    <value>Автомобили для шаблона</value>
   </data>
 </root>

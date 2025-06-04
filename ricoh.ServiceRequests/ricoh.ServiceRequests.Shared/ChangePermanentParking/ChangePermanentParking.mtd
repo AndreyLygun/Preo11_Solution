@@ -40,14 +40,6 @@
           "$type": "Sungero.Metadata.ControlGroupMetadata, Sungero.Metadata",
           "NameGuid": "edc74281-0fc3-4ba8-bceb-bc443bc51b4e",
           "Name": "Additional",
-          "ColumnDefinitions": [
-            {
-              "Percentage": 44.45
-            },
-            {
-              "Percentage": 55.55
-            }
-          ],
           "ColumnSpan": 1,
           "IsAncestorMetadata": true,
           "Overridden": [
@@ -85,7 +77,7 @@
           "NameGuid": "1aec695a-2815-414b-ba38-737052ce32ec",
           "Name": "Cars",
           "ColumnNumber": 0,
-          "ColumnSpan": 2,
+          "ColumnSpan": 1,
           "DataBinderTypeName": "Sungero.Presentation.CommonDataBinders.GridControlToChildCollectionBinder",
           "ParentGuid": "edc74281-0fc3-4ba8-bceb-bc443bc51b4e",
           "PropertyGuid": "3b98b41b-3243-47f1-ab41-68c3a97c8dab",
@@ -103,7 +95,7 @@
           "NameGuid": "c674e7af-e60a-4c6a-96a8-c4b41112d9e1",
           "Name": "Visitors",
           "ColumnNumber": 0,
-          "ColumnSpan": 2,
+          "ColumnSpan": 1,
           "DataBinderTypeName": "Sungero.Presentation.CommonDataBinders.TextEditorToTextBinder",
           "ParentGuid": "edc74281-0fc3-4ba8-bceb-bc443bc51b4e",
           "PropertyGuid": "d583953e-2bce-4c08-a587-dbabb0524e79",
@@ -133,25 +125,14 @@
     }
   ],
   "HandledEvents": [
-    "BeforeSaveServer"
+    "BeforeSaveServer",
+    "AfterSaveServer"
   ],
   "IconResourcesKeys": [],
   "IntegrationServiceName": "ServiceRequestsChangePermanentParking",
   "OpenCardByDefaultInCollection": true,
   "OperationsClass": "",
   "Properties": [
-    {
-      "$type": "Sungero.Metadata.EnumPropertyMetadata, Sungero.Metadata",
-      "NameGuid": "9d4e3771-7349-436b-bb59-cc4afabea7c2",
-      "Name": "RequestState",
-      "HandledEvents": [
-        "ChangedShared"
-      ],
-      "IsAncestorMetadata": true,
-      "Overridden": [
-        "HandledEvents"
-      ]
-    },
     {
       "$type": "Sungero.Metadata.CollectionPropertyMetadata, Sungero.Metadata",
       "NameGuid": "56cbe741-880f-4e6f-9567-343d08494b59",
@@ -221,6 +202,18 @@
       "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.DropDownEditorToEnumerationBinder",
       "PreviousPropertyGuid": "3b98b41b-3243-47f1-ab41-68c3a97c8dab",
       "Versions": []
+    },
+    {
+      "$type": "Sungero.Metadata.TextPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "1a48328f-5acb-434a-9387-91b709074a17",
+      "Name": "CarsString",
+      "CanBeSearch": false,
+      "Code": "CarsString2",
+      "IsEnabled": false,
+      "IsShowedInList": false,
+      "IsVisibility": false,
+      "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToTextBinder",
+      "PreviousPropertyGuid": "d583953e-2bce-4c08-a587-dbabb0524e79"
     }
   ],
   "PublicStructures": [],

@@ -78,15 +78,15 @@ namespace ricoh.ServiceRequests
     public override void AfterSave(Sungero.Domain.AfterSaveEventArgs e)
     {
       base.AfterSave(e);
-      if (Functions.BaseSRQ.isAllowed(_obj)) {
-        Sungero.Core.AccessRights.AllowRead(
-          () => AddOrUpdateCar()
-         );
-      } else {
-        Sungero.Core.AccessRights.AllowRead(
-          () => RemoveCar()
-         );
-      }
+//      if (Functions.BaseSRQ.isAllowed(_obj)) {
+//        Sungero.Core.AccessRights.AllowRead(
+//          () => AddOrUpdateCar()
+//         );
+//      } else {
+//        Sungero.Core.AccessRights.AllowRead(
+//          () => RemoveCar()
+//         );
+//      }
     }
 
     public override void Created(Sungero.Domain.CreatedEventArgs e)

@@ -208,6 +208,9 @@
   <data name="Action_ShowPrintFormConfirmationDescription" xml:space="preserve">
     <value />
   </data>
+  <data name="Property_ClosingInfo" xml:space="preserve">
+    <value>Закрытие</value>
+  </data>
   <data name="Property_Id" xml:space="preserve">
     <value>N</value>
   </data>
@@ -318,5 +321,20 @@
   </data>
   <data name="ControlGroup_72fe6180db0843919211baf36af5a629" xml:space="preserve">
     <value />
+  </data>
+  <data name="Action_OpenRequest" xml:space="preserve">
+    <value>Вернуть на исполнение</value>
+  </data>
+  <data name="Action_OpenRequestDescription" xml:space="preserve">
+    <value>Перевести заявку в режим "Согласовано" для исполнения</value>
+  </data>
+  <data name="Action_OpenRequestHint" xml:space="preserve">
+    <value>Перевести заявку в режим "Согласовано" для исполнения</value>
+  </data>
+  <data name="Action_OpenRequestConfirmationMessage" xml:space="preserve">
+    <value>Отрыть заявку?</value>
+  </data>
+  <data name="Action_OpenRequestConfirmationDescription" xml:space="preserve">
+    <value>Заявка вернётся в состояние "Одобрена". Продолжать?</value>
   </data>
 </root>

@@ -26,10 +26,11 @@ namespace ricoh.ServiceRequests
       _obj.Subject = string.Format("Дополнительный доступ ({0})", _obj.Employee);
       _obj.Name = string.Format("Заявка № {0} от {1}: {2}", _obj.Id, _obj.Renter, _obj.Subject);
       string[] sites = new string[_obj.Access.Count];
+      var i = 0;
       foreach(var item in _obj.Access) {
-        sites.Append(item.Site.Name);
+        sites[i++] = item.Site.Name;
       }
-      _obj.AccessStr = string.Join(",", sites);            
+      _obj.AccessStr = string.Join(", ", sites);            
     }
   }
 

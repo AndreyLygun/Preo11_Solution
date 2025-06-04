@@ -12,6 +12,28 @@ namespace ricoh.ServiceRequests.Server
   {
 
     /// <summary>
+    /// Записывает в заявку информацию о закрытии, меняет статус на Closed.
+    /// Срабатывает независимо от наличия у пользователя прав на заявку
+    /// </summary>
+    /// <param name="comment">Комментарий к закрыти</param>
+   
+    
+    [Remote, Public]
+    public void CloseRequest(string comment)
+    {
+      comment = string.Format("Закрыто {0} {1}, {2} {3}", 
+                                  Calendar.Now.ToShortDateString(),
+                                  Calendar.Now.ToShortTimeString(), 
+                                  Users.Current.DisplayValue,
+                                  string.IsNullOrWhiteSpace(comment)?"":$" ({comment})");
+      Sungero.Core.AccessRights.AllowRead(() => {
+                                            _obj.ClosingInfo = comment;
+                                            _obj.RequestState = ServiceRequests.BaseSRQ.RequestState.Closed;
+                                            _obj.Save();
+                                          });
+    }    
+    
+    /// <summary>
     /// Возвращает true, если заявка находится в одном из "согласованных" состоянии (согласовано, исполнено), false, если заявка является черновиком, на согласовани или отказано
     /// </summary>
     ///

@@ -10,13 +10,31 @@ namespace ricoh.ServiceRequests.Client
 
   partial class BaseSRQActions
   {
+    public virtual void OpenRequest(Sungero.Domain.Client.ExecuteActionArgs e)
+    {
+      _obj.RequestState = BaseSRQ.RequestState.Approved;
+      _obj.State.Properties.ClosingInfo.IsVisible = false;
+    }
+
+    public virtual bool CanOpenRequest(Sungero.Domain.Client.CanExecuteActionArgs e)
+    {
+      return _obj.RequestState == BaseSRQ.RequestState.Closed;
+    }
+
     public virtual void CloseRequest(Sungero.Domain.Client.ExecuteActionArgs e)
     {
+      var dlg = Dialogs.CreateInputDialog("Закрываем заявку",
+                                          string.Format("Дата/Время: {0} / {1}", Calendar.UserNow.ToLongDateString(), Calendar.UserNow.ToShortTimeString()));
+      var comment = dlg.AddString("Комментарий", false);
+      dlg.Buttons.AddOkCancel();
+      if (dlg.Show() != DialogButtons.Ok) return;
+      Functions.BaseSRQ.Remote.CloseRequest(_obj, comment.Value);
+      _obj.State.Properties.ClosingInfo.IsVisible = true;
     }
 
     public virtual bool CanCloseRequest(Sungero.Domain.Client.CanExecuteActionArgs e)
     {
-      return false;
+      return _obj.RequestState != BaseSRQ.RequestState.Closed;
     }
 
 

@@ -60,59 +60,25 @@
           "Settings": [
             {
               "Name": "Height",
-              "Value": 10
+              "Value": 40
             }
           ]
-        },
-        {
-          "$type": "Sungero.Metadata.ControlMetadata, Sungero.Metadata",
-          "NameGuid": "4c805602-bce7-4a93-9d05-c4b4fc08e84c",
-          "Name": "PassNumber",
-          "ColumnNumber": 0,
-          "ColumnSpan": 1,
-          "DataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToStringBinder",
-          "ParentGuid": "edc74281-0fc3-4ba8-bceb-bc443bc51b4e",
-          "PropertyGuid": "f65391b4-3e9b-4622-9e88-8e605d2bee60",
-          "RowNumber": 1,
-          "RowSpan": 1,
-          "Settings": []
         },
         {
           "$type": "Sungero.Metadata.ControlGroupMetadata, Sungero.Metadata",
           "NameGuid": "d23277ae-bd83-4073-b183-e26bd3bb22a5",
           "Name": "ControlGroup",
-          "ColumnDefinitions": [
-            {
-              "Percentage": 66.66
-            },
-            {
-              "Percentage": 33.33
-            }
-          ],
           "ColumnNumber": 0,
           "ColumnSpan": 1,
           "ParentGuid": "edc74281-0fc3-4ba8-bceb-bc443bc51b4e",
-          "RowNumber": 2,
+          "RowNumber": 1,
           "RowSpan": 1
-        },
-        {
-          "$type": "Sungero.Metadata.ControlMetadata, Sungero.Metadata",
-          "NameGuid": "9c8330cc-eb77-4545-b56d-9a91a7f17541",
-          "Name": "ValidFrom",
-          "ColumnNumber": 0,
-          "ColumnSpan": 1,
-          "DataBinderTypeName": "Sungero.Presentation.CommonDataBinders.DateTimeEditorToDateTimeBinder",
-          "ParentGuid": "d23277ae-bd83-4073-b183-e26bd3bb22a5",
-          "PropertyGuid": "1c37e2dc-73bf-48b7-8175-2f4de23755d1",
-          "RowNumber": 0,
-          "RowSpan": 1,
-          "Settings": []
         },
         {
           "$type": "Sungero.Metadata.ControlMetadata, Sungero.Metadata",
           "NameGuid": "8867fd1f-bd62-4aa2-97d3-f17c0539b0bf",
           "Name": "ValidTill",
-          "ColumnNumber": 1,
+          "ColumnNumber": 0,
           "ColumnSpan": 1,
           "DataBinderTypeName": "Sungero.Presentation.CommonDataBinders.DateTimeEditorToDateTimeBinder",
           "ParentGuid": "d23277ae-bd83-4073-b183-e26bd3bb22a5",
@@ -126,7 +92,7 @@
           "NameGuid": "8cb1fc92-78f4-41cb-8abb-286d1982c3dd",
           "Name": "Access",
           "ColumnNumber": 0,
-          "ColumnSpan": 2,
+          "ColumnSpan": 1,
           "DataBinderTypeName": "Sungero.Presentation.CommonDataBinders.MultiSelectEditorToCollectionBinder",
           "ParentGuid": "d23277ae-bd83-4073-b183-e26bd3bb22a5",
           "PropertyGuid": "9a5dad86-8fa7-49d6-bdf9-523e2729cce0",
@@ -193,9 +159,13 @@
       "$type": "Sungero.Metadata.StringPropertyMetadata, Sungero.Metadata",
       "NameGuid": "f65391b4-3e9b-4622-9e88-8e605d2bee60",
       "Name": "PassNumber",
+      "CanBeSearch": false,
       "Code": "PassNumber1",
+      "IsEnabled": false,
+      "IsShowedInList": false,
+      "IsVisibility": false,
       "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToStringBinder",
-      "PreviousPropertyGuid": "2699e219-f7a8-45ab-b6e4-efe1b2c7803f"
+      "PreviousPropertyGuid": "fb2189e4-a097-424e-8058-2f1af2116149"
     },
     {
       "$type": "Sungero.Metadata.StringPropertyMetadata, Sungero.Metadata",
@@ -203,7 +173,7 @@
       "Name": "Permisssion",
       "Code": "Permisssion",
       "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToStringBinder",
-      "PreviousPropertyGuid": "f65391b4-3e9b-4622-9e88-8e605d2bee60"
+      "PreviousPropertyGuid": "2699e219-f7a8-45ab-b6e4-efe1b2c7803f"
     },
     {
       "$type": "Sungero.Metadata.CollectionPropertyMetadata, Sungero.Metadata",

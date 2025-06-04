@@ -20,6 +20,7 @@ namespace ricoh.ServiceRequests
       if (!Users.Current.Equals(_obj.Renter) && !Users.Current.Equals(_obj.Author)) {
         _obj.State.IsEnabled = false;
       }
+      _obj.State.Properties.ClosingInfo.IsVisible = !string.IsNullOrWhiteSpace(_obj.ClosingInfo);
     }
   }
 }

@@ -11,7 +11,14 @@ namespace ricoh.ServiceRequests.Client
   {
     public override void CloseRequest(Sungero.Domain.Client.ExecuteActionArgs e)
     {
-      base.CloseRequest(e);
+      var dlg = Dialogs.CreateInputDialog("Закрываем заявку",
+                                          string.Format("Дата/Время: {0} / {1}", Calendar.UserNow.ToLongDateString(), Calendar.UserNow.ToShortTimeString()));
+      var comment = dlg.AddString("Комментарий", false);
+      var carModel = dlg.AddString("Модель автомобиля", false, _obj.CarModel);
+      var carNumber = dlg.AddString("Госномер автомобиля", false, _obj.CarNumber);
+      dlg.Buttons.AddOkCancel();
+      if (dlg.Show() != DialogButtons.Ok) return;
+      Functions.SecuritySRQ.Remote.CloseRequestWithCarInfo(_obj, comment.Value, carModel.Value, carNumber.Value);
     }
 
     public override bool CanCloseRequest(Sungero.Domain.Client.CanExecuteActionArgs e)
