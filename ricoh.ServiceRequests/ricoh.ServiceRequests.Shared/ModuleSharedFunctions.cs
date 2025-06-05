@@ -8,6 +8,5 @@ namespace ricoh.ServiceRequests.Shared
 {
   public class ModuleFunctions
   {
-
   }
 }

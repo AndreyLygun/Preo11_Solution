@@ -10,5 +10,6 @@ namespace ricoh.ServiceRequests.Shared
   partial class PermanentPass4EmployeeFunctions
   {
 
+
   }
 }

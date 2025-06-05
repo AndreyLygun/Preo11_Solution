@@ -73,8 +73,8 @@
   <data name="Property_EmployeePhoto" xml:space="preserve">
     <value>Фото сотрудников</value>
   </data>
-  <data name="Property_EmployeeName" xml:space="preserve">
-    <value>ФИО сотрудника</value>
+  <data name="Property_EmployeesString" xml:space="preserve">
+    <value>Сотрудники для шаблона</value>
   </data>
   <data name="Property_EmployeePhotoFileName" xml:space="preserve">
     <value>Название файла с фотографиями</value>

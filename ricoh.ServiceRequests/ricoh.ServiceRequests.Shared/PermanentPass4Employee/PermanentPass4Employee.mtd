@@ -143,6 +143,16 @@
   ],
   "Properties": [
     {
+      "$type": "Sungero.Metadata.StringPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "4e17fc93-a403-4c9a-94e6-ebff510c87e9",
+      "Name": "ResponsibleName",
+      "IsAncestorMetadata": true,
+      "Overridden": [
+        "PreviousPropertyGuid"
+      ],
+      "PreviousPropertyGuid": "fb67613a-bb27-4ca6-b8d7-d1147ece123a"
+    },
+    {
       "$type": "Sungero.Metadata.CollectionPropertyMetadata, Sungero.Metadata",
       "NameGuid": "56cbe741-880f-4e6f-9567-343d08494b59",
       "Name": "Versions",
@@ -167,11 +177,15 @@
     {
       "$type": "Sungero.Metadata.StringPropertyMetadata, Sungero.Metadata",
       "NameGuid": "b81ce04b-fd6e-43c1-ab3a-d20f13d2fe21",
-      "Name": "EmployeeName",
-      "Code": "EmployeeName",
+      "Name": "EmployeesString",
+      "CanBeSearch": false,
+      "Code": "EmployeesStrin",
+      "IsEnabled": false,
       "IsLoadEagerly": true,
+      "IsShowedInList": false,
+      "IsVisibility": false,
       "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToStringBinder",
-      "PreviousPropertyGuid": "72da0048-dcc4-4230-90b9-d470be94727e"
+      "PreviousPropertyGuid": "316b4aa4-4a55-4dd8-8372-72458d369f1b"
     },
     {
       "$type": "Sungero.Metadata.StringPropertyMetadata, Sungero.Metadata",
@@ -202,7 +216,7 @@
       "Code": "PermanentPass4",
       "EntityGuid": "4bf71e91-a342-4ee2-b9c5-bb7d95d39815",
       "IsShowedInList": false,
-      "PreviousPropertyGuid": "fb67613a-bb27-4ca6-b8d7-d1147ece123a"
+      "PreviousPropertyGuid": "d583953e-2bce-4c08-a587-dbabb0524e79"
     }
   ],
   "PublicStructures": [],
