@@ -336,6 +336,27 @@
       "PreviousPropertyGuid": "58fc0f91-330e-486c-83af-c5812f275d14"
     }
   ],
+  "PublicFunctions": [
+    {
+      "Name": "IssuePass",
+      "IsRemote": true,
+      "Parameters": [
+        {
+          "Name": "visitor",
+          "ParameterType": "global::ricoh.ServiceRequests.IVisitor",
+          "ParameterTypeFullName": "ricoh.ServiceRequests.IVisitor, Sungero.Domain.Interfaces"
+        },
+        {
+          "Name": "PassNum",
+          "ParameterType": "global::System.String",
+          "ParameterTypeFullName": "System.String"
+        }
+      ],
+      "Placement": "Shared",
+      "ReturnType": "void",
+      "ReturnTypeFullName": "System.Void"
+    }
+  ],
   "PublicStructures": [],
   "ResourcesKeys": [],
   "RibbonCardMetadata": {

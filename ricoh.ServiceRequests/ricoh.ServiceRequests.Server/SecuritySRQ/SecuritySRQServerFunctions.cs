@@ -9,6 +9,29 @@ namespace ricoh.ServiceRequests.Server
 {
   partial class SecuritySRQFunctions
   {
+
+    /// <summary>
+    /// Cинхронизирут посетителей из заявки со справочником Visitors
+    /// Вначале удаляет всех посетителей по этой заявке (если они есть), потом (если заявка активна), добавляет посетителей из этой заявки
+    /// </summary>
+    public void UpdateVisitors() {
+      var existedVisitors = Visitors.GetAll(v => Equals(v.Request, _obj));
+      foreach (var visitor in existedVisitors) {
+        if (visitor.CardIssuesAt == null) 
+          Visitors.Delete(visitor);
+      }
+        
+      if (!Functions.BaseSRQ.isAllowed(_obj)) return; //Заявка в состоянии "Черновик" или "Отказано"
+      if (string.IsNullOrWhiteSpace(_obj.Visitors)) return; // В заявке нет посетителей.
+      foreach (var visitor in _obj.Visitors.Split('\n')) {
+        var newVisitor = Visitors.Create();
+        newVisitor.Name = visitor;
+        newVisitor.Renter = _obj.Renter;
+        newVisitor.Request = _obj;
+        newVisitor.ValidOn = _obj.ValidOn;
+        newVisitor.Save();
+      }
+    }
     
 
     
@@ -43,31 +66,31 @@ namespace ricoh.ServiceRequests.Server
     /// 
     /// </summary>
     /// 
-    [Public]
-    public void AddOrUpdateCar()
-    {        
-      if (!Functions.BaseSRQ.isAllowed(_obj)) return;
-      var car = Cars.GetAll(c => c.Pass.Equals(_obj)).FirstOrDefault();
-      if (car == null) {
-        car = Cars.Create();
-      }
-      car.CarModel = _obj.CarModel;
-      car.CarNumber = _obj.CarNumber;
-      car.ParkingPlace = _obj.ParkingPlace;
-      car.ValidFrom = _obj.ValidTill;
-      car.Pass = _obj;
-      car.Renter = _obj.Renter;
-      car.Save();
-    }
-
-    public void RemoveCar()
-    {        
-      if (!Functions.BaseSRQ.isAllowed(_obj)) return;
-      var car = Cars.GetAll(c => c.Pass.Equals(_obj)).FirstOrDefault();
-      if (car != null)  {
-        Cars.Delete(car);
-      } 
-    }    
+//    [Public]
+//    public void AddOrUpdateCar()
+//    {        
+//      if (!Functions.BaseSRQ.isAllowed(_obj)) return;
+//      var car = Cars.GetAll(c => c.Pass.Equals(_obj)).FirstOrDefault();
+//      if (car == null) {
+//        car = Cars.Create();
+//      }
+//      car.CarModel = _obj.CarModel;
+//      car.CarNumber = _obj.CarNumber;
+//      car.ParkingPlace = _obj.ParkingPlace;
+//      car.ValidFrom = _obj.ValidTill;
+//      car.Pass = _obj;
+//      car.Renter = _obj.Renter;
+//      car.Save();
+//    }
+//
+//    public void RemoveCar()
+//    {        
+//      if (!Functions.BaseSRQ.isAllowed(_obj)) return;
+//      var car = Cars.GetAll(c => c.Pass.Equals(_obj)).FirstOrDefault();
+//      if (car != null)  {
+//        Cars.Delete(car);
+//      } 
+//    }    
     
   }
 }

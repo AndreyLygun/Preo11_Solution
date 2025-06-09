@@ -11,6 +11,12 @@ namespace ricoh.ServiceRequests
   partial class Pass4VisitorCarServerHandlers
   {
 
+    public override void AfterSave(Sungero.Domain.AfterSaveEventArgs e)
+    {
+      base.AfterSave(e);
+      Functions.SecuritySRQ.UpdateVisitors(_obj);
+    }
+
     public override void BeforeSave(Sungero.Domain.BeforeSaveEventArgs e)
     {
       base.BeforeSave(e);

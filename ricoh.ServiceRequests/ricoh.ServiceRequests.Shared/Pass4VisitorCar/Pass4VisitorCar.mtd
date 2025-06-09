@@ -228,7 +228,8 @@
     }
   ],
   "HandledEvents": [
-    "BeforeSaveServer"
+    "BeforeSaveServer",
+    "AfterSaveServer"
   ],
   "IconResourcesKeys": [],
   "IntegrationServiceName": "ServiceRequestsPass4VisitorCar",

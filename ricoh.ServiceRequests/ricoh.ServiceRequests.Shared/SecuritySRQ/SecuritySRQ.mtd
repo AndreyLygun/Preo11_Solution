@@ -423,18 +423,6 @@
   ],
   "PublicFunctions": [
     {
-      "Name": "AddOrUpdateCar",
-      "Parameters": [
-        {
-          "Name": "securitySRQ",
-          "ParameterType": "global::ricoh.ServiceRequests.ISecuritySRQ",
-          "ParameterTypeFullName": "ricoh.ServiceRequests.ISecuritySRQ, Sungero.Domain.Interfaces"
-        }
-      ],
-      "ReturnType": "void",
-      "ReturnTypeFullName": "System.Void"
-    },
-    {
       "Name": "CloseRequestWithCarInfo",
       "IsRemote": true,
       "Parameters": [

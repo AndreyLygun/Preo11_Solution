@@ -55,15 +55,14 @@ namespace ricoh.ServiceRequests.Client
       if (dlg.IsCanceled) return;
       e.CloseFormAfterAction = true;
       // Исправляем фигню при получении данных из считывателя Elatec
-      _obj.CardId = PassNum.Value
+      PassNum.Value = PassNum.Value
         .Replace('Ф', 'A')
         .Replace('И', 'B')
         .Replace('С', 'C')
         .Replace('В', 'D')
         .Replace('У', 'E')
         .Replace('А', 'F');
-      _obj.CardIssuesAt = Calendar.Now;
-      _obj.Save();
+      Functions.Visitor.Remote.IssuePass(_obj, PassNum.Value);
     }
 
     public virtual bool CanCheckIn(Sungero.Domain.Client.CanExecuteActionArgs e)

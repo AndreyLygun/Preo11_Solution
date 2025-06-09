@@ -25,11 +25,14 @@ namespace ricoh.ServiceRequests
                                                 newCar.Note = car.Note;
                                               }
                                               parkingPlace.Drivers.Clear();
-                                              foreach (var driver in _obj.Visitors.Split('\n')) {
-                                                if (string.IsNullOrWhiteSpace(driver)) continue;
-                                                var newDriver = parkingPlace.Drivers.AddNew();
-                                                newDriver.Name = driver;
+                                              if (!string.IsNullOrWhiteSpace(_obj.Visitors)) {
+                                                foreach (var driver in _obj.Visitors.Split('\n')) {
+                                                  if (string.IsNullOrWhiteSpace(driver)) continue;
+                                                  var newDriver = parkingPlace.Drivers.AddNew();
+                                                  newDriver.Name = driver;
+                                                }
                                               }
+                                              Logger.DebugFormat("Обновили информацию в парковочном месте '{0}' по заявке № {1}", parkingPlace.Name, _obj.Id);
                                             });
     }
     

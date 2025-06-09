@@ -11,12 +11,13 @@ namespace ricoh.ServiceRequests.Server
   partial class BaseSRQFunctions
   {
 
+    
+   
     /// <summary>
     /// Записывает в заявку информацию о закрытии, меняет статус на Closed.
     /// Срабатывает независимо от наличия у пользователя прав на заявку
     /// </summary>
     /// <param name="comment">Комментарий к закрыти</param>
-   
     
     [Remote, Public]
     public void CloseRequest(string comment)
