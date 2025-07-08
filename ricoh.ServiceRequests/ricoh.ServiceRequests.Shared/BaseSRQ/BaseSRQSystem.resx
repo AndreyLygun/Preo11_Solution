@@ -191,7 +191,7 @@
     <value />
   </data>
   <data name="Property_ExternalURL" xml:space="preserve">
-    <value>Ссылка на документ во внешней системе</value>
+    <value>Ссылка на документ на портале (пока не используется)</value>
   </data>
   <data name="Action_ShowPrintForm" xml:space="preserve">
     <value>Печатная форма</value>

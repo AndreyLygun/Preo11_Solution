@@ -24,8 +24,8 @@ namespace ricoh.ServiceRequests
 
     public override IQueryable<T> Filtering(IQueryable<T> query, Sungero.Domain.FilteringEventArgs e)
     {
-      if (_filter == null) return query;
       query = base.Filtering(query, e);      
+      if (_filter == null) return query;      
       var minDate = Calendar.SqlMinValue;
       var maxDate = Calendar.SqlMaxValue;
       var today = Calendar.UserToday;

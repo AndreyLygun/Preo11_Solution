@@ -14,9 +14,6 @@ namespace ricoh.ServiceRequests
     {
       base.Refresh(e);
       _obj.State.Controls.Control.IsVisible = _obj.EmployeePhoto == null;
-        //      _obj.State.Properties.EmployeeName.IsVisible =!_obj.EmployeesInAttachedFile??false;
-        //      _obj.State.Properties.EmployeePosition.IsVisible = !_obj.EmployeesInAttachedFile??false;
-        //      _obj.State.Properties.EmployeePhoto.IsVisible =!_obj.EmployeesInAttachedFile??false;
     }
 
   }

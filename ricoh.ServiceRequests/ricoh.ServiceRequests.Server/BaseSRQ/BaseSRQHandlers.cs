@@ -13,8 +13,8 @@ namespace ricoh.ServiceRequests
 
     public override IQueryable<T> Filtering(IQueryable<T> query, Sungero.Domain.FilteringEventArgs e)
     {
-      if (_filter == null) return query;
       query = base.Filtering(query, e);
+      if (_filter == null) return query;      
       if (_filter.Renter != null) query = query.Where(r => r.Renter.Equals(_filter.Renter));
       return query;
     }
@@ -25,13 +25,15 @@ namespace ricoh.ServiceRequests
   partial class BaseSRQServerHandlers
   {
 
-    
+
     public override void BeforeSave(Sungero.Domain.BeforeSaveEventArgs e)
     {
+     // Выдаём права доступа арендатору на случай, если заявка создана сотрудником арендодателя
       if (_obj.Renter != null) {
         _obj.AccessRights.Grant(_obj.Renter, DefaultAccessRightsTypes.FullAccess);
       }
       base.BeforeSave(e);      
+      // Пересоздаём тело документа
       var template = Sungero.Content.ElectronicDocumentTemplates.GetAll(tpl => tpl.DocumentType.Value.ToString() == _obj.DocumentKind.DocumentType.DocumentTypeGuid).FirstOrDefault();
       if (template != null) {
         if (_obj.HasVersions) _obj.DeleteVersion(_obj.LastVersion);

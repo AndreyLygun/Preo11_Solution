@@ -71,7 +71,7 @@
     <value>ФИО сотрудника</value>
   </data>
   <data name="Property_PassNumber" xml:space="preserve">
-    <value>Номер пропуска сотрудника (уст)</value>
+    <value>Номер пропуска сотрудника (не используется)</value>
   </data>
   <data name="Property_Permisssion" xml:space="preserve">
     <value>Вид доступа</value>

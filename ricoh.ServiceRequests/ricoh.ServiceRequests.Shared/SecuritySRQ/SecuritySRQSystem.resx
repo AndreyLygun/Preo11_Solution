@@ -101,13 +101,13 @@
     <value>Посетители</value>
   </data>
   <data name="Property_Approved1" xml:space="preserve">
-    <value>Согласование 1 уровень</value>
+    <value>Согласование 1 уровень (не используется)</value>
   </data>
   <data name="Property_Approved2" xml:space="preserve">
-    <value>Согласование 2 уровень</value>
+    <value>Согласование 2 уровень (не используется)</value>
   </data>
   <data name="Property_Approved3" xml:space="preserve">
-    <value>Согласование 3 уровень</value>
+    <value>Согласование 3 уровень (не используется)</value>
   </data>
   <data name="Property_CarModel" xml:space="preserve">
     <value>Модель автомобиля</value>
@@ -116,7 +116,7 @@
     <value>Госномер автомобиля</value>
   </data>
   <data name="Property_ParkingPlaceOld" xml:space="preserve">
-    <value>Парковочное место (уст)</value>
+    <value>Парковочное место (устарело)</value>
   </data>
   <data name="Property_ParkingPlace" xml:space="preserve">
     <value>Парковочное место</value>

@@ -883,7 +883,7 @@
       "Overridden": [
         "PreviousPropertyGuid"
       ],
-      "PreviousPropertyGuid": "484b2831-3657-4987-a035-a98617aadc2c"
+      "PreviousPropertyGuid": "0a073730-be4e-4789-9234-494dafc14458"
     },
     {
       "$type": "Sungero.Metadata.EnumPropertyMetadata, Sungero.Metadata",
@@ -1339,7 +1339,7 @@
       "IsEnabled": false,
       "IsLoadEagerly": true,
       "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToStringBinder",
-      "PreviousPropertyGuid": "0a073730-be4e-4789-9234-494dafc14458"
+      "PreviousPropertyGuid": "4532dfc0-cff5-4a53-a5ef-8acd6528c8c0"
     },
     {
       "$type": "Sungero.Metadata.StringPropertyMetadata, Sungero.Metadata",
@@ -1393,7 +1393,7 @@
       ],
       "IsLoadEagerly": true,
       "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.DropDownEditorToEnumerationBinder",
-      "PreviousPropertyGuid": "c7b89f11-8376-4f72-b7ae-6b96aa3a7272"
+      "PreviousPropertyGuid": "8e4a66f1-bf30-4ae5-990a-b1e8f4b93c7c"
     },
     {
       "$type": "Sungero.Metadata.NavigationPropertyMetadata, Sungero.Metadata",
@@ -1419,25 +1419,31 @@
       "IsShowedInList": false,
       "IsVisibility": false,
       "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.DateTimeEditorToDateTimeBinder",
-      "PreviousPropertyGuid": "df04a9ba-42bb-4f0a-8917-bec9108240b3"
+      "PreviousPropertyGuid": "484b2831-3657-4987-a035-a98617aadc2c"
     },
     {
       "$type": "Sungero.Metadata.TextPropertyMetadata, Sungero.Metadata",
       "NameGuid": "c7b89f11-8376-4f72-b7ae-6b96aa3a7272",
       "Name": "RequestStateDescription",
+      "CanBeSearch": false,
       "Code": "RequestStateDe",
       "IsEnabled": false,
+      "IsShowedInList": false,
+      "IsVisibility": false,
       "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToTextBinder",
-      "PreviousPropertyGuid": "8e4a66f1-bf30-4ae5-990a-b1e8f4b93c7c"
+      "PreviousPropertyGuid": "df04a9ba-42bb-4f0a-8917-bec9108240b3"
     },
     {
       "$type": "Sungero.Metadata.StringPropertyMetadata, Sungero.Metadata",
       "NameGuid": "df04a9ba-42bb-4f0a-8917-bec9108240b3",
       "Name": "ExternalURL",
+      "CanBeSearch": false,
       "Code": "ExternalURL",
+      "IsEnabled": false,
+      "IsVisibility": false,
       "Length": 1000,
       "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToStringBinder",
-      "PreviousPropertyGuid": "4532dfc0-cff5-4a53-a5ef-8acd6528c8c0"
+      "PreviousPropertyGuid": "af922c8f-06b3-45c7-b196-5490c9fe7568"
     },
     {
       "$type": "Sungero.Metadata.StringPropertyMetadata, Sungero.Metadata",

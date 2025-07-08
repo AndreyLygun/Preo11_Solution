@@ -134,6 +134,16 @@
   "OperationsClass": "",
   "Properties": [
     {
+      "$type": "Sungero.Metadata.StringPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "4e17fc93-a403-4c9a-94e6-ebff510c87e9",
+      "Name": "ResponsibleName",
+      "IsAncestorMetadata": true,
+      "Overridden": [
+        "PreviousPropertyGuid"
+      ],
+      "PreviousPropertyGuid": "fb67613a-bb27-4ca6-b8d7-d1147ece123a"
+    },
+    {
       "$type": "Sungero.Metadata.CollectionPropertyMetadata, Sungero.Metadata",
       "NameGuid": "56cbe741-880f-4e6f-9567-343d08494b59",
       "Name": "Versions",
@@ -156,19 +166,6 @@
       "Versions": []
     },
     {
-      "$type": "Sungero.Metadata.NavigationPropertyMetadata, Sungero.Metadata",
-      "NameGuid": "fb67613a-bb27-4ca6-b8d7-d1147ece123a",
-      "Name": "ParkingPlace",
-      "HandledEvents": [
-        "ChangedShared"
-      ],
-      "IsAncestorMetadata": true,
-      "Overridden": [
-        "HandledEvents"
-      ],
-      "Versions": []
-    },
-    {
       "$type": "Sungero.Metadata.CollectionPropertyMetadata, Sungero.Metadata",
       "NameGuid": "3b98b41b-3243-47f1-ab41-68c3a97c8dab",
       "Name": "Cars",
@@ -178,7 +175,7 @@
         "AddedShared"
       ],
       "IsShowedInList": false,
-      "PreviousPropertyGuid": "fb67613a-bb27-4ca6-b8d7-d1147ece123a",
+      "PreviousPropertyGuid": "d583953e-2bce-4c08-a587-dbabb0524e79",
       "Versions": []
     },
     {
@@ -200,7 +197,7 @@
       ],
       "IsLoadEagerly": true,
       "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.DropDownEditorToEnumerationBinder",
-      "PreviousPropertyGuid": "3b98b41b-3243-47f1-ab41-68c3a97c8dab",
+      "PreviousPropertyGuid": "1a48328f-5acb-434a-9387-91b709074a17",
       "Versions": []
     },
     {
@@ -213,7 +210,7 @@
       "IsShowedInList": false,
       "IsVisibility": false,
       "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToTextBinder",
-      "PreviousPropertyGuid": "d583953e-2bce-4c08-a587-dbabb0524e79"
+      "PreviousPropertyGuid": "3b98b41b-3243-47f1-ab41-68c3a97c8dab"
     }
   ],
   "PublicStructures": [],

@@ -24,6 +24,7 @@ namespace ricoh.ServiceRequests.Server
       if (!Functions.BaseSRQ.isAllowed(_obj)) return; //Заявка в состоянии "Черновик" или "Отказано"
       if (string.IsNullOrWhiteSpace(_obj.Visitors)) return; // В заявке нет посетителей.
       foreach (var visitor in _obj.Visitors.Split('\n')) {
+        if (string.IsNullOrWhiteSpace(visitor)) continue;
         var newVisitor = Visitors.Create();
         newVisitor.Name = visitor;
         newVisitor.Renter = _obj.Renter;

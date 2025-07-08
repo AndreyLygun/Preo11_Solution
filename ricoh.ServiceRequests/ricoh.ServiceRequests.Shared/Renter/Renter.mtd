@@ -30,8 +30,7 @@
     }
   ],
   "HandledEvents": [
-    "CreatedServer",
-    "AfterSaveServer"
+    "CreatedServer"
   ],
   "IconResourcesKeys": [],
   "IntegrationServiceName": "ServiceRequestsRenter",
