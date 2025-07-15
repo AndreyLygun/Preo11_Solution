@@ -175,16 +175,13 @@
       "Versions": []
     },
     {
-      "$type": "Sungero.Metadata.StringPropertyMetadata, Sungero.Metadata",
+      "$type": "Sungero.Metadata.TextPropertyMetadata, Sungero.Metadata",
       "NameGuid": "b81ce04b-fd6e-43c1-ab3a-d20f13d2fe21",
       "Name": "EmployeesString",
-      "CanBeSearch": false,
       "Code": "EmployeesStrin",
       "IsEnabled": false,
-      "IsLoadEagerly": true,
-      "IsShowedInList": false,
       "IsVisibility": false,
-      "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToStringBinder",
+      "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToTextBinder",
       "PreviousPropertyGuid": "316b4aa4-4a55-4dd8-8372-72458d369f1b"
     },
     {

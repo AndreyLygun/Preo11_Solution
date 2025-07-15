@@ -110,7 +110,7 @@
     <value>Этаж</value>
   </data>
   <data name="Property_MovingDirection" xml:space="preserve">
-    <value>Направление перемещения</value>
+    <value>Тип перемещения</value>
   </data>
   <data name="Property_InventoryString" xml:space="preserve">
     <value>Список ТМЦ (строка)</value>
@@ -150,5 +150,8 @@
   </data>
   <data name="Property_Visitors" xml:space="preserve">
     <value>Сотрудники перевозчика</value>
+  </data>
+  <data name="Enum_MovingDirection_GarbageOut" xml:space="preserve">
+    <value>Вывоз мусора</value>
   </data>
 </root>

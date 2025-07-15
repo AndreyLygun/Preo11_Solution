@@ -20,7 +20,7 @@ namespace ricoh.ServiceRequests
     {
       base.BeforeSave(e);
       if (string.IsNullOrWhiteSpace(_obj.Visitors)) return;
-      var visitors = _obj.Visitors.Split('\n');
+      var visitors = _obj.Visitors.Split('\n').Where(v => !string.IsNullOrWhiteSpace(v));
       var ValidOn = _obj.ValidOn.Value.ToShortDateString();
       if (visitors.Count() > 4) {
         _obj.Subject = string.Format("Посетители на {0}: {1} чел.",  ValidOn, visitors.Count());

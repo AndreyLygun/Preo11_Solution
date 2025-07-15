@@ -452,6 +452,11 @@
           "NameGuid": "271140f7-5d9a-464e-8202-a90a59a65c24",
           "Name": "CarryingOut",
           "Code": "CarryingOut"
+        },
+        {
+          "NameGuid": "86bca79e-accc-4daf-bfed-38d8d10e6122",
+          "Name": "GarbageOut",
+          "Code": "Garbage"
         }
       ],
       "IsLoadEagerly": true,

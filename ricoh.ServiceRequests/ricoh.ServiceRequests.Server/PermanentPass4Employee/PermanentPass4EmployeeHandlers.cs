@@ -26,7 +26,6 @@ namespace ricoh.ServiceRequests
         }
       _obj.Subject = string.Format("Пропуска для сотрудников ({0})", Functions.Module.List2SmartStr(names, 5, 50));
       _obj.Name = string.Format("Заявка № {0} от {1}: {2}", _obj.Id, _obj.Renter, _obj.Subject);         
-
     }
   }
 
