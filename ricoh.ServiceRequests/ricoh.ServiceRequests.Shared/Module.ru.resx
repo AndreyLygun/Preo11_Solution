@@ -58,4 +58,10 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="ShowPass4VisitorCarByCarNumber_FunctionName" xml:space="preserve">
+    <value>Показать гостевой авто пропуск по номеру автомобиля</value>
+  </data>
+  <data name="ShowPassAssetMovingById_FunctionName" xml:space="preserve">
+    <value>Показать пропуск на ввоз-вывоз ТМЦ по номеру</value>
+  </data>
 </root>

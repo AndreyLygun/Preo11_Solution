@@ -536,7 +536,10 @@
   "PublicStructures": [],
   "ResourceInterfaceAssemblyName": "Sungero.Domain.Interfaces",
   "ResourceInterfaceNamespace": "ricoh.ServiceRequests",
-  "ResourcesKeys": [],
+  "ResourcesKeys": [
+    "ShowPass4VisitorCarByCarNumber_FunctionName",
+    "ShowPassAssetMovingById_FunctionName"
+  ],
   "ServerAssemblyName": "ricoh.ServiceRequests.Server",
   "ServerNamespace": "ricoh.ServiceRequests.Server",
   "SharedAssemblyName": "ricoh.ServiceRequests.Shared",
@@ -599,7 +602,7 @@
       ]
     }
   ],
-  "Version": "0.0.1.47",
+  "Version": "0.0.1.49",
   "Widgets": [],
   "Versions": [
     {

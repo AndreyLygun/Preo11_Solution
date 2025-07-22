@@ -10,6 +10,24 @@ namespace ricoh.ServiceRequests.Server
   public class ModuleFunctions
   {
 
+    [Remote(IsPure = true)]
+    public IPass4AssetsMoving GetPass4AssetMoving(long Id)
+    {
+      var pass = Pass4AssetsMovings.GetAll(p => p.Id == Id);
+      return pass.FirstOrDefault();
+    }    
+    
+
+    [Remote(IsPure = true)]
+    public IQueryable<IPass4VisitorCar> GetPasses4VisitorCar(string CarNumber, DateTime? date)
+    {
+      var passes = Pass4VisitorCars.GetAll().Where(p => p.CarNumber.Contains(CarNumber));
+      if (date != null)
+        passes = passes.Where(p => p.ValidOn == date);
+      return passes;
+    }
+
+
     /// <summary>
     /// Обрезает текст text до длины length. Если текст обрезан, в конце добавляется многоточие.
     /// </summary>
