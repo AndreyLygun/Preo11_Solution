@@ -70,4 +70,7 @@
   <data name="Property_Department" xml:space="preserve">
     <value>Department</value>
   </data>
+  <data name="Property_Counterparty" xml:space="preserve">
+    <value>Контрагент</value>
+  </data>
 </root>

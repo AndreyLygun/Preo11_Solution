@@ -15,6 +15,11 @@ namespace ricoh.ServiceRequests.Client
     /// </summary>       
     public void OpenPhoto()
     {
+      if (!string.IsNullOrWhiteSpace(_obj.EmployeePhotoFileName)) {
+        _obj.EmployeePhoto.Open(_obj.EmployeePhotoFileName);
+      } else {
+        Dialogs.NotifyMessage("Арендатор не прикрепил файл с фотографиями");
+      }      
     }
 
   }

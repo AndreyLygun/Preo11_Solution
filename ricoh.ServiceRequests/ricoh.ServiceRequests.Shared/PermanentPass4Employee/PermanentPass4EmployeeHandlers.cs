@@ -7,8 +7,4 @@ using ricoh.ServiceRequests.PermanentPass4Employee;
 
 namespace ricoh.ServiceRequests
 {
-  partial class PermanentPass4EmployeeSharedHandlers
-  {
-
-  }
 }

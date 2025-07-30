@@ -108,7 +108,7 @@
           "HeaderLocation": "None",
           "ParentGuid": "edc74281-0fc3-4ba8-bceb-bc443bc51b4e",
           "PropertyGuid": "316b4aa4-4a55-4dd8-8372-72458d369f1b",
-          "RowNumber": 0,
+          "RowNumber": 1,
           "RowSpan": 1,
           "Settings": [
             {
@@ -120,6 +120,19 @@
               "Value": 120
             }
           ]
+        },
+        {
+          "$type": "Sungero.Metadata.ControlMetadata, Sungero.Metadata",
+          "NameGuid": "243625d6-03be-4783-8d18-9fe971492222",
+          "Name": "OpenPhoto",
+          "ColumnNumber": 0,
+          "ColumnSpan": 1,
+          "DataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToStringBinder",
+          "ParentGuid": "edc74281-0fc3-4ba8-bceb-bc443bc51b4e",
+          "PropertyGuid": "4fda6543-f7b8-4e55-8f34-1c6538fcfc68",
+          "RowNumber": 0,
+          "RowSpan": 1,
+          "Settings": []
         }
       ],
       "IsAncestorMetadata": true,
@@ -130,7 +143,6 @@
     }
   ],
   "HandledEvents": [
-    "RefreshClient",
     "BeforeSaveServer"
   ],
   "IconResourcesKeys": [],
@@ -192,7 +204,6 @@
       "Code": "EmployeePhotoF",
       "IsEnabled": false,
       "IsLoadEagerly": true,
-      "IsShowedInList": false,
       "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToStringBinder",
       "PreviousPropertyGuid": "b81ce04b-fd6e-43c1-ab3a-d20f13d2fe21"
     },
@@ -228,11 +239,21 @@
         "NameGuid": "821e6edb-79d8-4311-9ebf-06e0aeaa93fb",
         "Name": "ActionButton",
         "ActionGuid": "a30985c9-a045-459e-be2c-96b005e9c4f8",
-        "Index": 53,
-        "ParentGuid": "08286ff4-2571-4150-955e-571c1c352ff9"
+        "ButtonSize": "Large",
+        "Index": 54,
+        "ParentGuid": "e9330da4-8653-436e-a88b-f1046f643fec"
       }
     ],
-    "Groups": [],
+    "Groups": [
+      {
+        "NameGuid": "e9330da4-8653-436e-a88b-f1046f643fec",
+        "Name": "Photo",
+        "IconName": null,
+        "Index": 34,
+        "ParentGuid": "21a31627-5f58-4416-8c4a-90f538ee2e57",
+        "SmallIconName": null
+      }
+    ],
     "IsAncestorMetadata": true,
     "Pages": [],
     "RibbonKind": "Card"
