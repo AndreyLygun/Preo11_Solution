@@ -338,7 +338,6 @@
     }
   ],
   "HandledEvents": [
-    "CreatedServer",
     "BeforeSaveServer",
     "PreFilteringServer"
   ],
@@ -455,8 +454,13 @@
         },
         {
           "NameGuid": "86bca79e-accc-4daf-bfed-38d8d10e6122",
-          "Name": "GarbageOut",
+          "Name": "Garbage",
           "Code": "Garbage"
+        },
+        {
+          "NameGuid": "a2adce5c-4c39-4b02-ba26-10e9cba7bdb7",
+          "Name": "GarbageOut",
+          "Code": "GarbageOut"
         }
       ],
       "IsLoadEagerly": true,

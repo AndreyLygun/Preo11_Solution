@@ -67,4 +67,10 @@
   <data name="Property_ElevatorTimeSpanString" xml:space="preserve">
     <value>Время использования лифта - для шаблона</value>
   </data>
+  <data name="Property_MovingDirection" xml:space="preserve">
+    <value>Тип перемещения</value>
+  </data>
+  <data name="Enum_MovingDirection_GarbageOut" xml:space="preserve">
+    <value>Вывоз мусора</value>
+  </data>
 </root>

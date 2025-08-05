@@ -51,11 +51,6 @@ namespace ricoh.ServiceRequests
       _obj.Subject = $"{direction} ({assetsNames})";      
       _obj.Name = string.Format("Заявка № {0} от {1}: {2} ({3})", _obj.Id, _obj.Renter, direction,assetsNames);
     }
-
-    public override void Created(Sungero.Domain.CreatedEventArgs e)
-    {
-      base.Created(e);
-    }
   }
 
 

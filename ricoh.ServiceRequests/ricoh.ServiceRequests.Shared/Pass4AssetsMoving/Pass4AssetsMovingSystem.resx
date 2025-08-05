@@ -65,10 +65,10 @@
     <value>Вывоз</value>
   </data>
   <data name="Enum_MovingDirection_CarryingIn" xml:space="preserve">
-    <value>Внос</value>
+    <value>Внос (через турникеты)</value>
   </data>
   <data name="Enum_MovingDirection_CarryingOut" xml:space="preserve">
-    <value>Вынос</value>
+    <value>Вынос (через турникеты)</value>
   </data>
   <data name="DisplayName" xml:space="preserve">
     <value>Разовый ввоз-вывоз ТМЦ</value>
@@ -150,6 +150,9 @@
   </data>
   <data name="Property_Visitors" xml:space="preserve">
     <value>Сотрудники перевозчика</value>
+  </data>
+  <data name="Enum_MovingDirection_Garbage" xml:space="preserve">
+    <value>Вывоз мусора (не использовать)</value>
   </data>
   <data name="Enum_MovingDirection_GarbageOut" xml:space="preserve">
     <value>Вывоз мусора</value>
