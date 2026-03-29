@@ -74,10 +74,10 @@
     <value>Заявка</value>
   </data>
   <data name="Property_CheckIn" xml:space="preserve">
-    <value>Время входа</value>
+    <value>Время первого входа</value>
   </data>
   <data name="Property_CheckOut" xml:space="preserve">
-    <value>Время выхода</value>
+    <value>Время последнего выхода</value>
   </data>
   <data name="Property_CardId" xml:space="preserve">
     <value>Номер пропуска</value>

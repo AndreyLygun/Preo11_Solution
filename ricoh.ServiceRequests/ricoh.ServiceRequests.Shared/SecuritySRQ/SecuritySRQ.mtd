@@ -13,25 +13,6 @@
     "IsAncestorMetadata": true,
     "Versions": []
   },
-  "EntityStyleSelectors": [
-    {
-      "NameGuid": "24b71d99-b334-4cd5-9b19-0f67297b45d3",
-      "Name": "Obsolete",
-      "Conditions": [
-        {
-          "NameGuid": "3843b0fb-6a0f-4de0-b970-3c6565818bd0",
-          "ComparisonType": "Less",
-          "LeftSideGuid": "3ff332cf-beba-4c28-833e-8a34f6a8c4c5",
-          "RightSide": "Today"
-        }
-      ],
-      "PreviousStyleSelectorGuid": "bc116f9e-cef6-4dac-a125-dd6062897e9e",
-      "Style": {
-        "NameGuid": "2f78f550-e115-4683-b8a0-e1aff53e6169",
-        "IsStrikethrough": true
-      }
-    }
-  ],
   "ExtraSearchProperties": [],
   "FilterPanel": {
     "NameGuid": "80d3ce1a-9a72-443a-8b6c-6c6eef0c8d0f",

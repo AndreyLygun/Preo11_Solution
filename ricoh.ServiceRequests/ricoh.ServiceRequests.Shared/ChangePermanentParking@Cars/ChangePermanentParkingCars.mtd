@@ -65,6 +65,16 @@
           "NameGuid": "aa1230f0-df62-46aa-ba2c-67df0ba14ae0",
           "Name": "No",
           "Code": "No"
+        },
+        {
+          "NameGuid": "74ed99dc-4117-463a-8a12-ececfde8c559",
+          "Name": "NewPass",
+          "Code": "NewPass"
+        },
+        {
+          "NameGuid": "ecc388f5-41fe-4056-812e-5d51bc001522",
+          "Name": "ReissuePass",
+          "Code": "ReissuePass"
         }
       ],
       "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.DropDownEditorToEnumerationBinder",

@@ -1,6 +1,693 @@
 {
   "$type": "Sungero.DataExport.ExportingObject, Sungero.DataExport",
-  "Uuid": "1feb7e5a-ba4b-4833-b01c-abab731d4389",
+  "Cover": {
+    "$type": "Sungero.NoCode.Settings.Interfaces.Models.Cover.CoverSettings, Sungero.NoCode.Settings.Interfaces",
+    "NameGuid": "5c73debb-a0b4-43d6-a744-a8a867dc170c",
+    "Header": {
+      "$type": "Sungero.NoCode.Settings.Interfaces.Models.Cover.CoverHeaderSettings, Sungero.NoCode.Settings.Interfaces",
+      "NameGuid": "882d3ad3-4d5d-43f9-bb1a-ecde0309798e",
+      "Name": "CoverHeaderSettings",
+      "LocalizationStrings": [
+        {
+          "$type": "Sungero.NoCode.Settings.Models.SettingsLocalizationString, Sungero.NoCode.Settings.Interfaces",
+          "StringCode": "CoverHeaderSettings_Title_882d3ad34d5d43f9bb1aecde0309798e",
+          "Hash": null,
+          "LocalizationValues": {
+            "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+            "en-US": "Сервисные заявки"
+          }
+        },
+        {
+          "$type": "Sungero.NoCode.Settings.Models.SettingsLocalizationString, Sungero.NoCode.Settings.Interfaces",
+          "StringCode": "CoverHeaderSettings_Description_882d3ad34d5d43f9bb1aecde0309798e",
+          "Hash": null,
+          "LocalizationValues": {
+            "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+            "en-US": "Заявки на вход, въезд, внос-вынос, оформление пропусков"
+          }
+        }
+      ],
+      "IconName": null,
+      "Background": null,
+      "BackgroundPosition": 1
+    },
+    "Footer": {
+      "$type": "Sungero.NoCode.Settings.Interfaces.Models.Cover.CoverFooterSettings, Sungero.NoCode.Settings.Interfaces",
+      "NameGuid": "ac6512bb-181d-4ada-ba30-9a1e04b54d04",
+      "Name": "CoverFooterSettings",
+      "LocalizationStrings": [],
+      "IconName": null,
+      "Background": null,
+      "BackgroundPosition": 1
+    },
+    "Tabs": {
+      "$type": "System.Collections.Generic.List`1[[Sungero.NoCode.Settings.Interfaces.Models.Cover.CoverTabSettings, Sungero.NoCode.Settings.Interfaces]], System.Private.CoreLib",
+      "$values": [
+        {
+          "$type": "Sungero.NoCode.Settings.Interfaces.Models.Cover.CoverTabSettings, Sungero.NoCode.Settings.Interfaces",
+          "TabId": "f6ce8b72-31ce-4b52-b11b-077c41809207",
+          "NameGuid": "f6ce8b72-31ce-4b52-b11b-077c41809207",
+          "Name": "Requests",
+          "LocalizationStrings": [
+            {
+              "$type": "Sungero.NoCode.Settings.Models.SettingsLocalizationString, Sungero.NoCode.Settings.Interfaces",
+              "StringCode": "Requests_Title_f6ce8b7231ce4b52b11b077c41809207",
+              "Hash": null,
+              "LocalizationValues": {
+                "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+                "en-US": "Заявки"
+              }
+            }
+          ],
+          "Index": 0,
+          "ParentId": "69d330a3-076b-49b7-919b-2cb0b70b8101"
+        }
+      ]
+    },
+    "Groups": {
+      "$type": "System.Collections.Generic.List`1[[Sungero.NoCode.Settings.Interfaces.Models.Cover.CoverGroupSettings, Sungero.NoCode.Settings.Interfaces]], System.Private.CoreLib",
+      "$values": [
+        {
+          "$type": "Sungero.NoCode.Settings.Interfaces.Models.Cover.CoverGroupSettings, Sungero.NoCode.Settings.Interfaces",
+          "GroupId": "b0c7919b-6a02-4af6-ad0e-0d8eb4ff00d0",
+          "ColumnNumber": 0,
+          "IconName": null,
+          "NameGuid": "b0c7919b-6a02-4af6-ad0e-0d8eb4ff00d0",
+          "Name": "Common",
+          "LocalizationStrings": [
+            {
+              "$type": "Sungero.NoCode.Settings.Models.SettingsLocalizationString, Sungero.NoCode.Settings.Interfaces",
+              "StringCode": "Common_Title_b0c7919b6a024af6ad0e0d8eb4ff00d0",
+              "Hash": null,
+              "LocalizationValues": {
+                "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+                "en-US": "Общий"
+              }
+            }
+          ],
+          "Index": 0,
+          "ParentId": "f6ce8b72-31ce-4b52-b11b-077c41809207"
+        },
+        {
+          "$type": "Sungero.NoCode.Settings.Interfaces.Models.Cover.CoverGroupSettings, Sungero.NoCode.Settings.Interfaces",
+          "GroupId": "c61d61bf-78ee-472a-9151-9406d7aa21f3",
+          "ColumnNumber": 1,
+          "IconName": null,
+          "NameGuid": "c61d61bf-78ee-472a-9151-9406d7aa21f3",
+          "Name": "Passses4Car",
+          "LocalizationStrings": [
+            {
+              "$type": "Sungero.NoCode.Settings.Models.SettingsLocalizationString, Sungero.NoCode.Settings.Interfaces",
+              "StringCode": "Passses4Car_Title_c61d61bf78ee472a91519406d7aa21f3",
+              "Hash": null,
+              "LocalizationValues": {
+                "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+                "en-US": "Автомобильные пропуска"
+              }
+            }
+          ],
+          "Index": 1,
+          "ParentId": "f6ce8b72-31ce-4b52-b11b-077c41809207"
+        },
+        {
+          "$type": "Sungero.NoCode.Settings.Interfaces.Models.Cover.CoverGroupSettings, Sungero.NoCode.Settings.Interfaces",
+          "GroupId": "a74a8579-f128-41fa-be85-7368fc39504a",
+          "ColumnNumber": 0,
+          "IconName": null,
+          "NameGuid": "a74a8579-f128-41fa-be85-7368fc39504a",
+          "Name": "Passes4Employee",
+          "LocalizationStrings": [
+            {
+              "$type": "Sungero.NoCode.Settings.Models.SettingsLocalizationString, Sungero.NoCode.Settings.Interfaces",
+              "StringCode": "Passes4Employee_Title_a74a8579f12841fabe857368fc39504a",
+              "Hash": null,
+              "LocalizationValues": {
+                "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+                "en-US": "Сотрудники и гости"
+              }
+            }
+          ],
+          "Index": 2,
+          "ParentId": "f6ce8b72-31ce-4b52-b11b-077c41809207"
+        },
+        {
+          "$type": "Sungero.NoCode.Settings.Interfaces.Models.Cover.CoverGroupSettings, Sungero.NoCode.Settings.Interfaces",
+          "GroupId": "5fb4d075-5b05-46ee-980f-fa0a1c230b9e",
+          "ColumnNumber": 1,
+          "IconName": null,
+          "NameGuid": "5fb4d075-5b05-46ee-980f-fa0a1c230b9e",
+          "Name": "Passes4Assets",
+          "LocalizationStrings": [
+            {
+              "$type": "Sungero.NoCode.Settings.Models.SettingsLocalizationString, Sungero.NoCode.Settings.Interfaces",
+              "StringCode": "Passes4Assets_Title_5fb4d0755b0546ee980ffa0a1c230b9e",
+              "Hash": null,
+              "LocalizationValues": {
+                "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+                "en-US": "ТМЦ"
+              }
+            }
+          ],
+          "Index": 3,
+          "ParentId": "f6ce8b72-31ce-4b52-b11b-077c41809207"
+        },
+        {
+          "$type": "Sungero.NoCode.Settings.Interfaces.Models.Cover.CoverGroupSettings, Sungero.NoCode.Settings.Interfaces",
+          "GroupId": "dd243d0b-97f7-44de-8783-5d610ecd6230",
+          "ColumnNumber": 0,
+          "IconName": null,
+          "NameGuid": "dd243d0b-97f7-44de-8783-5d610ecd6230",
+          "Name": "Settings",
+          "LocalizationStrings": [
+            {
+              "$type": "Sungero.NoCode.Settings.Models.SettingsLocalizationString, Sungero.NoCode.Settings.Interfaces",
+              "StringCode": "Settings_Title_dd243d0b97f744de87835d610ecd6230",
+              "Hash": null,
+              "LocalizationValues": {
+                "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+                "en-US": "Настройки"
+              }
+            }
+          ],
+          "Index": 4,
+          "ParentId": "f6ce8b72-31ce-4b52-b11b-077c41809207"
+        }
+      ]
+    },
+    "Actions": {
+      "$type": "System.Collections.Generic.List`1[[Sungero.NoCode.Settings.Interfaces.Models.Cover.CoverActionSettingsBase, Sungero.NoCode.Settings.Interfaces]], System.Private.CoreLib",
+      "$values": [
+        {
+          "$type": "Sungero.NoCode.Settings.Interfaces.Models.Cover.CoverEntityListActionSettings, Sungero.NoCode.Settings.Interfaces",
+          "EntityTypeId": "7aff79f7-1e7f-43e8-853e-84eb5af7aaa8",
+          "ActionId": "461f45f8-90aa-46b0-b88c-c752a65b642a",
+          "NameGuid": "461f45f8-90aa-46b0-b88c-c752a65b642a",
+          "Name": "Visitors",
+          "LocalizationStrings": [
+            {
+              "$type": "Sungero.NoCode.Settings.Models.SettingsLocalizationString, Sungero.NoCode.Settings.Interfaces",
+              "StringCode": "Visitors_Title_461f45f890aa46b0b88cc752a65b642a",
+              "Hash": null,
+              "LocalizationValues": {
+                "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+                "en-US": "Visitors",
+                "ru-RU": "Посетители"
+              }
+            },
+            {
+              "$type": "Sungero.NoCode.Settings.Models.SettingsLocalizationString, Sungero.NoCode.Settings.Interfaces",
+              "StringCode": "Visitors_Description_461f45f890aa46b0b88cc752a65b642a",
+              "Hash": null,
+              "LocalizationValues": {
+                "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+                "en-US": "Тестовый режим, просим не использовать."
+              }
+            }
+          ],
+          "Index": 0,
+          "ParentId": "b0c7919b-6a02-4af6-ad0e-0d8eb4ff00d0"
+        },
+        {
+          "$type": "Sungero.NoCode.Settings.Interfaces.Models.Cover.CoverEntityListActionSettings, Sungero.NoCode.Settings.Interfaces",
+          "EntityTypeId": "2560a3ed-af5b-41bb-bde2-b99f9acf12ce",
+          "ActionId": "db76cd7f-56f1-4e55-9c6c-008e41ebdf6a",
+          "NameGuid": "db76cd7f-56f1-4e55-9c6c-008e41ebdf6a",
+          "Name": "Auto",
+          "LocalizationStrings": [
+            {
+              "$type": "Sungero.NoCode.Settings.Models.SettingsLocalizationString, Sungero.NoCode.Settings.Interfaces",
+              "StringCode": "Auto_Title_db76cd7f56f14e559c6c008e41ebdf6a",
+              "Hash": null,
+              "LocalizationValues": {
+                "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+                "en-US": "Автомобили"
+              }
+            },
+            {
+              "$type": "Sungero.NoCode.Settings.Models.SettingsLocalizationString, Sungero.NoCode.Settings.Interfaces",
+              "StringCode": "Auto_Description_db76cd7f56f14e559c6c008e41ebdf6a",
+              "Hash": null,
+              "LocalizationValues": {
+                "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+                "en-US": "Автомобили, которые могут проехать на территорию бизнес центра - по пропускам для ввоза-вывоза ТМЦ и гостевым автопропускам"
+              }
+            }
+          ],
+          "Index": 1,
+          "ParentId": "b0c7919b-6a02-4af6-ad0e-0d8eb4ff00d0"
+        },
+        {
+          "$type": "Sungero.NoCode.Settings.Interfaces.Models.Cover.CoverEntityListActionSettings, Sungero.NoCode.Settings.Interfaces",
+          "EntityTypeId": "ac86d580-b326-4345-a0bd-7277d2f47ad0",
+          "ActionId": "b31ac012-149d-4be2-b5d3-fef7d08ebf99",
+          "NameGuid": "b31ac012-149d-4be2-b5d3-fef7d08ebf99",
+          "Name": "AllRequests",
+          "LocalizationStrings": [
+            {
+              "$type": "Sungero.NoCode.Settings.Models.SettingsLocalizationString, Sungero.NoCode.Settings.Interfaces",
+              "StringCode": "AllRequests_Title_b31ac012149d4be2b5d3fef7d08ebf99",
+              "Hash": null,
+              "LocalizationValues": {
+                "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+                "en-US": "Все заявки"
+              }
+            },
+            {
+              "$type": "Sungero.NoCode.Settings.Models.SettingsLocalizationString, Sungero.NoCode.Settings.Interfaces",
+              "StringCode": "AllRequests_Description_b31ac012149d4be2b5d3fef7d08ebf99",
+              "Hash": null,
+              "LocalizationValues": {
+                "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+                "en-US": "Все заявки на проход, въезд, вввоз, вывоз и пр."
+              }
+            }
+          ],
+          "Index": 2,
+          "ParentId": "b0c7919b-6a02-4af6-ad0e-0d8eb4ff00d0"
+        },
+        {
+          "$type": "Sungero.NoCode.Settings.Interfaces.Models.Cover.CoverEntityListActionSettings, Sungero.NoCode.Settings.Interfaces",
+          "EntityTypeId": "33deea65-1d95-44dd-a39d-9a7252b1b99a",
+          "ActionId": "bfd352a8-531f-45de-98e1-a13ba93c20f8",
+          "NameGuid": "bfd352a8-531f-45de-98e1-a13ba93c20f8",
+          "Name": "Parkings",
+          "LocalizationStrings": [
+            {
+              "$type": "Sungero.NoCode.Settings.Models.SettingsLocalizationString, Sungero.NoCode.Settings.Interfaces",
+              "StringCode": "Parkings_Title_bfd352a8531f45de98e1a13ba93c20f8",
+              "Hash": null,
+              "LocalizationValues": {
+                "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+                "en-US": "Парковочные места"
+              }
+            },
+            {
+              "$type": "Sungero.NoCode.Settings.Models.SettingsLocalizationString, Sungero.NoCode.Settings.Interfaces",
+              "StringCode": "Parkings_Description_bfd352a8531f45de98e1a13ba93c20f8",
+              "Hash": null,
+              "LocalizationValues": {
+                "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+                "en-US": "Места на парковке для арендаторов"
+              }
+            }
+          ],
+          "Index": 0,
+          "ParentId": "c61d61bf-78ee-472a-9151-9406d7aa21f3"
+        },
+        {
+          "$type": "Sungero.NoCode.Settings.Interfaces.Models.Cover.CoverEntityListActionSettings, Sungero.NoCode.Settings.Interfaces",
+          "EntityTypeId": "8ce2b667-494d-443b-b389-a653002d304c",
+          "ActionId": "5ba7f133-edda-4a89-a827-2abe0dc8d000",
+          "NameGuid": "5ba7f133-edda-4a89-a827-2abe0dc8d000",
+          "Name": "Pass4Cars",
+          "LocalizationStrings": [
+            {
+              "$type": "Sungero.NoCode.Settings.Models.SettingsLocalizationString, Sungero.NoCode.Settings.Interfaces",
+              "StringCode": "Pass4Cars_Title_5ba7f133edda4a89a8272abe0dc8d000",
+              "Hash": null,
+              "LocalizationValues": {
+                "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+                "en-US": "Разовый автомобильный пропуск"
+              }
+            },
+            {
+              "$type": "Sungero.NoCode.Settings.Models.SettingsLocalizationString, Sungero.NoCode.Settings.Interfaces",
+              "StringCode": "Pass4Cars_Description_5ba7f133edda4a89a8272abe0dc8d000",
+              "Hash": null,
+              "LocalizationValues": {
+                "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+                "en-US": "Заявки на выдачу разового пропуска для въезда автомобилей на гостевую парковку или на парковку для арендаторов"
+              }
+            }
+          ],
+          "Index": 1,
+          "ParentId": "c61d61bf-78ee-472a-9151-9406d7aa21f3"
+        },
+        {
+          "$type": "Sungero.NoCode.Settings.Interfaces.Models.Cover.CoverEntityListActionSettings, Sungero.NoCode.Settings.Interfaces",
+          "EntityTypeId": "0322118b-ccaf-4b52-9078-c3b592ddf9c3",
+          "ActionId": "95454f77-b985-44cc-836a-f19134b32fcf",
+          "NameGuid": "95454f77-b985-44cc-836a-f19134b32fcf",
+          "Name": "ChangePermanentParking",
+          "LocalizationStrings": [
+            {
+              "$type": "Sungero.NoCode.Settings.Models.SettingsLocalizationString, Sungero.NoCode.Settings.Interfaces",
+              "StringCode": "ChangePermanentParking_Title_95454f77b98544cc836af19134b32fcf",
+              "Hash": null,
+              "LocalizationValues": {
+                "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+                "en-US": "Изменения на постоянной парковке"
+              }
+            },
+            {
+              "$type": "Sungero.NoCode.Settings.Models.SettingsLocalizationString, Sungero.NoCode.Settings.Interfaces",
+              "StringCode": "ChangePermanentParking_Description_95454f77b98544cc836af19134b32fcf",
+              "Hash": null,
+              "LocalizationValues": {
+                "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+                "en-US": "Заявки на изменение состава автомобилей на постоянной паркеовки, выдачу электронных пропусков и ламинатов"
+              }
+            }
+          ],
+          "Index": 2,
+          "ParentId": "c61d61bf-78ee-472a-9151-9406d7aa21f3"
+        },
+        {
+          "$type": "Sungero.NoCode.Settings.Interfaces.Models.Cover.CoverEntityListActionSettings, Sungero.NoCode.Settings.Interfaces",
+          "EntityTypeId": "69be0496-74a8-4dc6-9972-020d73d8a139",
+          "ActionId": "f4200d5c-5843-4cf2-adc2-dc71cd70955a",
+          "NameGuid": "f4200d5c-5843-4cf2-adc2-dc71cd70955a",
+          "Name": "Pass4Visitors",
+          "LocalizationStrings": [
+            {
+              "$type": "Sungero.NoCode.Settings.Models.SettingsLocalizationString, Sungero.NoCode.Settings.Interfaces",
+              "StringCode": "Pass4Visitors_Title_f4200d5c58434cf2adc2dc71cd70955a",
+              "Hash": null,
+              "LocalizationValues": {
+                "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+                "en-US": "Разовые пропуска"
+              }
+            },
+            {
+              "$type": "Sungero.NoCode.Settings.Models.SettingsLocalizationString, Sungero.NoCode.Settings.Interfaces",
+              "StringCode": "Pass4Visitors_Description_f4200d5c58434cf2adc2dc71cd70955a",
+              "Hash": null,
+              "LocalizationValues": {
+                "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+                "en-US": "Заявки на разовые пропуска для гостей бизнесцентра"
+              }
+            }
+          ],
+          "Index": 0,
+          "ParentId": "a74a8579-f128-41fa-be85-7368fc39504a"
+        },
+        {
+          "$type": "Sungero.NoCode.Settings.Interfaces.Models.Cover.CoverEntityListActionSettings, Sungero.NoCode.Settings.Interfaces",
+          "EntityTypeId": "7fd79205-dd00-4a52-b194-83d3db2f7fe9",
+          "ActionId": "7c317105-b213-48f8-a649-1fe44919060b",
+          "NameGuid": "7c317105-b213-48f8-a649-1fe44919060b",
+          "Name": "PermanentPass4Emploee",
+          "LocalizationStrings": [
+            {
+              "$type": "Sungero.NoCode.Settings.Models.SettingsLocalizationString, Sungero.NoCode.Settings.Interfaces",
+              "StringCode": "PermanentPass4Emploee_Title_7c317105b21348f8a6491fe44919060b",
+              "Hash": null,
+              "LocalizationValues": {
+                "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+                "en-US": "Изготовление пропусков для сотрудников"
+              }
+            },
+            {
+              "$type": "Sungero.NoCode.Settings.Models.SettingsLocalizationString, Sungero.NoCode.Settings.Interfaces",
+              "StringCode": "PermanentPass4Emploee_Description_7c317105b21348f8a6491fe44919060b",
+              "Hash": null,
+              "LocalizationValues": {
+                "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+                "en-US": "Заявки на изготовление постоянных пропусков для сотрудников"
+              }
+            }
+          ],
+          "Index": 1,
+          "ParentId": "a74a8579-f128-41fa-be85-7368fc39504a"
+        },
+        {
+          "$type": "Sungero.NoCode.Settings.Interfaces.Models.Cover.CoverEntityListActionSettings, Sungero.NoCode.Settings.Interfaces",
+          "EntityTypeId": "b3707878-748d-41e6-b807-badd72e0d265",
+          "ActionId": "63aa6215-4db9-4966-93a4-bac66253dcb1",
+          "NameGuid": "63aa6215-4db9-4966-93a4-bac66253dcb1",
+          "Name": "StopPermanentPass4Employee",
+          "LocalizationStrings": [
+            {
+              "$type": "Sungero.NoCode.Settings.Models.SettingsLocalizationString, Sungero.NoCode.Settings.Interfaces",
+              "StringCode": "StopPermanentPass4Employee_Title_63aa62154db9496693a4bac66253dcb1",
+              "Hash": null,
+              "LocalizationValues": {
+                "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+                "en-US": "Блокировка пропуска для сотрудников"
+              }
+            },
+            {
+              "$type": "Sungero.NoCode.Settings.Models.SettingsLocalizationString, Sungero.NoCode.Settings.Interfaces",
+              "StringCode": "StopPermanentPass4Employee_Description_63aa62154db9496693a4bac66253dcb1",
+              "Hash": null,
+              "LocalizationValues": {
+                "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+                "en-US": "Заявки на блокировку постоянных пропусков сотрудников"
+              }
+            }
+          ],
+          "Index": 2,
+          "ParentId": "a74a8579-f128-41fa-be85-7368fc39504a"
+        },
+        {
+          "$type": "Sungero.NoCode.Settings.Interfaces.Models.Cover.CoverEntityListActionSettings, Sungero.NoCode.Settings.Interfaces",
+          "EntityTypeId": "6cbff565-8da6-43f5-8b40-af86fa9a2a2e",
+          "ActionId": "9b99d168-2114-43a7-9907-b4faa5fc6679",
+          "NameGuid": "9b99d168-2114-43a7-9907-b4faa5fc6679",
+          "Name": "Permission4Employee",
+          "LocalizationStrings": [
+            {
+              "$type": "Sungero.NoCode.Settings.Models.SettingsLocalizationString, Sungero.NoCode.Settings.Interfaces",
+              "StringCode": "Permission4Employee_Title_9b99d168211443a79907b4faa5fc6679",
+              "Hash": null,
+              "LocalizationValues": {
+                "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+                "en-US": "Временный доступ для сотрудника"
+              }
+            },
+            {
+              "$type": "Sungero.NoCode.Settings.Models.SettingsLocalizationString, Sungero.NoCode.Settings.Interfaces",
+              "StringCode": "Permission4Employee_Description_9b99d168211443a79907b4faa5fc6679",
+              "Hash": null,
+              "LocalizationValues": {
+                "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+                "en-US": "Заявки на выдачу временного доступа на выполнение разичных работ"
+              }
+            }
+          ],
+          "Index": 3,
+          "ParentId": "a74a8579-f128-41fa-be85-7368fc39504a"
+        },
+        {
+          "$type": "Sungero.NoCode.Settings.Interfaces.Models.Cover.CoverEntityListActionSettings, Sungero.NoCode.Settings.Interfaces",
+          "EntityTypeId": "81a92bbf-8b60-4306-99ef-f57a3663cbc9",
+          "ActionId": "46f0bbef-af2e-4d9a-a1aa-66fc82570f49",
+          "NameGuid": "46f0bbef-af2e-4d9a-a1aa-66fc82570f49",
+          "Name": "WorkPermission",
+          "LocalizationStrings": [
+            {
+              "$type": "Sungero.NoCode.Settings.Models.SettingsLocalizationString, Sungero.NoCode.Settings.Interfaces",
+              "StringCode": "WorkPermission_Title_46f0bbefaf2e4d9aa1aa66fc82570f49",
+              "Hash": null,
+              "LocalizationValues": {
+                "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+                "en-US": "Выполнение работ"
+              }
+            },
+            {
+              "$type": "Sungero.NoCode.Settings.Models.SettingsLocalizationString, Sungero.NoCode.Settings.Interfaces",
+              "StringCode": "WorkPermission_Description_46f0bbefaf2e4d9aa1aa66fc82570f49",
+              "Hash": null,
+              "LocalizationValues": {
+                "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+                "en-US": "Выполнение работ на территории БЦ, в т.ч. с отключением пожарной сигнализации"
+              }
+            }
+          ],
+          "Index": 4,
+          "ParentId": "a74a8579-f128-41fa-be85-7368fc39504a"
+        },
+        {
+          "$type": "Sungero.NoCode.Settings.Interfaces.Models.Cover.CoverEntityListActionSettings, Sungero.NoCode.Settings.Interfaces",
+          "EntityTypeId": "b2d7bcc9-21a9-48bc-9c15-0f5aa8684f5e",
+          "ActionId": "a63cd4c5-6963-4c1e-805a-5db936627392",
+          "NameGuid": "a63cd4c5-6963-4c1e-805a-5db936627392",
+          "Name": "Pass4AssetsMoving",
+          "LocalizationStrings": [
+            {
+              "$type": "Sungero.NoCode.Settings.Models.SettingsLocalizationString, Sungero.NoCode.Settings.Interfaces",
+              "StringCode": "Pass4AssetsMoving_Title_a63cd4c569634c1e805a5db936627392",
+              "Hash": null,
+              "LocalizationValues": {
+                "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+                "en-US": "Разовые пропуска на ввоз-вывоз ТМЦ"
+              }
+            },
+            {
+              "$type": "Sungero.NoCode.Settings.Models.SettingsLocalizationString, Sungero.NoCode.Settings.Interfaces",
+              "StringCode": "Pass4AssetsMoving_Description_a63cd4c569634c1e805a5db936627392",
+              "Hash": null,
+              "LocalizationValues": {
+                "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+                "en-US": "Заявки на разовые пропуска на ввоз, вывоз, внос, вынос товарно-материальных ценностей"
+              }
+            }
+          ],
+          "Index": 0,
+          "ParentId": "5fb4d075-5b05-46ee-980f-fa0a1c230b9e"
+        },
+        {
+          "$type": "Sungero.NoCode.Settings.Interfaces.Models.Cover.CoverEntityListActionSettings, Sungero.NoCode.Settings.Interfaces",
+          "EntityTypeId": "241d8dd5-432a-4761-9659-b96dbf73af48",
+          "ActionId": "5e7d0f67-dd9e-440c-9d1a-f7772f60535a",
+          "NameGuid": "5e7d0f67-dd9e-440c-9d1a-f7772f60535a",
+          "Name": "Pass4InternalMoving",
+          "LocalizationStrings": [
+            {
+              "$type": "Sungero.NoCode.Settings.Models.SettingsLocalizationString, Sungero.NoCode.Settings.Interfaces",
+              "StringCode": "Pass4InternalMoving_Title_5e7d0f67dd9e440c9d1af7772f60535a",
+              "Hash": null,
+              "LocalizationValues": {
+                "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+                "en-US": "Разовые пропуска на внутреннее перемещение ТМЦ"
+              }
+            },
+            {
+              "$type": "Sungero.NoCode.Settings.Models.SettingsLocalizationString, Sungero.NoCode.Settings.Interfaces",
+              "StringCode": "Pass4InternalMoving_Description_5e7d0f67dd9e440c9d1af7772f60535a",
+              "Hash": null,
+              "LocalizationValues": {
+                "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+                "en-US": "Заявки на перемещение ТМЦ внутри бизнес-центра"
+              }
+            }
+          ],
+          "Index": 1,
+          "ParentId": "5fb4d075-5b05-46ee-980f-fa0a1c230b9e"
+        },
+        {
+          "$type": "Sungero.NoCode.Settings.Interfaces.Models.Cover.CoverEntityListActionSettings, Sungero.NoCode.Settings.Interfaces",
+          "EntityTypeId": "f43c57ea-12d8-43f8-b7a1-0d5259c4277b",
+          "ActionId": "bfb92820-217f-4b73-b219-fa8be06ba177",
+          "NameGuid": "bfb92820-217f-4b73-b219-fa8be06ba177",
+          "Name": "PermanentAssetMovin",
+          "LocalizationStrings": [
+            {
+              "$type": "Sungero.NoCode.Settings.Models.SettingsLocalizationString, Sungero.NoCode.Settings.Interfaces",
+              "StringCode": "PermanentAssetMovin_Title_bfb92820217f4b73b219fa8be06ba177",
+              "Hash": null,
+              "LocalizationValues": {
+                "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+                "en-US": "Постоянные пропуска на перемещение ТМЦ"
+              }
+            },
+            {
+              "$type": "Sungero.NoCode.Settings.Models.SettingsLocalizationString, Sungero.NoCode.Settings.Interfaces",
+              "StringCode": "PermanentAssetMovin_Description_bfb92820217f4b73b219fa8be06ba177",
+              "Hash": null,
+              "LocalizationValues": {
+                "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+                "en-US": "Ввоз-вывоз товарно-материальных ценностей на регулярной основе"
+              }
+            }
+          ],
+          "Index": 2,
+          "ParentId": "5fb4d075-5b05-46ee-980f-fa0a1c230b9e"
+        },
+        {
+          "$type": "Sungero.NoCode.Settings.Interfaces.Models.Cover.CoverEntityListActionSettings, Sungero.NoCode.Settings.Interfaces",
+          "EntityTypeId": "97222148-c6d3-40d0-bf61-47f03dbbdf54",
+          "ActionId": "c307cbc6-53b6-4cc8-973d-3084f7c94cbe",
+          "NameGuid": "c307cbc6-53b6-4cc8-973d-3084f7c94cbe",
+          "Name": "Renters",
+          "LocalizationStrings": [
+            {
+              "$type": "Sungero.NoCode.Settings.Models.SettingsLocalizationString, Sungero.NoCode.Settings.Interfaces",
+              "StringCode": "Renters_Title_c307cbc653b64cc8973d3084f7c94cbe",
+              "Hash": null,
+              "LocalizationValues": {
+                "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+                "en-US": "Арендаторы"
+              }
+            },
+            {
+              "$type": "Sungero.NoCode.Settings.Models.SettingsLocalizationString, Sungero.NoCode.Settings.Interfaces",
+              "StringCode": "Renters_Description_c307cbc653b64cc8973d3084f7c94cbe",
+              "Hash": null,
+              "LocalizationValues": {
+                "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+                "en-US": "Список компаний, сотрудники которых могут создавать заявки"
+              }
+            }
+          ],
+          "Index": 0,
+          "ParentId": "dd243d0b-97f7-44de-8783-5d610ecd6230"
+        },
+        {
+          "$type": "Sungero.NoCode.Settings.Interfaces.Models.Cover.CoverEntityListActionSettings, Sungero.NoCode.Settings.Interfaces",
+          "EntityTypeId": "8d45c2b2-8e20-4fc4-8539-432b7a299a46",
+          "ActionId": "e71373ae-cd0b-4671-bae2-a372035e1d6d",
+          "NameGuid": "e71373ae-cd0b-4671-bae2-a372035e1d6d",
+          "Name": "Sites",
+          "LocalizationStrings": [
+            {
+              "$type": "Sungero.NoCode.Settings.Models.SettingsLocalizationString, Sungero.NoCode.Settings.Interfaces",
+              "StringCode": "Sites_Title_e71373aecd0b4671bae2a372035e1d6d",
+              "Hash": null,
+              "LocalizationValues": {
+                "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+                "en-US": "Sites",
+                "ru-RU": "Места"
+              }
+            },
+            {
+              "$type": "Sungero.NoCode.Settings.Models.SettingsLocalizationString, Sungero.NoCode.Settings.Interfaces",
+              "StringCode": "Sites_Description_e71373aecd0b4671bae2a372035e1d6d",
+              "Hash": null,
+              "LocalizationValues": {
+                "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+                "en-US": "Секции БЦ, места для разгрузки, входы, въезды и пр."
+              }
+            }
+          ],
+          "Index": 1,
+          "ParentId": "dd243d0b-97f7-44de-8783-5d610ecd6230"
+        },
+        {
+          "$type": "Sungero.NoCode.Settings.Interfaces.Models.Cover.CoverEntityListActionSettings, Sungero.NoCode.Settings.Interfaces",
+          "EntityTypeId": "46d20a39-e6c1-4e02-89f7-c5f85eec8088",
+          "ActionId": "96caf883-334e-4d02-a2fd-fd9739a7fb76",
+          "NameGuid": "96caf883-334e-4d02-a2fd-fd9739a7fb76",
+          "Name": "TimeSpans",
+          "LocalizationStrings": [
+            {
+              "$type": "Sungero.NoCode.Settings.Models.SettingsLocalizationString, Sungero.NoCode.Settings.Interfaces",
+              "StringCode": "TimeSpans_Title_96caf883334e4d02a2fdfd9739a7fb76",
+              "Hash": null,
+              "LocalizationValues": {
+                "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+                "en-US": "TimeSpans",
+                "ru-RU": "Интервалы времени"
+              }
+            },
+            {
+              "$type": "Sungero.NoCode.Settings.Models.SettingsLocalizationString, Sungero.NoCode.Settings.Interfaces",
+              "StringCode": "TimeSpans_Description_96caf883334e4d02a2fdfd9739a7fb76",
+              "Hash": null,
+              "LocalizationValues": {
+                "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+                "en-US": "Интервалы времени для выбора в зявках"
+              }
+            }
+          ],
+          "Index": 2,
+          "ParentId": "dd243d0b-97f7-44de-8783-5d610ecd6230"
+        }
+      ]
+    },
+    "RemoteControls": {
+      "$type": "System.Collections.Generic.List`1[[Sungero.NoCode.Settings.Interfaces.Models.Cover.CoverRemoteControlSettings, Sungero.NoCode.Settings.Interfaces]], System.Private.CoreLib",
+      "$values": []
+    },
+    "Background": null,
+    "BackgroundPosition": 1
+  },
+  "Priority": 1,
+  "ExplorerModule": {
+    "$type": "Sungero.DataExport.ExportingObjectId, Sungero.DataExport",
+    "TypeGuid": "4cbdfb03-5462-43c4-a033-034e3d3aa095",
+    "Identifier": "5de25943-1cb3-45ef-9972-4be4f15b6d54"
+  },
   "Items": {
     "$type": "Sungero.DataExport.ExportingObject[], Sungero.DataExport",
     "$values": [
@@ -97,265 +784,8 @@
       }
     ]
   },
-  "Cover": {
-    "$type": "Sungero.NoCode.Settings.Interfaces.Models.Cover.CoverSettings, Sungero.NoCode.Settings.Interfaces",
-    "NameGuid": "5c73debb-a0b4-43d6-a744-a8a867dc170c",
-    "Header": {
-      "$type": "Sungero.NoCode.Settings.Interfaces.Models.Cover.CoverHeaderSettings, Sungero.NoCode.Settings.Interfaces",
-      "NameGuid": "882d3ad3-4d5d-43f9-bb1a-ecde0309798e",
-      "Name": "CoverHeaderSettings",
-      "IconName": null,
-      "Background": null,
-      "BackgroundPosition": 1
-    },
-    "Footer": {
-      "$type": "Sungero.NoCode.Settings.Interfaces.Models.Cover.CoverFooterSettings, Sungero.NoCode.Settings.Interfaces",
-      "NameGuid": "ac6512bb-181d-4ada-ba30-9a1e04b54d04",
-      "Name": "CoverFooterSettings",
-      "IconName": null,
-      "Background": null,
-      "BackgroundPosition": 1
-    },
-    "Tabs": {
-      "$type": "System.Collections.Generic.List`1[[Sungero.NoCode.Settings.Interfaces.Models.Cover.CoverTabSettings, Sungero.NoCode.Settings.Interfaces]], System.Private.CoreLib",
-      "$values": [
-        {
-          "$type": "Sungero.NoCode.Settings.Interfaces.Models.Cover.CoverTabSettings, Sungero.NoCode.Settings.Interfaces",
-          "TabId": "f6ce8b72-31ce-4b52-b11b-077c41809207",
-          "NameGuid": "f6ce8b72-31ce-4b52-b11b-077c41809207",
-          "Name": "Requests",
-          "Index": 0,
-          "ParentId": "69d330a3-076b-49b7-919b-2cb0b70b8101"
-        }
-      ]
-    },
-    "Groups": {
-      "$type": "System.Collections.Generic.List`1[[Sungero.NoCode.Settings.Interfaces.Models.Cover.CoverGroupSettings, Sungero.NoCode.Settings.Interfaces]], System.Private.CoreLib",
-      "$values": [
-        {
-          "$type": "Sungero.NoCode.Settings.Interfaces.Models.Cover.CoverGroupSettings, Sungero.NoCode.Settings.Interfaces",
-          "GroupId": "b0c7919b-6a02-4af6-ad0e-0d8eb4ff00d0",
-          "ColumnNumber": 0,
-          "IconName": null,
-          "NameGuid": "b0c7919b-6a02-4af6-ad0e-0d8eb4ff00d0",
-          "Name": "Common",
-          "Index": 0,
-          "ParentId": "f6ce8b72-31ce-4b52-b11b-077c41809207"
-        },
-        {
-          "$type": "Sungero.NoCode.Settings.Interfaces.Models.Cover.CoverGroupSettings, Sungero.NoCode.Settings.Interfaces",
-          "GroupId": "c61d61bf-78ee-472a-9151-9406d7aa21f3",
-          "ColumnNumber": 1,
-          "IconName": null,
-          "NameGuid": "c61d61bf-78ee-472a-9151-9406d7aa21f3",
-          "Name": "Passses4Car",
-          "Index": 1,
-          "ParentId": "f6ce8b72-31ce-4b52-b11b-077c41809207"
-        },
-        {
-          "$type": "Sungero.NoCode.Settings.Interfaces.Models.Cover.CoverGroupSettings, Sungero.NoCode.Settings.Interfaces",
-          "GroupId": "a74a8579-f128-41fa-be85-7368fc39504a",
-          "ColumnNumber": 0,
-          "IconName": null,
-          "NameGuid": "a74a8579-f128-41fa-be85-7368fc39504a",
-          "Name": "Passes4Employee",
-          "Index": 2,
-          "ParentId": "f6ce8b72-31ce-4b52-b11b-077c41809207"
-        },
-        {
-          "$type": "Sungero.NoCode.Settings.Interfaces.Models.Cover.CoverGroupSettings, Sungero.NoCode.Settings.Interfaces",
-          "GroupId": "5fb4d075-5b05-46ee-980f-fa0a1c230b9e",
-          "ColumnNumber": 1,
-          "IconName": null,
-          "NameGuid": "5fb4d075-5b05-46ee-980f-fa0a1c230b9e",
-          "Name": "Passes4Assets",
-          "Index": 3,
-          "ParentId": "f6ce8b72-31ce-4b52-b11b-077c41809207"
-        },
-        {
-          "$type": "Sungero.NoCode.Settings.Interfaces.Models.Cover.CoverGroupSettings, Sungero.NoCode.Settings.Interfaces",
-          "GroupId": "dd243d0b-97f7-44de-8783-5d610ecd6230",
-          "ColumnNumber": 0,
-          "IconName": null,
-          "NameGuid": "dd243d0b-97f7-44de-8783-5d610ecd6230",
-          "Name": "Settings",
-          "Index": 4,
-          "ParentId": "f6ce8b72-31ce-4b52-b11b-077c41809207"
-        }
-      ]
-    },
-    "Actions": {
-      "$type": "System.Collections.Generic.List`1[[Sungero.NoCode.Settings.Interfaces.Models.Cover.CoverActionSettingsBase, Sungero.NoCode.Settings.Interfaces]], System.Private.CoreLib",
-      "$values": [
-        {
-          "$type": "Sungero.NoCode.Settings.Interfaces.Models.Cover.CoverEntityListActionSettings, Sungero.NoCode.Settings.Interfaces",
-          "EntityTypeId": "7aff79f7-1e7f-43e8-853e-84eb5af7aaa8",
-          "ActionId": "461f45f8-90aa-46b0-b88c-c752a65b642a",
-          "NameGuid": "461f45f8-90aa-46b0-b88c-c752a65b642a",
-          "Name": "Visitors",
-          "Index": 0,
-          "ParentId": "b0c7919b-6a02-4af6-ad0e-0d8eb4ff00d0"
-        },
-        {
-          "$type": "Sungero.NoCode.Settings.Interfaces.Models.Cover.CoverEntityListActionSettings, Sungero.NoCode.Settings.Interfaces",
-          "EntityTypeId": "2560a3ed-af5b-41bb-bde2-b99f9acf12ce",
-          "ActionId": "db76cd7f-56f1-4e55-9c6c-008e41ebdf6a",
-          "NameGuid": "db76cd7f-56f1-4e55-9c6c-008e41ebdf6a",
-          "Name": "Auto",
-          "Index": 1,
-          "ParentId": "b0c7919b-6a02-4af6-ad0e-0d8eb4ff00d0"
-        },
-        {
-          "$type": "Sungero.NoCode.Settings.Interfaces.Models.Cover.CoverEntityListActionSettings, Sungero.NoCode.Settings.Interfaces",
-          "EntityTypeId": "ac86d580-b326-4345-a0bd-7277d2f47ad0",
-          "ActionId": "b31ac012-149d-4be2-b5d3-fef7d08ebf99",
-          "NameGuid": "b31ac012-149d-4be2-b5d3-fef7d08ebf99",
-          "Name": "AllRequests",
-          "Index": 2,
-          "ParentId": "b0c7919b-6a02-4af6-ad0e-0d8eb4ff00d0"
-        },
-        {
-          "$type": "Sungero.NoCode.Settings.Interfaces.Models.Cover.CoverEntityListActionSettings, Sungero.NoCode.Settings.Interfaces",
-          "EntityTypeId": "33deea65-1d95-44dd-a39d-9a7252b1b99a",
-          "ActionId": "bfd352a8-531f-45de-98e1-a13ba93c20f8",
-          "NameGuid": "bfd352a8-531f-45de-98e1-a13ba93c20f8",
-          "Name": "Parkings",
-          "Index": 0,
-          "ParentId": "c61d61bf-78ee-472a-9151-9406d7aa21f3"
-        },
-        {
-          "$type": "Sungero.NoCode.Settings.Interfaces.Models.Cover.CoverEntityListActionSettings, Sungero.NoCode.Settings.Interfaces",
-          "EntityTypeId": "8ce2b667-494d-443b-b389-a653002d304c",
-          "ActionId": "5ba7f133-edda-4a89-a827-2abe0dc8d000",
-          "NameGuid": "5ba7f133-edda-4a89-a827-2abe0dc8d000",
-          "Name": "Pass4Cars",
-          "Index": 1,
-          "ParentId": "c61d61bf-78ee-472a-9151-9406d7aa21f3"
-        },
-        {
-          "$type": "Sungero.NoCode.Settings.Interfaces.Models.Cover.CoverEntityListActionSettings, Sungero.NoCode.Settings.Interfaces",
-          "EntityTypeId": "0322118b-ccaf-4b52-9078-c3b592ddf9c3",
-          "ActionId": "95454f77-b985-44cc-836a-f19134b32fcf",
-          "NameGuid": "95454f77-b985-44cc-836a-f19134b32fcf",
-          "Name": "ChangePermanentParking",
-          "Index": 2,
-          "ParentId": "c61d61bf-78ee-472a-9151-9406d7aa21f3"
-        },
-        {
-          "$type": "Sungero.NoCode.Settings.Interfaces.Models.Cover.CoverEntityListActionSettings, Sungero.NoCode.Settings.Interfaces",
-          "EntityTypeId": "69be0496-74a8-4dc6-9972-020d73d8a139",
-          "ActionId": "f4200d5c-5843-4cf2-adc2-dc71cd70955a",
-          "NameGuid": "f4200d5c-5843-4cf2-adc2-dc71cd70955a",
-          "Name": "Pass4Visitors",
-          "Index": 0,
-          "ParentId": "a74a8579-f128-41fa-be85-7368fc39504a"
-        },
-        {
-          "$type": "Sungero.NoCode.Settings.Interfaces.Models.Cover.CoverEntityListActionSettings, Sungero.NoCode.Settings.Interfaces",
-          "EntityTypeId": "7fd79205-dd00-4a52-b194-83d3db2f7fe9",
-          "ActionId": "7c317105-b213-48f8-a649-1fe44919060b",
-          "NameGuid": "7c317105-b213-48f8-a649-1fe44919060b",
-          "Name": "PermanentPass4Emploee",
-          "Index": 1,
-          "ParentId": "a74a8579-f128-41fa-be85-7368fc39504a"
-        },
-        {
-          "$type": "Sungero.NoCode.Settings.Interfaces.Models.Cover.CoverEntityListActionSettings, Sungero.NoCode.Settings.Interfaces",
-          "EntityTypeId": "b3707878-748d-41e6-b807-badd72e0d265",
-          "ActionId": "63aa6215-4db9-4966-93a4-bac66253dcb1",
-          "NameGuid": "63aa6215-4db9-4966-93a4-bac66253dcb1",
-          "Name": "StopPermanentPass4Employee",
-          "Index": 2,
-          "ParentId": "a74a8579-f128-41fa-be85-7368fc39504a"
-        },
-        {
-          "$type": "Sungero.NoCode.Settings.Interfaces.Models.Cover.CoverEntityListActionSettings, Sungero.NoCode.Settings.Interfaces",
-          "EntityTypeId": "6cbff565-8da6-43f5-8b40-af86fa9a2a2e",
-          "ActionId": "9b99d168-2114-43a7-9907-b4faa5fc6679",
-          "NameGuid": "9b99d168-2114-43a7-9907-b4faa5fc6679",
-          "Name": "Permission4Employee",
-          "Index": 3,
-          "ParentId": "a74a8579-f128-41fa-be85-7368fc39504a"
-        },
-        {
-          "$type": "Sungero.NoCode.Settings.Interfaces.Models.Cover.CoverEntityListActionSettings, Sungero.NoCode.Settings.Interfaces",
-          "EntityTypeId": "81a92bbf-8b60-4306-99ef-f57a3663cbc9",
-          "ActionId": "46f0bbef-af2e-4d9a-a1aa-66fc82570f49",
-          "NameGuid": "46f0bbef-af2e-4d9a-a1aa-66fc82570f49",
-          "Name": "WorkPermission",
-          "Index": 4,
-          "ParentId": "a74a8579-f128-41fa-be85-7368fc39504a"
-        },
-        {
-          "$type": "Sungero.NoCode.Settings.Interfaces.Models.Cover.CoverEntityListActionSettings, Sungero.NoCode.Settings.Interfaces",
-          "EntityTypeId": "b2d7bcc9-21a9-48bc-9c15-0f5aa8684f5e",
-          "ActionId": "a63cd4c5-6963-4c1e-805a-5db936627392",
-          "NameGuid": "a63cd4c5-6963-4c1e-805a-5db936627392",
-          "Name": "Pass4AssetsMoving",
-          "Index": 0,
-          "ParentId": "5fb4d075-5b05-46ee-980f-fa0a1c230b9e"
-        },
-        {
-          "$type": "Sungero.NoCode.Settings.Interfaces.Models.Cover.CoverEntityListActionSettings, Sungero.NoCode.Settings.Interfaces",
-          "EntityTypeId": "241d8dd5-432a-4761-9659-b96dbf73af48",
-          "ActionId": "5e7d0f67-dd9e-440c-9d1a-f7772f60535a",
-          "NameGuid": "5e7d0f67-dd9e-440c-9d1a-f7772f60535a",
-          "Name": "Pass4InternalMoving",
-          "Index": 1,
-          "ParentId": "5fb4d075-5b05-46ee-980f-fa0a1c230b9e"
-        },
-        {
-          "$type": "Sungero.NoCode.Settings.Interfaces.Models.Cover.CoverEntityListActionSettings, Sungero.NoCode.Settings.Interfaces",
-          "EntityTypeId": "f43c57ea-12d8-43f8-b7a1-0d5259c4277b",
-          "ActionId": "bfb92820-217f-4b73-b219-fa8be06ba177",
-          "NameGuid": "bfb92820-217f-4b73-b219-fa8be06ba177",
-          "Name": "PermanentAssetMovin",
-          "Index": 2,
-          "ParentId": "5fb4d075-5b05-46ee-980f-fa0a1c230b9e"
-        },
-        {
-          "$type": "Sungero.NoCode.Settings.Interfaces.Models.Cover.CoverEntityListActionSettings, Sungero.NoCode.Settings.Interfaces",
-          "EntityTypeId": "97222148-c6d3-40d0-bf61-47f03dbbdf54",
-          "ActionId": "c307cbc6-53b6-4cc8-973d-3084f7c94cbe",
-          "NameGuid": "c307cbc6-53b6-4cc8-973d-3084f7c94cbe",
-          "Name": "Renters",
-          "Index": 0,
-          "ParentId": "dd243d0b-97f7-44de-8783-5d610ecd6230"
-        },
-        {
-          "$type": "Sungero.NoCode.Settings.Interfaces.Models.Cover.CoverEntityListActionSettings, Sungero.NoCode.Settings.Interfaces",
-          "EntityTypeId": "8d45c2b2-8e20-4fc4-8539-432b7a299a46",
-          "ActionId": "e71373ae-cd0b-4671-bae2-a372035e1d6d",
-          "NameGuid": "e71373ae-cd0b-4671-bae2-a372035e1d6d",
-          "Name": "Sites",
-          "Index": 1,
-          "ParentId": "dd243d0b-97f7-44de-8783-5d610ecd6230"
-        },
-        {
-          "$type": "Sungero.NoCode.Settings.Interfaces.Models.Cover.CoverEntityListActionSettings, Sungero.NoCode.Settings.Interfaces",
-          "EntityTypeId": "46d20a39-e6c1-4e02-89f7-c5f85eec8088",
-          "ActionId": "96caf883-334e-4d02-a2fd-fd9739a7fb76",
-          "NameGuid": "96caf883-334e-4d02-a2fd-fd9739a7fb76",
-          "Name": "TimeSpans",
-          "Index": 2,
-          "ParentId": "dd243d0b-97f7-44de-8783-5d610ecd6230"
-        }
-      ]
-    },
-    "RemoteControls": {
-      "$type": "System.Collections.Generic.List`1[[Sungero.NoCode.Settings.Interfaces.Models.Cover.CoverRemoteControlSettings, Sungero.NoCode.Settings.Interfaces]], System.Private.CoreLib",
-      "$values": []
-    },
-    "Background": null,
-    "BackgroundPosition": 1
-  },
+  "Uuid": "1feb7e5a-ba4b-4833-b01c-abab731d4389",
   "ModuleNameGuid": "5de25943-1cb3-45ef-9972-4be4f15b6d54",
-  "Status": "Active",
-  "Priority": 1,
   "StoreAsDefaultSetting": true,
-  "ExplorerModule": {
-    "$type": "Sungero.DataExport.ExportingObjectId, Sungero.DataExport",
-    "TypeGuid": "4cbdfb03-5462-43c4-a033-034e3d3aa095",
-    "Identifier": "5de25943-1cb3-45ef-9972-4be4f15b6d54"
-  }
+  "Status": "Draft"
 }

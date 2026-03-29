@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report ScriptLanguage="CSharp" ReferencedAssemblies="System.dll&#13;&#10;System.Core.dll&#13;&#10;System.Drawing.dll&#13;&#10;System.Windows.Forms.dll&#13;&#10;System.Data.dll&#13;&#10;System.Xml.dll&#13;&#10;Sungero.Domain.Shared&#13;&#10;Sungero.CoreEntities.Shared&#13;&#10;Sungero.Reporting.Shared&#13;&#10;CommonLibrary&#13;&#10;Sungero.Localization&#13;&#10;Sungero.Declension&#13;&#10;Sungero.Domain.Interfaces&#13;&#10;ricoh.ServiceRequests.Shared&#13;&#10;ricoh.ServiceRequests.Server" ReportInfo.CreatorVersion="2020.2.12.0">
+  <ScriptText>using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text.RegularExpressions;
+using System.Windows.Forms;
+using FastReport;
+using FastReport.Data;
+using FastReport.Dialog;
+using FastReport.Barcode;
+using FastReport.Table;
+using FastReport.Utils;
+using Sungero.Domain.Shared;
+using Sungero.CoreEntities;
+using Sungero.Core;
+using Resources = ricoh.ServiceRequests.Reports.Resources;
+
+
+namespace FastReport
+{
+  public class ReportScript
+  {
+  }
+}
+  </ScriptText>
+  <Dictionary>
+    <SungeroSqlDataConnection Name="Sungero_Connection" Restrictions="DontModify, DontEdit, DontDelete, HideAllProperties" ConnectionStringExpression="[SungeroConnectionString]">
+      <TableDataSource Name="Sungero_Core_Recipient" DataType="System.Int32" Enabled="true" TableName="Sungero_Core_Recipient">
+        <Column Name="Id" DataType="System.Int64"/>
+        <Column Name="Description" DataType="System.String"/>
+        <Column Name="IsSystem" DataType="System.Boolean"/>
+        <Column Name="Sid" DataType="System.String"/>
+        <Column Name="Name" DataType="System.String"/>
+        <Column Name="Parent" DataType="System.Int64"/>
+        <Column Name="Status" DataType="System.String"/>
+        <Column Name="IsSingleUser" DataType="System.Boolean"/>
+        <Column Name="Login" DataType="System.Int64"/>
+        <Column Name="PersonalPhoto" DataType="System.Byte[]" BindableControl="Picture"/>
+        <Column Name="PersonalPhotoHash" DataType="System.String"/>
+        <Column Name="TIN_Company_Sungero" DataType="System.String"/>
+        <Column Name="TRRC_Company_Sungero" DataType="System.String"/>
+        <Column Name="City_Company_Sungero" DataType="System.Int64"/>
+        <Column Name="Phones_Company_Sungero" DataType="System.String"/>
+        <Column Name="LegalName_Company_Sungero" DataType="System.String"/>
+        <Column Name="Region_Company_Sungero" DataType="System.Int64"/>
+        <Column Name="HeadCompany_Company_Sungero" DataType="System.Int64"/>
+        <Column Name="LegalAddress_Company_Sungero" DataType="System.String"/>
+        <Column Name="PostalAddress_Company_Sungero" DataType="System.String"/>
+        <Column Name="NoteBizUnit_Company_Sungero" DataType="System.String"/>
+        <Column Name="Company_Company_Sungero" DataType="System.Int64"/>
+        <Column Name="CEO_Company_Sungero" DataType="System.Int64"/>
+        <Column Name="EmailBizUnit_Company_Sungero" DataType="System.String"/>
+        <Column Name="Homepage_Company_Sungero" DataType="System.String"/>
+        <Column Name="PSRN_Company_Sungero" DataType="System.String"/>
+        <Column Name="NCEO_Company_Sungero" DataType="System.String"/>
+        <Column Name="NCEA_Company_Sungero" DataType="System.String"/>
+        <Column Name="Account_Company_Sungero" DataType="System.String"/>
+        <Column Name="Bank_Company_Sungero" DataType="System.Int64"/>
+        <Column Name="BUCode_Company_Sungero" DataType="System.String"/>
+        <Column Name="Nonresident_Company_Sungero" DataType="System.Boolean"/>
+        <Column Name="CAO_Company_Sungero" DataType="System.Int64"/>
+        <Column Name="BUExternalId_Company_Sungero" DataType="System.String"/>
+        <Column Name="Manager_Company_Sungero" DataType="System.Int64"/>
+        <Column Name="HeadOffice_Company_Sungero" DataType="System.Int64"/>
+        <Column Name="PhoneDepart_Company_Sungero" DataType="System.String"/>
+        <Column Name="ShortName_Company_Sungero" DataType="System.String"/>
+        <Column Name="NoteDepart_Company_Sungero" DataType="System.String"/>
+        <Column Name="BusinessUnit_Company_Sungero" DataType="System.Int64"/>
+        <Column Name="Code_Company_Sungero" DataType="System.String"/>
+        <Column Name="DepExternalId_Company_Sungero" DataType="System.String"/>
+        <Column Name="Person_Company_Sungero" DataType="System.Int64"/>
+        <Column Name="Department_Company_Sungero" DataType="System.Int64"/>
+        <Column Name="JobTitle_Company_Sungero" DataType="System.Int64"/>
+        <Column Name="Phone_Company_Sungero" DataType="System.String"/>
+        <Column Name="Note_Company_Sungero" DataType="System.String"/>
+        <Column Name="Email_Company_Sungero" DataType="System.String"/>
+        <Column Name="NeedNotifyExpi_Company_Sungero" DataType="System.Boolean"/>
+        <Column Name="NeedNotifyNewA_Company_Sungero" DataType="System.Boolean"/>
+        <Column Name="PersNumber_Company_Sungero" DataType="System.String"/>
+        <Column Name="NeedNotifySumA_Company_Sungero" DataType="System.Boolean"/>
+        <Column Name="EmplExternalId_Company_Sungero" DataType="System.String"/>
+        <Column Name="RGIndex_Docflow_Sungero" DataType="System.String"/>
+        <Column Name="RespEmpl_Docflow_Sungero" DataType="System.Int64"/>
+        <Column Name="CanRegIncoming_Docflow_Sungero" DataType="System.Boolean"/>
+        <Column Name="CanRegOutgoing_Docflow_Sungero" DataType="System.Boolean"/>
+        <Column Name="CanRegInternal_Docflow_Sungero" DataType="System.Boolean"/>
+        <Column Name="CanRegContract_Docflow_Sungero" DataType="System.Boolean"/>
+        <Column Name="Department_Service_ricoh" DataType="System.Int32"/>
+      </TableDataSource>
+      <TableDataSource Name="ricoh_Service_ChangePermanen" DataType="System.Int32" Enabled="true" TableName="ricoh_Service_ChangePermanen">
+        <Column Name="Id" DataType="System.Int64"/>
+        <Column Name="EDoc" DataType="System.Int64"/>
+        <Column Name="Model" DataType="System.String"/>
+        <Column Name="Number" DataType="System.String"/>
+        <Column Name="Note" DataType="System.String"/>
+        <Column Name="NeedPrintedPas" DataType="System.String"/>
+      </TableDataSource>
+    </SungeroSqlDataConnection>
+    <SungeroParameter Name="SungeroConnectionString" Restrictions="DontModify, DontEdit, DontDelete, HideAllProperties, DontShow" Id="0c7568c9-3236-48c8-927c-0dec75cdcbb7" IsRequired="false" IsCollection="false" InternalDataType="System.String" IsSimpleDataType="false" EntityTypeId="00000000-0000-0000-0000-000000000000"/>
+    <SungeroParameter Name="BeginDate" Id="40906068-b529-4a0a-8131-38df4a35fb0c" IsRequired="false" IsCollection="false" InternalDataType="System.DateTime" IsSimpleDataType="true" EntityTypeId="00000000-0000-0000-0000-000000000000"/>
+    <SungeroParameter Name="EndDate" Id="ce0d0a79-a1a9-473d-b500-e10e4b6f8c0b" IsRequired="false" IsCollection="false" InternalDataType="System.DateTime" IsSimpleDataType="true" EntityTypeId="00000000-0000-0000-0000-000000000000"/>
+  </Dictionary>
+  <ReportPage Name="Page1" Watermark.Font="Arial, 60pt">
+    <ReportTitleBand Name="ReportTitle1" Width="718.2" Height="56.7">
+      <TextObject Name="Text7" Left="47.25" Top="18.9" Width="94.5" Height="18.9" Text="[BeginDate]" Font="Arial, 10pt, style=Bold"/>
+      <TextObject Name="Text8" Left="170.1" Top="18.9" Width="94.5" Height="18.9" Text="[EndDate]" Font="Arial, 10pt, style=Bold"/>
+    </ReportTitleBand>
+    <PageHeaderBand Name="PageHeader1" Top="60.7" Width="718.2" Height="28.35">
+      <TextObject Name="Text2" Left="47.25" Width="264.6" Height="18.9" Text="Модель" Font="Arial, 10pt, style=Bold"/>
+      <TextObject Name="Text4" Left="453.6" Width="179.55" Height="18.9" Text="Изготовлен ламинат" Font="Arial, 10pt, style=Bold"/>
+      <TextObject Name="Text6" Left="311.85" Width="141.75" Height="18.9" Text="Госномер" Font="Arial, 10pt, style=Bold"/>
+    </PageHeaderBand>
+    <DataBand Name="Data1" Top="93.05" Width="718.2" Height="18.9" DataSource="ricoh_Service_ChangePermanen">
+      <TextObject Name="Text1" Left="47.25" Width="264.6" Height="18.9" Text="[ricoh_Service_ChangePermanen.Model]" Font="Arial, 10pt"/>
+      <TextObject Name="Text3" Left="453.6" Width="179.55" Height="18.9" Text="[ricoh_Service_ChangePermanen.NeedPrintedPas]" Font="Arial, 10pt"/>
+      <TextObject Name="Text5" Left="311.85" Width="141.75" Height="18.9" Text="[ricoh_Service_ChangePermanen.Number]" Font="Arial, 10pt"/>
+    </DataBand>
+    <PageFooterBand Name="PageFooter1" Top="115.95" Width="718.2" Height="18.9"/>
+  </ReportPage>
+</Report>

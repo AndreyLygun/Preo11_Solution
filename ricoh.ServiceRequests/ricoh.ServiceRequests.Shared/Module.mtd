@@ -321,6 +321,10 @@
       "IsVisible": false,
       "ItemId": "7d1f6fe4-c84d-430d-b9fb-8590ebf90445",
       "PreviousItemId": "0322118b-ccaf-4b52-9078-c3b592ddf9c3"
+    },
+    {
+      "ItemId": "8780ee01-14db-4acc-8146-dc0a9a9cb57b",
+      "PreviousItemId": "7d1f6fe4-c84d-430d-b9fb-8590ebf90445"
     }
   ],
   "HandledEvents": [
@@ -602,7 +606,7 @@
       ]
     }
   ],
-  "Version": "0.0.1.52",
+  "Version": "0.0.1.54",
   "Widgets": [],
   "Versions": [
     {

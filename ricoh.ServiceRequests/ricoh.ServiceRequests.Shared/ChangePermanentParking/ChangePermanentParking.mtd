@@ -3,6 +3,17 @@
   "NameGuid": "0322118b-ccaf-4b52-9078-c3b592ddf9c3",
   "Name": "ChangePermanentParking",
   "AccessRightsMode": "Both",
+  "Actions": [
+    {
+      "NameGuid": "24ed9bd1-b973-4734-9426-aea87c354a44",
+      "Name": "CloseRequest",
+      "GenerateHandler": true,
+      "IsAncestorMetadata": true,
+      "Overridden": [
+        "GenerateHandler"
+      ]
+    }
+  ],
   "BaseGuid": "ac86d580-b326-4345-a0bd-7277d2f47ad0",
   "CanBeNavigationPropertyType": true,
   "CreationAreaMetadata": {
@@ -115,6 +126,78 @@
           "RowNumber": 0,
           "RowSpan": 1,
           "Settings": []
+        },
+        {
+          "$type": "Sungero.Metadata.ControlGroupMetadata, Sungero.Metadata",
+          "NameGuid": "75b326b2-8f8b-49c4-ae78-9077d7dd4ce8",
+          "Name": "ControlGroup",
+          "ColumnDefinitions": [
+            {
+              "Percentage": 50.0
+            },
+            {
+              "Percentage": 50.0
+            }
+          ],
+          "ColumnNumber": 0,
+          "ColumnSpan": 1,
+          "GroupType": "GroupBox",
+          "ParentGuid": "edc74281-0fc3-4ba8-bceb-bc443bc51b4e",
+          "RowNumber": 4,
+          "RowSpan": 1,
+          "SharedNestedGroupsAlignment": true
+        },
+        {
+          "$type": "Sungero.Metadata.ControlMetadata, Sungero.Metadata",
+          "NameGuid": "581ce801-921b-4304-abf0-e2557e6978f5",
+          "Name": "NumOfNewNFC",
+          "ColumnNumber": 0,
+          "ColumnSpan": 1,
+          "DataBinderTypeName": "Sungero.Presentation.CommonDataBinders.NumericEditorToIntAndDoubleBinder",
+          "ParentGuid": "75b326b2-8f8b-49c4-ae78-9077d7dd4ce8",
+          "PropertyGuid": "2e0c89e4-9eda-41ce-9b04-6cfd8ed05e5b",
+          "RowNumber": 0,
+          "RowSpan": 1,
+          "Settings": []
+        },
+        {
+          "$type": "Sungero.Metadata.ControlMetadata, Sungero.Metadata",
+          "NameGuid": "cb406194-09da-4e7b-97fd-cc212d4a93bd",
+          "Name": "NumReissuedNFC",
+          "ColumnNumber": 1,
+          "ColumnSpan": 1,
+          "DataBinderTypeName": "Sungero.Presentation.CommonDataBinders.NumericEditorToIntAndDoubleBinder",
+          "ParentGuid": "75b326b2-8f8b-49c4-ae78-9077d7dd4ce8",
+          "PropertyGuid": "628aa2a5-bd77-4ab9-aa3a-bc1a7c99dc89",
+          "RowNumber": 0,
+          "RowSpan": 1,
+          "Settings": []
+        },
+        {
+          "$type": "Sungero.Metadata.ControlMetadata, Sungero.Metadata",
+          "NameGuid": "74b47549-f434-4f54-93ee-a52b5e1aa0f5",
+          "Name": "NumOfNewPrintedPass",
+          "ColumnNumber": 0,
+          "ColumnSpan": 1,
+          "DataBinderTypeName": "Sungero.Presentation.CommonDataBinders.NumericEditorToIntAndDoubleBinder",
+          "ParentGuid": "75b326b2-8f8b-49c4-ae78-9077d7dd4ce8",
+          "PropertyGuid": "92946cbe-cdbc-4113-a8a0-62dff6d4b10c",
+          "RowNumber": 1,
+          "RowSpan": 1,
+          "Settings": []
+        },
+        {
+          "$type": "Sungero.Metadata.ControlMetadata, Sungero.Metadata",
+          "NameGuid": "fec16c1e-27a0-4268-809c-5b06aa39399d",
+          "Name": "NumOfReissuedPrintedPasses",
+          "ColumnNumber": 1,
+          "ColumnSpan": 1,
+          "DataBinderTypeName": "Sungero.Presentation.CommonDataBinders.NumericEditorToIntAndDoubleBinder",
+          "ParentGuid": "75b326b2-8f8b-49c4-ae78-9077d7dd4ce8",
+          "PropertyGuid": "f8372c9b-369f-4438-adae-dea17eb676b3",
+          "RowNumber": 1,
+          "RowSpan": 1,
+          "Settings": []
         }
       ],
       "IsAncestorMetadata": true,
@@ -193,6 +276,16 @@
           "NameGuid": "1a5c1641-39ae-4651-8f65-c5bb6ec3d889",
           "Name": "No",
           "Code": "No"
+        },
+        {
+          "NameGuid": "1cf042a4-7819-44e3-bfcc-f193c419bd14",
+          "Name": "NewPass",
+          "Code": "NewPass"
+        },
+        {
+          "NameGuid": "51764bce-1961-46d7-9145-fa5404c925d7",
+          "Name": "ReissuePass",
+          "Code": "ReissuePass"
         }
       ],
       "IsLoadEagerly": true,
@@ -211,6 +304,85 @@
       "IsVisibility": false,
       "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToTextBinder",
       "PreviousPropertyGuid": "3b98b41b-3243-47f1-ab41-68c3a97c8dab"
+    },
+    {
+      "$type": "Sungero.Metadata.IntegerPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "92946cbe-cdbc-4113-a8a0-62dff6d4b10c",
+      "Name": "NumOfNewPrintedPass",
+      "Code": "nNewPrntdPass",
+      "IsEnabled": false,
+      "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.NumericEditorToIntAndDoubleBinder",
+      "PreviousPropertyGuid": "99026f8d-5ce4-45fd-9cfa-1cb257c152fd"
+    },
+    {
+      "$type": "Sungero.Metadata.IntegerPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "f8372c9b-369f-4438-adae-dea17eb676b3",
+      "Name": "NumOfReissuedPrintedPasses",
+      "Code": "nReissPrnPass",
+      "IsEnabled": false,
+      "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.NumericEditorToIntAndDoubleBinder",
+      "PreviousPropertyGuid": "92946cbe-cdbc-4113-a8a0-62dff6d4b10c"
+    },
+    {
+      "$type": "Sungero.Metadata.IntegerPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "2e0c89e4-9eda-41ce-9b04-6cfd8ed05e5b",
+      "Name": "NumOfNewNFC",
+      "Code": "nNewNFC",
+      "IsEnabled": false,
+      "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.NumericEditorToIntAndDoubleBinder",
+      "PreviousPropertyGuid": "f8372c9b-369f-4438-adae-dea17eb676b3",
+      "Versions": []
+    },
+    {
+      "$type": "Sungero.Metadata.IntegerPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "628aa2a5-bd77-4ab9-aa3a-bc1a7c99dc89",
+      "Name": "NumReissuedNFC",
+      "Code": "nReissuedNFC",
+      "IsEnabled": false,
+      "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.NumericEditorToIntAndDoubleBinder",
+      "PreviousPropertyGuid": "2e0c89e4-9eda-41ce-9b04-6cfd8ed05e5b",
+      "Versions": []
+    }
+  ],
+  "PublicFunctions": [
+    {
+      "Name": "CloseRequest",
+      "IsRemote": true,
+      "Parameters": [
+        {
+          "Name": "changePermanentParking",
+          "ParameterType": "global::ricoh.ServiceRequests.IChangePermanentParking",
+          "ParameterTypeFullName": "ricoh.ServiceRequests.IChangePermanentParking, Sungero.Domain.Interfaces"
+        },
+        {
+          "Name": "comment",
+          "ParameterType": "global::System.String",
+          "ParameterTypeFullName": "System.String"
+        },
+        {
+          "Name": "NumOfNewPrintedPass",
+          "ParameterType": "global::System.Int32",
+          "ParameterTypeFullName": "System.Int32"
+        },
+        {
+          "Name": "NumOfReissuedPrintedPasses",
+          "ParameterType": "global::System.Int32",
+          "ParameterTypeFullName": "System.Int32"
+        },
+        {
+          "Name": "NumOfNewNFC",
+          "ParameterType": "global::System.Int32",
+          "ParameterTypeFullName": "System.Int32"
+        },
+        {
+          "Name": "NumReissuedNFC",
+          "ParameterType": "global::System.Int32",
+          "ParameterTypeFullName": "System.Int32"
+        }
+      ],
+      "Placement": "Shared",
+      "ReturnType": "void",
+      "ReturnTypeFullName": "System.Void"
     }
   ],
   "PublicStructures": [],

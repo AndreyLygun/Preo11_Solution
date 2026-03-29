@@ -7,6 +7,8 @@ using ricoh.ServiceRequests.Visitor;
 
 namespace ricoh.ServiceRequests
 {
+
+
   partial class VisitorSharedHandlers
   {
 

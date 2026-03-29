@@ -35,7 +35,8 @@ namespace ricoh.ServiceRequests
                                               Logger.DebugFormat("Обновили информацию в парковочном месте '{0}' по заявке № {1}", parkingPlace.Name, _obj.Id);
                                             });
     }
-    
+
+   
     public override void BeforeSave(Sungero.Domain.BeforeSaveEventArgs e)
     {
       base.BeforeSave(e);
@@ -43,9 +44,11 @@ namespace ricoh.ServiceRequests
       _obj.Name = string.Format("Заявка № {0} от {1}: {2}", _obj.Id, _obj.Renter, _obj.Subject);
       _obj.CarsString = "";
       foreach(var car in _obj.Cars) {
-        var needLaminat = car.NeedPrintedPass==ChangePermanentParking.NeedNFC.Yes?" Требуется ламинат":"";
+        var needLaminat = 
+          car.NeedPrintedPass==ChangePermanentParking.NeedNFC.NewPass?"Новый ламинат":
+          (car.NeedPrintedPass==ChangePermanentParking.NeedNFC.ReissuePass?"Перевыпуск ламината":"");
         var comment = string.IsNullOrEmpty(car.Note)?"":(string.Format(" ({0})",  car.Note));
-        _obj.CarsString += string.Format("{1} / {2}{3}{0}\n", needLaminat, car.Model, car.Number, comment);
+        _obj.CarsString += string.Format("{1} / {2} {3} {0}\n", needLaminat, car.Model, car.Number, comment);
       }
     }
   }

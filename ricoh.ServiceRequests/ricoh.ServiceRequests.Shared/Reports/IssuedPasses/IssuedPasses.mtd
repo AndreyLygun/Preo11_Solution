@@ -1,0 +1,44 @@
+{
+  "$type": "Sungero.Metadata.ReportMetadata, Sungero.Reporting.Shared",
+  "NameGuid": "8780ee01-14db-4acc-8146-dc0a9a9cb57b",
+  "Name": "IssuedPasses",
+  "AssociatedGuid": "5de25943-1cb3-45ef-9972-4be4f15b6d54",
+  "BaseGuid": "cef9a810-3f30-4eca-9fe3-30992af0b818",
+  "DataSources": [],
+  "DefaultExportFormat": "Excel",
+  "ExportFormats": [
+    "Excel"
+  ],
+  "HandledEvents": [
+    "BeforeExecuteClient"
+  ],
+  "IconResourcesKeys": [],
+  "IntegrationServiceName": "ServiceRequestsIssuedPasses",
+  "Overridden": [
+    "PublicConstants",
+    "PublicStructures",
+    "ExportFormats",
+    "DefaultExportFormat",
+    "DisplayName",
+    "Description",
+    "Parameters",
+    "HandledEvents"
+  ],
+  "Parameters": [
+    {
+      "NameGuid": "40906068-b529-4a0a-8131-38df4a35fb0c",
+      "Name": "BeginDate",
+      "InternalDataTypeName": "System.DateTime",
+      "IsSimpleDataType": true
+    },
+    {
+      "NameGuid": "ce0d0a79-a1a9-473d-b500-e10e4b6f8c0b",
+      "Name": "EndDate",
+      "InternalDataTypeName": "System.DateTime",
+      "IsSimpleDataType": true
+    }
+  ],
+  "PublicStructures": [],
+  "ResourcesKeys": [],
+  "Versions": []
+}

@@ -77,10 +77,10 @@
     <value>Request</value>
   </data>
   <data name="Property_CheckIn" xml:space="preserve">
-    <value>Check In Time</value>
+    <value>First Check In Time</value>
   </data>
   <data name="Property_CheckOut" xml:space="preserve">
-    <value>Check Out Time</value>
+    <value>Last Check Out Time</value>
   </data>
   <data name="Property_CardId" xml:space="preserve">
     <value>Card Id</value>
@@ -141,5 +141,11 @@
   </data>
   <data name="FilterPanel_Any_5a0224eab51f437ba45822956e116c89" xml:space="preserve">
     <value>Любая</value>
+  </data>
+  <data name="Property_Passes" xml:space="preserve">
+    <value>Пропуска и проходы</value>
+  </data>
+  <data name="ControlGroup_3e084897c55940fbb1abcec3cd888e4d" xml:space="preserve">
+    <value>Пропуска и проходы</value>
   </data>
 </root>

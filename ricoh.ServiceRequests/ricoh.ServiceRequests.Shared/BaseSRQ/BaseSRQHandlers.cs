@@ -16,16 +16,5 @@ namespace ricoh.ServiceRequests
       //      if (e.OldValue != null) _obj.AccessRights.RevokeAll(e.OldValue);
       //      if (e.NewValue != null) _obj.AccessRights.Grant(e.NewValue, DefaultAccessRightsTypes.Change);
     }
-
-    
-    public virtual void RequestStateChanged(Sungero.Domain.Shared.EnumerationPropertyChangedEventArgs e)
-    {
-      // Запускаем заявку на согласование
-//      if (Equals(e.OldValue, BaseSRQ.RequestState.Draft) & Equals(e.NewValue, BaseSRQ.RequestState.OnReview)) {
-//        _obj.Save();
-//        Functions.BaseSRQ.Remote.CreateAndStartRequestApprovalTask(_obj);
-//      }
-
-    }
   }
 }

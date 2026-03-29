@@ -88,4 +88,25 @@
   <data name="Property_CarsString" xml:space="preserve">
     <value>Автомобили для шаблона</value>
   </data>
+  <data name="Enum_NeedNFC_NewPass" xml:space="preserve">
+    <value>Новый</value>
+  </data>
+  <data name="Enum_NeedNFC_ReissuePass" xml:space="preserve">
+    <value>Перевыпуск</value>
+  </data>
+  <data name="Property_NumOfNewPrintedPass" xml:space="preserve">
+    <value>Новых ламинатов</value>
+  </data>
+  <data name="Property_NumOfReissuedPrintedPasses" xml:space="preserve">
+    <value>Перевыпущенных ламинатов</value>
+  </data>
+  <data name="Property_NumOfNewNFC" xml:space="preserve">
+    <value>Новый эл.пропуск</value>
+  </data>
+  <data name="Property_NumReissuedNFC" xml:space="preserve">
+    <value>Перевыпущенный эл.пропуск</value>
+  </data>
+  <data name="ControlGroup_75b326b28f8b49c4ae789077d7dd4ce8" xml:space="preserve">
+    <value>Изготовлено пропусков</value>
+  </data>
 </root>

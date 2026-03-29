@@ -1,0 +1,78 @@
+{
+  "$type": "Sungero.Metadata.ModuleMetadata, Sungero.Metadata",
+  "NameGuid": "13bd5fb6-b8a5-4cbb-a500-bf0c98e5d9df",
+  "Name": "Sipass",
+  "AsyncHandlers": [],
+  "ClientAssemblyName": "RICOH.Sipass.Client",
+  "ClientBaseAssemblyName": "RICOH.Sipass.ClientBase",
+  "ClientBaseNamespace": "RICOH.Sipass.ClientBase",
+  "ClientNamespace": "RICOH.Sipass.Client",
+  "Code": "Sipass",
+  "CompanyCode": "RICOH",
+  "Cover": {
+    "NameGuid": "0b3d1457-9cda-49cf-809b-a7efe94076c5",
+    "Actions": [],
+    "Background": null,
+    "Footer": {
+      "NameGuid": "5dfa04d6-79bd-421a-b71f-dc4a7e24b036",
+      "BackgroundPosition": "Stretch"
+    },
+    "Groups": [],
+    "Header": {
+      "NameGuid": "59789e47-d1a4-4b32-8ef1-dc4a8a64199f",
+      "BackgroundPosition": "Stretch"
+    },
+    "RemoteControls": [],
+    "Tabs": []
+  },
+  "Dependencies": [
+    {
+      "Id": "597c698c-dff4-472e-97e4-805c4350174b",
+      "IsSolutionModule": true,
+      "MaxVersion": "",
+      "MinVersion": ""
+    }
+  ],
+  "IconResourcesKeys": [],
+  "Importance": "Medium",
+  "InterfaceAssemblyName": "Sungero.Domain.Interfaces",
+  "InterfaceNamespace": "RICOH.Sipass",
+  "IsolatedAssemblyName": "RICOH.Sipass.Isolated",
+  "IsolatedNamespace": "RICOH.Sipass.Isolated",
+  "IsVisible": false,
+  "Libraries": [
+    {
+      "NameGuid": "46bdca4c-561e-45a0-bbb7-54a754ed60e0",
+      "Name": "MSSQL",
+      "Scope": "Server"
+    }
+  ],
+  "PublicFunctions": [
+    {
+      "Name": "ReadSQL",
+      "ReturnType": "void",
+      "ReturnTypeFullName": "System.Void"
+    }
+  ],
+  "PublicStructures": [],
+  "ResourceInterfaceAssemblyName": "Sungero.Domain.Interfaces",
+  "ResourceInterfaceNamespace": "RICOH.Sipass",
+  "ResourcesKeys": [],
+  "ServerAssemblyName": "RICOH.Sipass.Server",
+  "ServerNamespace": "RICOH.Sipass.Server",
+  "SharedAssemblyName": "RICOH.Sipass.Shared",
+  "SharedNamespace": "RICOH.Sipass.Shared",
+  "SpecialFolders": [],
+  "Version": "0.0.1.2",
+  "Widgets": [],
+  "Versions": [
+    {
+      "Type": "ModuleMetadata",
+      "Number": 8
+    },
+    {
+      "Type": "DomainApi",
+      "Number": 3
+    }
+  ]
+}

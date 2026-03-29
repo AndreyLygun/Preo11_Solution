@@ -27,33 +27,24 @@ namespace ricoh.ServiceRequests.Client
 
   partial class VisitorActions
   {
+
     /// <summary>
     ///  Выдать пропуск посетителю
     /// </summary>
     /// <param name="e"></param>
     public virtual void CheckIn(Sungero.Domain.Client.ExecuteActionArgs e)
     {
-      if (!String.IsNullOrEmpty(_obj.CardId)) {
-        e.AddWarning("Этот посетитель уже получил пропуск");
-        return;
-      }
-      if (!Calendar.Today.Equals(_obj.ValidOn)) {
-        e.AddWarning("Этот посетитель оформлен не на сегодня");
-        return;
-      }
       var dlg = Dialogs.CreateInputDialog("Выдача пропуска");
       var name = dlg.AddString("Имя:", false);
       name.IsEnabled = false;
       name.Value = _obj.Name;
       var renter = dlg.AddString("Принимающая сторона:", false);
       renter.IsEnabled = false;
-      renter.Value = _obj.Renter.Name;
-      
+      renter.Value = _obj.Renter.Name;    
       var PassNum = dlg.AddString("Номер пропуска", true).WithLabel("(приложите пропуск к считывателю)");
       
       dlg.Show();
       if (dlg.IsCanceled) return;
-      e.CloseFormAfterAction = true;
       // Исправляем фигню при получении данных из считывателя Elatec
       PassNum.Value = PassNum.Value
         .Replace('Ф', 'A')
@@ -67,7 +58,7 @@ namespace ricoh.ServiceRequests.Client
 
     public virtual bool CanCheckIn(Sungero.Domain.Client.CanExecuteActionArgs e)
     {
-      return true;
+      return _obj.ValidOn == Calendar.Today;
     }
 
   }

@@ -76,4 +76,10 @@
   <data name="Enum_NeedPrintedPass_No" xml:space="preserve">
     <value>Нет</value>
   </data>
+  <data name="Enum_NeedPrintedPass_NewPass" xml:space="preserve">
+    <value>Новый</value>
+  </data>
+  <data name="Enum_NeedPrintedPass_ReissuePass" xml:space="preserve">
+    <value>Перевыпуск</value>
+  </data>
 </root>

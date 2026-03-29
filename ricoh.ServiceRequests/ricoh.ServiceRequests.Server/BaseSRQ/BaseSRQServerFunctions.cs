@@ -17,7 +17,7 @@ namespace ricoh.ServiceRequests.Server
     /// Записывает в заявку информацию о закрытии, меняет статус на Closed.
     /// Срабатывает независимо от наличия у пользователя прав на заявку
     /// </summary>
-    /// <param name="comment">Комментарий к закрыти</param>
+    /// <param name="comment">Комментарий к закрытию</param>
     
     [Remote, Public]
     public void CloseRequest(string comment)

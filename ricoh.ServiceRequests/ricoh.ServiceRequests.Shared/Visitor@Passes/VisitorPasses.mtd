@@ -1,0 +1,110 @@
+{
+  "$type": "Sungero.Metadata.EntityMetadata, Sungero.Metadata",
+  "NameGuid": "27599f8b-057b-4c69-b15f-519e3b93f5f4",
+  "Name": "VisitorPasses",
+  "AccessRightsMode": "NoRight",
+  "BaseGuid": "a3d38bf5-0414-41f6-bb33-a4621d2e5a60",
+  "CanBeNavigationPropertyType": true,
+  "Code": "VisitorPasses",
+  "ExtraSearchProperties": [],
+  "IsChildEntity": true,
+  "Properties": [
+    {
+      "$type": "Sungero.Metadata.NavigationPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "a628debf-3342-485c-b2a6-7519ed6e907c",
+      "Name": "Visitor",
+      "CanBeSearch": false,
+      "Code": "Visitor",
+      "EntityGuid": "7aff79f7-1e7f-43e8-853e-84eb5af7aaa8",
+      "IsReferenceToRootEntity": true,
+      "IsShowedInList": false
+    },
+    {
+      "$type": "Sungero.Metadata.StringPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "93c32412-5e37-4d90-91ab-96ccb5fb052a",
+      "Name": "CardId",
+      "CanBeSearch": false,
+      "Code": "CardId",
+      "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToStringBinder",
+      "PreviousPropertyGuid": "a628debf-3342-485c-b2a6-7519ed6e907c"
+    },
+    {
+      "$type": "Sungero.Metadata.DateTimePropertyMetadata, Sungero.Metadata",
+      "NameGuid": "7589f3fc-2856-4cee-bcb4-8bf4c3ad47ae",
+      "Name": "CardIssuedAt",
+      "CanBeSearch": false,
+      "Code": "CardIssuedAt",
+      "DateTimeFormat": "DateTime",
+      "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.DateTimeEditorToDateTimeBinder",
+      "PreviousPropertyGuid": "93c32412-5e37-4d90-91ab-96ccb5fb052a"
+    },
+    {
+      "$type": "Sungero.Metadata.NavigationPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "2c09c067-abd5-4939-b265-4ee17f9a3a00",
+      "Name": "CardIssuedBy",
+      "CanBeSearch": false,
+      "Code": "CardIssuedBy",
+      "EntityGuid": "243c2d26-f5f7-495f-9faf-951d91215c77",
+      "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.DropDownEditorToNavigationBinder",
+      "PreviousPropertyGuid": "7589f3fc-2856-4cee-bcb4-8bf4c3ad47ae"
+    },
+    {
+      "$type": "Sungero.Metadata.DateTimePropertyMetadata, Sungero.Metadata",
+      "NameGuid": "dc5b61ba-f721-4432-82e7-3d0950677f45",
+      "Name": "CheckIn",
+      "CanBeSearch": false,
+      "Code": "CheckIn",
+      "DateTimeFormat": "DateTime",
+      "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.DateTimeEditorToDateTimeBinder",
+      "PreviousPropertyGuid": "2c09c067-abd5-4939-b265-4ee17f9a3a00"
+    },
+    {
+      "$type": "Sungero.Metadata.DateTimePropertyMetadata, Sungero.Metadata",
+      "NameGuid": "e8950163-2695-481d-ab7b-cfc98ce2b879",
+      "Name": "CheckOut",
+      "CanBeSearch": false,
+      "Code": "CheckOut",
+      "DateTimeFormat": "DateTime",
+      "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.DateTimeEditorToDateTimeBinder",
+      "PreviousPropertyGuid": "dc5b61ba-f721-4432-82e7-3d0950677f45"
+    },
+    {
+      "$type": "Sungero.Metadata.StringPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "c565dc87-1912-4b68-bf44-5407a3e2c1ca",
+      "Name": "Note",
+      "CanBeSearch": false,
+      "Code": "Note",
+      "IsShowedInList": false,
+      "IsVisibility": false,
+      "Length": 1000,
+      "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToStringBinder",
+      "PreviousPropertyGuid": "e8950163-2695-481d-ab7b-cfc98ce2b879"
+    }
+  ],
+  "PublicStructures": [],
+  "RibbonCardMetadata": {
+    "NameGuid": "a91ec28e-a2fd-4991-8376-94d458658b86",
+    "Name": "RibbonCard",
+    "Categories": [],
+    "Elements": [],
+    "Groups": [],
+    "IsAncestorMetadata": true,
+    "Pages": [],
+    "RibbonKind": "Card"
+  },
+  "RibbonCollectionMetadata": {
+    "NameGuid": "afbe32e6-4a52-4de2-8d74-ddec0ec551a7",
+    "Name": "RibbonCollection",
+    "Categories": [],
+    "Elements": [],
+    "Groups": [],
+    "IsAncestorMetadata": true,
+    "Pages": []
+  },
+  "Versions": [
+    {
+      "Type": "EntityMetadata",
+      "Number": 12
+    }
+  ]
+}

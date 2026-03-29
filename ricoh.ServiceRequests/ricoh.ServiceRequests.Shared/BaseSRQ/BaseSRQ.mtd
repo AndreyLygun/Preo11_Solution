@@ -73,7 +73,7 @@
       "Overridden": [
         "PreviousStyleSelectorGuid"
       ],
-      "PreviousStyleSelectorGuid": "051d8764-d295-48fb-9293-c07de9e63e55",
+      "PreviousStyleSelectorGuid": "23fbdb63-48f9-4192-80a3-6d667aaf0bde",
       "Style": {
         "NameGuid": "379967e5-ed40-4f92-8209-8c165b6b79c0",
         "IsItalic": true
@@ -161,8 +161,7 @@
       ],
       "PreviousStyleSelectorGuid": "84e4d5b2-3716-4c3d-b3e8-ee3267fb8a85",
       "Style": {
-        "NameGuid": "4c0a8a49-056a-4a2d-8fc0-dbf609f78f04",
-        "ForegroundBrushName": "GreenEntityColor"
+        "NameGuid": "4c0a8a49-056a-4a2d-8fc0-dbf609f78f04"
       }
     },
     {
@@ -194,6 +193,23 @@
       "PreviousStyleSelectorGuid": "59c3468d-6470-4922-8a64-7a4703cf7eb7",
       "Style": {
         "NameGuid": "1fc0332b-929e-42bd-b68d-2a74540728fc",
+        "IsStrikethrough": true
+      }
+    },
+    {
+      "NameGuid": "23fbdb63-48f9-4192-80a3-6d667aaf0bde",
+      "Name": "DoneRequest",
+      "Conditions": [
+        {
+          "NameGuid": "1a859421-1960-4bf7-bb78-8388b558c5e1",
+          "LeftSideGuid": "9d4e3771-7349-436b-bb59-cc4afabea7c2",
+          "RightSide": "Done"
+        }
+      ],
+      "PreviousStyleSelectorGuid": "051d8764-d295-48fb-9293-c07de9e63e55",
+      "Style": {
+        "NameGuid": "ca2a634e-42d4-43fd-ac66-689a09cb883c",
+        "ForegroundBrushName": "GreenEntityColor",
         "IsStrikethrough": true
       }
     }
@@ -1387,9 +1403,6 @@
           "Name": "Closed",
           "Code": "Closed"
         }
-      ],
-      "HandledEvents": [
-        "ChangedShared"
       ],
       "IsLoadEagerly": true,
       "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.DropDownEditorToEnumerationBinder",

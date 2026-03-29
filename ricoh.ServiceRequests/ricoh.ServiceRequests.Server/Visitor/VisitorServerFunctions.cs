@@ -17,10 +17,15 @@ namespace ricoh.ServiceRequests.Server
     public void IssuePass(string PassNum)
     {
       Sungero.Core.AccessRights.AllowRead(()=> {
-                                            _obj.CardId = PassNum;
-                                            _obj.CardIssuesAt = Calendar.Now;
-                                            _obj.Save();
-                                          });
+                                      var NewPass = _obj.Passes.AddNew();
+                                      NewPass.CardId = PassNum;
+                                      NewPass.CardIssuedAt = Calendar.Now;
+                                      NewPass.CardIssuedBy = Users.Current;
+                                      _obj.CardId = PassNum;
+                                      _obj.CardIssuesAt = NewPass.CardIssuedAt;
+                                      _obj.Save();
+                                });
+
     }
 
   }
