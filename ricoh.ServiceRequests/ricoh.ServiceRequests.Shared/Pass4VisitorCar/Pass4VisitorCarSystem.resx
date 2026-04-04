@@ -89,6 +89,9 @@
     <value>Продолжительность парковки (час)</value>
   </data>
   <data name="Enum_ParkingType_CommonParking" xml:space="preserve">
-    <value>Общая парковка</value>
+    <value>Общая платная парковка (2 этаж)</value>
+  </data>
+  <data name="Enum_ParkingType_CommonFreePark" xml:space="preserve">
+    <value>Общая бесплатная парковка (1 этаж)</value>
   </data>
 </root>

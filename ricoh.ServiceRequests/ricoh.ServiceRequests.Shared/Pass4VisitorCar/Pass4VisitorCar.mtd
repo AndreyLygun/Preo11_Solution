@@ -320,10 +320,16 @@
           "NameGuid": "0c6374f3-dae6-4726-91cd-03a04f338539",
           "Name": "CommonParking",
           "Code": "CommonParking"
+        },
+        {
+          "NameGuid": "c3035f57-b040-40b9-92b9-950c8b2f6c70",
+          "Name": "CommonFreePark",
+          "Code": "CommonFreePark"
         }
       ],
       "HandledEvents": [
-        "ValueInputClient"
+        "ValueInputClient",
+        "ChangedShared"
       ],
       "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.DropDownEditorToEnumerationBinder",
       "PreviousPropertyGuid": "a1cbbe2e-be36-4dc8-8609-20131c0dadab"

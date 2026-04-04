@@ -10,6 +10,12 @@ namespace ricoh.ServiceRequests
   partial class Pass4VisitorCarSharedHandlers
   {
 
+    public virtual void ParkingTypeChanged(Sungero.Domain.Shared.EnumerationPropertyChangedEventArgs e)
+    {
+      if (!(_obj.ParkingType == Pass4VisitorCar.ParkingType.PrivateParking))
+        _obj.ParkingPlace = ParkingPlaces.Null;      
+    }
+
     public virtual void ValidOnDateTimeChanged(Sungero.Domain.Shared.DateTimePropertyChangedEventArgs e)
     {
       _obj.ValidOn = _obj.ValidOnDateTime;  
