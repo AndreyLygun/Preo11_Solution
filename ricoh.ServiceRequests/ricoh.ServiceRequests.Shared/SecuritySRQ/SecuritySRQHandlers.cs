@@ -12,8 +12,10 @@ namespace ricoh.ServiceRequests
 
     public virtual void ValidOnChanged(Sungero.Domain.Shared.DateTimePropertyChangedEventArgs e)
     {
-      _obj.ValidFrom = _obj.ValidOn;
-      _obj.ValidTill = _obj.ValidOn;
+      if (!_obj.ValidFrom.HasValue)
+        _obj.ValidFrom = _obj.ValidOn;
+      if (!_obj.ValidTill.HasValue)
+        _obj.ValidTill = _obj.ValidOn;
     }
 
   }

@@ -70,4 +70,7 @@
   <data name="CoverAction_Visitors" xml:space="preserve">
     <value>Посетители</value>
   </data>
+  <data name="AsyncHandler_Description_b980a9c10bbb49d9adbb79aa09deb2d0" xml:space="preserve">
+    <value>AsyncHandler</value>
+  </data>
 </root>

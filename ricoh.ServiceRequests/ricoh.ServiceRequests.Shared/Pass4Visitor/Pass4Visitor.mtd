@@ -88,7 +88,7 @@
           "ColumnSpan": 1,
           "DataBinderTypeName": "Sungero.Presentation.CommonDataBinders.DateTimeEditorToDateTimeBinder",
           "ParentGuid": "edc74281-0fc3-4ba8-bceb-bc443bc51b4e",
-          "PropertyGuid": "72da0048-dcc4-4230-90b9-d470be94727e",
+          "PropertyGuid": "1c37e2dc-73bf-48b7-8175-2f4de23755d1",
           "RowNumber": 0,
           "RowSpan": 1,
           "Settings": []
@@ -114,6 +114,19 @@
               "Value": 200
             }
           ]
+        },
+        {
+          "$type": "Sungero.Metadata.ControlMetadata, Sungero.Metadata",
+          "NameGuid": "97146fe6-a7a1-4b59-a60e-889b3483b80b",
+          "Name": "ValidTill",
+          "ColumnNumber": 1,
+          "ColumnSpan": 1,
+          "DataBinderTypeName": "Sungero.Presentation.CommonDataBinders.DateTimeEditorToDateTimeBinder",
+          "ParentGuid": "edc74281-0fc3-4ba8-bceb-bc443bc51b4e",
+          "PropertyGuid": "3ff332cf-beba-4c28-833e-8a34f6a8c4c5",
+          "RowNumber": 0,
+          "RowSpan": 1,
+          "Settings": []
         }
       ],
       "IsAncestorMetadata": true,

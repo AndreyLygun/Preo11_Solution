@@ -2,7 +2,33 @@
   "$type": "Sungero.Metadata.ModuleMetadata, Sungero.Metadata",
   "NameGuid": "5de25943-1cb3-45ef-9972-4be4f15b6d54",
   "Name": "ServiceRequests",
-  "AsyncHandlers": [],
+  "AsyncHandlers": [
+    {
+      "NameGuid": "b980a9c1-0bbb-49d9-adbb-79aa09deb2d0",
+      "Name": "SendEMail",
+      "DelayPeriod": 1,
+      "DelayStrategy": "RegularDelayStrategy",
+      "IsHandlerGenerated": true,
+      "MaxRetryCount": 3,
+      "Parameters": [
+        {
+          "NameGuid": "3b70ef7f-c983-4f33-a047-8f4715a42d0b",
+          "Name": "Body",
+          "ParameterType": "String"
+        },
+        {
+          "NameGuid": "6aad3ffb-fb5c-477e-a862-cc94efd399b8",
+          "Name": "Addresses",
+          "ParameterType": "String"
+        },
+        {
+          "NameGuid": "c8ee982d-cb44-442e-b410-ca8fe5d7b692",
+          "Name": "Subject",
+          "ParameterType": "String"
+        }
+      ]
+    }
+  ],
   "ClientAssemblyName": "ricoh.ServiceRequests.Client",
   "ClientBaseAssemblyName": "ricoh.ServiceRequests.ClientBase",
   "ClientBaseNamespace": "ricoh.ServiceRequests.ClientBase",
@@ -606,7 +632,7 @@
       ]
     }
   ],
-  "Version": "0.0.1.54",
+  "Version": "0.0.1.55",
   "Widgets": [],
   "Versions": [
     {

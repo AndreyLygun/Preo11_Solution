@@ -1453,6 +1453,7 @@
       "CanBeSearch": false,
       "Code": "ExternalURL",
       "IsEnabled": false,
+      "IsShowedInList": false,
       "IsVisibility": false,
       "Length": 1000,
       "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToStringBinder",

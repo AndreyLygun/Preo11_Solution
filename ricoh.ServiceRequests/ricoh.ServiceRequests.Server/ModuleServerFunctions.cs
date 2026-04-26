@@ -10,12 +10,31 @@ namespace ricoh.ServiceRequests.Server
   public class ModuleFunctions
   {
 
+ 
+    [Remote]
+    public void EnqueueSendMailAsync(string addresses, string subject, string body)
+    {
+      if (string.IsNullOrWhiteSpace(addresses))
+      {
+        Logger.Error("EnqueueSendMailAsync. No recipient is stated");
+        return;
+      }
+
+      var handler = AsyncHandlers.SendEMail.Create();
+      handler.Addresses = addresses;
+      handler.Subject = subject ?? string.Empty;
+      handler.Body = body ?? string.Empty;
+
+      Logger.DebugFormat("EnqueueSendMailAsync. Mail queued. To: {0}, Subject: {1}", addresses, subject);
+      handler.ExecuteAsync();
+    }
+
     [Remote(IsPure = true)]
     public IPass4AssetsMoving GetPass4AssetMoving(long Id)
     {
       var pass = Pass4AssetsMovings.GetAll(p => p.Id == Id);
       return pass.FirstOrDefault();
-    }    
+    }
     
 
     [Remote(IsPure = true)]
@@ -86,7 +105,7 @@ namespace ricoh.ServiceRequests.Server
       var tasks = Sungero.DocflowApproval.PublicFunctions.Module.Remote.GetDocumentFlowTasks(request);
       foreach (var task in tasks) {
         task.AbortingReason = Reason;
-        task.Abort();        
+        task.Abort();
       }
     }
     

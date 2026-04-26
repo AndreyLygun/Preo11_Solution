@@ -12,7 +12,7 @@ namespace ricoh.ServiceRequests
 
     public override void Showing(Sungero.Presentation.FormShowingEventArgs e)
     {
-      if (_obj.Request != null  | _obj.CardId != null) {
+      if (_obj.Request != null  | _obj.CardId != null | !Users.Current.IncludedIn(Roles.Administrators)) {
         // если создан при одобрении заявки на пропуск или карта посетителя уже выдана, то отключаем возможность изменять данные
         _obj.State.Properties.Name.IsEnabled = false;
         _obj.State.Properties.Renter.IsEnabled = false;

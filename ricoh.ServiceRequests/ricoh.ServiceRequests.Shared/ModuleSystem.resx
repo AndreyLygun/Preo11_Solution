@@ -211,4 +211,7 @@
   <data name="CoverDescription_Parkings" xml:space="preserve">
     <value>Места на парковке для арендаторов</value>
   </data>
+  <data name="AsyncHandler_Description_b980a9c10bbb49d9adbb79aa09deb2d0" xml:space="preserve">
+    <value>Отправляет письмо</value>
+  </data>
 </root>
