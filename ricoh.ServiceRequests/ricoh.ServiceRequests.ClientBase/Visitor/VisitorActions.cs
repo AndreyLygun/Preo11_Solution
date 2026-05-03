@@ -42,6 +42,8 @@ namespace ricoh.ServiceRequests.Client
       renter.IsEnabled = false;
       renter.Value = _obj.Renter.Name;    
       var PassNum = dlg.AddString("Номер пропуска", true).WithLabel("(приложите пропуск к считывателю)");
+      var SendNotification = dlg.AddBoolean("Уведомить автора заявки о выдаче пропуска");
+      SendNotification.Value = _obj.SendNotification??false;
       
       dlg.Show();
       if (dlg.IsCanceled) return;
@@ -54,6 +56,10 @@ namespace ricoh.ServiceRequests.Client
         .Replace('У', 'E')
         .Replace('А', 'F');
       Functions.Visitor.Remote.IssuePass(_obj, PassNum.Value);
+      if (SendNotification.Value??false) {
+        Functions.Module.Remote.EnqueueSendMailAsync(_obj.Request.CreatorMail, "Ваш посетитель получил пропуск", "Ваш посетитель получил пропуск");        
+      }
+
     }
 
     public virtual bool CanCheckIn(Sungero.Domain.Client.CanExecuteActionArgs e)

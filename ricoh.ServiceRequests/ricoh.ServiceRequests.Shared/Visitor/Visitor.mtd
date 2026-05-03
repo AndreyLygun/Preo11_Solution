@@ -288,6 +288,7 @@
       "Name": "Name",
       "Code": "Name",
       "IsDisplayValue": true,
+      "IsLoadEagerly": true,
       "IsQuickSearchAllowed": true,
       "IsRequired": true,
       "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToStringBinder",
@@ -298,6 +299,7 @@
       "NameGuid": "25f0e6d1-9bec-4793-b1ec-16adf330718f",
       "Name": "ValidOn",
       "Code": "ValidOn",
+      "IsLoadEagerly": true,
       "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.DateTimeEditorToDateTimeBinder",
       "PreviousPropertyGuid": "9e27b936-2481-4f78-b7fa-5558a962ccb7"
     },
@@ -309,6 +311,7 @@
       "EntityGuid": "ac86d580-b326-4345-a0bd-7277d2f47ad0",
       "FlatListInStandaloneLookup": true,
       "IsEnabled": false,
+      "IsLoadEagerly": true,
       "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.DropDownEditorToNavigationBinder",
       "PreviousPropertyGuid": "25f0e6d1-9bec-4793-b1ec-16adf330718f"
     },
@@ -329,6 +332,7 @@
       "Code": "CheckOut",
       "DateTimeFormat": "DateTime",
       "IsEnabled": false,
+      "IsLoadEagerly": true,
       "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.DateTimeEditorToDateTimeBinder",
       "PreviousPropertyGuid": "8814003d-f291-4c33-922c-15113f22c4b7"
     },
@@ -338,6 +342,7 @@
       "Name": "CardId",
       "Code": "CardId",
       "IsEnabled": false,
+      "IsLoadEagerly": true,
       "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToStringBinder",
       "PreviousPropertyGuid": "e999c51d-6633-4423-bacd-a5c58cca94a2"
     },
@@ -348,6 +353,7 @@
       "Code": "CardIssuesAt",
       "DateTimeFormat": "DateTime",
       "IsEnabled": false,
+      "IsLoadEagerly": true,
       "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.DateTimeEditorToDateTimeBinder",
       "PreviousPropertyGuid": "f867becb-9b68-4132-9521-983089bff04f"
     },
@@ -368,6 +374,15 @@
       "EntityGuid": "27599f8b-057b-4c69-b15f-519e3b93f5f4",
       "IsShowedInList": false,
       "PreviousPropertyGuid": "2d7c41b3-2626-4099-aabc-cb8c97242ae4"
+    },
+    {
+      "$type": "Sungero.Metadata.BooleanPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "748c20da-e289-461d-8e44-4f389ffcc861",
+      "Name": "SendNotification",
+      "Code": "SendNotificati",
+      "IsLoadEagerly": true,
+      "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.BooleanEditorToBooleanBinder",
+      "PreviousPropertyGuid": "10fae9b3-9c21-4a38-8b6f-d811811f1807"
     }
   ],
   "PublicFunctions": [

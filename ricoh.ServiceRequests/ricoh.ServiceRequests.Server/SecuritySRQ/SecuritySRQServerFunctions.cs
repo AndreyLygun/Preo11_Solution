@@ -28,7 +28,10 @@ namespace ricoh.ServiceRequests.Server
         foreach (var visitor in _obj.Visitors.Split('\n')) {
           if (string.IsNullOrWhiteSpace(visitor)) continue;
           var newVisitor = Visitors.Create();
-          newVisitor.Name = visitor;
+          if (visitor[0] == '!') {
+            newVisitor.SendNotification = true;
+            newVisitor.Name = visitor.TrimStart('!');
+          } else newVisitor.Name = visitor;
           newVisitor.Renter = _obj.Renter;
           newVisitor.Request = _obj;
           newVisitor.ValidOn = day;
